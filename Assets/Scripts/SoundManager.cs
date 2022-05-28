@@ -49,7 +49,7 @@ public class SoundManager : MonoBehaviour
         // Audio Name
         public string name;
         // To play music
-        public AudioClip AudioClip;
+        public AudioClip audioClip;
     }
 
     public List<AudioInfo> m_BGM_List;
@@ -62,7 +62,6 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        SetBGMVolume(0.5f);
     }
 
     public float GetBGMVolume()
@@ -101,7 +100,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBGM(in AudioInfo audio)
     {
-        m_AudioSource.PlayOneShot(audio.AudioClip, m_BGM_Volume);
+        m_AudioSource.PlayOneShot(audio.audioClip, m_BGM_Volume);
     }
 
     public AudioInfo GetSFX(in string audioName)
@@ -113,7 +112,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySFX(in AudioInfo audio)
     {
-        m_AudioSource.PlayOneShot(audio.AudioClip, m_SFX_Volume);
+        m_AudioSource.PlayOneShot(audio.audioClip, m_SFX_Volume);
     }
 
 }
