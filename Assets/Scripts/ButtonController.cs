@@ -17,4 +17,14 @@ public class ButtonController : MonoBehaviour
         SoundManager soundManager = SoundManager.Instance;
         soundManager.PlaySFX(soundManager.GetSFX("Hover"));
     }
+
+    public void ExitToClick()
+    {
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }
+
