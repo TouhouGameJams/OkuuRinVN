@@ -1,0 +1,30 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -800,-440
+__PrivCrochet_tags: 
+title: Start_Test
+---
+Orin: Hi, I'm Orin, Satori's pet!
+Okuu: And my name is Okuu. I'm also Satori's pet!
+Orin: Okuu, look over there!
+<<Flip Okuu>> //Execute command <<Flip>>
+<<Expression Orin Smug>>
+Okuu: Huh?
+Orin: Just kidding.
+<<Expression Okuu Sad>>
+<<Flip Okuu>>
+Okuu: You're always teasing me.
+<<Expression Orin Perked>>
+Orin: Hehe, let me make up to you.
+Orin: How about lunch? What would you like, Okuu? On me of course.
+<<SentenceBuilder GameObject>> //Execute the script SentenceBuilder
+Okuu: [i]I-Is she asking me out on a date? Think Okuu, think...[/i]
+Okuu: {Output()}
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -480,-400
+__PrivCrochet_tags: 
+title: Beef
+---
+Orin: Woah, beef! I would love BBQ.
+===
