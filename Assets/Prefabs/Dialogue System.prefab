@@ -686,8 +686,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 638e885a48f1a46c29aaa1b64688b208, type: 3}
 --- !u!114 &5319429346689502788 stripped
@@ -803,12 +802,12 @@ PrefabInstance:
     - target: {fileID: 1192931821082035759, guid: 123a611f933b2a14f97c17ed0c0009d0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1192931821082035759, guid: 123a611f933b2a14f97c17ed0c0009d0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -540
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1192931821082035759, guid: 123a611f933b2a14f97c17ed0c0009d0,
         type: 3}
@@ -1027,8 +1026,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4935123090415912066, guid: 67dde1b92175d4745aaea386e7555d40,
         type: 3}
       propertyPath: m_IsActive
@@ -1123,8 +1121,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4935123091767085941, guid: 67dde1b92175d4745aaea386e7555d40,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1159,8 +1156,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67dde1b92175d4745aaea386e7555d40, type: 3}
 --- !u!224 &1121761132697172917 stripped
