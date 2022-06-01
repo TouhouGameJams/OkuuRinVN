@@ -1,0 +1,16 @@
+﻿title: Start
+tags:
+---
+Orin: Hi, I'm Orin, Satori's pet!
+
+<<SentenceBuilderStart GameManager SetenceBuilder1>>
+Okuu: (Currently in Sentence Builder!)
+Okuu: {SentenceBuilderResult()}
+<<SentenceBuilderEnd GameManager>>
+===
+
+title: newNode
+tags:
+---
+Orin: This is a new node
+===
