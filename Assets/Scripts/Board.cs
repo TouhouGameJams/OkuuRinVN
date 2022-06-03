@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Board : MonoBehaviour
@@ -19,23 +20,31 @@ public class Board : MonoBehaviour
         
     }
 
-    public void SetUpBoard(int blocks, int slots, List<string> listStrings)
+    public void SetUpBoard(int slots, List<string> listStrings)
     {
-
+        CreateBlocks(listStrings);
     }
 
-    public void CreateBlocks(int numberOfBlocks, List<string> listStrings)
+    public void CreateBlocks(List<string> listStrings)
     {
-        for(int i = 0; i < numberOfBlocks; i++)
+        var positions = new List<Vector3>();
+        for(int i = 0; i < listStrings.Count; i++)
         {
+            Vector3 position;
+
+            do
+            {
+                position = new Vector3(
+                                Random.Range(-750f, 750f),
+                                Random.Range(-275f, 275f),
+                                0f);
+            } while (positions.Any(p => Vector3.Distance(position, p) < blockAsset.GetComponent<RectTransform>().rect.width));
+
+            positions.Add(position);
+
             var newGo = Instantiate(blockAsset, PhraseBlockArea.transform);
-            
-            //Future TODO set up each block message to be read off the list of strings the scriptable object will provide
-            //blockAsset.GetComponent<Block>().itemMessage = listStrings[i];
-
-            //TODO set the starting position of each block to be in a random position
-            //newGo.transform.position = RandomPointInBounds(new Bounds(new Vector3(0, 0, 0), new Vector3(0, 100, 1)));
-
+            blockAsset.itemMessage = listStrings[i];
+            newGo.transform.localPosition = positions[i];
         }
     }
 
@@ -58,5 +67,15 @@ public class Board : MonoBehaviour
             Random.Range(bounds.min.y, bounds.max.y),
             0
         );
+    }
+
+    public Vector3 GeneratedPosition()
+    {
+        var screenToWorldPosition = Camera.main.ScreenToWorldPoint(PhraseBlockArea.GetComponent<RectTransform>().transform.position);
+        float x, y, z;
+        x = Random.Range(-750f, 750f);
+        y = Random.Range(-275f, 275f);
+        z = 0;
+        return new Vector3(x, y, z);
     }
 }

@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
             wordList.Add(phrase);
         }
 
-        //board.CreateBlocks()
+        board.SetUpBoard(sO.numberOfSlots, sO.listPhrases);
 
         //Show board
         stateMachine.ChangeState(new SentenceBuilderState());
