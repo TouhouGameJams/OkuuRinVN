@@ -7,8 +7,10 @@ public class Board : MonoBehaviour
 {
     public Block blockAsset;
     public Slot slotAsset;
-    public GameObject PhraseBlockArea;
     public GameObject AnswerBlockArea;
+    public GameObject PhraseBlockArea;
+    public List<Slot> slots;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +19,12 @@ public class Board : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void SetUpBoard(int slots, List<string> listStrings)
     {
         CreateBlocks(listStrings);
+        CreateSlots(slots);
     }
 
     public void CreateBlocks(List<string> listStrings)
@@ -48,34 +50,13 @@ public class Board : MonoBehaviour
         }
     }
 
-    //test function to create blocks individually
-    public void CreateBlock(string text)
-    {
-        var newBlock = Instantiate(blockAsset, PhraseBlockArea.transform);
-        blockAsset.GetComponent<Block>().itemMessage = text;
-    }
-
     public void CreateSlots(int numberOfSlots)
     {
+        for(int i = 0; i < numberOfSlots; i++)
+        {
+            var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
+            slots.Add(newSlot);
+        }
         //Create and evenly position slots in the slot area based on the number of slots provided
-    }
-
-    public static Vector3 RandomPointInBounds(Bounds bounds)
-    {
-        return new Vector3(
-            Random.Range(bounds.min.x, bounds.max.x),
-            Random.Range(bounds.min.y, bounds.max.y),
-            0
-        );
-    }
-
-    public Vector3 GeneratedPosition()
-    {
-        var screenToWorldPosition = Camera.main.ScreenToWorldPoint(PhraseBlockArea.GetComponent<RectTransform>().transform.position);
-        float x, y, z;
-        x = Random.Range(-750f, 750f);
-        y = Random.Range(-275f, 275f);
-        z = 0;
-        return new Vector3(x, y, z);
     }
 }

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public StateMachine stateMachine;
     public DialogueRunner dR;
     public LineView lW;
+    private bool sentenceBuilderStarted;
     public List<string> wordList;
 
     private static string outputSentence;
@@ -21,12 +22,24 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(sentenceBuilderStarted)
+        {
+            if (AreAllSlotsFilled())
+            {
+                for (int i = 0; i < board.slots.Count; i++)
+                {
+                    wordList.Add(board.slots[i].currentText);
+                }
+                CloseBoard();
+                sentenceBuilderStarted = false;
+            }
+        }
     }
 
     [YarnCommand("SentenceBuilderStart")]
@@ -34,19 +47,12 @@ public class GameManager : MonoBehaviour
     {
         //disable and hide continue button
         var sO = Resources.Load<SentenceBuilderScriptableObject>("ScriptableObjects/" + scriptableObjectName);
-        Debug.Log(sO.listPhrases.Count);
-        Debug.Log(sO.numberOfSlots);
-        
-        foreach(var phrase in sO.listPhrases)
-        {
-            wordList.Add(phrase);
-        }
-
+ 
         board.SetUpBoard(sO.numberOfSlots, sO.listPhrases);
 
         //Show board
         stateMachine.ChangeState(new SentenceBuilderState());
-
+        sentenceBuilderStarted = true;
         //Call on board's create slot and block functions using the sO as references
     }
 
@@ -67,10 +73,23 @@ public class GameManager : MonoBehaviour
     public void SentenceBuilderEnd()
     {
         dR.Dialogue.Stop();
-        dR.StartDialogue("newNode");
+        dR.StartDialogue(outputSentence);
     }
+
     public string CreateStringFromList()
     {
         return String.Join(" ", wordList);
+    }
+
+    public bool AreAllSlotsFilled()
+    {
+        for (int i = 0; i < board.slots.Count; i++)
+        {
+            if (board.slots[i].occupied == false)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

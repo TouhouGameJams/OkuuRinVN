@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class Slot : MonoBehaviour, IDropHandler
 {
+    public bool occupied;
+
     public string currentText;
     [SerializeField]
     private int slotIndex;
@@ -43,15 +46,12 @@ public class Slot : MonoBehaviour, IDropHandler
 
         if (eventData.pointerDrag != null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-
+            eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+            occupied = true;
             currentText = eventData.pointerDrag.GetComponent<Block>().itemMessage;
             currentMessage = eventData.pointerDrag.GetComponent<Block>().itemMessage;
             currentTextBoxAnswerNumber = eventData.pointerDrag.GetComponent<Block>().textBoxAnswerNumber;
-            hasTextBox = true;
             eventData.pointerDrag.GetComponent<Block>().isLocked = true;
-            //Debug.Log(currentMessage);
         }
-
     }
 }
