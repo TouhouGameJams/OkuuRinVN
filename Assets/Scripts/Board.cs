@@ -10,7 +10,7 @@ public class Board : MonoBehaviour
     public GameObject AnswerBlockArea;
     public GameObject PhraseBlockArea;
     public List<Slot> slots;
-
+    private float[] slotPosition = {1200f,1100f,950f,800f,650f};
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class Board : MonoBehaviour
     {
     }
 
-    public void SetUpBoard(int slots, List<string> listStrings)
+    public void SetUpBoard(in int slots, in List<string> listStrings)
     {
         CreateBlocks(listStrings);
         CreateSlots(slots);
@@ -30,10 +30,9 @@ public class Board : MonoBehaviour
     public void CreateBlocks(List<string> listStrings)
     {
         var positions = new List<Vector3>();
-        for(int i = 0; i < listStrings.Count; i++)
+        Vector3 position;
+        for (int i = 0; i < listStrings.Count; i++)
         {
-            Vector3 position;
-
             do
             {
                 position = new Vector3(
@@ -45,16 +44,25 @@ public class Board : MonoBehaviour
             positions.Add(position);
 
             var newGo = Instantiate(blockAsset, PhraseBlockArea.transform);
-            blockAsset.itemMessage = listStrings[i];
+            newGo.itemMessage = listStrings[i];
             newGo.transform.localPosition = positions[i];
         }
     }
 
     public void CreateSlots(int numberOfSlots)
     {
+
+        const float SPACING_WIDTH = 50f;
+        float SLOT_WIDTH = slotAsset.GetComponent<RectTransform>().rect.width;
+
         for(int i = 0; i < numberOfSlots; i++)
         {
             var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
+            Vector3 position = new Vector3(
+                slotPosition[numberOfSlots - 1] + (SLOT_WIDTH *(i - 1)) + (SPACING_WIDTH * (i - 1)),
+                292f,
+                0f);
+            newSlot.transform.position = position;
             slots.Add(newSlot);
         }
         //Create and evenly position slots in the slot area based on the number of slots provided
