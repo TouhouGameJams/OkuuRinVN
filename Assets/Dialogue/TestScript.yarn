@@ -3,14 +3,26 @@ tags:
 ---
 Orin: Hi, I'm Orin, Satori's pet!
 
-<<SentenceBuilderStart GameManager SetenceBuilder1>>
-Okuu: (Currently in Sentence Builder!)
-Okuu: {SentenceBuilderResult()}
-<<SentenceBuilderEnd GameManager>>
+<<SentenceBuilderStart GameManager SetenceBuilder1>> //This calls the sentence builder where you can call a scriptable object
+Okuu: (Currently in Sentence Builder!) //Represents inner thoughts. Also to help the player remind what the goal of the sentence to build
+Okuu: {SentenceBuilderResult()} //This outputs the sentence into Okuu's dialogue
+<<SentenceBuilderEnd GameManager>> // This moves into a new node
 ===
 
-title: newNode
+title: Node1
 tags:
 ---
-Orin: This is a new node
+Orin: This is Node1
+===
+
+title: Node2
+tags:
+---
+Orin: This is Node2
+===
+
+title: Node3
+tags:
+---
+Orin: This is Node3
 ===
