@@ -23,12 +23,12 @@ public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
 
         //To be decided if we want to make each block a random color
         //GetComponent<Image>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-        
+
         //Very ugly. Used only to test faster. Must change to get the canvas reference more elegantly
-        canvas = transform.parent.parent.parent.GetComponent<Canvas>();
+        canvas = GetComponentInParent<Canvas>();
 
         //Not the best for now
-        gameObject.transform.Find("Text").GetComponent<TextMeshProUGUI>().text = itemMessage;
+        GetComponentInChildren<TextMeshProUGUI>().text = itemMessage;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

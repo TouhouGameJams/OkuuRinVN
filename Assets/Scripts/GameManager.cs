@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     {
         //disable and hide continue button
         var sO = Resources.Load<SentenceBuilderScriptableObject>("ScriptableObjects/" + scriptableObjectName);
- 
+
         board.SetUpBoard(sO.numberOfSlots, sO.listPhrases);
 
         //Show board

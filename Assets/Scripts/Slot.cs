@@ -43,15 +43,17 @@ public class Slot : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-
-        if (eventData.pointerDrag != null)
+        if (eventData.pointerDrag == null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
-            occupied = true;
-            currentText = eventData.pointerDrag.GetComponent<Block>().itemMessage;
-            currentMessage = eventData.pointerDrag.GetComponent<Block>().itemMessage;
-            currentTextBoxAnswerNumber = eventData.pointerDrag.GetComponent<Block>().textBoxAnswerNumber;
-            eventData.pointerDrag.GetComponent<Block>().isLocked = true;
+            return;
         }
+
+        eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+        occupied = true;
+        currentText = eventData.pointerDrag.GetComponent<Block>().itemMessage;
+        currentMessage = eventData.pointerDrag.GetComponent<Block>().itemMessage;
+        currentTextBoxAnswerNumber = eventData.pointerDrag.GetComponent<Block>().textBoxAnswerNumber;
+        eventData.pointerDrag.GetComponent<Block>().isLocked = true;
+
     }
 }
