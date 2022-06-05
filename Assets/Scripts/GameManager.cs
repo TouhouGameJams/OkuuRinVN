@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
     public StateMachine stateMachine;
     public DialogueRunner dR;
     public LineView lW;
-    private bool sentenceBuilderStarted;
     public List<string> wordList;
 
-    private static string outputSentence;
+    public List<string> nodeList;
+    private static string nodeName;
+    private bool sentenceBuilderStarted;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
 
         board.SetUpBoard(sO.numberOfSlots, sO.listPhrases);
 
+        CreateList(sO.possibleResults);
         //Show board
         stateMachine.ChangeState(new SentenceBuilderState());
         sentenceBuilderStarted = true;
@@ -59,26 +61,34 @@ public class GameManager : MonoBehaviour
     public void CloseBoard()
     {
         stateMachine.ChangeState(new GameState());
-        outputSentence = CreateStringFromList();
+        nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
     }
 
-    [YarnFunction("SentenceBuilderResult")]
-    public static string OutputToLine()
+    [YarnFunction("JumpToNode")]
+    public static string JumpToNode()
     {
-        return outputSentence;
+        return nodeName;
     }
 
-    [YarnCommand("SentenceBuilderEnd")]
-    public void SentenceBuilderEnd()
+    public string ValidateNode()
     {
-        dR.Dialogue.Stop();
-        dR.StartDialogue(outputSentence);
+        var word = String.Join("_", wordList);
+        if (nodeList.Contains(word))
+        {
+            return word;
+        }
+        return "Invalid";
     }
 
-    public string CreateStringFromList()
+    public string CheckSlots(List<String> list, string keyWord)
     {
-        return String.Join(" ", wordList);
+        if(list.Contains(keyWord))
+        {
+            return keyWord;
+        }
+        return "Invalid";
+        //wordList.Find(x => wordList.Contains(keyWord));
     }
 
     public bool AreAllSlotsFilled()
@@ -91,5 +101,13 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void CreateList(List<string> list)
+    {
+        for(int i = 0; i < list.Count; i++)
+        {
+            nodeList.Add(list[i]);
+        }
     }
 }

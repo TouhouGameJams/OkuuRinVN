@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 public class Board : MonoBehaviour
 {
@@ -51,7 +52,6 @@ public class Board : MonoBehaviour
 
     public void CreateSlots(int numberOfSlots)
     {
-
         const float SPACING_WIDTH = 50f;
         float SLOT_WIDTH = slotAsset.GetComponent<RectTransform>().rect.width;
 
@@ -63,6 +63,9 @@ public class Board : MonoBehaviour
                 292f,
                 0f);
             newSlot.transform.position = position;
+            var slotNumber = 1 + i;
+            newSlot.GetComponentInChildren<TextMeshProUGUI>().text = "Slot " + slotNumber.ToString();
+            newSlot.SlotIndex = i;
             slots.Add(newSlot);
         }
         //Create and evenly position slots in the slot area based on the number of slots provided

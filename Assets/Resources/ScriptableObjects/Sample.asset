@@ -10,10 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
-  m_Name: SetenceBuilder1
+  m_Name: Sample
   m_EditorClassIdentifier: 
-  numberOfSlots: 4
+  numberOfSlots: 3
   listPhrases:
-  - Node1
-  - Node2
-  - Node3
+  - I
+  - Like
+  - Work
+  - Don't
+  - Mind
+  - It
+  possibleResults:
+  - I_Like_It
+  - I_Don't_Mind
+  - I_Like_Work
+  - I_Don't_Like
+  - I_Don't_Work
+  - Invalid

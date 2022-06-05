@@ -1,0 +1,51 @@
+﻿title: Start
+tags:
+---
+Orin: Hey Okuu! Did you hear? Satori-sama gave us a day off. What do you think?
+Okuu: Oh? What do I think?
+
+<<SentenceBuilderStart GameManager Sample>> //This calls the sentence builder where you can call a scriptable object
+Okuu: (What do I think of days off?) //Represents inner thoughts. Also to help the player remind what the goal of the sentence to build
+<<jump {JumpToNode()}>>
+===
+
+title: I_Like_It
+tags:
+---
+Okuu: I'm looking forward to a day off.
+Orin: I know right? We've been working a whole bunch lately.
+===
+
+title: I_Don't_Mind
+tags:
+---
+Okuu: I don't mind.
+Orin: Hehe. This girl acting all cool. I can see the grin on your face.
+===
+
+title: I_Like_Work
+tags:
+---
+Okuu: But I like working...
+Orin: I like work too, but a girl's gotta kick back sometime ya know.
+===
+
+title: I_Don't_Like
+tags:
+---
+Okuu: Hm...I don't know, I kind of have a lot of work.
+Orin: Eh? You must be busy huh?
+===
+
+title: I_Don't_Work
+tags:
+---
+Okuu: Uh...I don't really work.
+Orin: Eh? D-don't let Satori-sama hear that...
+===
+
+title: Invalid
+tags:
+---
+Orin: What was that? I didn't quite catch that one.
+===
