@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
   m_Name: SetenceBuilder1
   m_EditorClassIdentifier: 
-  numberOfSlots: 3
+  numberOfSlots: 4
   listPhrases:
   - Node1
   - Node2
