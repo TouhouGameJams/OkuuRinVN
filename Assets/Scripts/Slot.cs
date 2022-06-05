@@ -27,6 +27,7 @@ public class Slot : MonoBehaviour, IDropHandler
     public int SlotIndex
     {
         get { return slotIndex; }
+        set { slotIndex = value; }
     }
 
     public bool HasTextBox
@@ -53,7 +54,7 @@ public class Slot : MonoBehaviour, IDropHandler
         currentText = eventData.pointerDrag.GetComponent<Block>().itemMessage;
         currentMessage = eventData.pointerDrag.GetComponent<Block>().itemMessage;
         currentTextBoxAnswerNumber = eventData.pointerDrag.GetComponent<Block>().textBoxAnswerNumber;
-        eventData.pointerDrag.GetComponent<Block>().isLocked = true;
+        //eventData.pointerDrag.GetComponent<Block>().isLocked = true;
 
     }
 }
