@@ -9,7 +9,7 @@ public class SentenceBuilderState : BaseState
         base.PrepareState();
 
         // Attach functions to view events
-        //owner.UI.SentenceBuilderView.OnSentenceBuilderEnded += ReturnGameState;
+        owner.UI.SentenceBuilderView.OnSentenceBuilderEnded += SentenceBuilderEnd;
 
         // Show pause view
         owner.UI.SentenceBuilderView.ShowView();
@@ -20,7 +20,7 @@ public class SentenceBuilderState : BaseState
         // Hide pause view
         owner.UI.SentenceBuilderView.HideView();
 
-        //owner.UI.SentenceBuilderView.OnSentenceBuilderEnded -= ReturnGameState;
+        owner.UI.SentenceBuilderView.OnSentenceBuilderEnded -= SentenceBuilderEnd;
 
         base.DestroyState();
     }
@@ -29,6 +29,13 @@ public class SentenceBuilderState : BaseState
     {
         // we are disabling game content loading as game is already loaded and prepared
         owner.ChangeState(new GameState { loadGameContent = false });
+    }
+
+    private void SentenceBuilderEnd()
+    {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("ThinkEnd"));
+
     }
 
     private void OptionsState()

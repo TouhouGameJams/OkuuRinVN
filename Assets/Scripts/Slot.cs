@@ -49,6 +49,9 @@ public class Slot : MonoBehaviour, IDropHandler
             return;
         }
 
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("DropSlot"));
+
         eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
         occupied = true;
         currentText = eventData.pointerDrag.GetComponent<Block>().itemMessage;

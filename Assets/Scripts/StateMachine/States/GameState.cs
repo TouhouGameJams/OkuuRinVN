@@ -24,6 +24,17 @@ public class GameState : BaseState
             return;
         }
 
+
+
+        SoundManager soundManager = SoundManager.Instance;
+        if (soundManager.IsPlayingBGM())
+            soundManager.StopBGM();
+        soundManager.PlayBGM(soundManager.GetBGM("UnderGround"));
+
+
+        owner.UI.GameView.OnSentenceBuilderStarted += SentenceBuilderStart;
+
+
         // Attach functions to view events
         //owner.UI.GameView.OnPauseClicked += PauseClicked;
         //owner.UI.GameView.OnFinishClicked += FinishClicked;
@@ -49,7 +60,7 @@ public class GameState : BaseState
         // Hide game view
         owner.UI.GameView.HideView();
 
-        //owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
+        owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
 
         // Detach functions from view events
         //owner.UI.GameView.OnPauseClicked -= PauseClicked;
@@ -60,6 +71,8 @@ public class GameState : BaseState
 
     private void SentenceBuilderStart()
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("ThinkStart"));
 
     }
 

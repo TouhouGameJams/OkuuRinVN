@@ -33,6 +33,9 @@ public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("Grab"));
+
         if (!isLocked)
         {
             canvasGroup.alpha = 0.5f;
@@ -51,6 +54,9 @@ public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("Drop"));
+
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }

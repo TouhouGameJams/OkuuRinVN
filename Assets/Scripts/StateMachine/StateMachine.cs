@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 // If you wish to learn more about State Machine visit my blog: https://www.patrykgalach.com/2019/03/18/design-pattern-state-machine/
 
 /// <summary>
@@ -10,11 +9,11 @@ public class StateMachine : MonoBehaviour
 {
     // Reference to currently operating state.
     private BaseState currentState;
-
     // Reference to UI root that holds references to different views
     [SerializeField]
     private UIRoot ui;
     public UIRoot UI => ui;
+
 
     /// <summary>
     /// Unity method called each frame

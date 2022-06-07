@@ -36,12 +36,13 @@ public class SoundManager : MonoBehaviour
 
     // Volume range is 0.0f between 1.0f
 
-    public float m_BGM_Volume = 0.5f;
+    public float m_BGM_Volume = 1.0f;
     public float m_SFX_Volume = 0.5f;
     private const float MIN_VOLUME = 0.0f;
     private const float MAX_VOLUME = 1.0f;
 
-    public AudioSource m_AudioSource;
+    public AudioSource m_BGM_Audio;
+    public AudioSource m_SFX_Audio;
 
     [System.Serializable]
     public class AudioInfo
@@ -57,7 +58,7 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        m_AudioSource = GetComponent<AudioSource>();
+        m_SFX_Audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -100,7 +101,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBGM(in AudioInfo audio)
     {
-        m_AudioSource.PlayOneShot(audio.audioClip, m_BGM_Volume);
+        m_BGM_Audio.PlayOneShot(audio.audioClip, m_BGM_Volume);
     }
 
     public AudioInfo GetSFX(in string audioName)
@@ -112,7 +113,22 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySFX(in AudioInfo audio)
     {
-        m_AudioSource.PlayOneShot(audio.audioClip, m_SFX_Volume);
+        m_SFX_Audio.PlayOneShot(audio.audioClip, m_SFX_Volume);
+    }
+
+    public bool IsPlayingBGM()
+    {
+        return m_BGM_Audio.isPlaying;
+    }
+
+    public void StopBGM()
+    {
+        m_BGM_Audio.Stop();
+    }
+
+    public void StopSFX()
+    {
+        m_SFX_Audio.Stop();
     }
 
 }
