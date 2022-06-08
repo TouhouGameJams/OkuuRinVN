@@ -36,9 +36,9 @@ public class GameManager : MonoBehaviour
                 SoundManager soundManager = SoundManager.Instance;
                 soundManager.PlaySFX(soundManager.GetSFX("Confirm"));
 
-                for (int i = 0; i < board.slots.Count; i++)
+                foreach (Slot slot in board.slots)
                 {
-                    wordList.Add(board.slots[i].currentText);
+                    wordList.Add(slot.currentText);
                 }
                 CloseBoard();
                 sentenceBuilderStarted = false;
