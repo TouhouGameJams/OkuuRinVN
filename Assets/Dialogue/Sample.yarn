@@ -22,6 +22,7 @@ Okuu: (What do I think of days off?) //Represents inner thoughts. Also to help t
 title: I_Like_It
 tags:
 ---
+<<AddScore AffectionManager 2>>
 <<Expression Okuu Happy>>
 Okuu: I'm looking forward to a day off.
 Orin: I know right? We've been working a whole bunch lately.
@@ -30,6 +31,7 @@ Orin: I know right? We've been working a whole bunch lately.
 title: I_Don't_Mind
 tags:
 ---
+<<AddScore AffectionManager 1>>
 Okuu: I don't mind.
 Orin: Hehe. This girl acting all cool. I can see the grin on your face.
 ===
@@ -37,6 +39,7 @@ Orin: Hehe. This girl acting all cool. I can see the grin on your face.
 title: I_Like_Work
 tags:
 ---
+<<AddScore AffectionManager 1>>
 Okuu: But I like working...
 Orin: I like work too, but a girl's gotta kick back sometime ya know.
 ===
@@ -44,6 +47,7 @@ Orin: I like work too, but a girl's gotta kick back sometime ya know.
 title: I_Don't_Like
 tags:
 ---
+<<AddScore AffectionManager -1>>
 Okuu: Hm...I don't know, I kind of have a lot of work.
 Orin: Eh? You must be busy huh?
 ===
@@ -51,6 +55,7 @@ Orin: Eh? You must be busy huh?
 title: I_Don't_Work
 tags:
 ---
+<<AddScore AffectionManager -1>>
 Okuu: Uh...I don't really work.
 Orin: Eh? D-don't let Satori-sama hear that...
 ===
@@ -58,5 +63,6 @@ Orin: Eh? D-don't let Satori-sama hear that...
 title: Invalid
 tags:
 ---
+<<AddScore AffectionManager 0>>
 Orin: What was that? I didn't quite catch that one.
 ===
