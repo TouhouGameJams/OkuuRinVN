@@ -59,26 +59,19 @@ public class GameManager : MonoBehaviour
         uiRoot.GameView.SentenceBuilderStart();
         //stateMachine.ChangeState(new SentenceBuilderState());
         sentenceBuilderStarted = true;
-    }        //Call on board's create slot and block functions using the sO as references
 
-
-    public void CloseBoard()
-    {
-        //stateMachine.ChangeState(new GameState());
-        uiRoot.SentenceBuilderView.SentenceBuilderEnd();
-
-        // Animation Start
         Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
         anim.Play("OpenWindow");
-
-        //Call on board's create slot and block functions using the sO as references
-    }
+    }        //Call on board's create slot and block functions using the sO as references
 
     public void CloseBoard()
     {
-        // Animation End
         Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
         anim.Play("CloseWindow");
+        // Animation End
+        uiRoot.SentenceBuilderView.SentenceBuilderEnd();
+
+
         //stateMachine.ChangeState(new GameState());
         nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
