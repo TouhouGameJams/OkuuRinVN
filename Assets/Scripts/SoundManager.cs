@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class SoundManager : MonoBehaviour
 {
@@ -37,11 +38,13 @@ public class SoundManager : MonoBehaviour
     // Volume range is 0.0f between 1.0f
 
     public float m_BGM_Volume = 1.0f;
+    public float m_SBBGM_Volume = 1.0f;
     public float m_SFX_Volume = 0.5f;
     private const float MIN_VOLUME = 0.0f;
     private const float MAX_VOLUME = 1.0f;
-
+    public AudioInfo current;
     public AudioSource m_BGM_Audio;
+    public AudioSource m_SBBGM_Audio;
     public AudioSource m_SFX_Audio;
 
     [System.Serializable]
@@ -58,7 +61,6 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        m_SFX_Audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -71,6 +73,17 @@ public class SoundManager : MonoBehaviour
     }
 
     public void SetBGMVolume(in float bgmVolume)
+    {
+        m_BGM_Volume = bgmVolume;
+        Clamp(ref m_BGM_Volume, MIN_VOLUME, MAX_VOLUME);
+    }
+
+    public float GetSBBGMVolume()
+    {
+        return m_SBBGM_Volume;
+    }
+
+    public void SetSBBGMVolume(in float bgmVolume)
     {
         m_BGM_Volume = bgmVolume;
         Clamp(ref m_BGM_Volume, MIN_VOLUME, MAX_VOLUME);
@@ -92,6 +105,12 @@ public class SoundManager : MonoBehaviour
         volume = Mathf.Clamp(volume, min, max);
     }
 
+    [YarnCommand("PlayBGM")]
+    public void YarnPlayBGM(string audioName)
+    {
+        PlayBGM(GetBGM(audioName));
+    }
+
     public AudioInfo GetBGM(in string audioName)
     {
         string findName = audioName;
@@ -102,6 +121,21 @@ public class SoundManager : MonoBehaviour
     public void PlayBGM(in AudioInfo audio)
     {
         m_BGM_Audio.PlayOneShot(audio.audioClip, m_BGM_Volume);
+    }
+
+    public void PlaySBBGM(in AudioInfo audio)
+    {
+        m_SBBGM_Audio.PlayOneShot(audio.audioClip, m_SBBGM_Volume);
+    }
+
+    public void PauseBGM()
+    {
+        m_BGM_Audio.Pause();
+    }
+
+    public void ResumeBGM()
+    {
+        m_BGM_Audio.UnPause();
     }
 
     public AudioInfo GetSFX(in string audioName)
@@ -121,9 +155,19 @@ public class SoundManager : MonoBehaviour
         return m_BGM_Audio.isPlaying;
     }
 
+    public bool IsPlayingSBBGM()
+    {
+        return m_SBBGM_Audio.isPlaying;
+    }
+
     public void StopBGM()
     {
         m_BGM_Audio.Stop();
+    }
+
+    public void StopSBBGM()
+    {
+        m_SBBGM_Audio.Stop();
     }
 
     public void StopSFX()

@@ -1,8 +1,18 @@
 ﻿title: Start
 tags:
 ---
+<<PlayBGM SoundManager HF_2>>
+Orin: Hey Okuu!
+<<Hop Orin 2>>
+<<Hop Okuu 2>>
+Okuu: Hey Orin!
+
 Orin: Hey Okuu! Did you hear? Satori-sama gave us a day off. What do you think?
 Okuu: Oh? What do I think?
+<<Expression Okuu Confused>>
+<<Spin Okuu 2>>
+Okuu: Hm?
+<<Expression Okuu Confused>>
 
 <<SentenceBuilderStart GameManager Sample>> //This calls the sentence builder where you can call a scriptable object
 Okuu: (What do I think of days off?) //Represents inner thoughts. Also to help the player remind what the goal of the sentence to build
@@ -12,6 +22,7 @@ Okuu: (What do I think of days off?) //Represents inner thoughts. Also to help t
 title: I_Like_It
 tags:
 ---
+<<Expression Okuu Happy>>
 Okuu: I'm looking forward to a day off.
 Orin: I know right? We've been working a whole bunch lately.
 ===

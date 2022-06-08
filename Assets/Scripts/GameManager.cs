@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public Board board;
     public StateMachine stateMachine;
+    public UIRoot uiRoot;
     public DialogueRunner dR;
     public LineView lW;
     public List<string> wordList;
@@ -14,10 +15,12 @@ public class GameManager : MonoBehaviour
     public List<string> nodeList;
     private static string nodeName;
     private bool sentenceBuilderStarted;
+    private SoundManager soundManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        soundManager = SoundManager.Instance;
         stateMachine.ChangeState(new GameState());
     }
 
@@ -33,9 +36,6 @@ public class GameManager : MonoBehaviour
         {
             if (AreAllSlotsFilled())
             {
-                SoundManager soundManager = SoundManager.Instance;
-                soundManager.PlaySFX(soundManager.GetSFX("Confirm"));
-
                 for (int i = 0; i < board.slots.Count; i++)
                 {
                     wordList.Add(board.slots[i].currentText);
@@ -56,14 +56,18 @@ public class GameManager : MonoBehaviour
 
         CreateList(sO.possibleResults);
         //Show board
-        stateMachine.ChangeState(new SentenceBuilderState());
+        uiRoot.GameView.SentenceBuilderStart();
+        //stateMachine.ChangeState(new SentenceBuilderState());
         sentenceBuilderStarted = true;
-        //Call on board's create slot and block functions using the sO as references
-    }
+    }        //Call on board's create slot and block functions using the sO as references
+
 
     public void CloseBoard()
     {
-        stateMachine.ChangeState(new GameState());
+        //stateMachine.ChangeState(new GameState());
+        uiRoot.SentenceBuilderView.SentenceBuilderEnd();
+
+        //soundManager.PlaySFX(soundManager.GetSFX("ThinkEnd"));
         nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
     }

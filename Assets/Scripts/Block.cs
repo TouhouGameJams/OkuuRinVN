@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public Color col;
     public bool isLocked;
@@ -31,10 +31,28 @@ public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
         GetComponentInChildren<TextMeshProUGUI>().text = itemMessage;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         SoundManager soundManager = SoundManager.Instance;
         soundManager.PlaySFX(soundManager.GetSFX("Grab"));
+
+        if (!isLocked)
+        {
+            canvasGroup.alpha = 0.5f;
+            canvasGroup.blocksRaycasts = false;
+        }
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        //SoundManager soundManager = SoundManager.Instance;
+        //soundManager.PlaySFX(soundManager.GetSFX("Grab"));
 
         if (!isLocked)
         {
@@ -59,10 +77,5 @@ public class Block : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
 
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        //Event only called if mouse is click upon the object
     }
 }
