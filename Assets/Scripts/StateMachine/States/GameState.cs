@@ -49,7 +49,7 @@ public class GameState : BaseState
 
         owner.UI.GameView.HideView();
 
-        owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
+
 
         // Detach functions from view events
         //owner.UI.GameView.OnPauseClicked -= PauseClicked;
@@ -66,7 +66,6 @@ public class GameState : BaseState
         soundManager.PlaySFX(soundManager.GetSFX("ThinkStart"));
         soundManager.PlaySBBGM(soundManager.GetBGM("Thinking"));
         owner.ChangeState(new SentenceBuilderState());
-
     }
 
     /// <summary>

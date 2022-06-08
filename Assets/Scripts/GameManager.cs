@@ -36,9 +36,9 @@ public class GameManager : MonoBehaviour
         {
             if (AreAllSlotsFilled())
             {
-                for (int i = 0; i < board.slots.Count; i++)
+                foreach (Slot slot in board.slots)
                 {
-                    wordList.Add(board.slots[i].currentText);
+                    wordList.Add(slot.currentText);
                 }
                 CloseBoard();
                 sentenceBuilderStarted = false;
@@ -67,7 +67,19 @@ public class GameManager : MonoBehaviour
         //stateMachine.ChangeState(new GameState());
         uiRoot.SentenceBuilderView.SentenceBuilderEnd();
 
-        //soundManager.PlaySFX(soundManager.GetSFX("ThinkEnd"));
+        // Animation Start
+        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+        anim.Play("OpenWindow");
+
+        //Call on board's create slot and block functions using the sO as references
+    }
+
+    public void CloseBoard()
+    {
+        // Animation End
+        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+        anim.Play("CloseWindow");
+        //stateMachine.ChangeState(new GameState());
         nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
     }
