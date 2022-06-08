@@ -17,28 +17,15 @@ public class GameState : BaseState
     {
         base.PrepareState();
 
-        // Skip to finish game
-        if (skipToFinish)
-        {
-            owner.ChangeState(new GameOverState { gameResult = GameResult.GetRandomResult() });
-            return;
-        }
-
-
-
-        SoundManager soundManager = SoundManager.Instance;
-        if (soundManager.IsPlayingBGM())
-            soundManager.StopBGM();
-        soundManager.PlayBGM(soundManager.GetBGM("UnderGround"));
-
-
         owner.UI.GameView.OnSentenceBuilderStarted += SentenceBuilderStart;
 
 
         // Attach functions to view events
         //owner.UI.GameView.OnPauseClicked += PauseClicked;
         //owner.UI.GameView.OnFinishClicked += FinishClicked;
-
+        SoundManager soundManager = SoundManager.Instance;
+        if (soundManager.IsPlayingBGM())
+            soundManager.ResumeBGM();
         // Show game view
         owner.UI.GameView.ShowView();
 
@@ -58,6 +45,8 @@ public class GameState : BaseState
         //owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
 
         // Hide game view
+
+
         owner.UI.GameView.HideView();
 
 
@@ -71,8 +60,12 @@ public class GameState : BaseState
 
     private void SentenceBuilderStart()
     {
-
-
+        SoundManager soundManager = SoundManager.Instance;
+        if (soundManager.IsPlayingBGM())
+            soundManager.PauseBGM();
+        soundManager.PlaySFX(soundManager.GetSFX("ThinkStart"));
+        soundManager.PlaySBBGM(soundManager.GetBGM("Thinking"));
+        owner.ChangeState(new SentenceBuilderState());
     }
 
     /// <summary>

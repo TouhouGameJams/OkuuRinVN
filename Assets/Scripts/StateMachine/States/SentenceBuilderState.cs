@@ -34,8 +34,10 @@ public class SentenceBuilderState : BaseState
     private void SentenceBuilderEnd()
     {
         SoundManager soundManager = SoundManager.Instance;
-        soundManager.PlaySFX(soundManager.GetSFX("ThinkEnd"));
-
+        soundManager.PlaySFX(soundManager.GetSFX("Confirm"));
+        soundManager.StopSBBGM();
+        soundManager.ResumeBGM();
+        owner.ChangeState(new GameState());
     }
 
     private void OptionsState()
