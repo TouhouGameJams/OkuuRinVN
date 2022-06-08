@@ -8,6 +8,8 @@ public class AffectionManager : MonoBehaviour
 
     private const int BASE_SCORE = 10;
     private int m_Score = BASE_SCORE;
+    public const int MAX_SCORE = 100;
+
     public int CurrentScore { get { return m_Score; } }
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class AffectionManager : MonoBehaviour
     {
         m_Score += score;
         Debug.Log(m_Score);
+        Clamp(ref m_Score, MAX_SCORE);
     }
 
     [YarnCommand("IsHigher")]
@@ -34,4 +37,10 @@ public class AffectionManager : MonoBehaviour
         return conditionScore <= m_Score;
     }
 
+
+    private void Clamp(ref int currentScore,in int maxScore)
+    {
+        if(maxScore < currentScore)
+            currentScore = maxScore;
+    }
 }
