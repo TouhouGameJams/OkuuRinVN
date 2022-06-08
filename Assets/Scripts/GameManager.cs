@@ -58,12 +58,20 @@ public class GameManager : MonoBehaviour
         //Show board
         stateMachine.ChangeState(new SentenceBuilderState());
         sentenceBuilderStarted = true;
+
+        // Animation Start
+        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+        anim.Play("OpenWindow");
+
         //Call on board's create slot and block functions using the sO as references
     }
 
     public void CloseBoard()
     {
-        stateMachine.ChangeState(new GameState());
+        // Animation End
+        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+        anim.Play("CloseWindow");
+        //stateMachine.ChangeState(new GameState());
         nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
     }

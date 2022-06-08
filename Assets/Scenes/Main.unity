@@ -311,7 +311,7 @@ PrefabInstance:
     - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_BGM_Volume
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
@@ -785,6 +785,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2640443604146651477, guid: 034358000affc25418d24c4e12be4ad8,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 37fb2aec934738c43b5fd9f94010bb6e, type: 2}
     - target: {fileID: 2753718017938504223, guid: 034358000affc25418d24c4e12be4ad8,
         type: 3}
       propertyPath: gameView
