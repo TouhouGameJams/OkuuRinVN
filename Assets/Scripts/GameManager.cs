@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
     public LineView lW;
     public List<string> wordList;
 
-    public List<string> nodeList;
+    public SentenceBuilderScriptableObject currentSO;
     private static string nodeName;
     private bool sentenceBuilderStarted;
     private SoundManager soundManager;
@@ -49,12 +50,12 @@ public class GameManager : MonoBehaviour
     [YarnCommand("SentenceBuilderStart")]
     public void SentenceBuilderStart(string scriptableObjectName)
     {
+
         //disable and hide continue button
-        var sO = Resources.Load<SentenceBuilderScriptableObject>("ScriptableObjects/" + scriptableObjectName);
+        currentSO = Resources.Load<SentenceBuilderScriptableObject>("ScriptableObjects/" + scriptableObjectName);
 
-        board.SetUpBoard(sO.numberOfSlots, sO.listPhrases);
+        board.SetUpBoard(currentSO.numberOfSlots, currentSO.listPhrases);
 
-        CreateList(sO.possibleResults);
         //Show board
         uiRoot.GameView.SentenceBuilderStart();
         //stateMachine.ChangeState(new SentenceBuilderState());
@@ -85,12 +86,14 @@ public class GameManager : MonoBehaviour
 
     public string ValidateNode()
     {
-        var word = String.Join("_", wordList);
-        if (nodeList.Contains(word))
+        foreach(var answer in currentSO.SentenceAnswerList)
         {
-            return word;
+            if (Enumerable.SequenceEqual(answer.outputComparatorList, wordList))
+            {
+                return answer.nodeName;
+            }
         }
-        return "Invalid";
+        return currentSO.invalidNodeName;
     }
 
     public string CheckSlots(List<String> list, string keyWord)
@@ -113,13 +116,5 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
-    }
-
-    public void CreateList(List<string> list)
-    {
-        for(int i = 0; i < list.Count; i++)
-        {
-            nodeList.Add(list[i]);
-        }
     }
 }

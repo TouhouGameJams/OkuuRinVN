@@ -17,3 +17,5 @@ MonoBehaviour:
   - Node1
   - Node2
   - Node3
+  SentenceAnswerList: []
+  invalidNodeName: 

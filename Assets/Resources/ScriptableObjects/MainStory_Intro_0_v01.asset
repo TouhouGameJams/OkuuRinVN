@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
   m_Name: MainStory_Intro_0_v01
   m_EditorClassIdentifier: 
-  numberOfSlots: 0
+  numberOfSlots: 3
   listPhrases:
   - I
   - It
@@ -22,10 +22,32 @@ MonoBehaviour:
   - Work
   - Great
   - Bad
-  possibleResults:
-  - I_Like_It
-  - I_Like_Work
-  - It_Be_Great
-  - It_Be_Bad
-  - What_Be_It
-  - Invalid_Intro_0
+  SentenceAnswerList:
+  - outputComparatorList:
+    - I
+    - Like
+    - It
+    nodeName: Intro_1
+  - outputComparatorList:
+    - I
+    - Like
+    - Work
+    nodeName: Intro_2
+  - outputComparatorList:
+    - It
+    - Be
+    - Great
+    nodeName: Intro_3
+  - outputComparatorList:
+    - It
+    - Be
+    - Bad
+    nodeName: Intro_4
+  - outputComparatorList:
+    - What
+    - Be
+    - It
+    nodeName: Intro_5
+  - outputComparatorList: []
+    nodeName: 
+  invalidNodeName: Invalid_Intro_0

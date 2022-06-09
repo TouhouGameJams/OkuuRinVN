@@ -8,5 +8,13 @@ public class SentenceBuilderScriptableObject : ScriptableObject
     public int numberOfSlots;
     public List<string> listPhrases;
 
-    public List<string> possibleResults;
+    [System.Serializable]
+    public struct SentenceAnswerNode
+    {
+        public List<string> outputComparatorList;
+        public string nodeName;
+    }
+    public List<SentenceAnswerNode> SentenceAnswerList;
+
+    public string invalidNodeName;
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
   m_Name: MainStory_Intro_1_v01
   m_EditorClassIdentifier: 
-  numberOfSlots: 0
+  numberOfSlots: 3
   listPhrases:
   - Would you like
   - To visit
@@ -22,9 +22,25 @@ MonoBehaviour:
   - Hmm
   - Uhm
   - Uhh
-  possibleResults:
-  - WouldYouLike_ToGoTo_TheHumanVillage
-  - WouldYouLike_ToStayAt_TheHumanVillage
-  - WouldYouLike_ToGoTo_TheOldCapital
-  - WouldYouLike_ToStayAt_TheOldCapital
-  - Invalid_Intro_1
+  SentenceAnswerList:
+  - outputComparatorList:
+    - Would you like
+    - To visit
+    - The Human Village
+    nodeName: SampleNode0
+  - outputComparatorList:
+    - Would you like
+    - To stay at
+    - The Human Village
+    nodeName: SampleNode1
+  - outputComparatorList:
+    - Would you like
+    - To visit
+    - The Old Capital
+    nodeName: SampleNode2
+  - outputComparatorList:
+    - Would you like
+    - To stay at
+    - The Old Capital
+    nodeName: SampleNode3
+  invalidNodeName: SampleNode4
