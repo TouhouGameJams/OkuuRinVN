@@ -1,0 +1,143 @@
+﻿title: MainStory_Intro_0
+tags:
+---
+
+<<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
+Okuu: (Where do I want to go?)
+<<jump {JumpToNode()}>>
+
+[i]~At the hallway of Chireiden~[/i]
+Orin: Woah, days off. What do you think, Okuu?
+//
+<<SentenceBuilderStart GameManager MainStory_Intro_0_v01>>
+Okuu: (What do I think of days off?)
+<<jump {JumpToNode()}>>
+//Words: [I, We, It, What] [Be, Like, Work] [Great, Bad]
+===
+title: Intro_1
+tags: 
+position: -542,-451
+colorID: 4
+---
+Okuu: I like it! 
+Orin: I like it too! It has been so long.
+Orin: Of course, I like work too: Collecting corpses, helping you and Satori-sama...
+Orin: But having a relaxing day once in a while is great.
+Okuu: Relaxing...
+
+===
+title: Intro_2
+position: -542,-396
+---
+Okuu: But I do like working for Satori-sama.
+Orin: Well, I like working for Satori-sama too. Still, it's not wrong to relax once in a while!
+Orin: Cheer up, Okuu. We will see Satori-sama again soon.
+Okuu: Yeah, you are right!
+===
+title: Intro_3
+position: -542,-344
+---
+Okuu: It is great that we are getting days off!
+Okuu: How long has it been since our last days off?
+Orin: Should count that time you trying to take over Gensokyo as "days off", I wonder?
+Okuu: *teary eye* I-I really thought it was good for Satori-sama and the others.
+Orin: I'm joking. Well, the past is the past. Let us look forward to our days off.
+Orin: And a proper one this time.
+===
+title: Intro_4
+position: -541,-292
+---
+Okuu: It's bad...
+Orin: Ehhh??? How come?
+Okuu: Because...
+<<wait 3>>
+Orin: Okuu? Are you ok?
+<<wait 2>>
+Orin: You are worrying me...
+<<wait 1>>
+Okuu: I forgot what I want to say...
+Okuu: Oh well, it's not important! Anyway, I'm looking forward to our days off.
+Orin: (So... Are days off still bad then?)
+===
+title: Intro_5
+position: -542,-236
+---
+Okuu: So... What exactly is it?
+Orin: Exactly what, Okuu?
+Okuu: Days off. You seem so excited too. I just can't help but be excited.
+Okuu: But... I'm not sure why...
+Orin: To put it simply: We are completely free during our days off.
+Orin: Meaning we don't have to do anything!
+Okuu: Woah~ That sounds cool.
+===
+title: Invalid_Intro_0
+position: -540,-183
+---
+Orin: Okuu? Are you alright?
+Orin: I didn't catch that...
+Okuu: Unyuu...
+===
+
+title: Location_1
+position: -361,-452
+---
+Okuu: W-Would you like to go to the Human Village with me?
+Okuu: I know you visit the surface a lot to help Satori-sama in her detective works.
+Okuu: But I still want to go there with you!
+Orin: Just us two?
+Okuu: Yep, just the two of us!
+Orin: Then it's a deal! I'm looking forward to our date, Okuu.
+Okuu: (D-date...)
+===
+title: Location_2
+position: -362,-373
+---
+Okuu: How about we stay at the Human Village this weekend, Orin?
+Okuu: You said there will be a festival right?
+Okuu: I would love to experience this festival with you!
+Orin: Then let us visit the Human Village for our days off.
+Orin: It sure sounds like a date, don't you think, Okuu?
+Okuu: (Yah!)
+===
+title: Location_3
+position: -360,-296
+---
+Okuu: How about the Old Capital?
+Okuu: I heard the hot spring boost your health.
+Orin: Oooh, we can also check out how everyone is doing.
+Orin: I would be rude to turn down Yuugi's invitation.
+Okuu: I'm sure she won't mind us going as Satori-sama's representative.
+Orin: Exactly!
+Orin: (It's not like Okuu can sneak into the human village easily like me...) 
+Orin: Then I'm looking forward to the weekend, Okuu!
+===
+title: Location_4
+position: -359,-216
+---
+Orin: Ah! The hot spring is offering a discount for couples!
+Orin: How about we spend our weekend there, Okuu?
+Okuu: Wah... Are you Satori-sama? How did you read my mind like that?
+Orin: Oh?
+Okuu: I wanted to ask if you would like to stay at the Old Capital with me this weekend...
+Okuu: But now that you ask me first, I'm so happy to hear you want the same thing, Orin!
+Orin: Great mind, think alike, don't you think?
+Okuu: Yup!
+===
+title: Invalid_Intro_1
+position: -357,-138
+---
+Okuu: Unyuu... Unyuuuuuu.....
+Yag: (Oh dear... She has too many ideas.)
+Yag: (Yet, she can't say it out loud...)
+Orin: Okuu? Are you alright?
+Okuu: Unyuu~
+Orin: Hmm... How about we just stay at Chireiden, with Satori-sama?
+Okuu: Unyuu?
+Orin: I'm sure you are thinking hard. Maybe a bit too hard...
+Orin: I don't mind where we spend our weekend, Okuu.
+Orin: It's more important that we do it together, in my opinion.
+Okuu: You really don't mind?
+Orin: I don't. And you?
+Okuu: Same! As long I'm with you, I don't really care where we go!
+Orin: Then let us relax at home for this weekend.
+===
