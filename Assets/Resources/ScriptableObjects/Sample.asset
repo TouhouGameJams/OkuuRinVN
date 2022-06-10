@@ -20,10 +20,30 @@ MonoBehaviour:
   - Don't
   - Mind
   - It
-  possibleResults:
-  - I_Like_It
-  - I_Don't_Mind
-  - I_Like_Work
-  - I_Don't_Like
-  - I_Don't_Work
-  - Invalid
+  SentenceAnswerList:
+  - outputComparatorList:
+    - I
+    - Like
+    - It
+    nodeName: Intro_1
+  - outputComparatorList:
+    - I
+    - Don't
+    - Mind
+    nodeName: Intro_2
+  - outputComparatorList:
+    - I
+    - Like
+    - Work
+    nodeName: Intro_3
+  - outputComparatorList:
+    - I
+    - Don't
+    - Like
+    nodeName: Intro_4
+  - outputComparatorList:
+    - I
+    - Don't
+    - Work
+    nodeName: Intro_5
+  invalidNodeName: Intro_6

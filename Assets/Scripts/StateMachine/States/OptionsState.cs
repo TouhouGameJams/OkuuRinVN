@@ -12,21 +12,21 @@ public class OptionsState : BaseState
         Time.timeScale = 0;
 
         // Attach functions to view events
-        owner.UI.PauseView.OnMenuClicked += MenuClicked;
-        owner.UI.PauseView.OnResumeClicked += ResumeClicked;
+        owner.UI.OptionsView.OnMenuClicked += MenuClicked;
+        owner.UI.OptionsView.OnResumeClicked += ResumeClicked;
 
         // Show pause view
-        owner.UI.PauseView.ShowView();
+        owner.UI.OptionsView.ShowView();
     }
 
     public override void DestroyState()
     {
         // Hide pause view
-        owner.UI.PauseView.HideView();
+        owner.UI.OptionsView.HideView();
 
         // Detach functions from view events
-        owner.UI.PauseView.OnMenuClicked -= MenuClicked;
-        owner.UI.PauseView.OnResumeClicked -= ResumeClicked;
+        owner.UI.OptionsView.OnMenuClicked -= MenuClicked;
+        owner.UI.OptionsView.OnResumeClicked -= ResumeClicked;
 
         // Resume time in game
         Time.timeScale = 1;

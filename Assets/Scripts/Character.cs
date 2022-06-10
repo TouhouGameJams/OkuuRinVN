@@ -143,7 +143,6 @@ public class Character : MonoBehaviour
         transform.position = targetPosition;
     }
 
-    [YarnCommand("HopTowards")]
     private IEnumerator HopTowards(float duration)
     {
         float time = 0;
