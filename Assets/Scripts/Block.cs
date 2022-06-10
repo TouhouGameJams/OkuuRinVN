@@ -15,7 +15,7 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    private Image backGroundImage;
+
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -25,18 +25,18 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
         //GetComponent<Image>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
         canvas = GetComponentInParent<Canvas>();
-        backGroundImage = GetComponentInParent<Image>();
         //Not the best for now
         GetComponentInChildren<TextMeshProUGUI>().text = itemMessage;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        SoundManager soundManager = SoundManager.Instance;
-        soundManager.PlaySFX(soundManager.GetSFX("Grab"));
 
         if (!isLocked)
         {
+            SoundManager soundManager = SoundManager.Instance;
+            soundManager.PlaySFX(soundManager.GetSFX("Grab"));
+
             canvasGroup.alpha = 0.5f;
             canvasGroup.blocksRaycasts = false;
         }
@@ -64,9 +64,7 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
     {
         if (!isLocked)
         {
-            //TODO Block can only be moved within the area of the backgroundImage.
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-            //rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         }
     }
 
@@ -77,5 +75,13 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
 
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
+    }
+
+    public void Update()
+    {
+        Vector3 viewPos = transform.localPosition;
+        viewPos.x = Mathf.Clamp(viewPos.x, -775f, 775f);
+        viewPos.y = Mathf.Clamp(viewPos.y, -460f, 295f);
+        transform.localPosition = viewPos;
     }
 }
