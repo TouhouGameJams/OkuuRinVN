@@ -15,7 +15,7 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-
+    private Image backGroundImage;
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -24,9 +24,8 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
         //To be decided if we want to make each block a random color
         //GetComponent<Image>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
-        //Very ugly. Used only to test faster. Must change to get the canvas reference more elegantly
         canvas = GetComponentInParent<Canvas>();
-
+        backGroundImage = GetComponentInParent<Image>();
         //Not the best for now
         GetComponentInChildren<TextMeshProUGUI>().text = itemMessage;
     }
@@ -67,6 +66,7 @@ public class Block : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeg
         {
             //TODO Block can only be moved within the area of the backgroundImage.
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+            //rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         }
     }
 
