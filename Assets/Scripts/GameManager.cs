@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         {
             if (AreAllSlotsFilled())
             {
+                wordList = new List<string>();
                 foreach (Slot slot in board.slots)
                 {
                     wordList.Add(slot.currentText);
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
     {
         Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
         anim.Play("CloseWindow");
+        board.CleanBoard();
         // Animation End
         uiRoot.SentenceBuilderView.SentenceBuilderEnd();
 
@@ -76,6 +78,19 @@ public class GameManager : MonoBehaviour
         //stateMachine.ChangeState(new GameState());
         nodeName = ValidateNode();
         lW.UserRequestedViewAdvancement();
+    }
+
+    public void CleanBoard()
+    {
+        foreach(Transform child in board.AnswerBlockArea.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        foreach (Transform child in board.PhraseBlockArea.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
     }
 
     [YarnFunction("JumpToNode")]

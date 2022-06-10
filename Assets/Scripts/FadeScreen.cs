@@ -12,6 +12,7 @@ public class FadeScreen : MonoBehaviour
     void Start()
     {
         elementToFade = gameObject.GetComponent<CanvasRenderer>();
+        elementToFade.SetAlpha(1f);
     }
 
     // Update is called once per frame

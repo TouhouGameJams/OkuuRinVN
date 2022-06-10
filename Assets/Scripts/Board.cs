@@ -70,4 +70,19 @@ public class Board : MonoBehaviour
         }
         //Create and evenly position slots in the slot area based on the number of slots provided
     }
+
+    public void CleanBoard()
+    {
+        foreach (Transform child in AnswerBlockArea.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        foreach (Transform child in PhraseBlockArea.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+        slots = new List<Slot>();
+
+    }
 }
