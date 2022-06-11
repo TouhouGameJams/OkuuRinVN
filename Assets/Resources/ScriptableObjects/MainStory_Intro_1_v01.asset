@@ -27,20 +27,24 @@ MonoBehaviour:
     - Would you like
     - To visit
     - The Human Village
-    nodeName: SampleNode0
+    nodeName: Location_1
+    points: 0
   - outputComparatorList:
     - Would you like
     - To stay at
     - The Human Village
-    nodeName: SampleNode1
+    nodeName: Location_2
+    points: 0
   - outputComparatorList:
     - Would you like
     - To visit
     - The Old Capital
-    nodeName: SampleNode2
+    nodeName: Location_3
+    points: 0
   - outputComparatorList:
     - Would you like
     - To stay at
     - The Old Capital
-    nodeName: SampleNode3
-  invalidNodeName: SampleNode4
+    nodeName: Location_4
+    points: 0
+  invalidNodeName: Invalid_Intro_1
