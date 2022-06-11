@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(gameObject.transform.localScale.x == -1)
+        if (gameObject.transform.localScale.x == -1)
         {
             isForward = false;
         }
@@ -122,13 +122,14 @@ public class Character : MonoBehaviour
 
         while (time < duration)
         {
-            transform.position = Vector3.Lerp(startPosition, targetPosition, time/ duration);
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
             time += Time.deltaTime;
             yield return null;
         }
 
         transform.position = targetPosition;
     }
+
 
     private IEnumerator MoveTowards(Vector3 targetPosition, float duration)
     {
@@ -143,21 +144,31 @@ public class Character : MonoBehaviour
         transform.position = targetPosition;
     }
 
-    private IEnumerator HopTowards(float duration)
+    [YarnCommand("WalkTowards")]
+    private IEnumerator WalkTowards(float moveAmount, string direction, float duration)
     {
         float time = 0;
         Vector3 startPosition = transform.position;
+        Dictionary<string, Vector3> afterPosition = new Dictionary<string, Vector3>
+        {
+            {"Left", new Vector3(startPosition.x - moveAmount,transform.position.y,startPosition.z) },
+            {"Right", new Vector3(startPosition.x + moveAmount,transform.position.y,startPosition.z)},
+            {"Up", new Vector3(transform.position.x,startPosition.y - moveAmount,startPosition.z) },
+            {"Down",new Vector3(transform.position.x,startPosition.y - moveAmount,startPosition.z) },
+
+        };
+        if (!afterPosition.ContainsKey(direction)) yield return null;
+
         while (time < duration)
         {
             StartCoroutine(Hop(new Vector3(transform.position.x, transform.position.y + 10f, transform.position.z), 0.15f));
             yield return new WaitForSeconds(0.15f);
             StartCoroutine(Hop(new Vector3(transform.position.x, transform.position.y - 10f, transform.position.z), 0.15f));
             yield return new WaitForSeconds(0.15f);
-            transform.position = Vector3.Lerp(startPosition, new Vector3(startPosition.x + 500f, transform.position.y, startPosition.z), time / duration);
+            transform.position = Vector3.Lerp(startPosition, afterPosition[direction], time / duration);
             time += Time.deltaTime;
             yield return null;
         }
-        transform.position = new Vector3(startPosition.x + 300f, transform.position.y, startPosition.z);
     }
 
     private void SetSprite(Image image)
