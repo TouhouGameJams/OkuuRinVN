@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 8296283658260226779}
   - component: {fileID: 7685863155143850375}
   - component: {fileID: 4691524606050948889}
+  - component: {fileID: 5906739031062469715}
   m_Layer: 5
   m_Name: Block
   m_TagString: Untagged
@@ -230,7 +231,6 @@ MonoBehaviour:
   isLocked: 0
   itemMessage: 
   textBoxAnswerNumber: 0
-  isBouncy: 1
 --- !u!225 &8296283658260226779
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -290,3 +290,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5906739031062469715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296283658260226774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5dbcad332295e46af9913f52a4d62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBouncy: 0

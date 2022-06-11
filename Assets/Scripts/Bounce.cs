@@ -10,34 +10,26 @@ public class Bounce : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     // Start is called before the first frame update
     void Start()
     {
-        if (isBouncy)
-        {
-            ApplyForce();
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        gameObject.transform.localRotation = Quaternion.identity;
     }
 
-    private void ApplyForce()
+    public void ApplyForce()
     {
-        Vector2 direction = new Vector2((float)Random.Range(-2, 2), (float)Random.Range(-2, 2));
+        /*        Vector2 direction = new Vector2((float)Random.Range(-1, 1), (float)Random.Range(-1, 1));
 
-        float force = (float)Random.Range(-1, 1);
-        GetComponent<Rigidbody2D>().AddForce(direction * force);
-
-        if (GetComponent<Rigidbody2D>().velocity.magnitude > 1f)
-        {
-            GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity.normalized * 1f;
-        }
+                float force = (float)Random.Range(-100, 100);*/
+        GetComponent<Rigidbody2D>().velocity = RandomVector(-50f, 50f);
     }
 
     void OnCollision2D(Collider2D col)
     {
-        ApplyForce();
+        //ApplyForce();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -52,5 +44,13 @@ public class Bounce : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerUp(PointerEventData eventData)
     {
         isBouncy = true;
+    }
+
+    private Vector3 RandomVector(float min, float max)
+    {
+        var x = Random.Range(min, max);
+        var y = Random.Range(min, max);
+        var z = 0;
+        return new Vector3(x, y, z);
     }
 }
