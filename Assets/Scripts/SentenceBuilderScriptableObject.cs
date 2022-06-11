@@ -13,6 +13,7 @@ public class SentenceBuilderScriptableObject : ScriptableObject
     {
         public List<string> outputComparatorList;
         public string nodeName;
+        public int points;
     }
     public List<SentenceAnswerNode> SentenceAnswerList;
 

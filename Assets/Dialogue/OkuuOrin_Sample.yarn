@@ -3,6 +3,7 @@ tags:
 position: -542,-566
 colorID: 4
 ---
+<<SetBlack FadeScreen>>
 <<PlayBGM SoundManager HF_2>>
 [i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
 Satori: Okuu, Orin, do you know why I'm calling you two here?

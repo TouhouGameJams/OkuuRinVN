@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using System.Linq;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject backgroundImage;
     public Board board;
     public StateMachine stateMachine;
     public UIRoot uiRoot;
     public DialogueRunner dR;
     public LineView lW;
     public List<string> wordList;
+
+    public GameObject characterParent;
 
     public SentenceBuilderScriptableObject currentSO;
     private static string nodeName;
@@ -131,5 +135,19 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void CreateCharacter(GameObject character, Vector2 position, bool isRight)
+    {
+        var newCharacter = Instantiate(character, characterParent.transform);
+        newCharacter.transform.position = new Vector3(position.x, position.y, 0);
+        if(isRight)
+        {
+            newCharacter.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else
+        {
+            newCharacter.transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
     }
 }

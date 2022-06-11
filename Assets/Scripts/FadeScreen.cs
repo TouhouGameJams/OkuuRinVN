@@ -12,7 +12,6 @@ public class FadeScreen : MonoBehaviour
     void Start()
     {
         elementToFade = gameObject.GetComponent<CanvasRenderer>();
-        elementToFade.SetAlpha(1f);
     }
 
     // Update is called once per frame
@@ -21,7 +20,13 @@ public class FadeScreen : MonoBehaviour
         
     }
 
-    [YarnCommand("FadeOut")]
+    [YarnCommand("SetBlack")]
+    public void SetToBlack()
+    {
+            gameObject.GetComponent<Image>().color = new Color(0f, 0f, 0f, 255f);
+    }
+
+        [YarnCommand("FadeOut")]
     public void FadeOut()
     {
         StartCoroutine(FadeRoutine(0f, 1f));
