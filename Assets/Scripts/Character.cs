@@ -144,7 +144,7 @@ public class Character : MonoBehaviour
         transform.position = targetPosition;
     }
 
-    [YarnCommand("WalkTowards")]
+    //[YarnCommand("WalkTowards")]
     private IEnumerator WalkTowards(float moveAmount, string direction, float duration)
     {
         float time = 0;
