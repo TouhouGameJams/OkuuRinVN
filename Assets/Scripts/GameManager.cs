@@ -66,13 +66,15 @@ public class GameManager : MonoBehaviour
         //stateMachine.ChangeState(new SentenceBuilderState());
         sentenceBuilderStarted = true;
 
-        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+        Animator anim = GameObject.Find("DialogueSystem").GetComponentInChildren<Animator>();
         anim.Play("OpenWindow");
     }        //Call on board's create slot and block functions using the sO as references
 
     public void CloseBoard()
     {
-        Animator anim = GameObject.Find("Dialogue System").GetComponentInChildren<Animator>();
+
+        //We need to wait a second to see the close anim
+        Animator anim = GameObject.Find("DialogueSystem").GetComponentInChildren<Animator>();
         anim.Play("CloseWindow");
         board.CleanBoard();
         // Animation End

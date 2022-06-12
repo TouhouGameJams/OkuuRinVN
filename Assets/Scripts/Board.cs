@@ -11,7 +11,7 @@ public class Board : MonoBehaviour
     public GameObject AnswerBlockArea;
     public GameObject PhraseBlockArea;
     public List<Slot> slots;
-    private float[] slotPosition = {1200f,1100f,950f,800f,650f};
+    private float[] slotPosition = { -600f, -300f, 0f, 300f, 600f };
     // Start is called before the first frame update
     void Start()
     {
@@ -57,12 +57,9 @@ public class Board : MonoBehaviour
 
         for(int i = 0; i < numberOfSlots; i++)
         {
+            float xPos = slotPosition[numberOfSlots - 1] + (SLOT_WIDTH * (i - 1)) + (SPACING_WIDTH * (i - 1));
             var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
-            Vector3 position = new Vector3(
-                slotPosition[numberOfSlots - 1] + (SLOT_WIDTH *(i - 1)) + (SPACING_WIDTH * (i - 1)),
-                292f,
-                0f);
-            newSlot.transform.position = position;
+            newSlot.transform.localPosition = new Vector3(xPos, 0f, 0f);
             var slotNumber = 1 + i;
             newSlot.GetComponentInChildren<TextMeshProUGUI>().text = "Slot " + slotNumber.ToString();
             newSlot.SlotIndex = i;
