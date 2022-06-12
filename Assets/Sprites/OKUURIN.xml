@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="OKUURIN.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Embarressed0000" x="0" y="0" width="1007" height="700"/>
+	<SubTexture name="Happy0000" x="1007" y="0" width="1007" height="700"/>
+	<SubTexture name="Mad0000" x="2014" y="0" width="1007" height="700"/>
+	<SubTexture name="Neutral0000" x="3021" y="0" width="1007" height="700"/>
+	<SubTexture name="O.O0000" x="0" y="700" width="1007" height="700"/>
+	<SubTexture name="Sad0000" x="1007" y="700" width="1007" height="700"/>
+	<SubTexture name="Smug0000" x="2014" y="700" width="1007" height="700"/>
+	<SubTexture name="Swirly0000" x="3021" y="700" width="1007" height="700"/>
+	<SubTexture name="Thinking0000" x="0" y="1400" width="1007" height="700"/>
+	<SubTexture name="unyuu0000" x="1007" y="1400" width="1007" height="700"/>
+</TextureAtlas>
