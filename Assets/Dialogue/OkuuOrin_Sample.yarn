@@ -29,7 +29,10 @@ Satori: Also you two have worked hard for everyone this past few years.
 Satori: It's only fair that you two deserve a break.
 Both: Satori-sama...
 Satori: (I wonder how these two are going to spend their weekend)
-//<<WalkTowards Okuu 3f,"Right",3>>
+
+<<WalkTowards Okuu 3 "Right" 2>>
+<<Flip Orin>>
+
 [i]~At the hallway of Chireiden~[/i]
 <<FadeOut FadeScreen>>
 Orin: Woah, days off. What do you think, Okuu?
