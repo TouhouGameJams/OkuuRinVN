@@ -45,7 +45,7 @@ public class Character : MonoBehaviour
 
     }
 
-    [YarnCommand("Expression")]
+    //[YarnCommand("Expression")]
     public void SetExpression(string expressionName)
     {
         // find the expression with the same name as we are looking for
@@ -71,7 +71,7 @@ public class Character : MonoBehaviour
         return null;
     }
 
-    [YarnCommand("Flip")]
+    //[YarnCommand("Flip")]
     private void Flip()
     {
         if (isForward)
@@ -86,7 +86,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    [YarnCommand("Hop")]
+    //[YarnCommand("Hop")]
     private IEnumerator HopUpAndDown(float repeat)
     {
         float val = 0;
@@ -100,7 +100,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    [YarnCommand("Spin")]
+    //[YarnCommand("Spin")]
     private IEnumerator Spin(float repeat)
     {
         float val = 0;
@@ -144,7 +144,7 @@ public class Character : MonoBehaviour
         transform.position = targetPosition;
     }
 
-    [YarnCommand("WalkTowards")]
+    //[YarnCommand("WalkTowards")]
     private IEnumerator WalkTowards(float moveAmount, string direction, float duration)
     {
         float time = 0;
