@@ -7,23 +7,10 @@ using UnityEngine.Events;
 /// </summary>
 public class PauseView : BaseView
 {
-    // Events to attach to.
-    public UnityAction OnResumeClicked;
-    public UnityAction OnMenuClicked;
+    public UnityAction OnMenuClosed;
 
-    /// <summary>
-    /// Method called by Resume Button.
-    /// </summary>
-    public void ResumeClick()
+    public void MenuClose()
     {
-        OnResumeClicked?.Invoke();
-    }
-
-    /// <summary>
-    /// Method called by Menu Button.
-    /// </summary>
-    public void MenuClick()
-    {
-        OnMenuClicked?.Invoke();
+        OnMenuClosed?.Invoke();
     }
 }
