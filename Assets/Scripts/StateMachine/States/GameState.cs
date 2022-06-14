@@ -18,6 +18,7 @@ public class GameState : BaseState
         base.PrepareState();
 
         owner.UI.GameView.OnSentenceBuilderStarted += SentenceBuilderStart;
+        owner.UI.GameView.OnPauseClicked += PauseClicked;
 
 
         // Attach functions to view events
@@ -42,8 +43,8 @@ public class GameState : BaseState
             // here we would destroy loaded game content
         }
 
-        //owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
-
+        owner.UI.GameView.OnSentenceBuilderStarted -= SentenceBuilderStart;
+        owner.UI.GameView.OnPauseClicked -= PauseClicked;
         // Hide game view
 
 

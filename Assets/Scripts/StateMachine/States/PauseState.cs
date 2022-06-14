@@ -14,8 +14,7 @@ public class PauseState : BaseState
         Time.timeScale = 0;
 
         // Attach functions to view events
-        owner.UI.PauseView.OnMenuClicked += MenuClicked;
-        owner.UI.PauseView.OnResumeClicked += ResumeClicked;
+        owner.UI.PauseView.OnMenuClosed += MenuClosed;
 
         // Show pause view
         owner.UI.PauseView.ShowView();
@@ -27,8 +26,7 @@ public class PauseState : BaseState
         owner.UI.PauseView.HideView();
 
         // Detach functions from view events
-        owner.UI.PauseView.OnMenuClicked -= MenuClicked;
-        owner.UI.PauseView.OnResumeClicked -= ResumeClicked;
+        owner.UI.PauseView.OnMenuClosed -= MenuClosed;
 
         // Resume time in game
         Time.timeScale = 1;
@@ -39,19 +37,9 @@ public class PauseState : BaseState
     /// <summary>
     /// Function called when Menu button is clicked in Pause view.
     /// </summary>
-    private void MenuClicked()
+    private void MenuClosed()
     {
         // we are using skipToFinish variable to have finishing code in one place - game state
-        owner.ChangeState(new GameState { skipToFinish = true });
+        owner.ChangeState(new GameState {});
     }
-
-    /// <summary>
-    /// Function called when Resume button is clicked in Pause view.
-    /// </summary>
-    private void ResumeClicked()
-    {
-        // we are disabling game content loading as game is already loaded and prepared
-        owner.ChangeState(new GameState { loadGameContent = false });
-    }
-
 }

@@ -152,4 +152,10 @@ public class GameManager : MonoBehaviour
             newCharacter.transform.localScale = new Vector3(-1f, 1f, 1f);
         }
     }
+
+    public void PauseMenu()
+    {
+        uiRoot.GameView.PauseClick();
+
+    }
 }
