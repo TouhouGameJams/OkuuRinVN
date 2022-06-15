@@ -23,7 +23,7 @@ public class OptionsMenu : MonoBehaviour
     private string[] ScreenResArr = new string[] { "1388x768", "1920x1080", "2560x1440" };
     private int[,] ScreenResArr2D = new int[,] { { 1388, 768 }, { 1920, 1080 }, { 2560, 1440 } };
 
-    private int[] BGMVolArr = new int[] {0, 1, 2, 3};
+    private int[] BGMVolArr = new int[] { 0, 1, 2, 3 };
     private int[] SFXVolArr = new int[] { 0, 1, 2, 3 };
 
     public bool isFullScreen;
@@ -31,6 +31,9 @@ public class OptionsMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentBGMVol = PlayerPrefs.GetInt("BGM");
+        currentSFXVol = PlayerPrefs.GetInt("SFX");
+        currentResolution = PlayerPrefs.GetString("Resolution");
         Resolution();
         ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
     }
@@ -38,6 +41,7 @@ public class OptionsMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         BGMVolumeText.text = currentBGMVol.ToString();
         SFXVolumeText.text = currentSFXVol.ToString();
         Debug.Log(currentResolutionIndex);
@@ -57,7 +61,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void RaiseBGMVolume()
     {
-        if(currentBGMVol < 5)
+        if (currentBGMVol < 5)
         {
             bgmMixer.GetFloat("BGMVolume", out currentBGMVolFloat);
             bgmMixer.SetFloat("BGMVolume", currentBGMVolFloat + 20f);
@@ -97,11 +101,11 @@ public class OptionsMenu : MonoBehaviour
 
     public void RaiseResolution()
     {
-        if(currentResolutionIndex <= ScreenResArr.Length)
+        if (currentResolutionIndex <= ScreenResArr.Length)
         {
-           currentResolutionIndex++;
-           ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
-           Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
+            currentResolutionIndex++;
+            ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
+            Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
         }
     }
 
@@ -117,7 +121,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void FullScreenToggle()
     {
-        if(isFullScreen)
+        if (isFullScreen)
         {
             isFullScreen = false;
             Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
@@ -132,9 +136,9 @@ public class OptionsMenu : MonoBehaviour
 
     public void Resolution()
     {
-        for(int i = 0; i < ScreenResArr.Length; i++)
+        for (int i = 0; i < ScreenResArr.Length; i++)
         {
-            if(ScreenResArr[i] == baseResolution)
+            if (ScreenResArr[i] == baseResolution)
             {
                 currentResolutionIndex = i;
             }

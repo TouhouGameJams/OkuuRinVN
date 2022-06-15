@@ -38,6 +38,8 @@ public class ButtonController : MonoBehaviour
 
     public void ExitToClick()
     {
+        SaveDataManager saveDataManager = SaveDataManager.Instance;
+        saveDataManager.SaveInfo();
 #if UNITY_EDITOR
         EditorApplication.isPlaying = false;
 #else
