@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Menu state that show Menu view and add interpret user interaction with that view.
@@ -10,7 +10,9 @@ public class MenuState : BaseState
         base.PrepareState();
 
         // Attach functions to view events
-        owner.UI.MenuView.OnStartClicked += StartClicked;
+        owner.UI.MenuView.OnLoadClicked += LoadClicked;
+        owner.UI.MenuView.OnOptionsClicked += OptionsClicked;
+        owner.UI.MenuView.OnCreditsClicked += CreditsClicked;
         owner.UI.MenuView.OnQuitClicked += QuitClicked;
 
         // Show menu view
@@ -23,8 +25,10 @@ public class MenuState : BaseState
         owner.UI.MenuView.HideView();
 
         // Detach functions from view events
-        owner.UI.MenuView.OnStartClicked -= StartClicked;
-        owner.UI.MenuView.OnQuitClicked -= QuitClicked;
+        owner.UI.MenuView.OnLoadClicked -= LoadClicked;
+        owner.UI.MenuView.OnOptionsClicked -= OptionsClicked;
+        owner.UI.MenuView.OnCreditsClicked -= CreditsClicked;
+        owner.UI.MenuView.OnCreditsClicked -= QuitClicked;
 
         base.DestroyState();
     }
@@ -32,9 +36,19 @@ public class MenuState : BaseState
     /// <summary>
     /// Function called when Start button is clicked in Menu view.
     /// </summary>
-    private void StartClicked()
+    private void LoadClicked()
     {
-        owner.ChangeState(new GameState());
+        owner.ChangeState(new LoadState());
+    }
+
+    private void OptionsClicked()
+    {
+        owner.ChangeState(new OptionsState());
+    }
+
+    private void CreditsClicked()
+    {
+        owner.ChangeState(new CreditsState());
     }
 
     /// <summary>
@@ -46,4 +60,3 @@ public class MenuState : BaseState
     }
 
 }
-*/

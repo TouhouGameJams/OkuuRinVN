@@ -8,20 +8,26 @@ using UnityEngine.Events;
 public class MenuView : BaseView
 {
     // Events to attach to.
-    public UnityAction OnStartClicked;
+    public UnityAction OnLoadClicked;
+    public UnityAction OnOptionsClicked;
+    public UnityAction OnCreditsClicked;
     public UnityAction OnQuitClicked;
 
-    /// <summary>
-    /// Method called by Start Button.
-    /// </summary>
-    public void StartClick()
+    public void LoadClick()
     {
-        OnStartClicked?.Invoke();
+        OnLoadClicked?.Invoke();
     }
 
-    /// <summary>
-    /// Method called by Quit Button.
-    /// </summary>
+    public void OptionsClick()
+    {
+        OnOptionsClicked?.Invoke();
+    }
+
+    public void CreditsClick()
+    {
+        OnCreditsClicked?.Invoke();
+    }
+
     public void QuitClick()
     {
         OnQuitClicked?.Invoke();

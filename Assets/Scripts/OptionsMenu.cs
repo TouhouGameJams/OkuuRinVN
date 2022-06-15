@@ -8,20 +8,13 @@ using System.Linq;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public AudioMixer bgmMixer;
-    public AudioMixer sfxMixer;
-    float currentBGMVolFloat;
-    float currentSFXVolFloat;
+    public AudioMixer mixer;
     public TextMeshProUGUI ScreenResolutionText;
-    public TextMeshProUGUI BGMVolumeText;
-    public TextMeshProUGUI SFXVolumeText;
-    private int currentBGMVol = 4;
-    private int currentSFXVol = 4;
     private string currentResolution;
-    private string baseResolution = "1920x1080";
     private int currentResolutionIndex = 0;
     private string[] ScreenResArr = new string[] { "1388x768", "1920x1080", "2560x1440" };
     private int[,] ScreenResArr2D = new int[,] { { 1388, 768 }, { 1920, 1080 }, { 2560, 1440 } };
+
 
     private int[] BGMVolArr = new int[] { 0, 1, 2, 3 };
     private int[] SFXVolArr = new int[] { 0, 1, 2, 3 };
@@ -31,9 +24,13 @@ public class OptionsMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         currentBGMVol = PlayerPrefs.GetInt("BGM");
         currentSFXVol = PlayerPrefs.GetInt("SFX");
         currentResolution = PlayerPrefs.GetString("Resolution");
+
+        isFullScreen = Screen.fullScreen;
+
         Resolution();
         ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
     }
@@ -41,7 +38,6 @@ public class OptionsMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         BGMVolumeText.text = currentBGMVol.ToString();
         SFXVolumeText.text = currentSFXVol.ToString();
         Debug.Log(currentResolutionIndex);
@@ -56,6 +52,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void ReturnToTitleScreen()
     {
+
         //SceneManager.LoadScene(0);
     }
 
@@ -77,31 +74,27 @@ public class OptionsMenu : MonoBehaviour
             bgmMixer.SetFloat("BGMVolume", currentBGMVolFloat - 20f);
             currentBGMVol--;
         }
+
+        SceneManager.LoadScene("Main");
     }
 
-    public void RaiseSFXVolume()
+    public void SetBGMVolume(float sliderValue)
     {
-        if (currentSFXVol < 3)
-        {
-            bgmMixer.GetFloat("SFXVolume", out currentSFXVolFloat);
-            bgmMixer.SetFloat("SFXVolume", currentBGMVolFloat + 20f);
-            currentSFXVol++;
-        }
+        mixer.SetFloat("BGMVolume", Mathf.Log10(sliderValue) * 20f);
     }
 
-    public void LowerSFXVolume()
+    public void SetSFXVolume(float sliderValue)
     {
-        if (currentSFXVol > 0)
-        {
-            bgmMixer.GetFloat("SFXVolume", out currentSFXVolFloat);
-            bgmMixer.SetFloat("SFXVolume", currentBGMVolFloat - 20f);
-            currentSFXVol--;
-        }
+        mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20f);
     }
 
     public void RaiseResolution()
     {
+
         if (currentResolutionIndex <= ScreenResArr.Length)
+
+        if(currentResolutionIndex < ScreenResArr.Length)
+
         {
             currentResolutionIndex++;
             ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
@@ -138,10 +131,20 @@ public class OptionsMenu : MonoBehaviour
     {
         for (int i = 0; i < ScreenResArr.Length; i++)
         {
+
             if (ScreenResArr[i] == baseResolution)
+
+            if(ScreenResArr[i] == Screen.width.ToString() + "x" + Screen.height.ToString())
+
             {
                 currentResolutionIndex = i;
             }
         }
+    }
+
+    public void OnClick()
+    {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFX(soundManager.GetSFX("Click"));
     }
 }
