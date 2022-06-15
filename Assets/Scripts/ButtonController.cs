@@ -9,11 +9,6 @@ public class ButtonController : MonoBehaviour
 {
     private Text m_text;
 
-    public void StartToClick()
-    {
-        SceneManager.LoadScene("Main");
-    }
-
     public void OnClick()
     {
         SoundManager soundManager = SoundManager.Instance;
@@ -32,17 +27,7 @@ public class ButtonController : MonoBehaviour
     public void OnExit()
     {
         m_text = GetComponentInChildren<Text>();
-        m_text.color = Color.white;
+        m_text.color = Color.black;
 
-    }
-
-    public void ExitToClick()
-    {
-#if UNITY_EDITOR
-        EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
     }
 }
-

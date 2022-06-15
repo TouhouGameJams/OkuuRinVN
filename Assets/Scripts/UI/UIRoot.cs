@@ -18,10 +18,22 @@ public class UIRoot : MonoBehaviour
     public PauseView PauseView => pauseView;
 
     [SerializeField]
+    private GameOverView gameOverView;
+    public GameOverView GameOverView => gameOverView;
+
+    [SerializeField]
+    private MenuView menuView;
+    public MenuView MenuView => menuView;
+
+    [SerializeField]
+    private LoadView loadView;
+    public LoadView LoadView => loadView;
+
+    [SerializeField]
     private OptionsView optionsView;
     public OptionsView OptionsView => optionsView;
 
     [SerializeField]
-    private GameOverView gameOverView;
-    public GameOverView GameOverView => gameOverView;
+    private CreditsView creditsView;
+    public CreditsView CreditsView => creditsView;
 }

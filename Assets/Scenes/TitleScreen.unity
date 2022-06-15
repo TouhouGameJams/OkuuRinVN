@@ -359,7 +359,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153873873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 842272994}
+        m_TargetAssemblyTypeName: MenuView, Assembly-CSharp
+        m_MethodName: OptionsClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &153873873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1569,7 +1581,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1008343001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1671805324}
+        m_TargetAssemblyTypeName: TitleScreenManager, Assembly-CSharp
+        m_MethodName: StartToClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1008343001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2898,6 +2922,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1655326088}
     m_Modifications:
+    - target: {fileID: 2162214157424768085, guid: 25e3f6f5176cbc240a1ccd135106267b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4499786955037715631}
+    - target: {fileID: 2162214157424768085, guid: 25e3f6f5176cbc240a1ccd135106267b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CloseClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162214157424768085, guid: 25e3f6f5176cbc240a1ccd135106267b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: OptionsView, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2695949652322909094, guid: 25e3f6f5176cbc240a1ccd135106267b,
         type: 3}
       propertyPath: m_Name

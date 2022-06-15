@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OptionsView : BaseView
+public class CreditsView : BaseView
 {
     // Events to attach to.
     public UnityAction OnCloseClicked;
