@@ -8,22 +8,31 @@ colorID: 4
 [i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
 Satori: Okuu, Orin, do you know why I'm calling you two here?
 Orin: I'm not sure, Satori-sama...
-Okuu: ( thinks very hard )
+Okuu: (thinks very hard)
 -> Okuu: D-did I do something bad again?
+    <<Expression Okuu "Unyuu">>
     Okuu: (I might have accidentally broken a cup...)
--> Okuu: Do you want us to go after that spirit, Satori-sama?
+-> Okuu: Do you want us to go after that spirit, Satori-sama? 
+    <<Expression Okuu "Smug">>
     Orin: I think it's best if you don't go after her, Okuu.
 Satori: No, it's something much simpler.
 Satori: I would like to give you two this weekend off.
 Orin: Ehhh?
+<<Expression Okuu "Happy">>
+<<Expression Orin "Happy">>
 Orin: Woah! Satori-sama, you are the best!
 Orin: B-but Satori-sama, will the flames of Hell of Blazing Fires be ok without Okuu?
+<<Expression Orin "Thinking">>
 Satori: The kappa said we will be fine for a few days without Okuu.
 Satori: Also you two have worked hard for everyone this past few years.
 //CG: Satori pets Orin and Okuu?
 Satori: It's only fair that you two deserve a break.
 Both: Satori-sama...
 Satori: (I wonder how these two are going to spend their weekend)
+
+<<WalkTowards Okuu 3 "Right" 2>>
+<<Flip Orin>>
+
 [i]~At the hallway of Chireiden~[/i]
 <<FadeOut FadeScreen>>
 Orin: Woah, days off. What do you think, Okuu?
