@@ -30,4 +30,18 @@ public class ButtonController : MonoBehaviour
         m_text.color = Color.black;
 
     }
+
+
+    public void ExitToClick()
+    {
+        SaveDataManager saveDataManager = SaveDataManager.Instance;
+        saveDataManager.SaveInfo();
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }
+}
+
