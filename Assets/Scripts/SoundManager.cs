@@ -150,6 +150,11 @@ public class SoundManager : MonoBehaviour
         m_SFX_Audio.PlayOneShot(audio.audioClip, m_SFX_Volume);
     }
 
+    public void PlaySFXString(string audioName)
+    {
+        PlaySFX(GetSFX(audioName));
+    }
+
     public bool IsPlayingBGM()
     {
         return m_BGM_Audio.isPlaying;

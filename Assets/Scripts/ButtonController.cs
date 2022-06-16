@@ -18,7 +18,10 @@ public class ButtonController : MonoBehaviour
     public void OnHover()
     {
         m_text = GetComponentInChildren<Text>();
-        m_text.color = Color.red;
+        if(m_text != null)
+        {
+            m_text.color = Color.red;
+        }
         SoundManager soundManager = SoundManager.Instance;
         soundManager.PlaySFX(soundManager.GetSFX("Hover"));
 
@@ -27,7 +30,10 @@ public class ButtonController : MonoBehaviour
     public void OnExit()
     {
         m_text = GetComponentInChildren<Text>();
-        m_text.color = Color.black;
+        if(m_text != null)
+        {
+            m_text.color = Color.black;
+        }
 
     }
 
@@ -42,6 +48,5 @@ public class ButtonController : MonoBehaviour
         Application.Quit();
 #endif
     }
-}
 }
 
