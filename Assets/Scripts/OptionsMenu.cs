@@ -21,28 +21,27 @@ public class OptionsMenu : MonoBehaviour
 
     public bool isFullScreen;
 
+    private float currentBGMVol;
+    private float currentSFXVol;
     // Start is called before the first frame update
     void Start()
     {
+        isFullScreen = Screen.fullScreen;
+
+        Resolution();
 
         currentBGMVol = PlayerPrefs.GetInt("BGM");
         currentSFXVol = PlayerPrefs.GetInt("SFX");
         currentResolution = PlayerPrefs.GetString("Resolution");
-
-        isFullScreen = Screen.fullScreen;
-
-        Resolution();
         ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
+
+        SetBGMVolume(currentBGMVol);
+        SetSFXVolume(currentSFXVol);
     }
 
     // Update is called once per frame
     void Update()
     {
-        BGMVolumeText.text = currentBGMVol.ToString();
-        SFXVolumeText.text = currentSFXVol.ToString();
-        Debug.Log(currentResolutionIndex);
-        Debug.Log(ScreenResArr2D[currentResolutionIndex, 0]);
-
     }
 
     public void CloseOptions()
@@ -52,47 +51,25 @@ public class OptionsMenu : MonoBehaviour
 
     public void ReturnToTitleScreen()
     {
-
-        //SceneManager.LoadScene(0);
-    }
-
-    public void RaiseBGMVolume()
-    {
-        if (currentBGMVol < 5)
-        {
-            bgmMixer.GetFloat("BGMVolume", out currentBGMVolFloat);
-            bgmMixer.SetFloat("BGMVolume", currentBGMVolFloat + 20f);
-            currentBGMVol++;
-        }
-    }
-
-    public void LowerBGMVolume()
-    {
-        if (currentBGMVol > 0)
-        {
-            bgmMixer.GetFloat("BGMVolume", out currentBGMVolFloat);
-            bgmMixer.SetFloat("BGMVolume", currentBGMVolFloat - 20f);
-            currentBGMVol--;
-        }
-
         SceneManager.LoadScene("Main");
     }
 
     public void SetBGMVolume(float sliderValue)
     {
-        mixer.SetFloat("BGMVolume", Mathf.Log10(sliderValue) * 20f);
+        currentBGMVol = Mathf.Log10(sliderValue) * 20f;
+        mixer.SetFloat("BGMVolume", currentBGMVol);
+        PlayerPrefs.SetInt("BGM", (int)currentBGMVol);
     }
 
     public void SetSFXVolume(float sliderValue)
     {
+        currentSFXVol = Mathf.Log10(sliderValue) * 20f;
         mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20f);
+        PlayerPrefs.SetInt("SFX", (int)currentSFXVol);
     }
 
     public void RaiseResolution()
     {
-
-        if (currentResolutionIndex <= ScreenResArr.Length)
-
         if(currentResolutionIndex < ScreenResArr.Length)
 
         {
@@ -131,13 +108,10 @@ public class OptionsMenu : MonoBehaviour
     {
         for (int i = 0; i < ScreenResArr.Length; i++)
         {
-
-            if (ScreenResArr[i] == baseResolution)
-
             if(ScreenResArr[i] == Screen.width.ToString() + "x" + Screen.height.ToString())
-
             {
                 currentResolutionIndex = i;
+                PlayerPrefs.SetString("Resolution", Screen.width.ToString() + "x" + Screen.height.ToString());
             }
         }
     }
