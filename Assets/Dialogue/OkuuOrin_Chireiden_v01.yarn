@@ -2,5 +2,29 @@
 tags:
 position: -291,-292
 ---
-
+//Vibe: Domestic fluff. Cute girls doing cute things
+<<SetBlack FadeScreen>>
+[i]Weekend, Chireiden[/i]
+Orin: Okuu...
+Orin: Okuu...
+Okuu: (Zzz...)
+Orin: Reiuji Utsuho...
+Okuu: (Unyuu~)
+Orin: Wake up...
+//Orin move in = poke
+Orin: Else you will miss breakfast...
+-> Okuu: Just 5 more minutes... Zzz...
+    Orin: *whispers* I made us breakfast.
+    //Okuu hops up
+    Okuu: Wah!
+    <<FadeOut FadeScreen>>
+    <<Expression Okuu "BugEyed">>
+    Okuu: Orin's breakfast... I can't miss it.
+    Orin: I'm glad that got you woke up. Go clean up and let's have breakfast together!
+    Okuu: Will Satori-sama be joining us?
+    Orin: It seems she went somewhere. She left us a note saying the house is ours for the day.
+-> Okuu: Zzz...
+    Orin: Okuu?
+    Okuu: Zzz... Zzz...
+    
 ===
