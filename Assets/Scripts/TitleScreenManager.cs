@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenManager : MonoBehaviour
 {
+    public string targetScene;
+
     public StateMachine sM;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,8 @@ public class TitleScreenManager : MonoBehaviour
 
     public void StartToClick()
     {
-        SceneManager.LoadScene("Main");
+        LoadingData.sceneToLoad = targetScene;
+        SceneManager.LoadScene("LoadingScene");
     }
 
     public void ExitToClick()
