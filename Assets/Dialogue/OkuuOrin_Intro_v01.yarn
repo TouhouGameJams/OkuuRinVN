@@ -1,6 +1,6 @@
 title: MainStory_Intro_0
 tags: 
-position: -542,-566
+position: -573,-560
 colorID: 4
 ---
 <<SetBlack FadeScreen>>
@@ -29,6 +29,7 @@ Satori: Also you two have worked hard for everyone this past few years.
 Satori: It's only fair that you two deserve a break.
 Both: Satori-sama...
 Satori: (I wonder how these two are going to spend their weekend)
+Satori: (Although... I seems to forget to tell Orin something important.)
 
 [i]~At the hallway of Chireiden~[/i]
 <<FadeOut FadeScreen>>
@@ -42,7 +43,7 @@ Okuu: (What do I think of days off?)
 
 title: I_Like_It
 tags: 
-position: -542,-451
+position: -575,-472
 colorID: 4
 ---
 Okuu: I like it! 
@@ -53,7 +54,7 @@ Okuu: Relaxing...
 <<jump MainStory_Intro_1>>
 ===
 title: I_Like_Work
-position: -542,-396
+position: -578,-412
 ---
 Okuu: But I do like working for Satori-sama.
 Orin: Well, I like working for Satori-sama too. Still, it's not wrong to relax once in a while!
@@ -62,7 +63,7 @@ Okuu: Yeah, you are right!
 <<jump MainStory_Intro_1>>
 ===
 title: It_Be_Great
-position: -542,-344
+position: -579,-359
 ---
 Okuu: It is great that we are getting days off!
 Okuu: How long has it been since our last days off?
@@ -73,7 +74,7 @@ Orin: And a proper one this time.
 <<jump MainStory_Intro_1>>
 ===
 title: It_Be_Bad
-position: -541,-292
+position: -579,-294
 ---
 Okuu: It's bad...
 Orin: Ehhh??? How come?
@@ -89,7 +90,7 @@ Orin: (So... Are days off still bad then?)
 <<jump MainStory_Intro_1>>
 ===
 title: What_Be_It
-position: -542,-236
+position: -578,-241
 ---
 Okuu: So... What exactly is it?
 Orin: Exactly what, Okuu?
@@ -101,16 +102,107 @@ Okuu: Woah~ That sounds cool.
 <<jump MainStory_Intro_1>>
 ===
 title: Invalid_Intro_0
-position: -540,-183
+position: -575,-184
 ---
 Orin: Okuu? Are you alright?
 Orin: I didn't catch that...
 Okuu: Unyuu...
+<<jump MainStory_Intro_1>>
 ===
 title: MainStory_Intro_1
-position: -363,-565
+position: -335,-354
 ---
 Orin: Anyhow, do you plan to do something on the weekend, Okuu?
+Okuu: I-
+//Satori appears
+Satori: Oh, I'm glad you two are still here.
+Satori: Okuu, may I borrow Orin for a bit?
+-> Okuu: Of course, Satori-sama.
+    <<Expression Okuu "Happy">>
+    Satori: I promised, it won't take long.
+    Orin: Wait for me, alright?
+    Okuu: Ok!
+-> Okuu: Sure, Satori-sama...
+    <<Expression Okuu "Sad">>
+    Orin: Don't be sad, Okuu.
+    Orin: I'm sure it's something important.
+    Orin: Wait for me, alright?
+    <<Expression Okuu "Happy">>
+    Okuu: Ok!
+//Satori and Orin gone
+//Monolog between Okuu and Yag
+<<Expression Okuu "Sad">>
+Okuu: (It's sure is quiet without her...)
+Yag: (It certainly is.)
+<<Expression Okuu "Embarassed">>
+Okuu: (Wah, who's there?!)
+Yag: (Well, who else beside me, the great Yag?)
+Okuu: (Oh right...)
+Yag: (So... Weekend huh?)
+Okuu: (Yeah, Satori-sama gives us days off at my request. But...)
+Yag: (But you not sure what to do, right?)
+Okuu: (Unyuu... It's not like we never get break from work.)
+<<Expression Okuu "Swirly">>
+Okuu: (But those break are usually short one where we hangs out with Satori-sama and others.)
+Yag: (Ahh, I see. This is probably the first time where it's just that cat and you.)
+<<Expression Okuu "Angry">>
+Okuu: (Her name is Orin.)
+Yag: (Right, Orin. So... Do you have anything planned for this weekend?)
+Yag: (Maybe some kind of date?)
+<<Expression Okuu "Embarassed">>
+Okuu: (D-Date?)
+Yag: (How about a love confession too?)
+Okuu: (Unyuu...)
+Yag: (I can see how much you love her.)
+Yag: (You should gather some courage and ask her out!)
+Yag: (So, what do you think, my dear bird friend?)
+<<Expression Okuu "Thinking">>
+//Building Segment
+<<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
+Okuu: (Hmm...)
+<<jump {JumpToNode()}>>
+//Words: [I] [Can, Will] [My best, Do it] 
+===
+title: I_Can_Try
+position: -335,-187
+---
+<<Expression Okuu "Swirly">>
+Okuu: (I can try...)
+Yag: (Don't chicken out when it's confession time.)
+Yag: (Ah, speaking of her...)
+<<jump MainStory_Intro_2>>
+===
+title: I_Will_DoIt
+position: -334,-282
+---
+<<Expression Okuu "Smug">>
+Okuu: (I promised, I will do it!)
+Yag: (I like that look in your eyes!)
+Yag: (Ah, speaking of her...)
+<<jump MainStory_Intro_2>>
+===
+title: I_Can_DoIt
+position: -334,-236
+---
+<<Expression Okuu "Smug">>
+Okuu: (I know I can do it!)
+Yag: (That's the spirit!)
+Yag: (Speaking of which...)
+<<jump MainStory_Intro_2>>
+===
+title: Invalid_Intro_1
+position: -334,-140
+---
+<<Expression Okuu "Unyuu">>
+Yag: (Oh dear... I hope it will be all ok...)
+Yag: (Speaking of Orin...)
+<<jump MainStory_Intro_2>>
+===
+
+title: MainStory_Intro_2
+position: -111,-229
+---
+//Orin comes back
 Orin: I heard the Human Village is preparing some kind of festival!
 Orin: Oh, I remember Yuugi sent an invitation to Satori-sama. But I can't remember what is was about...
 Orin: But I'm happy regardless of where we spend our time, Okuu!
@@ -131,7 +223,7 @@ Okuu: I-I want to ask...
 //Words: [Hmm, Uhm, Uhh]
 ===
 title: WouldYouLike_ToGoTo_TheHumanVillage
-position: -361,-452
+position: -111,-158
 ---
 Okuu: W-Would you like to go to the Human Village with me?
 Okuu: I know you visit the surface a lot to help Satori-sama in her detective works.
@@ -142,7 +234,7 @@ Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 Okuu: (D-date...)
 ===
 title: WouldYouLike_ToStayAt_TheHumanVillage
-position: -362,-373
+position: -110,-85
 ---
 Okuu: How about we stay at the Human Village this weekend, Orin?
 Okuu: You said there will be a festival right?
@@ -152,7 +244,7 @@ Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: (Yah!)
 ===
 title: WouldYouLike_ToGoTo_TheOldCapital
-position: -360,-296
+position: -111,-13
 ---
 Okuu: How about the Old Capital?
 Okuu: I heard the hot spring boost your health.
@@ -164,7 +256,7 @@ Orin: (It's not like Okuu can sneak into the human village easily like me...)
 Orin: Then I'm looking forward to the weekend, Okuu!
 ===
 title: WouldYouLike_ToStayAt_TheOldCapital
-position: -359,-216
+position: -111,58
 ---
 Orin: Ah! The hot spring is offering a discount for couples!
 Orin: How about we spend our weekend there, Okuu?
@@ -175,8 +267,8 @@ Okuu: But now that you ask me first, I'm so happy to hear you want the same thin
 Orin: Great mind, think alike, don't you think?
 Okuu: Yup!
 ===
-title: Invalid_Intro_1
-position: -357,-138
+title: Invalid_Intro_2
+position: -112,127
 ---
 Okuu: Unyuu... Unyuuuuuu.....
 Yag: (Oh dear... She has too many ideas.)
@@ -193,3 +285,4 @@ Orin: I don't. And you?
 Okuu: Same! As long I'm with you, I don't really care where we go!
 Orin: Then let us relax at home for this weekend.
 ===
+
