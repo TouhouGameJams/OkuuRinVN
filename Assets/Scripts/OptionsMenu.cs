@@ -32,11 +32,10 @@ public class OptionsMenu : MonoBehaviour
 
         currentBGMVol = PlayerPrefs.GetInt("BGM");
         currentSFXVol = PlayerPrefs.GetInt("SFX");
-        currentResolution = PlayerPrefs.GetString("Resolution");
-        ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
+        currentResolution = PlayerPrefs.GetString("Resolution");        ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
 
-        SetBGMVolume(currentBGMVol);
-        SetSFXVolume(currentSFXVol);
+        //SetBGMVolume(currentBGMVol);
+        //SetSFXVolume(currentSFXVol);
     }
 
     // Update is called once per frame
