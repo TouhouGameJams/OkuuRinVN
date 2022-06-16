@@ -198,14 +198,21 @@ Yag: (Oh dear... I hope it will be all ok...)
 Yag: (Speaking of Orin...)
 <<jump MainStory_Intro_2>>
 ===
-
 title: MainStory_Intro_2
 position: -111,-229
 ---
 //Orin comes back
-Orin: I heard the Human Village is preparing some kind of festival!
-Orin: Oh, I remember Yuugi sent an invitation to Satori-sama. But I can't remember what is was about...
-Orin: But I'm happy regardless of where we spend our time, Okuu!
+<<Expression Okuu "Happy">>
+Okuu: Welcome back, Orin!
+<<Expression Okuu "Happy">>
+Orin: I'm back.
+Okuu: Orin, you have been to the surface more than me.
+Okuu: Do you have any interesting place you know of?
+Okuu: (So maybe we can go there.)
+Orin: Ah, I heard the Human Village is preparing some kind of festival!
+Orin: Yuugi sent an invitation to Satori-sama.
+Orin: But she told me she can't go just now...
+Orin: Regardless, I'm happy where ever we will spend our time, Okuu!
 Okuu: (Do I have something planned for this weekend, I wonder?)
 Yag: (Yes! Yes, you do!)
 Okuu: (Unyu???)
