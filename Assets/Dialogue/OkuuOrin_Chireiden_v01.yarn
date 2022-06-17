@@ -64,16 +64,22 @@ Orin: ...And for us.
 <<Expression Okuu "Happy">>
 Okuu: Yup! Thou that shrine maiden and magician are scary...
 Orin: Yeah... So, do you have any plan for today, Okuu?
-//
 Yag: (Oh right, you don't exactly have anything planned...)
 Yag: (I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)
+Yag: (Try to play this familiar location to your adventages.)
+//
 <<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
 Okuu: (Hmmm... What should I tell Orin...?)
 <<jump {JumpToNode()}>>
-//Words: [I, We, It], [Can, Like, Be] [Anything]
+//Words: [I, We, It, You], [Can, Like, Be, Do] [Anything, Nothing, Cooking?]
 ===
-title: Node
-position: -268,-258
+title: I_Like_You
+position: -290,-216
 ---
+//Affection ++
+Okuu: I like you.
+<<Expression Orin "Embarrassed">>
+Orin: *blushes*
+Okuu: I mean it: I like how you take care of everyone.
 
 ===
