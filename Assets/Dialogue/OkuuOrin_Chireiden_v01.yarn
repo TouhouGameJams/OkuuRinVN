@@ -4,6 +4,7 @@ position: -291,-292
 ---
 //Vibe: Domestic fluff. Cute girls doing cute things
 <<SetBlack FadeScreen>>
+<<PlayBGM SoundManager HF_2>>
 [i]Weekend, Chireiden[/i]
 Orin: Okuu...
 Orin: Okuu...
@@ -23,8 +24,56 @@ Orin: Else you will miss breakfast...
     Orin: I'm glad that got you woke up. Go clean up and let's have breakfast together!
     Okuu: Will Satori-sama be joining us?
     Orin: It seems she went somewhere. She left us a note saying the house is ours for the day.
+    Yag: (Or she just want to leave these two alone for the day.)
+    Okuu: I'm looking forward to today, Orin.
+    Okuu: Let's go!
 -> Okuu: Zzz...
     Orin: Okuu?
     Okuu: Zzz... Zzz...
-    
+    Orin: If you don't wake up soon, your breakfast is going to be cold...
+    Okuu: Zzz...
+    //Orin moves closer and give peek on Okuu's cheek
+    Orin: *chu*
+    Orin: (Oh well... I guess I will give her more time to sleep)
+    //Orin out of the room
+    <<FadeOut FadeScreen>>
+    <<Expression Okuu "BugEyed">>
+    Okuu: !!!
+    Okuu: (S-She...)
+    Okuu: Ahh, I should hurry!
+[i] Few minutes later [/i]
+<<Expression Okuu "Happy">>
+<<Expression Orin "Happy">>
+Okuu: Orin's breakfast... It smells so good...
+Orin: Feel free to dig in.
+Okuu: You are an amazing cook, Orin! I wish I know how to cook like you.
+<<Expression Orin "Unyuu">>
+Okuu: I simply scorched our food when I try...
+Orin: Don't be sad. On the bright side...
+<<Expression Orin "Smug">>
+Orin: You are amazing at disposing our trash. The perk of having the power of the sun.
+<<Expression Okuu "Embarassed">>
+Okuu: Oriiiiiinn~
+Orin: I'm joking, I'm joking!
+<<Expression Orin "Happy">>
+Orin: But I mean it, I do think you are amazing.
+<<Expression Okuu "Sad">>
+Okuu: Even if I did troubled in the past?
+Orin: While it was, admitedly, kinda scary, I think you just want a better world for Saoti-sama...
+Orin: ...And for us.
+<<Expression Okuu "Happy">>
+Okuu: Yup! Thou that shrine maiden and magician are scary...
+Orin: Yeah... So, do you have any plan for today, Okuu?
+//
+Yag: (Oh right, you don't exactly have anything planned...)
+Yag: (I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)
+<<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
+Okuu: (Hmmm... What should I tell Orin...?)
+<<jump {JumpToNode()}>>
+//Words: [I, We, It], [Can, Like, Be] [Anything]
+===
+title: Node
+position: -268,-258
+---
+
 ===
