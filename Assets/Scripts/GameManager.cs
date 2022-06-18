@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     public LineView lW;
     public List<string> wordList;
 
-    public GameObject characterParent;
-
     public SentenceBuilderScriptableObject currentSO;
     private static string nodeName;
     private bool sentenceBuilderStarted;
@@ -137,20 +135,6 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
-    }
-
-    public void CreateCharacter(GameObject character, Vector2 position, bool isRight)
-    {
-        var newCharacter = Instantiate(character, characterParent.transform);
-        newCharacter.transform.position = new Vector3(position.x, position.y, 0);
-        if(isRight)
-        {
-            newCharacter.transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else
-        {
-            newCharacter.transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
     }
 
     public void PauseMenu()
