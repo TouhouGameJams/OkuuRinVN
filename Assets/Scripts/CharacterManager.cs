@@ -5,9 +5,6 @@ using Yarn.Unity;
 
 public class CharacterManager : MonoBehaviour
 {
-
-    public GameObject Okuu;
-    public GameObject Orin;
     // Start is called before the first frame update
     void Start()
     {
