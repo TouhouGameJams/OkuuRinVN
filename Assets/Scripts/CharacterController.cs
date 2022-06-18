@@ -6,6 +6,8 @@ using Yarn.Unity;
 
 public class CharacterController : MonoBehaviour
 {
+    public SpriteRenderer spriteRend;
+
     [SerializeField]
     private SpriteLibrary spriteLibrary = default;
 
@@ -22,7 +24,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRend = gameObject.transform.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -115,5 +117,41 @@ public class CharacterController : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+    }
+
+    public IEnumerator FadeIn()
+    {
+        float time = 0;
+        Color startValue = new Color(spriteRend.color.r, spriteRend.color.b, spriteRend.color.g, 0);
+        Color endValue = new Color(spriteRend.color.r, spriteRend.color.b, spriteRend.color.g, 1);
+
+        spriteRend.color = startValue;
+
+        while (time < 1f)
+        {
+            spriteRend.color = Color.Lerp(startValue, endValue, time / 1f);
+            time += Time.deltaTime;
+            yield return null;
+
+        }
+        spriteRend.color = endValue;
+    }
+
+    public IEnumerator FadeOut()
+    {
+        float time = 0;
+        Color startValue = new Color(spriteRend.color.r, spriteRend.color.b, spriteRend.color.g, 1);
+        Color endValue = new Color(spriteRend.color.r, spriteRend.color.b, spriteRend.color.g, 0);
+
+        spriteRend.color = startValue;
+
+        while (time < 1f)
+        {
+            spriteRend.color = Color.Lerp(startValue, endValue, time / 1f);
+            time += Time.deltaTime;
+            yield return null;
+
+        }
+        spriteRend.color = endValue;
     }
 }

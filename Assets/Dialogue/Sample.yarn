@@ -1,7 +1,8 @@
-﻿title: Start
+﻿title: MainStory_Intro_0
 tags:
 ---
 <<PlayBGM SoundManager HF_2>>
+<<CreateCharacter CharacterManager Okuu -4.7 -1.25 true>>
 Orin: Hey Okuu!
 <<Hop Orin 2>>
 <<Hop Okuu 2>>

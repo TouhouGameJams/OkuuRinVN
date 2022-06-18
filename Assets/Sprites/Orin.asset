@@ -16,36 +16,33 @@ MonoBehaviour:
   - m_Name: Orin
     m_Hash: -1418479624
     m_CategoryList:
-    - m_Name: Normal
-      m_Hash: 640249298
+    - m_Name: Neutral
+      m_Hash: 1805245548
       m_Sprite: {fileID: 21300000, guid: 46bd3c0d0ed713e4bbecd3a7a998582d, type: 3}
-    - m_Name: Love
-      m_Hash: -139395293
-      m_Sprite: {fileID: 21300000, guid: 97fb91733cc511f45a5d3f11385fd5b0, type: 3}
-    - m_Name: Smug
-      m_Hash: 963468907
-      m_Sprite: {fileID: 21300000, guid: 342f0ac5b6b78d541b56058df08e15f7, type: 3}
-    - m_Name: Depressed
-      m_Hash: 2068090750
-      m_Sprite: {fileID: 21300000, guid: 0fa3ee8e5d66e6b4095a1d592fdc4cb9, type: 3}
-    - m_Name: Frustrated
-      m_Hash: 115161009
-      m_Sprite: {fileID: 21300000, guid: 9468e2b18aee06049a891f3e20540442, type: 3}
-    - m_Name: Crying
-      m_Hash: -1031419995
-      m_Sprite: {fileID: 21300000, guid: ce466231d466832418bec46b88e91d32, type: 3}
-    - m_Name: Shocked
-      m_Hash: 1339033456
-      m_Sprite: {fileID: 21300000, guid: 8505df3bc85756140be00458657087f0, type: 3}
-    - m_Name: Confused
-      m_Hash: -1019119960
-      m_Sprite: {fileID: 21300000, guid: dc8249e2c2c17ea43bde3a3b3cb90485, type: 3}
-    - m_Name: Embarassed
-      m_Hash: 384447257
-      m_Sprite: {fileID: 21300000, guid: 951ba5d73d7318442854f688e9feb55a, type: 3}
     - m_Name: Happy
       m_Hash: 2133634253
       m_Sprite: {fileID: 21300000, guid: 59f6ed303a88e2445b98244f95f335b0, type: 3}
     - m_Name: Mad
       m_Hash: -1321584602
       m_Sprite: {fileID: 21300000, guid: 7909c3f0f68f5a047bd0220ba3feebac, type: 3}
+    - m_Name: Embarassed
+      m_Hash: 384447257
+      m_Sprite: {fileID: 21300000, guid: 951ba5d73d7318442854f688e9feb55a, type: 3}
+    - m_Name: BugEyed
+      m_Hash: -1682289294
+      m_Sprite: {fileID: 21300000, guid: 8505df3bc85756140be00458657087f0, type: 3}
+    - m_Name: Sad
+      m_Hash: -1484605860
+      m_Sprite: {fileID: 21300000, guid: ce466231d466832418bec46b88e91d32, type: 3}
+    - m_Name: Smug
+      m_Hash: 963468907
+      m_Sprite: {fileID: 21300000, guid: 342f0ac5b6b78d541b56058df08e15f7, type: 3}
+    - m_Name: Swirly
+      m_Hash: -2116022623
+      m_Sprite: {fileID: 21300000, guid: dc8249e2c2c17ea43bde3a3b3cb90485, type: 3}
+    - m_Name: Thinking
+      m_Hash: -2040036074
+      m_Sprite: {fileID: 21300000, guid: 951ba5d73d7318442854f688e9feb55a, type: 3}
+    - m_Name: Unyuu
+      m_Hash: -1003525047
+      m_Sprite: {fileID: 21300000, guid: 97fb91733cc511f45a5d3f11385fd5b0, type: 3}
