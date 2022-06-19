@@ -255,6 +255,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2410875658684096661, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2410875658878736766, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -461,6 +466,41 @@ PrefabInstance:
       propertyPath: continueButton
       value: 
       objectReference: {fileID: 1513281162}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1520965824}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DialogueSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CurrentSpeaker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7437138034190241971, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -715,6 +755,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[8].name
+      value: TextScrollA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[9].name
+      value: TextScrollB
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[10].name
+      value: TextScrollC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[8].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cc1c6ac3a5721640a19414cbfd9f635, type: 3}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[9].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: db867c825a0d9864298bdcf1e56657b9, type: 3}
+    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
+        type: 3}
+      propertyPath: m_SFX_List.Array.data[10].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87a7f89a932487b46adea91061f8e6ec, type: 3}
     - target: {fileID: 1043275046997892079, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_RootOrder
