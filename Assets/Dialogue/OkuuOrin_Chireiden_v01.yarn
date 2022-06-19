@@ -71,15 +71,207 @@ Yag: (Try to play this familiar location to your adventages.)
 <<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
 Okuu: (Hmmm... What should I tell Orin...?)
 <<jump {JumpToNode()}>>
-//Words: [I, We, It, You], [Can, Like, Be, Do] [Anything, Nothing, Cooking?]
+//Words: [I, You], [Like, Be] [Anything, Nothing, Cooking?]
 ===
 title: I_Like_You
 position: -290,-216
 ---
-//Affection ++
+<<AddScore AddScore 5>>
 Okuu: I like you.
 <<Expression Orin "Embarrassed">>
 Orin: *blushes*
 Okuu: I mean it: I like how you take care of everyone.
+Orin: Geez, flattering won't get you anywhere.
+Okuu: If you wan't I can praise you whenever you want!
+Orin: I- I will remember this offer. Anyway, back to the topic...
+<<Expression Orin "Thinking">>
+Orin: Oh, you mention you can't cook well.
+Orin: How about I teach you in making some sweets?
+Okuu: Ohhh! You will?
+<<Expression Orin "Happy">>
+Orin: Sure! I'm sure everyone else, including Satori-sama, will be so happy to receive your gift.
+Orin: Oh, maybe Koishi-sama will come by. She likes sweet, isn't she?
+Okuu: Right, let's get to work!
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Like_Anything
+position: -291,-166
+---
+<<AddScore AddScore 1>>
+Okuu: I like anything really.
+Orin: Hmm, that's a bit hard for us to decide...
+Orin: As I also have no idea what we should do...
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Thinking">>
+Both: Hmm...
+Okuu: We can... No, it's too late...
+Orin: How about.. Nah, no one will look after this place...
+Both: Hmm...
+Yag: (Oh dear... Hey, bird friend!)
+<<Expression Okuu "Unyuu">>
+Okuu: (Unyuu?)
+Yag: (Listen, how about you two do some cooking?)
+Okuu: (Cooking? But I'm horrible at it...)
+Yag: (I mean, yeah, but you can use it as an excuse so Orin can teach how to make something.)
+Okuu: Orin.
+Orin: ?
+Okuu: Would it be ok if you teach me how to cook?
+<<Expression Okuu "Happy">>
+Okuu: And we have time now anyway.
+<<Expression Orin "Happy">>
+Orin: Oh, sure! I would love to help you!
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Like_Cooking?
+position: -291,-115
+---
+<<AddScore AddScore 3>>
+<<Expression Okuu "Unyuu">>
+Okuu: I like cooking, maybe?
+<<Expression Okuu "Sad">>
+Okuu: I like to try at least... Even though the result is...
+Okuu: Well...
+Orin: I know it's hard to control such power, Okuu.
+Orin: So how about I teach you a bit of cooking?
+<<Expression Orin "Happy">>
+Orin: We have time anyway!
+<<Expression Okuu "Happy">>
+Okuu: Really? You are ther best, Orin!
+Orin: If we fail we can still have some fun for ourselves.
+Okuu: Yup! Teach me, Master Orin!
+Orin: Sure!
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Be_Nothing
+position: -289,-68
+---
+<<AddScore AddScore -5>>
+Okuu: You are nothing.
+<<Expression Orin "Sad">>
+Yag: (Hey, hey, hey! What are you saying?)
+Yag: (That's too mean, my bird friend.)
+Orin: I'm sorry...
+Okuu: (Oh... I-...)
+<<Expression Okuu "Sad">>
+Okuu: I-I didn't mean to. Uhm, anyway...
+Orin: Would you teach me how to cook?
+Orin: Oh, sure...
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Like_Cooking?
+position: -290,-17
+---
+<<AddScore AddScore 2>>
+<<Expression Okuu "Thinking">>
+Okuu: Orin. Do you like cooking?
+<<Expression Orin "Thinking">>
+Orin: I wouldn't exactly say I like cooking...
+Orin: But I don't hate it. Something on your mind, Okuu?
+Okuu: Oh, I thought if you want...
+Okuu: Maybe you can teach me how to cook?
+Orin: It's not like we have anything better to do.
+Okuu: You... don't want to?
+Orin: I mean, why not?
+<<Expression Orin "Happy">>
+Orin: I'm sure there are easy recepies for you to follow.
+<<Expression Okuu "Happy">>
+Okuu: Ooooh!
+Orin: Let's me have a look.
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Be_You
+position: -292,121
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Swirly">>
+Okuu: I am you.
+Okuu: And you are me.
+<<Expression Orin "BugEyed">>
+Orin: ...Okuu?
+Orin: Are you alright?
+Okuu: We are all creatures of this world...
+Okuu: Creatures like us needs energy to survive.
+Yag: (Oh Amaterasu Oomikami, we are loosing her...)
+Yag: (Okuu? Okuu! Snap out. NOW!)
+<<Expression Okuu "Unyuu">>
+Okuu: Unyuu?!
+Orin: Wah!
+Orin: Uhm, are you... ok now?
+Okuu: Orin... Let's do some cooking...
+Orin: Oh... uhm... sure?
+<<Expression Okuu "Happy">>
+Okuu: Yah! I will get ready then.
+Orin: (Now I'm worried...)
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Be_I
+position: -291,57
+---
+<<jump I_Be_You>>
+===
+title: Invalid_Chireiden_0
+position: -291,175
+---
+<<AddScore AddScore -3>>
+<<Expression Okuu "Sad">>
+Okuu: (Ughh, nothing came out...)
+Orin: Are you alright, Okuu?
+Okuu: (Come on, say something!)
+<<Expression Okuu "Unyuu">>
+Okuu: Unyuu...
+Orin: I guess you don't have anything planned then?
+Okuu: ...Unyuu...
+<<Expression Orin "Thinking">>
+Orin: Hmmmmm... This is tricky.
+Orin: Oh, you mention you are bad at cooking, right?
+Orin: How about I teach you a bit? You won't be a master chef.
+<<Expression Orin "Happy">>
+Orin: But I'm sure you will be happy with the result.
+<<Expression Okuu "Happy">>
+Okuu: Oh, sure! I would love to cook again.
+<<jump MainStory_Chireiden_1>>
+===
+title: MainStory_Chireiden_1
+position: -25,-95
+---
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Thinking">>
+Orin: Now we are facing the biggest question...
+Okuu: Yup...
+Orin: Do you have any food you want to cook?
+Okuu: Not really...
+//Inner monolog
+Okuu: (Yamcha, what kind of food do you like?)
+Yag: (Who? Anyhow, I don't really have any preference for food.)
+Yag: (It's not like I can eat anyway...)
+Okuu: (What about you? Do you have any food you would like to make?)
+Okuu: (I love anything Orin makes!)
+Okuu: (So... I guess I don't really have any favorite food...)
+Yag: (What about your feline friend? Does she have any favorite food?)
+//Dialog with Orin
+<<Expression Orin "Neutral">>
+Okuu: Orin, do you have any favorite food?
+Orin: Me? Well, I like fish a lot.
+Orin: But we don't have any fish left for this weekend.
+Okuu: Oh, I see. How do you normally get the ingredients anyway?
+Orin: You know that I'm helping Satori-sama with her detective work, right?
+Okuu: Oh, that! I heard many youkai hire Satori-sama to solve some mystery for them...
+<<Expression Orin "Happy">>
+<<Expression Okuu "Smug">>
+Orin: Yup! Satori-sama is an amazing detective and I'm her amazing sidekick!
+Orin: I'm her eyes and ear on the surface then report back to her.
+Orin: Along the way, I visit the Human Village to buy some ingredients too!
+Okuu: Oooh! Right, I wish to visit the Human Village sometime soon...
+Orin: It's a great place, but don't cause any trouble.
+Orin: Unless you want the wrath of that shrine maiden again, that is.
+<<Expression Okuu "Swirly">>
+Okuu: Unyuu... So... I guess we can't cook your favorite food, Orin...
+//Monolog
+Yag: (Hey, what about that master of yours? That mind-reading youkai.)
+<<Expression Okuu "Mad">>
+Okuu: (Please don't disrespect Satori-sama like that!)
+<<Expression Okuu "Thinking">>
+Okuu: (I think she likes drinking tea while petting us...)
+Okuu: (She says it calms her mind.)
 
 ===
