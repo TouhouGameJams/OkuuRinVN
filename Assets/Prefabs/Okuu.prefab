@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 578320161428600341}
   m_Layer: 0
   m_Name: Okuu
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac089ae1bf92a043a77a56e9fb52aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRend: {fileID: 0}
   spriteLibrary: {fileID: 578320161428600340}
   targetResolver: {fileID: 578320161054092918}
   targetCategory: Okuu

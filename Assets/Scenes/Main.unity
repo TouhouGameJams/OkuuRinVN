@@ -689,8 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c308d449901cf74a80a2ca4fe786ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Okuu: {fileID: 0}
-  Orin: {fileID: 0}
 --- !u!4 &790933512
 Transform:
   m_ObjectHideFlags: 0
@@ -1100,7 +1098,7 @@ GameObject:
   - component: {fileID: 1520965825}
   - component: {fileID: 1520965824}
   m_Layer: 0
-  m_Name: CharacterNameColor
+  m_Name: CurrentSpeaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,6 +1252,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orin
       objectReference: {fileID: 0}
+    - target: {fileID: 5952621756649669437, guid: ee84953f384d489438c30056e081bfd7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Character
+      objectReference: {fileID: 0}
     - target: {fileID: 5952621756649669438, guid: ee84953f384d489438c30056e081bfd7,
         type: 3}
       propertyPath: m_RootOrder
@@ -1262,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: 5952621756649669438, guid: ee84953f384d489438c30056e081bfd7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.7
+      value: 6.01
       objectReference: {fileID: 0}
     - target: {fileID: 5952621756649669438, guid: ee84953f384d489438c30056e081bfd7,
         type: 3}
@@ -1322,6 +1325,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580657701148171485, guid: 638a339da405742489b926d205f8e079,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7671091893493769247, guid: 2f5afa3ef7e670540899335eabff8f99,
+        type: 3}
+    - target: {fileID: 8580657701148171486, guid: 638a339da405742489b926d205f8e079,
+        type: 3}
+      propertyPath: m_labelHash
+      value: 3.7201313e+26
       objectReference: {fileID: 0}
     - target: {fileID: 8580657701856380083, guid: 638a339da405742489b926d205f8e079,
         type: 3}
@@ -1387,6 +1401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580657701856380094, guid: 638a339da405742489b926d205f8e079,
+        type: 3}
+      propertyPath: m_TagString
+      value: Character
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 638a339da405742489b926d205f8e079, type: 3}
