@@ -1,6 +1,7 @@
-﻿title: OkuuEmotes
+﻿title: MainStory_Intro_0
 tags:
 ---
+
 <<Expression Okuu Embarassed>>
 Okuu: Embarassed
 <<Expression Okuu Happy>>
@@ -27,9 +28,19 @@ Okuu: Flip
 Okuu: Flip Again
 <<Hop Okuu 2>>
 Okuu: Hop
-<<Spin Okuu 2>>
-Okuu: Spin
-<<Flip Okuu >>
-<<WalkTowards Okuu 5 Right 1>>
-Okuu: Walk
+<<Expression Okuu Swirly>>
+<<Rotate Okuu 360 0.5>>
+Okuu: Rotate
+<<Expression Okuu Smug>>
+<<SpeedLines Okuu 1>>
+Okuu: SpeedLines
+<<Expression Okuu Sad>>
+<<ShakeSide Okuu>>
+Okuu: ShakeSide
+<<Expression Okuu Unyuu>>
+<<ShakeOver Okuu>>
+Okuu: ShakeOver
+<<WalkTowards Okuu 8 Right 1>>
+Okuu: Right
+<<WalkTowards Okuu 8 Left 1>>
 ===
