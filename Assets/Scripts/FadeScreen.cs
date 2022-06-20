@@ -26,7 +26,13 @@ public class FadeScreen : MonoBehaviour
             gameObject.GetComponent<Image>().color = new Color(0f, 0f, 0f, 255f);
     }
 
-        [YarnCommand("FadeOut")]
+    [YarnCommand("SetWhite")]
+    public void SetToWhitek()
+    {
+        gameObject.GetComponent<Image>().color = new Color(255f, 255f, 255f, 255f);
+    }
+
+    [YarnCommand("FadeOut")]
     public void FadeOut()
     {
         StartCoroutine(FadeRoutine(0f, 1f));
