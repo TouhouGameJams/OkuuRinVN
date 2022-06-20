@@ -24,7 +24,7 @@ Orin: Else you will miss breakfast...
     Orin: I'm glad that got you woke up. Go clean up and let's have breakfast together!
     Okuu: Will Satori-sama be joining us?
     Orin: It seems she went somewhere. She left us a note saying the house is ours for the day.
-    Yag: (Or she just want to leave these two alone for the day.)
+    Yag: (Or she just wants to leave these two alone for the day.)
     Okuu: I'm looking forward to today, Orin.
     Okuu: Let's go!
 -> Okuu: Zzz...
@@ -51,14 +51,14 @@ Okuu: You are an amazing cook, Orin! I wish I know how to cook like you.
 Okuu: I simply scorched our food when I try...
 Orin: Don't be sad. On the bright side...
 <<Expression Orin "Smug">>
-Orin: You are amazing at disposing our trash. The perk of having the power of the sun.
+Orin: You are amazing at disposing of our trash. The perk of having the power of the sun.
 <<Expression Okuu "Embarassed">>
 Okuu: Oriiiiiinn~
 Orin: I'm joking, I'm joking!
 <<Expression Orin "Happy">>
 Orin: But I mean it, I do think you are amazing.
 <<Expression Okuu "Sad">>
-Okuu: Even if I did troubled in the past?
+Okuu: Even if I did trouble in the past?
 Orin: While it was, admitedly, kinda scary, I think you just want a better world for Saoti-sama...
 Orin: ...And for us.
 <<Expression Okuu "Happy">>
@@ -105,7 +105,7 @@ Orin: As I also have no idea what we should do...
 <<Expression Okuu "Thinking">>
 Both: Hmm...
 Okuu: We can... No, it's too late...
-Orin: How about.. Nah, no one will look after this place...
+Orin: How about... Nah, no one will look after this place...
 Both: Hmm...
 Yag: (Oh dear... Hey, bird friend!)
 <<Expression Okuu "Unyuu">>
@@ -136,7 +136,7 @@ Orin: So how about I teach you a bit of cooking?
 <<Expression Orin "Happy">>
 Orin: We have time anyway!
 <<Expression Okuu "Happy">>
-Okuu: Really? You are ther best, Orin!
+Okuu: Really? You are the best, Orin!
 Orin: If we fail we can still have some fun for ourselves.
 Okuu: Yup! Teach me, Master Orin!
 Orin: Sure!
@@ -154,8 +154,9 @@ Orin: I'm sorry...
 Okuu: (Oh... I-...)
 <<Expression Okuu "Sad">>
 Okuu: I-I didn't mean to. Uhm, anyway...
-Orin: Would you teach me how to cook?
-Orin: Oh, sure...
+*silence*
+Okuu: Would you teach me how to cook?
+Orin: Oh, sure... Thank you...
 <<jump MainStory_Chireiden_1>>
 ===
 title: You_Like_Cooking?
@@ -190,8 +191,8 @@ Okuu: And you are me.
 Orin: ...Okuu?
 Orin: Are you alright?
 Okuu: We are all creatures of this world...
-Okuu: Creatures like us needs energy to survive.
-Yag: (Oh Amaterasu Oomikami, we are loosing her...)
+Okuu: Creatures like us need energies to survive.
+Yag: (Oh Amaterasu Oomikami, we are losing her...)
 Yag: (Okuu? Okuu! Snap out. NOW!)
 <<Expression Okuu "Unyuu">>
 Okuu: Unyuu?!
@@ -251,7 +252,7 @@ Yag: (What about your feline friend? Does she have any favorite food?)
 //Dialog with Orin
 <<Expression Orin "Neutral">>
 Okuu: Orin, do you have any favorite food?
-Orin: Me? Well, I like fish a lot.
+Orin: Me? Well, I like fishes a lot.
 Orin: But we don't have any fish left for this weekend.
 Okuu: Oh, I see. How do you normally get the ingredients anyway?
 Orin: You know that I'm helping Satori-sama with her detective work, right?
@@ -273,5 +274,248 @@ Okuu: (Please don't disrespect Satori-sama like that!)
 <<Expression Okuu "Thinking">>
 Okuu: (I think she likes drinking tea while petting us...)
 Okuu: (She says it calms her mind.)
+<<Expression Okuu "Happy">>
+Okuu: (Oh... OH!!)
+//Dialog
+Okuu: Orin, I have a great idea!
+Orin: ?
+Okuu: How about we make something for Satori-sama?
+Orin: Something for Satori-sama?
+Okuu: Yeah! She likes to drink tea during her breaks, right?
+Okuu: I thought, maybe we can do something small for her.
+<<Expression Orin "Happy">>
+Orin: That should work with our limited ingredients.
+Orin: Although...
+<<Expression Okuu "Thinking">>
+<<Expression Orin "Thinking">>
+Orin: What do you think we should make for her?
+//
+<<SentenceBuilderStart GameManager MainStory_Chireiden_1_v01>>
+Okuu: (Let's see... what kind of food should we make for Satori-sama and her tea time?)
+<<jump {JumpToNode()}>>
+//Word: [We, You], [Can, Can't], [Make], [Cookies, Pudding, Grilled Mushroom]
+===
+title: We_Can_Make_Cookies
+position: -25,-23
+---
+<<AddScore AddScore 5>>
+<<Expression Okuu "Happy">>
+<<Expression Orin "BugEyed">>
+Okuu: We can make some cookies.
+Okuu: I'm sure they will go well with tea.
+Orin: Cookies... *drools*
+Okuu: Orin...?
+Orin: !!!
+<<Expression Orin "Happy">>
+Orin: Let's go, Okuu.
+Orin: We shall make the best cookies to go with Satori-sama's amazing tea.
+Okuu: Right. You sure look fired up.
+Orin: It's because you haven't tried Satori-sama tea alongside some cookies.
+Orin: If you think the cookies are already delicious...
+Orin: Wait until you taste them with the tea.
+<<Expression Okuu "Smug">>
+Okuu: Wow... It sure does sound magical.
+<<Expression Orin "CatFace">>
+Orin: Once you get a taste, you will know what I'm talking about.
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Can_Make_Pudding
+position: -23,115
+---
+<<AddScore AddScore 4>>
+<<Expression Okuu "Happy">>
+Okuu: How about some puddings? We can make some of those.
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Can_Make_GrilledMushroom
+position: -24,45
+---
+<<AddScore AddScore 0>>
+<<Expression Okuu "Happy">>
+Okuu: Oh, what about grilled mushrooms? We can grill some!
+Okuu: And the smells are amazing too.
+<<Expression Orin "Sad">>
+Orin: Yeah but... I thought we are making something to go along with Satori-sama's tea...
+Orin: Thou, I did say I will teach you what you want to make.
+Orin: I hope Satori-sama won't mind the smell of those mushrooms clashing with her tea.
+//Monolog
+<<Expression Okuu "Thinking">>
+Okuu: (Hmm, I feel like I said something wrong...)
+Yag: (I guess... On the bright side, you could say something even worse.)
+Okuu: (That... doesn't exactly make me feel any better though.)
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_Cookies
+position: -23,192
+---
+<<AddScore AddScore -5>>
+<<Expression Okuu "Angry">>
+Okuu: We can't make any cookies.
+<<Expression Orin "BugEyes">>
+Orin: Ehhhhh??? Why not?
+Okuu: Those cookies' crumbs will ruin our clothes and the carpet.
+Orin: Okuu, I don't think Satori-sama minds that...
+Okuu: Yeah, but... those crumbs can get on our clothes!
+Orin: You are not the one washing the clothes, please...
+<<Expression Okuu "Sad">>
+Okuu: B-but... I just think those little crumbs are annoying...
+<<Expression Orin "Sad">>
+Orin: Hmm. If you are so against it... How about pudding?
+Orin: It shouldn't leave crumbs like cookies.
+Okuu: That's much better. Let's do it!
+Orin: (My beloved cookies with Satori-sama's tea...)
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_Pudding
+position: -24,263
+---
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_GrilledMushroom
+position: -26,330
+---
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_Cookies
+position: 74,483
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some cookies.
+<<Expression Orin "Happy">>
+Orin: Cookies!
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yag: (Well... That was embarrassing, my dear bird friend...)
+<<Expression Okuu "Sad">>
+Okuu: (Unyuu... I didn't mean to...)
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_Pudding
+position: 73,629
+---
+<<AddScore AddScore -3>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some puddings.
+<<Expression Orin "Thinking">>
+Orin: Hmm, puddings? Not bad.
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yag: (Well... That was embarrassing, my dear bird friend...)
+<<Expression Okuu "Sad">>
+Okuu: (Unyuu... I didn't mean to...)
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_GrilledMushroom
+position: 74,554
+---
+<<AddScore AddScore -4>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some grilled mushrooms.
+<<Expression Orin "Thinking">>
+Orin: Grilled mushrooms? 
+Orin: But they don't even go well with tea. Especially not with Satori-sama's tea.
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yag: (Well... That was embarrassing, my dear bird friend...)
+<<Expression Okuu "Sad">>
+Okuu: (Unyuu... I didn't mean to...)
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can't_Make_Cookies
+position: -171,628
+---
+<<AddScore AddScore -1>>
+<<Expression Okuu "Angry">>
+Okuu: You can't make any cookies, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? What else should I make then?
+-> Okuu: You can make puddings instead.
+    <<jump You_Can_Make_Pudding>>
+-> Okuu: You can make grilled mushrooms instead.
+    <<jump You_Can_Make_GrilledMushroom>>
+===
+title: You_Can't_Make_Pudding
+position: -166,550
+---
+<<AddScore AddScore -1>>
+<<Expression Okuu "Angry">>
+Okuu: You can't make any puddings, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? What else should I make then?
+-> Okuu: You can make cookies instead.
+    <<jump You_Can_Make_Cookies>>
+-> Okuu: You can make grilled mushrooms instead.
+    <<jump You_Can_Make_GrilledMushroom>>
+===
+title: You_Can't_Make_GrilledMushroom
+position: -163,480
+---
+<<AddScore AddScore -1>>
+<<Expression Okuu "Angry">>
+Okuu: You can't make any grilled mushroom, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? Wait, why even grilled mushrooms in the first place???
+Okuu: Just trust me!
+Orin: Ok, what else should I make then?
+-> Okuu: You can make cookies instead.
+    <<jump You_Can_Make_Cookies>>
+-> Okuu: You can make puddings instead.
+    <<jump You_Can_Make_Pudding>>
+===
+
+title: Invalid_Chireiden_1
+position: -26,401
+---
+<<jump MainStory_Chireiden_2>>
+===
+title: MainStory_Chireiden_2
+position: 390,174
+---
 
 ===
