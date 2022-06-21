@@ -1,7 +1,12 @@
 ﻿title: MainStory_Intro_0
 tags:
 ---
-
+Okuu: Show a CG
+<<ShowCG CGImage test>>
+Okuu: CG!
+Orin: Whoooooa!
+<<HideCG CGImage test>>
+Okuu: Hiding the CG
 <<Expression Okuu Embarassed>>
 Okuu: Embarassed
 <<Expression Okuu Happy>>
