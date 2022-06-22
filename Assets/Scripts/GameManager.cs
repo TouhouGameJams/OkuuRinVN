@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sentenceBuilderStarted)
+        if (sentenceBuilderStarted)
         {
             if (AreAllSlotsFilled())
             {
@@ -68,6 +68,32 @@ public class GameManager : MonoBehaviour
         anim.Play("OpenWindow");
     }        //Call on board's create slot and block functions using the sO as references
 
+    [YarnCommand("SetUpScene")]
+    public void SetUpScene(string backGroundName, string bgmName, string charactersInfo)
+    {
+        var texture = Resources.Load<Texture2D>("Sprites/" + backGroundName);
+        Image backGround = backgroundImage.GetComponentInChildren<Image>();
+        backGround.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlayBGM(soundManager.GetBGM(bgmName));
+
+        CharacterManager characterManager = GameObject.Find("CharacterManager").GetComponent<CharacterManager>();
+
+        string[] characters = charactersInfo.Split(' ');
+        foreach(string character in characters)
+        {
+            string[] characterInfo = character.Split('_');
+            Debug.Log(characterInfo.ToString());
+            string name = characterInfo[0];
+            float posX = float.Parse(characterInfo[1]);
+            float posY = float.Parse(characterInfo[2]);
+            bool isFacingRight = bool.Parse(characterInfo[3]);
+            characterManager.CreateCharacter(name, posX, posY, isFacingRight);
+        }
+
+    }
+
     public void CloseBoard()
     {
 
@@ -86,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     public void CleanBoard()
     {
-        foreach(Transform child in board.AnswerBlockArea.transform)
+        foreach (Transform child in board.AnswerBlockArea.transform)
         {
             GameObject.Destroy(child.gameObject);
         }
@@ -105,7 +131,7 @@ public class GameManager : MonoBehaviour
 
     public string ValidateNode()
     {
-        foreach(var answer in currentSO.SentenceAnswerList)
+        foreach (var answer in currentSO.SentenceAnswerList)
         {
             if (Enumerable.SequenceEqual(answer.outputComparatorList, wordList))
             {
@@ -117,7 +143,7 @@ public class GameManager : MonoBehaviour
 
     public string CheckSlots(List<String> list, string keyWord)
     {
-        if(list.Contains(keyWord))
+        if (list.Contains(keyWord))
         {
             return keyWord;
         }
