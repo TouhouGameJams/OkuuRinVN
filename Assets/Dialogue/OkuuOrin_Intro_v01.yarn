@@ -239,7 +239,7 @@ Yag: (Don't let all of our hard work go to waste!)
 Okuu: O-Orin...
 Orin: Hmm?
 //Building Segment
-<<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
+<<SentenceBuilderStart GameManager MainStory_Intro_2_v01>>
 Okuu: I-I want to ask...
 <<jump {JumpToNode()}>>
 //Words: [Would you like] [To visit, to stay at] [The Human Village, the Old Capital] 

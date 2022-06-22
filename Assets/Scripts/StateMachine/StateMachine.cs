@@ -8,6 +8,7 @@
 public class StateMachine : MonoBehaviour
 {
     // Reference to currently operating state.
+    private BaseState prevState;
     private BaseState currentState;
     // Reference to UI root that holds references to different views
     [SerializeField]
@@ -39,6 +40,7 @@ public class StateMachine : MonoBehaviour
             currentState.DestroyState();
         }
 
+        prevState = currentState;
         // Swap reference
         currentState = newState;
 
@@ -49,6 +51,16 @@ public class StateMachine : MonoBehaviour
             currentState.owner = this;
             currentState.PrepareState();
         }
+    }
+
+    public void PauseState()
+    {
+        ChangeState(new PauseState());
+    }
+
+    public void DismissPauseState()
+    {
+        ChangeState(prevState);
     }
 }
 
