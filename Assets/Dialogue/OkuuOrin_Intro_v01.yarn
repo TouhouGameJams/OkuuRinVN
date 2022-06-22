@@ -4,7 +4,9 @@ position: -573,-560
 colorID: 4
 ---
 <<SetBlack FadeScreen>>
-<<PlayBGM SoundManager HF_2>>
+<<SetUpScene GameManager "Palace of the Earth Spirits (A)" HF_2
+"Okuu_-4.75_0_true
+ Orin_4.75_0_false">>
 [i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
 Satori: Okuu, Orin, do you know why I'm calling you two here?
 Orin: I'm not sure, Satori-sama...
@@ -255,6 +257,8 @@ Orin: Just us two?
 Okuu: Yep, just the two of us!
 Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 Okuu: (D-date...)
+<<FadeIn FadeScreen>>
+<<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_TheHumanVillage
 position: -110,-85
@@ -265,6 +269,8 @@ Okuu: I would love to experience this festival with you!
 Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: (Yah!)
+<<FadeIn FadeScreen>>
+<<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToGoTo_TheOldCapital
 position: -111,-13
@@ -277,6 +283,8 @@ Okuu: I'm sure she won't mind us going as Satori-sama's representative.
 Orin: Exactly!
 Orin: (It's not like Okuu can sneak into the human village easily like me...) 
 Orin: Then I'm looking forward to the weekend, Okuu!
+<<FadeIn FadeScreen>>
+<<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_TheOldCapital
 position: -111,58
@@ -289,6 +297,8 @@ Okuu: I wanted to ask if you would like to stay at the Old Capital with me this 
 Okuu: But now that you ask me first, I'm so happy to hear you want the same thing, Orin!
 Orin: Great mind, think alike, don't you think?
 Okuu: Yup!
+<<FadeIn FadeScreen>>
+<<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: Invalid_Intro_2
 position: -112,127
@@ -307,5 +317,7 @@ Okuu: You really don't mind?
 Orin: I don't. And you?
 Okuu: Same! As long I'm with you, I don't really care where we go!
 Orin: Then let us relax at home for this weekend.
+<<FadeIn FadeScreen>>
+<<ToNext GameManager MainStory_Chireiden_0>>
 ===
 
