@@ -3,7 +3,6 @@ tags:
 position: -542,-566
 colorID: 4
 ---
-<<SetBlack FadeScreen>>
 <<PlayBGM SoundManager HF_2>>
 [i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
 Satori: Okuu, Orin, do you know why I'm calling you two here?
@@ -13,7 +12,7 @@ Okuu: (thinks very hard)
     <<Expression Okuu "Unyuu">>
     Okuu: (I might have accidentally broken a cup...)
 -> Okuu: Do you want us to go after that spirit, Satori-sama? 
-    <<Expression Okuu "Smug">>
+    <<Expression Orin "Smug">>
     Orin: I think it's best if you don't go after her, Okuu.
 Satori: No, it's something much simpler.
 Satori: I would like to give you two this weekend off.
@@ -30,6 +29,32 @@ Satori: It's only fair that you two deserve a break.
 Both: Satori-sama...
 Satori: (I wonder how these two are going to spend their weekend)
 
+Yatagarasu: Now what are you doing fidgeting about Reiuji?
+Okuu: Who said that?
+Yatagarasu: Are you daft woman? Here!
+Okuu: W-where?
+Yatagarasu: In here!
+Okuu: In where?!
+Yatagarasu: Inside your head!
+Okuu: Oh but inside my head is just Mr. Crow.
+Yatagarasu: I’m a raven, not a crow. And I’m not just any raven.
+Yatagarasu: Geez to forget the god you’ve absorbed within your very being. 
+Yatagarasu: Surely you have not forgotten about the great and powerful god of the sun, the Yatagarasu, have you?
+Okuu: Oh! Yata...Yata...Mr Crow!
+Yatagarasu: Still having trouble saying my name are you? Very well, Mr. Crow then.
+Yatagarasu: Now what in red blazes is possibly bothering you?
+Okuu: Well, Satori gave us the day off today. And I don’t know how to spend it.
+Okuu: Well I do know how to spend it. But I don’t know how I CAN spend it.
+Okuu: But, well I. And she, but what if…
+Yatagarasu: Red blazes woman, your thoughts are all over the place. 
+Yatagarasu: I’m going to need you to slow down before a valve in your head begins to burst. 
+Yatagarasu: You remember what Ms. Satori said when you begin to feel this way correct?
+Okuu: She said to think and focus on one thing at a time?
+Yatagarasu: That’s right, think and focus on one thing at a time. 
+Yatagarasu: Now lets sort out this little conundrum you have in your mind. 
+Yatagarasu: Think carefully on what you want to do most on your free time.
+Okuu: Ok...What I want most to do on my free time is...
+
 <<WalkTowards Okuu 3 "Right" 2>>
 <<Flip Orin>>
 
@@ -37,6 +62,7 @@ Satori: (I wonder how these two are going to spend their weekend)
 <<FadeOut FadeScreen>>
 Orin: Woah, days off. What do you think, Okuu?
 //
+Okuu: (What do I think of days off?)
 <<SentenceBuilderStart GameManager MainStory_Intro_0_v01>>
 Okuu: (What do I think of days off?)
 <<jump {JumpToNode()}>>

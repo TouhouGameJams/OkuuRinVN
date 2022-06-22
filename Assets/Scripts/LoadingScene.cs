@@ -29,7 +29,7 @@ public class LoadingScene : MonoBehaviour
             {
                 operation.allowSceneActivation = true;
             }
-            yield return null;
+            yield return new WaitForSeconds(2f);
         }
     }
 }

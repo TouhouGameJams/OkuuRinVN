@@ -14,37 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfSlots: 3
   listPhrases:
-  - Would you like
-  - To visit
-  - To stay at
-  - The Human Village
-  - The Old Capital
-  - Hmm
-  - Uhm
-  - Uhh
+  - I
+  - Can
+  - Will
+  - Do it
+  - Try
   SentenceAnswerList:
   - outputComparatorList:
-    - Would you like
-    - To visit
-    - The Human Village
-    nodeName: Location_1
+    - I
+    - Can
+    - Try
+    nodeName: I_Can_Try
     points: 0
   - outputComparatorList:
-    - Would you like
-    - To stay at
-    - The Human Village
-    nodeName: Location_2
+    - I
+    - Will
+    - Do it
+    nodeName: I_Will_DoIt
     points: 0
   - outputComparatorList:
-    - Would you like
-    - To visit
-    - The Old Capital
-    nodeName: Location_3
-    points: 0
-  - outputComparatorList:
-    - Would you like
-    - To stay at
-    - The Old Capital
-    nodeName: Location_4
+    - I
+    - Can
+    - Do it
+    nodeName: I_Can_DoIt
     points: 0
   invalidNodeName: Invalid_Intro_1
