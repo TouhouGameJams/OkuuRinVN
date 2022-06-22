@@ -298,7 +298,7 @@ PrefabInstance:
     - target: {fileID: 4425188273291237570, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: startNode
-      value: SetUpSceneTest
+      value: MainStory_Intro_0
       objectReference: {fileID: 0}
     - target: {fileID: 4425188273291237570, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}

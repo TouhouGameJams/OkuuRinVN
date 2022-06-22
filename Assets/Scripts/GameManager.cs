@@ -18,12 +18,10 @@ public class GameManager : MonoBehaviour
     public SentenceBuilderScriptableObject currentSO;
     private static string nodeName;
     private bool sentenceBuilderStarted;
-    private SoundManager soundManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        soundManager = SoundManager.Instance;
         stateMachine.ChangeState(new GameState());
     }
 
@@ -92,6 +90,13 @@ public class GameManager : MonoBehaviour
             characterManager.CreateCharacter(name, posX, posY, isFacingRight);
         }
 
+    }
+
+    [YarnCommand("ToNext")]
+    public void ToNext(string nextScriptName)
+    {
+        dR.Stop();
+        dR.StartDialogue(nextScriptName);
     }
 
     public void CloseBoard()
