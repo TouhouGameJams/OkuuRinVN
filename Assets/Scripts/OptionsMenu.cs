@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Audio;
 using System.Linq;
+using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class OptionsMenu : MonoBehaviour
 
     private float currentBGMVol;
     private float currentSFXVol;
+
+    public Slider BGMSlider;
+    public Slider SFXSlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +35,11 @@ public class OptionsMenu : MonoBehaviour
 
         Resolution();
 
-        currentBGMVol = PlayerPrefs.GetInt("BGM");
-        currentSFXVol = PlayerPrefs.GetInt("SFX");
-        currentResolution = PlayerPrefs.GetString("Resolution");        ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
+        BGMSlider.value = PlayerPrefs.GetFloat("BGM");
+        SFXSlider.value = PlayerPrefs.GetFloat("SFX");
+        //currentResolution = PlayerPrefs.GetString("Resolution");        
+        ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
 
-        //SetBGMVolume(currentBGMVol);
-        //SetSFXVolume(currentSFXVol);
     }
 
     // Update is called once per frame
@@ -55,21 +59,29 @@ public class OptionsMenu : MonoBehaviour
 
     public void SetBGMVolume(float sliderValue)
     {
+        PlayerPrefs.SetFloat("BGM", sliderValue);
         currentBGMVol = Mathf.Log10(sliderValue) * 20f;
+
         mixer.SetFloat("BGMVolume", currentBGMVol);
-        PlayerPrefs.SetInt("BGM", (int)currentBGMVol);
+
+        SaveDataManager saveDataManager = SaveDataManager.Instance;
+        saveDataManager.SaveBGM();
     }
 
     public void SetSFXVolume(float sliderValue)
     {
+        PlayerPrefs.SetFloat("SFX", sliderValue);
+
         currentSFXVol = Mathf.Log10(sliderValue) * 20f;
         mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20f);
-        PlayerPrefs.SetInt("SFX", (int)currentSFXVol);
+
+        SaveDataManager saveDataManager = SaveDataManager.Instance;
+        saveDataManager.SaveSFX();
     }
 
     public void RaiseResolution()
     {
-        if(currentResolutionIndex < ScreenResArr.Length)
+        if(currentResolutionIndex < ScreenResArr.Length-1)
 
         {
             currentResolutionIndex++;

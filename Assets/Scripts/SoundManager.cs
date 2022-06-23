@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using Yarn.Unity;
 
 public class SoundManager : MonoBehaviour
@@ -36,6 +37,7 @@ public class SoundManager : MonoBehaviour
     //===== SoundManager Features =====//
 
     // Volume range is 0.0f between 1.0f
+    public AudioMixer mixer;
 
     public float m_BGM_Volume = 1.0f;
     public float m_SBBGM_Volume = 1.0f;
@@ -61,6 +63,8 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
+        mixer.SetFloat("BGMVolume", Mathf.Log10(PlayerPrefs.GetFloat("BGM")) * 20f);
+        mixer.SetFloat("SFXVolume", Mathf.Log10(PlayerPrefs.GetFloat("SFX")) * 20f);
     }
 
     private void Update()
