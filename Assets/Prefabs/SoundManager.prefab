@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d7aed2282a7d0489840e908a10db5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 0}
   m_BGM_Volume: 0.2
   m_SBBGM_Volume: 0.2
   m_SFX_Volume: 0.1
@@ -81,6 +82,12 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 8bf244ee3d6aca043a97d9859b586a05, type: 3}
   - name: ThinkStart
     audioClip: {fileID: 8300000, guid: fc55b05dfc6c5b24792dea7870182832, type: 3}
+  - name: TextScrollA
+    audioClip: {fileID: 8300000, guid: 6cc1c6ac3a5721640a19414cbfd9f635, type: 3}
+  - name: TextScrollB
+    audioClip: {fileID: 8300000, guid: db867c825a0d9864298bdcf1e56657b9, type: 3}
+  - name: TextScrollC
+    audioClip: {fileID: 8300000, guid: 87a7f89a932487b46adea91061f8e6ec, type: 3}
 --- !u!1 &3966956177437143760
 GameObject:
   m_ObjectHideFlags: 0

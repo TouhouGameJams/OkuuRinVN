@@ -39,15 +39,17 @@ public class SaveDataManager : MonoBehaviour
     private bool m_hasSaveData = false;
     public bool HasSaveData { get { return m_hasSaveData; } }
 
+    [System.Serializable]
     public struct SaveData
     {
         public string lastSentence;
         public string resolution;
-        public int bgmVolume;
-        public int sfxVolume;
+        public bool isFullScreen;
+        public float bgmVolume;
+        public float sfxVolume;
     }
 
-    private SaveData m_saveData;
+    public SaveData m_saveData;
     /*[SerializeField] private GameObject m_continueButton*/
     [SerializeField] private GameObject m_continueButton;
     // Start is called before the first frame update
@@ -66,14 +68,14 @@ public class SaveDataManager : MonoBehaviour
         if (m_hasSaveData == true)
         {
 
-            GameObject startButton = GameObject.Find("StartButton");
+/*            GameObject startButton = GameObject.Find("StartButton");
             m_continueButton.gameObject.SetActive(true);
             startButton.transform.localPosition = new Vector3(
                 startButton.transform.localPosition.x,
                 -50,
                 startButton.transform.localPosition.z
                 );
-
+*/
         }
     }
 
@@ -86,12 +88,32 @@ public class SaveDataManager : MonoBehaviour
     public void SaveInfo()
     {
         m_saveData.lastSentence = PlayerPrefs.GetString("LastSentence");
-        m_saveData.bgmVolume = PlayerPrefs.GetInt("BGM");
-        m_saveData.sfxVolume = PlayerPrefs.GetInt("SFX");
+        m_saveData.bgmVolume = PlayerPrefs.GetFloat("BGM");
+        m_saveData.sfxVolume = PlayerPrefs.GetFloat("SFX");
         m_saveData.resolution = PlayerPrefs.GetString("Resolution");
 
         StreamWriter writer = new StreamWriter("Assets/UserData/SaveData.json", false);
 
+        string jsonString = JsonUtility.ToJson(m_saveData);
+        writer.Write(jsonString);
+        writer.Flush();
+        writer.Close();
+    }
+
+    public void SaveBGM()
+    {
+        m_saveData.bgmVolume = PlayerPrefs.GetFloat("BGM");
+        StreamWriter writer = new StreamWriter("Assets/UserData/SaveData.json", false);
+        string jsonString = JsonUtility.ToJson(m_saveData);
+        writer.Write(jsonString);
+        writer.Flush();
+        writer.Close();
+    }
+
+    public void SaveSFX()
+    {
+        m_saveData.bgmVolume = PlayerPrefs.GetFloat("SFX");
+        StreamWriter writer = new StreamWriter("Assets/UserData/SaveData.json", false);
         string jsonString = JsonUtility.ToJson(m_saveData);
         writer.Write(jsonString);
         writer.Flush();
