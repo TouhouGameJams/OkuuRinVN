@@ -1,0 +1,71 @@
+﻿title: MainStory_HumanVillage_0
+tags:
+---
+<<SetBlack FadeScreen>>
+<<PlayBGM SoundManager HF_2>>
+Satori: Listen, Okuu.
+Satori: When you go to the surface, please behave.
+Satori: And be a good example for Chireiden.
+Satori: Don't cause trouble at the Human Village.
+Satori: Listen to Orin. She will know what to do there.
+Satori: But more importantly, have fun.
+<<FadeOut FadeScreen>>
+<<Expression Orin "Neutral">>
+Orin: Are you ready, Okuu?
+Orin: Is this the first time you will go to the surface?
+<<Expression Okuu "Happy">>
+Okuu: I think so... That's why I'm so hype!
+Okuu: Can you tell me something about the surface, Orin?
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Neutral">>
+Orin: Well, there are lots of Youkai and even Humans.
+Orin: The Human Village is supposed to be a strict "No-Youkai" zone.
+Orin: But in reality, I see many Youkai hanging around there.
+Okuu: Oh? A place only for the so-called, human...
+Orin: Yup! Although, I personally only set foot there as Satori-sama's assistant.
+Orin: Normally I wouldn't dare to visit either.
+Okuu: How come? I don't think those humans will notice you.
+Okuu: Unlike me with these gigantic wings and a concrete leg.
+<<Expression Orin "Happy">>
+Orin: Luckily the Human Village is having a festival!
+Orin: I don't know the full details but it's said...
+Orin: That this festival is for everyone to attend.
+Orin: As long as they behave themselves, of course.
+Okuu: What if they don't and cause trouble?
+Orin: Well, they will just face the wrath of that shrine maiden.
+<<Expression Okuu "Swirly">>
+Okuu: <i>shivers</i>
+Okuu: Scary... Yeah...
+<<Expression Okuu "Neutral">>
+<<Expression Orin "Neutral">>
+Orin: Say, do you have anything you want to ask me of the surface?
+Orin: Or you rather have it as a surprise?
+-> Okuu: Are there other interesting locations?
+    Orin: I haven't been everywhere.
+    Orin: But I visited two interesting locations while searching for that Jail-Breaking King.
+    Okuu: Do tell!
+    Orin: One of them is a mansion just like ours, but fully covered in red.
+    Okuu: A red mansion, interesting...
+    Orin: Oh, within the depth of a bamboo forest there is another mansion.
+    Okuu: Another one? There sure are a lot of mansions on the surface.
+    Orin: It sure is. But the design is rather unique.
+    <<Expression Orin "Happy">>
+    Orin: Ah, I believe the owners are alien, too!
+    Okuu: Wah... That sounds kinda scary...
+    Orin: Anyhow we probably won't have time to visit them.
+    Okuu: True... Regardless I'm looking forwards to the Human Village.
+    Okuu: And seeing it with my own eyes.
+-> Okuu: I think I will leave everything as a surprise for now.
+    Orin: Wah... Are you still Okuu?
+    <<Expression Okuu "Unyuu">>
+    Okuu: ???
+    <<Expression Orin "Swirly">>
+    Orin: Normally you would be more... I don't know... Curious?
+    Orin: I just feel kinda sad that you don't want to ask me...
+    <<Expression Okuu "Smug">>
+    Okuu: Haha! I thought it would be nice if I just experience everything blind.
+    Okuu: You know, for maximum effects.
+    Orin: Oh, ok.
+    
+===
+
