@@ -82,12 +82,13 @@ public class GameManager : MonoBehaviour
         foreach(string character in characters)
         {
             string[] characterInfo = character.Split('_');
-            Debug.Log(characterInfo.ToString());
             string name = characterInfo[0];
             float posX = float.Parse(characterInfo[1]);
             float posY = float.Parse(characterInfo[2]);
-            bool isFacingRight = bool.Parse(characterInfo[3]);
-            characterManager.CreateCharacter(name, posX, posY, isFacingRight);
+            string standDirection =
+                characterInfo[3].IndexOf("\r") != -1 ?
+                characterInfo[3].Substring(0, characterInfo[3].IndexOf("\r")) : characterInfo[3];
+            characterManager.CreateCharacter(name, posX, posY, standDirection);
         }
 
     }

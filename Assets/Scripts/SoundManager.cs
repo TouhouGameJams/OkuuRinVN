@@ -63,8 +63,8 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        mixer.SetFloat("BGMVolume", Mathf.Log10(PlayerPrefs.GetFloat("BGM")) * 20f);
-        mixer.SetFloat("SFXVolume", Mathf.Log10(PlayerPrefs.GetFloat("SFX")) * 20f);
+        mixer.SetFloat("BGMVolume", Mathf.Log10(PlayerPrefs.GetFloat("BGM", 1f)) * 20f);
+        mixer.SetFloat("SFXVolume", Mathf.Log10(PlayerPrefs.GetFloat("SFX", 1f)) * 20f);
     }
 
     private void Update()
