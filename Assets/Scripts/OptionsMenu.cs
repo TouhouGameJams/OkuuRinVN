@@ -11,16 +11,6 @@ public class OptionsMenu : MonoBehaviour
 {
     public AudioMixer mixer;
     public TextMeshProUGUI ScreenResolutionText;
-    private string currentResolution;
-    private int currentResolutionIndex = 0;
-    private string[] ScreenResArr = new string[] { "1388x768", "1920x1080", "2560x1440" };
-    private int[,] ScreenResArr2D = new int[,] { { 1388, 768 }, { 1920, 1080 }, { 2560, 1440 } };
-
-
-    private int[] BGMVolArr = new int[] { 0, 1, 2, 3 };
-    private int[] SFXVolArr = new int[] { 0, 1, 2, 3 };
-
-    public bool isFullScreen;
 
     private float currentBGMVol;
     private float currentSFXVol;
@@ -28,18 +18,21 @@ public class OptionsMenu : MonoBehaviour
     public Slider BGMSlider;
     public Slider SFXSlider;
 
+    public Toggle fullScreenTog;
+    public int isFullScreen;
+
+    public List<ResItem> resolutions = new List<ResItem>();
+    private int selectedResolution;
     // Start is called before the first frame update
     void Start()
     {
-        isFullScreen = Screen.fullScreen;
-
-        Resolution();
-
-        BGMSlider.value = PlayerPrefs.GetFloat("BGM");
-        SFXSlider.value = PlayerPrefs.GetFloat("SFX");
-        //currentResolution = PlayerPrefs.GetString("Resolution");        
-        ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
-
+        BGMSlider.value = PlayerPrefs.GetFloat("BGM", 1f);
+        SFXSlider.value = PlayerPrefs.GetFloat("SFX", 1f);
+        selectedResolution = PlayerPrefs.GetInt("Resolution", 1);
+        isFullScreen = PlayerPrefs.GetInt("isFullScreen", 1);
+        fullScreenTog.isOn = intToBool(isFullScreen);
+        UpdateResLabel();
+        ApplyGraphics();
     }
 
     // Update is called once per frame
@@ -63,9 +56,6 @@ public class OptionsMenu : MonoBehaviour
         currentBGMVol = Mathf.Log10(sliderValue) * 20f;
 
         mixer.SetFloat("BGMVolume", currentBGMVol);
-
-        SaveDataManager saveDataManager = SaveDataManager.Instance;
-        saveDataManager.SaveBGM();
     }
 
     public void SetSFXVolume(float sliderValue)
@@ -74,57 +64,6 @@ public class OptionsMenu : MonoBehaviour
 
         currentSFXVol = Mathf.Log10(sliderValue) * 20f;
         mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20f);
-
-        SaveDataManager saveDataManager = SaveDataManager.Instance;
-        saveDataManager.SaveSFX();
-    }
-
-    public void RaiseResolution()
-    {
-        if(currentResolutionIndex < ScreenResArr.Length-1)
-
-        {
-            currentResolutionIndex++;
-            ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
-            Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
-        }
-    }
-
-    public void LowerResolution()
-    {
-        if (currentResolutionIndex > 0)
-        {
-            currentResolutionIndex--;
-            ScreenResolutionText.text = ScreenResArr[currentResolutionIndex];
-            Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
-        }
-    }
-
-    public void FullScreenToggle()
-    {
-        if (isFullScreen)
-        {
-            isFullScreen = false;
-            Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
-        }
-        else
-        {
-            isFullScreen = true;
-            Screen.SetResolution(ScreenResArr2D[currentResolutionIndex, 0], ScreenResArr2D[currentResolutionIndex, 1], isFullScreen);
-
-        }
-    }
-
-    public void Resolution()
-    {
-        for (int i = 0; i < ScreenResArr.Length; i++)
-        {
-            if(ScreenResArr[i] == Screen.width.ToString() + "x" + Screen.height.ToString())
-            {
-                currentResolutionIndex = i;
-                PlayerPrefs.SetString("Resolution", Screen.width.ToString() + "x" + Screen.height.ToString());
-            }
-        }
     }
 
     public void OnClick()
@@ -132,4 +71,66 @@ public class OptionsMenu : MonoBehaviour
         SoundManager soundManager = SoundManager.Instance;
         soundManager.PlaySFX(soundManager.GetSFX("Click"));
     }
+
+    public void ResLeft()
+    {
+        selectedResolution--;
+        if(selectedResolution < 0)
+        {
+            selectedResolution = 0;
+        }
+        PlayerPrefs.SetInt("Resolution", selectedResolution);
+        UpdateResLabel();
+        ApplyGraphics();
+    }
+
+    public void ResRight()
+    {
+        selectedResolution++;
+        if (selectedResolution > resolutions.Count- 1)
+        {
+            selectedResolution = resolutions.Count - 1;
+        }
+        PlayerPrefs.SetInt("Resolution", selectedResolution);
+        UpdateResLabel();
+        ApplyGraphics();
+    }
+
+    public void UpdateResLabel()
+    {
+        ScreenResolutionText.text = resolutions[selectedResolution].horizontal.ToString() + "x" + resolutions[selectedResolution].vertical.ToString();
+    }
+
+    public void FullScreen()
+    {
+        Screen.fullScreen = fullScreenTog.isOn;
+        PlayerPrefs.SetInt("isFullScreen", boolToInt(fullScreenTog.isOn));
+    }
+
+    public void ApplyGraphics()
+    {
+        Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullScreenTog.isOn);
+    }
+
+    int boolToInt(bool val)
+    {
+        if (val)
+            return 1;
+        else
+            return 0;
+    }
+
+    bool intToBool(int val)
+    {
+        if (val != 0)
+            return true;
+        else
+            return false;
+    }
+}
+
+[System.Serializable]
+public class ResItem
+{
+    public int horizontal, vertical;
 }
