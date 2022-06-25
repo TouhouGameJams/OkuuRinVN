@@ -58,13 +58,13 @@ MonoBehaviour:
   m_SFX_Audio: {fileID: 6224101405462711696}
   m_BGM_List:
   - name: UnderGround
-    audioClip: {fileID: 8300000, guid: 73d2045a54efee04691b96b2d6489a5b, type: 3}
+    audioClip: {fileID: 8300000, guid: 2a619283c8be05545b1b07e6bae31e1c, type: 3}
   - name: Thinking
-    audioClip: {fileID: 8300000, guid: d7d2974fa518560409a42263c499edfc, type: 3}
+    audioClip: {fileID: 8300000, guid: a28441d1dff3e22498917b7632188839, type: 3}
   - name: Comical
-    audioClip: {fileID: 8300000, guid: c9b2aa137ecf7a040bd308ff8bc72764, type: 3}
-  - name: HF_2
-    audioClip: {fileID: 8300000, guid: fa8cd7582e0e3cc46a353832d325e815, type: 3}
+    audioClip: {fileID: 8300000, guid: 0c0d6a5f6ae8e4d47aadca48c5fe8acb, type: 3}
+  - name: HeartfeltFancy
+    audioClip: {fileID: 8300000, guid: c98cf780a1023c34ca85ccb079783469, type: 3}
   m_SFX_List:
   - name: Drop
     audioClip: {fileID: 8300000, guid: b8391895405675f4591f49a3678fe40d, type: 3}
@@ -82,12 +82,30 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 8bf244ee3d6aca043a97d9859b586a05, type: 3}
   - name: ThinkStart
     audioClip: {fileID: 8300000, guid: fc55b05dfc6c5b24792dea7870182832, type: 3}
-  - name: TextScrollA
-    audioClip: {fileID: 8300000, guid: 6cc1c6ac3a5721640a19414cbfd9f635, type: 3}
-  - name: TextScrollB
-    audioClip: {fileID: 8300000, guid: db867c825a0d9864298bdcf1e56657b9, type: 3}
-  - name: TextScrollC
-    audioClip: {fileID: 8300000, guid: 87a7f89a932487b46adea91061f8e6ec, type: 3}
+  - name: GenNote
+    audioClip: {fileID: 8300000, guid: 00da978d441930646b6a4d369afac746, type: 3}
+  - name: OkuuNote
+    audioClip: {fileID: 8300000, guid: 17bd52c44505ecb4197d5ce2816a5857, type: 3}
+  - name: RinNote
+    audioClip: {fileID: 8300000, guid: 945e1c0072d3b0b43bdf21723afa3dc7, type: 3}
+  - name: SatNote
+    audioClip: {fileID: 8300000, guid: dfe28f39cd4b44d4dbbabc780b53c27a, type: 3}
+  - name: YatNote
+    audioClip: {fileID: 8300000, guid: e10a53ace361e574e9f617d48e296d75, type: 3}
+  - name: Hop
+    audioClip: {fileID: 8300000, guid: bdc0d1f7b782d6e4790452d53e7f98e4, type: 3}
+  - name: JoyShake
+    audioClip: {fileID: 8300000, guid: 9782bd4ed140ec7468a245e51e8001dc, type: 3}
+  - name: JoyShake
+    audioClip: {fileID: 8300000, guid: 9782bd4ed140ec7468a245e51e8001dc, type: 3}
+  - name: Smile
+    audioClip: {fileID: 8300000, guid: d46b36813755fc84cb7f5c87a398cfb2, type: 3}
+  - name: Speed
+    audioClip: {fileID: 8300000, guid: 3771f77757a9fd1498d5bc41b9ea78f2, type: 3}
+  - name: Spin
+    audioClip: {fileID: 8300000, guid: d647055e76e2b5b4d8fee874adc52f87, type: 3}
+  - name: Fail
+    audioClip: {fileID: 8300000, guid: 479b67b64e157304ca6fb986be470da2, type: 3}
 --- !u!1 &3966956177437143760
 GameObject:
   m_ObjectHideFlags: 0
