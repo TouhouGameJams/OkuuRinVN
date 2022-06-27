@@ -514,6 +514,11 @@ PrefabInstance:
       propertyPath: resolutions.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5222286987425245503, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6045656523554489105, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_Type
@@ -1726,12 +1731,12 @@ PrefabInstance:
     - target: {fileID: 6636607930081672159, guid: 638a339da405742489b926d205f8e079,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7261059882929335783, guid: 638a339da405742489b926d205f8e079,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7997110414802988513, guid: 638a339da405742489b926d205f8e079,
         type: 3}
