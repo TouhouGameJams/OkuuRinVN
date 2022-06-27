@@ -163,13 +163,13 @@ position: -335,-187
 ---
 <<Expression Okuu "Swirly">>
 Okuu: <i>(I can try...)</i>
-Yag: <i>(A little half-baked, make sure not to chicken out when it's confession time.)</i>
+Yatagarasu: <i>(A little half-baked, make sure not to chicken out when it's confession time.)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: <i>(Ah, speaking of which...)</i>
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: <i>(I don't have to hide! I'm in your head!)</i>
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Will_DoIt
@@ -177,13 +177,13 @@ position: -334,-282
 ---
 <<Expression Okuu "Smug">>
 Okuu: <i>(I promised, I will do it!)</i>
-Yag: <i>(I like that look in your eyes! I can feel the fire from within.)</i>
+Yatagarasu: <i>(I like that look in your eyes! I can feel the fire from within.)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: <i>(Ah, speaking of which...)</i>
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: <i>(I don't have to hide! I'm in your head!)</i>
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Can_DoIt
@@ -191,26 +191,26 @@ position: -334,-236
 ---
 <<Expression Okuu "Smug">>
 Okuu: <i>(I know I can do it!)</i>
-Yag: <i>(That's the spirit!)</i>
+Yatagarasu: <i>(That's the spirit!)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: <i>(Ah, speaking of which...)</i>
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: <i>(I don't have to hide! I'm in your head!)</i>
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: Invalid_Intro_1
 position: -334,-140
 ---
 <<Expression Okuu "Unyuu">>
-Yag: <i>(Oh dear... I hope it will be all ok...)</i>
+Yatagarasu: <i>(Oh dear... I hope it will be all ok...)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: <i>(Ah, speaking of which...)</i>
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Already? Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: <i>(I don't have to hide! I'm in your head!)</i>
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 
@@ -363,12 +363,12 @@ Orin: Yuugi sent an invitation to Satori-sama.
 Orin: But she told me she can't go just now...
 Orin: Regardless, I'm happy where ever we will spend our time, Okuu!
 Okuu: <i>(Do I have something planned for this weekend, I wonder?)</i>
-Yag: <i>(Yes! Yes, you do!)</i>
+Yatagarasu: <i>(Yes! Yes, you do!)</i>
 Okuu: <i>(Unyu???)</i>
-Yag: <i>(Please don't tell me you gather all your courage to ask Satori to let you two have weekends off for nothing!)</i>
+Yatagarasu: <i>(Please don't tell me you gather all your courage to ask Satori to let you two have weekends off for nothing!)</i>
 Okuu: <i>(Oh, right...)</i>
-Yag: <i>(Go ahead and tell her to go out on a date with you!)</i>
-Yag: <i>(Don't let all of our hard work go to waste!)</i>
+Yatagarasu: <i>(Go ahead and tell her to go out on a date with you!)</i>
+Yatagarasu: <i>(Don't let all of our hard work go to waste!)</i>
 Okuu: O-Orin...
 Orin: Hmm?
 ===
@@ -447,8 +447,8 @@ title: Invalid_Intro_2
 position: -112,127
 ---
 Okuu: Unyuu... Unyuuuuuu.....
-Yag: <i>(Oh dear... She has too many ideas.)</i>
-Yag: <i>(Yet, she can't say it out loud...)</i>
+Yatagarasu: <i>(Oh dear... She has too many ideas.)</i>
+Yatagarasu: <i>(Yet, she can't say it out loud...)</i>
 Orin: Okuu? Are you alright?
 Okuu: Unyuu~
 Orin: Hmm... How about we just stay at Chireiden, with Satori-sama?
