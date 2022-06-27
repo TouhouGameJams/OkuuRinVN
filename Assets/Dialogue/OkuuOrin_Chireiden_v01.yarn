@@ -659,7 +659,7 @@ position: 434,173
 <<SentenceBuilderStart GameManager MainStory_Chireiden_2_v01>>
 Okuu: (What do I want to say to Orin?)
 <<jump {JumpToNode()}>>
-//Word: [I], [Do, Don't], [Enjoy], [Today], [A lot]
+//Word: <i>, [Do, Don't], [Enjoy], [Today], [A lot]
 ===
 title: I_Enjoy_Today_ALot
 position: 434,331

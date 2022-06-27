@@ -18,7 +18,7 @@ Okuu: You're always teasing me.
 Orin: Hehe, let me make up to you.
 Orin: How about lunch? What would you like, Okuu? On me of course.
 <<SentenceBuilder GameObject>> //Execute the script SentenceBuilder
-Okuu: [i]I-Is she asking me out on a date? Think Okuu, think...[/i]
+Okuu: <i>I-Is she asking me out on a date? Think Okuu, think...</i>
 Okuu: {Output()}
 ===
 __PrivCrochet_colorID: 0

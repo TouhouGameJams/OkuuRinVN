@@ -4,7 +4,7 @@ position: -542,-566
 colorID: 4
 ---
 <<PlayBGM SoundManager HF_2>>
-[i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
+<i>~Weekday, at Satori Komeji's office, Chireiden~</i>
 Satori: Okuu, Orin, do you know why I'm calling you two here?
 Orin: I'm not sure, Satori-sama...
 Okuu: (thinks very hard)
@@ -58,7 +58,7 @@ Okuu: Ok...What I want most to do on my free time is...
 <<WalkTowards Okuu 3 "Right" 2>>
 <<Flip Orin>>
 
-[i]~At the hallway of Chireiden~[/i]
+<i>~At the hallway of Chireiden~</i>
 <<FadeOut FadeScreen>>
 Orin: Woah, days off. What do you think, Okuu?
 //

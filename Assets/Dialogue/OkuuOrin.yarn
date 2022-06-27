@@ -7,7 +7,7 @@ colorID: 4
 <<SetUpScene GameManager "Palace of the Earth Spirits (A)" HF_2
 "Okuu_-4.75_0_Left
  Orin_4.75_0_Right">>
-[i]~Weekday, at Satori Komeji's office, Chireiden~[/i]
+<i>~Weekday, at Satori Komeji's office, Chireiden~</i>
 Satori: Okuu, Orin, do you know why I'm calling you two here?
 Orin: I'm not sure, Satori-sama...
 Okuu: ( thinks very hard )
@@ -34,7 +34,7 @@ Satori: (I wonder how these two are going to spend their weekend)
 Satori: (Although... I seems to forget to tell Orin something important.)
 
 
-[i]~At the hallway of Chireiden~[/i]
+<i>~At the hallway of Chireiden~</i>
 <<FadeOut FadeScreen>>
 Orin: Woah, days off. What do you think, Okuu?
 <<jump SentenceBuilder_Intro_0>>
@@ -229,7 +229,7 @@ tags:
 <<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
 Okuu: (Hmm...)
 <<jump {JumpToNode()}>>
-//Words: [I] [Can, Will] [My best, Do it] 
+//Words: <i> [Can, Will] [My best, Do it] 
 ===
 title: I_Can_Try
 position: -335,-187
@@ -408,7 +408,7 @@ position: -291,-292
 //Vibe: Domestic fluff. Cute girls doing cute things
 <<SetBlack FadeScreen>>
 <<PlayBGM SoundManager HF_2>>
-[i]Weekend, Chireiden[/i]
+<i>Weekend, Chireiden</i>
 Orin: Okuu...
 Orin: Okuu...
 Okuu: (Zzz...)
@@ -444,7 +444,7 @@ Orin: Else you will miss breakfast...
     Okuu: !!!
     Okuu: (S-She...)
     Okuu: Ahh, I should hurry!
-[i] Few minutes later [/i]
+<i> Few minutes later </i>
 <<Expression Okuu "Happy">>
 <<Expression Orin "Happy">>
 Okuu: Orin's breakfast... It smells so good...
@@ -995,7 +995,7 @@ title: MainStory_Chireiden_2
 position: 434,173
 ---
 //CG: Baking
-[i]A few hours later[/i]
+<i>A few hours later</i>
 <<Expression Okuu "Sad">>
 <<Expression Orin "Happy">>
 Orin: Well, they are not *that* bad, Okuu.
@@ -1015,7 +1015,7 @@ Okuu: I wonder why...
 Orin: Oh well, we can make our own tea if you want. 
 Okuu: Sure, we can store some for Satori-sama later.
 //
-[i]Orin is brewing some tea.[/i]
+<i>Orin is brewing some tea.</i>
 <<Expression Orin "Happy">>
 <<Expression Okuu "Happy">>
 Orin: They might not be as good as Satori-sama's-
@@ -1040,7 +1040,7 @@ Orin: But... It wasn't bad, right?
 <<SentenceBuilderStart GameManager MainStory_Chireiden_2_v01>>
 Okuu: (What do I want to say to Orin?)
 <<jump {JumpToNode()}>>
-//Word: [I], [Do, Don't], [Enjoy], [Today], [A lot]
+//Word: <i>, [Do, Don't], [Enjoy], [Today], [A lot]
 ===
 title: I_Enjoy_Today_ALot
 position: 434,331
