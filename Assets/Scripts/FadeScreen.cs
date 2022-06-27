@@ -27,7 +27,7 @@ public class FadeScreen : MonoBehaviour
     }
 
     [YarnCommand("SetWhite")]
-    public void SetToWhitek()
+    public void SetToWhite()
     {
         gameObject.GetComponent<Image>().color = new Color(255f, 255f, 255f, 255f);
     }
@@ -42,6 +42,12 @@ public class FadeScreen : MonoBehaviour
     public void FadeIn()
     {
         StartCoroutine(FadeRoutine(1f, 1f));
+    }
+
+    [YarnCommand("FadeHalf")]
+    public void FadeInHalf()
+    {
+        StartCoroutine(FadeRoutine(0.5f, 1f));
     }
 
     IEnumerator FadeRoutine(float endValue, float duration)
