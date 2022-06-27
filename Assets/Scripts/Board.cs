@@ -45,8 +45,8 @@ public class Board : MonoBehaviour
             positions.Add(position);
 
             var newGo = Instantiate(blockAsset, PhraseBlockArea.transform);
-            newGo.itemMessage = listStrings<i>;
-            newGo.transform.localPosition = positions<i>;
+            newGo.itemMessage = listStrings[i];
+            newGo.transform.localPosition = positions[i];
         }
     }
 
