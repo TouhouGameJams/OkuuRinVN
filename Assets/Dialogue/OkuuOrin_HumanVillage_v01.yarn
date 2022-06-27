@@ -364,5 +364,184 @@ Orin: ...as the music really moves me! Let's continue watching the show.
 title: MainStory_HumanVillage_2
 position: 587,565
 ---
-
+<i>~The Prismrivers finish their stage and everyone goes their separate way~</i>
+<<Expression Orin "Neutral">>
+<<Expression Okuu "Thinking">>
+Okuu: I wonder if there is anything interesting left-
+Man: Did you hear? They are having a public danmaku battle by the end of the festival.
+Woman: Eh? They won't do the fireworks like before?
+Man: I'm not sure but it's supposed to replace the fireworks...
+<<Expression Okuu "Happy">>
+Man: Everyone with spell cards are free to join, too.
+Woman: I will just watch from the side.
+Okuu: Orin...
+<<Expression Orin "Smug">>
+Orin: You want to join, don't you?
+Okuu: I admit, I do...
+Okuu: It sounds so interesting too!
+Okuu: Would you like to join?
+Orin: Me?
+Okuu: Yeah. In fact, the two of us haven't had a spell card duel in a while.
+Okuu: It will be fun!
+Orin: Hmm...
+===
+title: SentenceBuilder_HumanVillage_2
+position: 320,375
+---
+<<Expression Okuu "Thinking">>
+Okuu: <i>(I have to find a way to convince Orin to join)</i>
+<<SentenceBuilderStart GameManager MainStory_HumanVillage_1_v01>>
+Okuu: <i>(But what if she really doesn't want to join?)</i>
+<<jump {JumpToNode()}>>
+//Word: [Please] [Pretty] [?] [I'm] [Begging] [You]
+===
+title: Pretty_Please_Quesiton
+position: 588,639
+---
+<<AddScore AddScore 3>>
+<<Expression Okuu "Unyuu">>
+Okuu: Pretty please?
+Orin: ...
+Okuu: Unyuu~
+<<Expression Orin "Swirly">>
+Orin: ...Those eyes won't work...
+Okuu: Unyuu~
+<<Expression Orin "Embarrassed">>
+Orin: Ok, fine. You win.
+Orin: I won't go easy on you, even if you are my friend!
+<<Expression Okuu "Happy">>
+Okuu: Of course. Time to put on a spectacular show!
+===
+title: Please_Im_Begging
+position: 587,709
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Sad">>
+Okuu: Orin, please, I'm begging here!
+<<Expression Orin "Thinking">>
+Orin: Is it that important?
+Okuu: Yeeess!
+Orin: ...
+Okuu: ...
+Orin: ...
+<<Expression Orin "Smug">>
+Orin: Ugh, fine. Let's have a duel then!
+Orin: And I won't go easy on you.
+<<Expression Okuu "Happy">>
+Okuu: Me neither!
+===
+title: Im_Begging_You
+position: 587,779
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Sad">>
+Okuu: I'm begging you, Orin!
+Okuu: Please have a danmaku duel with me!
+<<Expression Orin "Thinking">>
+Orin: Is it that important?
+Okuu: Yeeess!
+Orin: ...
+Okuu: ...Please?
+Orin: ...
+<<Expression Orin "Smug">>
+Orin: Ugh, fine. Let's have a duel then!
+Orin: And I won't go easy on you.
+<<Expression Okuu "Happy">>
+Okuu: Me neither!
+===
+title: Im_Pretty_Question
+position: 587,823
+---
+<<AddScore AddScore 0>>
+<<Expression Okuu "Happy">>
+Okuu: I'm pretty, right?
+Orin: Huh? Uhm...
+Orin: You are pretty, Okuu!
+<<Expression Okuu "Swirly">>
+Orin: <i>(But what does it have to do with the danmaku battle?)</i>
+Okuu: It sure feels good to be praised!
+===
+title: Im_You_Question
+position: 586,894
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Swirly">>
+Okuu: I am you?
+Orin: Excuse me...?
+Okuu: And you are me?
+<<Expression Orin "BugEyed">>
+Orin: ...Okuu?
+Orin: <i>(Wait... Why do I get a sense of deja vu...)</i>
+Orin: <i>(Never mind that-)</i>
+Orin: Are you alright?
+Okuu: We are all creatures of this world...
+Okuu: Creatures like us need energies to survive.
+Yag: (Oh Amaterasu Oomikami, we are losing her...)
+Yag: (Okuu? Okuu! Snap out. NOW!)
+<<Expression Okuu "Unyuu">>
+Okuu: Unyuu?!
+Orin: Wah!
+Orin: Uhm, are you... ok now?
+Okuu: Orin... Let's have a danmaku battle
+Orin: Oh... uhm... sure?
+<<Expression Okuu "Happy">>
+Okuu: Yah! I will get ready then.
+Orin: (Now I'm worried...)
+===
+title: You_Pretty_?
+position: 586,1011
+---
+<<AddScore AddScore 5>>
+<<Expression Okuu "Smug">>
+Okuu: Orin, I think you are pretty?
+Okuu: And I can't take my eye off you.
+<<Expression Orin "Embarrassed">>
+Orin: Ehh? W-What with the sudden praise...
+Orin: Right here too...
+<<Expression Okuu "Happy">>
+Okuu: But it's the truth!
+Okuu: I think I rather watching you than watch the spectacle in the sky.
+Orin: Ugh... You are making me blush...
+Orin: <i>(This can't go on! I will die of embarrassment!)</i>
+Orin: <i>(I need to distract Okuu...)</i>
+<<Expression Orin "Happy">>
+Orin: Okuu, how about we have a danmaku duel?
+Orin: Just the two of us, of course.
+Okuu: Really? Do you really want to join?
+Orin: Sure! I can't get too rusty with my skills now, do I?
+===
+title: Im_Begging_Question
+position: 586,939
+---
+<<AddScore AddScore -2>>
+<<Expression Okuu "Sad">>
+Okuu: Orin, even if...
+Okuu: I'm begging here?
+Okuu: Just... Have a danmaku match with me!
+<<Expression Orin "Thinking">>
+Orin: Is it that important?
+Okuu: Yeeess!
+Orin: ...
+Okuu: ...Please?
+Orin: ...
+<<Expression Orin "Smug">>
+Orin: Ugh, fine. Let's have a duel then!
+Orin: And I won't go easy on you.
+<<Expression Okuu "Happy">>
+Okuu: Me neither!
+===
+title: Invalid_HumanVillage_2
+position: 586,1055
+---
+<<AddScore AddScore -4>>
+Okuu: ...
+Okuu: <i>(Better not ask Orin as she seems to not want to play with me...)</i>
+Okuu: <i>(I will respect that)</i>
+Yag: <i>(Wait, how do you even know that she doesn't want to play with you?)</i>
+Yag: <i>(Last time I check, it's your master who has the ability to read minds.)</i>
+Yag: <i>(Not you.)</i>
+Okuu: <i>(I... think?)</i>
+Yag: <i>(Oh you think, not because you know... right....)</i>
+Yag: <i>(Guess it's too late now, the sky is already filled with beautiful pattern)</i>
+Okuu: <i>(I- I will ask her next time...)</i>
 ===
