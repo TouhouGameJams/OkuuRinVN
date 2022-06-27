@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4947797087499720261}
   - component: {fileID: 6636607930081672159}
+  - component: {fileID: 7472954682868274213}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Untagged
@@ -27,7 +28,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.3499999, y: 5.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7997110414802988513}
   m_Father: {fileID: 1179906113371386365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82,6 +84,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7472954682868274213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134297237856945738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d120af98a8f85144b8420f22bf5897e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6454708884447351481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,7 +4929,6 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 4947797087499720261}
-  - {fileID: 7997110414802988513}
   m_Father: {fileID: 8580657701856380083}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5124,12 +5137,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -0.76929, y: 0.76929, z: 1}
   m_Children: []
-  m_Father: {fileID: 1179906113371386365}
-  m_RootOrder: 1
+  m_Father: {fileID: 4947797087499720261}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.7, y: 5.7}
+  m_AnchoredPosition: {x: -0.3000002, y: 0.13000011}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2317480787375535657

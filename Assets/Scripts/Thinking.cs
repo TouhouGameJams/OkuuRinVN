@@ -7,13 +7,14 @@ using Yarn.Unity;
 public class Thinking : MonoBehaviour
 {
 
-    private bool m_isThinking;
+    private bool m_isThinking = false;
     [SerializeField] private GameObject m_thinkingObject;
     // Start is called before the first frame update
     void Start()
     {
-        m_isThinking = false;
-        SetEnabled();
+        Bubble bubble = gameObject.transform.Find("Bubble").GetComponent<Bubble>();
+        bubble.IsActive = m_isThinking;
+        StartCoroutine(bubble.AppearGradual(0.0f));
     }
 
     // Update is called once per frame
@@ -26,19 +27,17 @@ public class Thinking : MonoBehaviour
     public void StartThinking()
     {
         m_isThinking = true;
-        SetEnabled();
+        Bubble bubble = gameObject.transform.Find("Bubble").GetComponent<Bubble>();
+        bubble.IsActive = m_isThinking;
+        StartCoroutine(bubble.AppearGradual(1.0f));
     }
 
     [YarnCommand("FinishThinking")]
     public void FinishThinking()
     {
         m_isThinking = false;
-        SetEnabled();
-    }
-
-    private void SetEnabled()
-    {
-        foreach (SpriteRenderer spriteRenderer in m_thinkingObject.GetComponentsInChildren<SpriteRenderer>())
-            spriteRenderer.enabled = m_isThinking;
+        Bubble bubble = gameObject.transform.Find("Bubble").GetComponent<Bubble>();
+        bubble.IsActive = m_isThinking;
+        StartCoroutine(bubble.AppearGradual(0.0f));
     }
 }
