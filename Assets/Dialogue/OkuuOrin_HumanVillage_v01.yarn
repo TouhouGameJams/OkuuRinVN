@@ -146,13 +146,13 @@ position: -96,423
 <<AddScore AddScore 0>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it amazing?)</i>
-Yag: <i>(Wait, are you asking me?)</i>
+Yatagarasu: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
-Yag: <i>(Now, I'm a cake??? ...Geez)</i>
-Yag: <i>(But yes, such a view is nothing new for the great me.)</i>
+Yatagarasu: <i>(Now, I'm a cake??? ...Geez)</i>
+Yatagarasu: <i>(But yes, such a view is nothing new for the great me.)</i>
 Yah: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
 Okuu: <i>(But then you won't be able to see anything.)</i>
-Yag: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
+Yatagarasu: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>
 <<Expression Orin "Neutral">>
 Orin: Okuu?
@@ -168,13 +168,13 @@ position: -95,354
 <<AddScore AddScore 2>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it not amazing?)</i>
-Yag: <i>(Wait, are you asking me?)</i>
+Yatagarasu: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
-Yag: <i>(Now, I'm a cake??? ...Geez)</i>
-Yag: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yag: <i>(If anything, I have even a better view of the universe as if I was the sun.)</i> 
+Yatagarasu: <i>(Now, I'm a cake??? ...Geez)</i>
+Yatagarasu: <i>(But yes, such a view is nothing new for the great me.)</i>
+Yatagarasu: <i>(If anything, I have even a better view of the universe as if I was the sun.)</i> 
 Okuu: <i>(But then you won't be able to see anything.)</i>
-Yag: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
+Yatagarasu: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>
 <<Expression Orin "Neutral">>
 Orin: Okuu?
@@ -239,8 +239,8 @@ Okuu: *mg mg* Sure!
 <i>A few minutes later...</i>
 Orin: The Prismrivers? And they are playing all their hits...
 Okuu: The humans are dancing over there too!
-Yag: <i>(What are you waiting for?)</i>
-Yag: <i>(The chance can't get any better than this)</i>
+Yatagarasu: <i>(What are you waiting for?)</i>
+Yatagarasu: <i>(The chance can't get any better than this)</i>
 <<jump SentenceBuilder_HumanVillage_1>>
 ===
 title: SentenceBuilder_HumanVillage_1
@@ -315,8 +315,8 @@ position: 144,578
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Orin is looking at the human so intensely)</i>
 Okuu: <i>(Does she wants to try to dance as well?)</i>
-Yag: <i>(Duh?)</i>
-Yag: <i>(Now be brave and ask her out, my bird friend!)</i>
+Yatagarasu: <i>(Duh?)</i>
+Yatagarasu: <i>(Now be brave and ask her out, my bird friend!)</i>
 <<Expression Okuu "Embarrassed">>
 Okuu: Uhm...
 <<jump Would_You_LikeTo_Dance>>
@@ -411,6 +411,7 @@ Orin: Ok, fine. You win.
 Orin: I won't go easy on you, even if you are my friend!
 <<Expression Okuu "Happy">>
 Okuu: Of course. Time to put on a spectacular show!
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Please_Im_Begging
 position: 587,709
@@ -429,6 +430,7 @@ Orin: Ugh, fine. Let's have a duel then!
 Orin: And I won't go easy on you.
 <<Expression Okuu "Happy">>
 Okuu: Me neither!
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Begging_You
 position: 587,779
@@ -448,6 +450,7 @@ Orin: Ugh, fine. Let's have a duel then!
 Orin: And I won't go easy on you.
 <<Expression Okuu "Happy">>
 Okuu: Me neither!
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Pretty_Question
 position: 587,823
@@ -460,6 +463,7 @@ Orin: You are pretty, Okuu!
 <<Expression Okuu "Swirly">>
 Orin: <i>(But what does it have to do with the danmaku battle?)</i>
 Okuu: It sure feels good to be praised!
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Im_You_Question
 position: 586,894
@@ -476,8 +480,8 @@ Orin: <i>(Never mind that-)</i>
 Orin: Are you alright?
 Okuu: We are all creatures of this world...
 Okuu: Creatures like us need energies to survive.
-Yag: (Oh Amaterasu Oomikami, we are losing her...)
-Yag: (Okuu? Okuu! Snap out. NOW!)
+Yatagarasu: (Oh Amaterasu Oomikami, we are losing her...)
+Yatagarasu: (Okuu? Okuu! Snap out. NOW!)
 <<Expression Okuu "Unyuu">>
 Okuu: Unyuu?!
 Orin: Wah!
@@ -487,6 +491,7 @@ Orin: Oh... uhm... sure?
 <<Expression Okuu "Happy">>
 Okuu: Yah! I will get ready then.
 Orin: (Now I'm worried...)
+<<jump GoToEnding_HumanVillage>>
 ===
 title: You_Pretty_?
 position: 586,1011
@@ -509,6 +514,7 @@ Orin: Okuu, how about we have a danmaku duel?
 Orin: Just the two of us, of course.
 Okuu: Really? Do you really want to join?
 Orin: Sure! I can't get too rusty with my skills now, do I?
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Begging_Question
 position: 586,939
@@ -529,6 +535,7 @@ Orin: Ugh, fine. Let's have a duel then!
 Orin: And I won't go easy on you.
 <<Expression Okuu "Happy">>
 Okuu: Me neither!
+<<jump GoToEnding_HumanVillage>>
 ===
 title: Invalid_HumanVillage_2
 position: 586,1055
@@ -537,11 +544,19 @@ position: 586,1055
 Okuu: ...
 Okuu: <i>(Better not ask Orin as she seems to not want to play with me...)</i>
 Okuu: <i>(I will respect that)</i>
-Yag: <i>(Wait, how do you even know that she doesn't want to play with you?)</i>
-Yag: <i>(Last time I check, it's your master who has the ability to read minds.)</i>
-Yag: <i>(Not you.)</i>
+Yatagarasu: <i>(Wait, how do you even know that she doesn't want to play with you?)</i>
+Yatagarasu: <i>(Last time I check, it's your master who has the ability to read minds.)</i>
+Yatagarasu: <i>(Not you.)</i>
 Okuu: <i>(I... think?)</i>
-Yag: <i>(Oh you think, not because you know... right....)</i>
-Yag: <i>(Guess it's too late now, the sky is already filled with beautiful pattern)</i>
+Yatagarasu: <i>(Oh you think, not because you know... right....)</i>
+Yatagarasu: <i>(Guess it's too late now, the sky is already filled with beautiful patterns)</i>
 Okuu: <i>(I- I will ask her next time...)</i>
+<<jump GoToEnding_HumanVillage>>
+===
+title: GoToEnding_HumanVillage
+position: 13,378
+---
+//If total Affection score is higher than 2
+//<<IsHigher 2>>
+    //<<jump GoodEnding_HumanVillage>>
 ===

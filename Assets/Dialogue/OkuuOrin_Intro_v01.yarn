@@ -4,27 +4,27 @@ position: -573,-560
 colorID: 4
 ---
 <<SetBlack FadeScreen>>
-[i]~On one odd conspicuous day at Satori Komeiji's office, Chireiden~[/i]
+<i>~On one odd conspicuous day at Satori Komeiji's office, Chireiden~</i>
 <<FadeOut FadeScreen>>
 <<PlayBGM SoundManager HeartfeltFancy>>
 Satori: Okuu! Orin! Could you come into my office please?
 <<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
 <<CreateCharacter CharacterManager Okuu 15 -1.25 Left>>
 Orin: Yahoo! How's it going Satori-sama?
-[i]~Rin Kaenbyou, Hell's Traffic Accident. Affectionately known as Orin~[/i]
-[i]~A twin tailed pet cat in faithful service to Satori, the mistress of the Palace of the Earth Sprits~[/i]
-[i]~A kind and cheery girl. She'll do just about anything with a smile on her face~[/i]
-[i]~Even if it does mean carting a corpse back home...~[/i]
+<i>~Rin Kaenbyou, Hell's Traffic Accident. Affectionately known as Orin~</i>
+<i>~A twin-tailed pet cat in faithful service to Satori, the mistress of the Palace of the Earth Sprits~</i>
+<i>~A kind and cheery girl. She'll do just about anything with a smile on her face~</i>
+<i>~Even if it does mean carting a corpse back home...~</i>
 Satori: Orin, did you see Okuu on the way here?
 Orin: Okuu? I think she should be on the way here. She shouldn't be long.
 <<WalkTowards Okuu 19 Left 0.5>>
 <<Expression Orin BugEyed>>
 <<Flip Okuu>>
 Okuu: Okuu reporting for duty!
-[i]~Utsuho Reiuji, The Scorhing, Troublesome Divine Flame~[/i]
-[i]~The young scatterbrained Raven from hell who consumed Yatagarasu, the god of the sun~[/i]
-[i]~While her head is empty, her body is absolutely brimming with divine fire~[/i]
-[i]~For better, for worse~[/i]
+<i>~Utsuho Reiuji, The Scorhing, Troublesome Divine Flame~</i>
+<i>~The young scatterbrained Raven from hell who consumed Yatagarasu, the god of the sun~</i>
+<i>~While her head is empty, her body is absolutely brimming with divine fire~</i>
+<i>~For better, for worse~</i>
 Satori: Okuu, Orin, do you know why I'm calling you two here?
 <<Expression Orin Neutral>>
 Orin: I'm not sure, Satori-sama...
@@ -46,7 +46,7 @@ Okuu: Ehhhhh!
 Orin: Woah! Satori-sama, you are the best!
 <<Expression Orin "Thinking">>
 Orin: B-but Satori-sama, will the flames of Hell of Blazing Fires be ok without Okuu?
-Satori: The kappa said they can manage a couple days without Okuu.
+Satori: The kappa said they can manage a couple of days without Okuu.
 <<Expression Orin Neutral>>
 Satori: Also you two have been working very hard for everyone these past few years.
 Satori: It's only fair that you two deserve a break.
@@ -69,7 +69,7 @@ Orin: Okuu! Wait!
 Satori: (I wonder how these two are going to spend their weekend)
 Satori: (Ah...Actually...I seemed to forget to tell Orin something important.)
 <<FadeIn FadeScreen>>
-[i]~At the hallway of Chireiden~[/i]
+<i>~At the hallway of Chireiden~</i>
 <<PlayBGM SoundManager Comical>>
 <<SetCharacter Orin 6 -1.25>>
 <<SetCharacter Okuu -4 -1.25>>
@@ -113,105 +113,104 @@ Okuu: Where?
 Okuu: Who is there?
 <<FadeHalf FadeScreenWhite>>
 <<StartThinking Thinking>>
-Yatagarasu: (Have you forgotten me so soon?)
-Yatagarasu: (It is I! The great Divine Three Legged Crow.)
-Yatagarasu: (The Avatar of the Sun Goddess and the vessel of the divine flame which pours out nuclear power!)
-Okuu: (Mr. Crow!)
-Yatagarasu: (Mr. Crow!)
-Yatagarasu: (No! Wait! I am the Yatagarasu!)
-Okuu: (Yag- Yat- Yacchie? No, Yatergerasu? Ughh, it's so hard to remember...)
-Okuu: (I'll just call you Mr. Crow. It's so much easier to remember.)
-Yatagarasu: (Very well child. Do whatever you want. However, it seems you have something very important you're thinking about.
-Okuu: Ah! The weekend! Days off! With Orin!)
-Yatagarasu: (Slow down. Free time off isn't any different from normal is it?)
-Okuu: (Ah! But breaks are usually short ones where we hang out with Satori-sama and the other pets.)
-Okuu: (But this time. This time)
-Yatagarasu: (Ahh...I see. This is probably the first time where it's just the cat and you.)
+Yatagarasu: <i>(Have you forgotten me so soon?)</i>
+Yatagarasu: <i>(It is I! The great Divine Three-Legged Crow.)</i>
+Yatagarasu: <i>(The Avatar of the Sun Goddess and the vessel of the divine flame which pours out nuclear power!)</i>
+Okuu: <i>(Mr. Crow!)</i>
+Yatagarasu: <i>(Mr. Crow!)</i>
+Yatagarasu: <i>(No! Wait! I am the Yatagarasu!)</i>
+Okuu: <i>(Yag- Yat- Yachie? No, Yatergerasu? Ughh, it's so hard to remember...)</i>
+Okuu: <i>(I'll just call you Mr. Crow. It's so much easier to remember.)</i>
+Yatagarasu: <i>(Very well child. Do whatever you want. However, it seems you have something very important you're thinking about.)</i>
+Okuu: <i>(Ah! The weekend! Days off! With Orin!)</i>
+Yatagarasu: <i>(Slow down. Free time off isn't any different from normal is it?)</i>
+Okuu: <i>(Ah! But breaks are usually short ones where we hang out with Satori-sama and the other pets.)</i>
+Okuu: <i>(But this time. This time)</i>
+Yatagarasu: <i>(Ahh...I see. This is probably the first time where it's just the cat and you.)</i>
 <<Expression Okuu Mad>>
-Okuu: (Her name is Orin.)
-Yatagarasu: (Ah correct. Ms. Orin. My mistake. Do you have anything planned as of yet for the weekend?)
-Yatagarasu: (Maybe some sort of date perhaps?)
+Okuu: <i>(Her name is Orin.)</i>
+Yatagarasu: <i>(Ah correct. Ms. Orin. My mistake. Do you have anything planned as of yet for the weekend?)</i>
+Yatagarasu: <i>(Maybe some sort of date perhaps?)</i>
 <<Expression Okuu Embarassed>>
-Okuu: (D-Date?!)
-Yatagarasu: (My how, risque. I can feel those fiery emotions within ready to burst.)
-Yatagarasu: (You're even thinking as far as to confess your love aren't you?)
+Okuu: <i>(D-Date?!)</i>
+Yatagarasu: <i>(My how, risque. I can feel those fiery emotions within ready to burst.)</i>
+Yatagarasu: <i>(You're even thinking as far as to confess your love aren't you?)</i>
 <<ShakeSide Okuu>>
-Okuu: (L-love...confess...)
+Okuu: <i>(L-love...confess...)</i>
 <<Expression Okuu Swirly>>
-Okuu: Unyuu...
-Yatagarasu: (Oh dear I may have broken a fuse there.)
+Okuu: <i>(Unyuu...)</i>
+Yatagarasu: <i>(Oh dear I may have broken a fuse there.)</i>
 <<Expression Okuu Neutral>>
-Okuu: (What should I do Mr. Crow? I don't know what to do!)
-Yatagarasu: (I'm going to have to ask you to slow down before a valve in your head begins to burst.)
-Yatagarasu: You remember what Ms. Satori said when your thoughts begin to race correct?
-Okuu: She said to think and focus on one thing at a time.
-Yatagarasu: That's right and when it comes to right now? What do you want to do most?!
-Yatagarasu: Say it! Let me feel the flames of conviction from within!
-Okuu: What do I want to do most...
+Okuu: <i>(What should I do Mr. Crow? I don't know what to do!)</i>
+Yatagarasu: <i>(I'm going to have to ask you to slow down before a valve in your head begins to burst.)</i>
+Yatagarasu: <i>(You remember what Ms. Satori said when your thoughts begin to race correct?)</i>
+Okuu: <i>(She said to think and focus on one thing at a time.)</i>
+Yatagarasu: <i>(That's right and when it comes to right now? What do you want to do most?!)</i>
+Yatagarasu: <i>(Say it! Let me feel the flames of conviction from within!)</i>
+Okuu: <i>(What do I want to do most...)</i>
 <<jump SentenceBuilder_Prelude>>
 ===
-
 title: SentenceBuilder_Prelude
 tags: 
 ---
 <<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
 Okuu: (Hmm...)
 <<jump {JumpToNode()}>>
-//Words: [I] [Can, Will] [My best, Do it] 
+//Words: <i> [Can, Will] [My best, Do it] 
 ===
 title: I_Can_Try
 position: -335,-187
 ---
 <<Expression Okuu "Swirly">>
-Okuu: (I can try...)
-Yag: (A little half-baked, make sure not to chicken out when it's confession time.)
+Okuu: <i>(I can try...)</i>
+Yatagarasu: <i>(A little half-baked, make sure not to chicken out when it's confession time.)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: (Ah, speaking of which...)
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: (I don't have to hide! I'm in your head!)
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Will_DoIt
 position: -334,-282
 ---
 <<Expression Okuu "Smug">>
-Okuu: (I promised, I will do it!)
-Yag: (I like that look in your eyes! I can feel the fire from within.)
+Okuu: <i>(I promised, I will do it!)</i>
+Yatagarasu: <i>(I like that look in your eyes! I can feel the fire from within.)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: (Ah, speaking of which...)
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: (I don't have to hide! I'm in your head!)
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Can_DoIt
 position: -334,-236
 ---
 <<Expression Okuu "Smug">>
-Okuu: (I know I can do it!)
-Yag: (That's the spirit!)
+Okuu: <i>(I know I can do it!)</i>
+Yatagarasu: <i>(That's the spirit!)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: (Ah, speaking of which...)
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Orin! Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: (I don't have to hide! I'm in your head!)
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: Invalid_Intro_1
 position: -334,-140
 ---
 <<Expression Okuu "Unyuu">>
-Yag: (Oh dear... I hope it will be all ok...)
+Yatagarasu: <i>(Oh dear... I hope it will be all ok...)</i>
 Orin: Okuu!
 <<Expression Okuu Embarassed>>
-Yag: (Ah, speaking of which...)
+Yatagarasu: <i>(Ah, speaking of which...)</i>
 Okuu: Already? Quick! Hide!
 <<FinishThinking Thinking>>
-Yag: (I don't have to hide! I'm in your head!)
+Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 
@@ -231,7 +230,7 @@ Okuu: O-Orin! What did Satori-sama want?
 Orin: Oh she just warned me to not bring any corpses back from wherever we went.
 Orin: Anyways. We were saying something before. What was it again?
 Orin: Oh yea! We finally get days off! What do you think Okuu?
-Yatagarasu: (Here's your chance Okuu. Turn the conversation the way you want!)
+Yatagarasu: <i>(Here's your chance Okuu. Turn the conversation the way you want!)</i>
 <<jump SentenceBuilder_Intro_0>>
 ===
 
@@ -358,18 +357,18 @@ Okuu: Welcome back, Orin!
 <<Expression Okuu "Happy">>
 Okuu: Hey Orin! You've been to the surface more than me.
 Okuu: Do you have any interesting place you know of?
-Okuu: (So maybe we can go there.)
+Okuu: <i>(So maybe we can go there.)</i>
 Orin: Ah, I heard the Human Village is preparing some kind of festival!
 Orin: Yuugi sent an invitation to Satori-sama.
 Orin: But she told me she can't go just now...
 Orin: Regardless, I'm happy where ever we will spend our time, Okuu!
-Okuu: (Do I have something planned for this weekend, I wonder?)
-Yag: (Yes! Yes, you do!)
-Okuu: (Unyu???)
-Yag: (Please don't tell me you gather all your courage to ask Satori to let you two have weekends off for nothing!)
-Okuu: (Oh, right...)
-Yag: (Go ahead and tell her to go out on a date with you!)
-Yag: (Don't let all of our hard work go to waste!)
+Okuu: <i>(Do I have something planned for this weekend, I wonder?)</i>
+Yatagarasu: <i>(Yes! Yes, you do!)</i>
+Okuu: <i>(Unyu???)</i>
+Yatagarasu: <i>(Please don't tell me you gather all your courage to ask Satori to let you two have weekends off for nothing!)</i>
+Okuu: <i>(Oh, right...)</i>
+Yatagarasu: <i>(Go ahead and tell her to go out on a date with you!)</i>
+Yatagarasu: <i>(Don't let all of our hard work go to waste!)</i>
 Okuu: O-Orin...
 Orin: Hmm?
 ===
@@ -396,7 +395,7 @@ Orin: Just us two?
 Okuu: Yep, just the two of us!
 Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 <<Expression Orin Neutral>>
-Okuu: (D-date...)
+Okuu: <i>(D-date...)</i>
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
@@ -410,7 +409,7 @@ Okuu: I would love to experience this festival with you!
 <<Expression Orin Flushed>>
 Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
-Okuu: (Yah!)
+Okuu: <i>(Yah!)</i>
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
@@ -425,7 +424,7 @@ Orin: Oooh, we can also check out how everyone is doing.
 Orin: I would be rude to turn down Yuugi's invitation.
 Okuu: I'm sure she won't mind us going as Satori-sama's representative.
 Orin: Exactly!
-Orin: (It's not like Okuu can sneak into the human village easily like me...) 
+Orin: <i>(It's not like Okuu can sneak into the human village easily like me...)</i>
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
@@ -448,8 +447,8 @@ title: Invalid_Intro_2
 position: -112,127
 ---
 Okuu: Unyuu... Unyuuuuuu.....
-Yag: (Oh dear... She has too many ideas.)
-Yag: (Yet, she can't say it out loud...)
+Yatagarasu: <i>(Oh dear... She has too many ideas.)</i>
+Yatagarasu: <i>(Yet, she can't say it out loud...)</i>
 Orin: Okuu? Are you alright?
 Okuu: Unyuu~
 Orin: Hmm... How about we just stay at Chireiden, with Satori-sama?

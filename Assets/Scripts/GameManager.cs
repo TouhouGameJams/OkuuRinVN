@@ -160,7 +160,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < board.slots.Count; i++)
         {
-            if (board.slots[i].occupied == false)
+            if (board.slots<i>.occupied == false)
             {
                 return false;
             }
