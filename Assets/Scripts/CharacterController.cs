@@ -46,15 +46,35 @@ public class CharacterController : MonoBehaviour
     [YarnCommand("Flip")]
     private void Flip()
     {
-        if (gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX == false)
+        /*        if (gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX == false)
+                {
+                    gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = true;
+                }
+                else
+                {
+                    gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = false;
+                }*/
+
+        if (Mathf.Sign(gameObject.transform.localScale.x) == -1)
         {
-            gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = true;
+            gameObject.transform.localScale = new Vector3(Mathf.Abs(gameObject.transform.localScale.x), gameObject.transform.localScale.y, gameObject.transform.localScale.z);
         }
         else
         {
-            gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = false;
-
+            gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
         }
+    }
+
+    [YarnCommand("Right")]
+    private void SetRight()
+    {
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+    }
+
+    [YarnCommand("Left")]
+    private void SetLeft()
+    {
+        gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
     }
 
     [YarnCommand("Hop")]
@@ -63,6 +83,8 @@ public class CharacterController : MonoBehaviour
         float val = 0;
         while (val < repeat)
         {
+            SoundManager soundManager = SoundManager.Instance;
+            soundManager.PlaySFXString("Hop");
             StartCoroutine(Hop(new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), 0.15f));
             yield return new WaitForSeconds(0.15f);
             StartCoroutine(Hop(new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z), 0.15f));
@@ -103,18 +125,16 @@ public class CharacterController : MonoBehaviour
 
         while (time < duration)
         {
-            if(direction == "Left")
-            {
-                gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = false;
-            }
-            else if(direction == "Right")
-            {
-                gameObject.transform.GetComponentInChildren<SpriteRenderer>().flipX = true;
-            }
             transform.position = Vector3.Lerp(startPosition, afterPosition[direction], time / duration);
             time += Time.deltaTime;
             yield return null;
         }
+    }
+
+    [YarnCommand("SetCharacter")]
+    public void SetCharacter(float xPos, float yPos)
+    {
+        gameObject.transform.position = new Vector3(xPos, yPos, gameObject.transform.position.z);
     }
 
     public IEnumerator FadeIn()
@@ -161,6 +181,9 @@ public class CharacterController : MonoBehaviour
     [YarnCommand("Spin")]
     public IEnumerator RotateRoutine(float rotation, float duration)
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFXString("Spin");
+
         float startRotation = transform.eulerAngles.y;
         float endRotation = startRotation + rotation;
 
@@ -271,6 +294,9 @@ public class CharacterController : MonoBehaviour
     [YarnCommand("ShakeSide")]
     public void shakeGameObjectHorizontal()
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFXString("SadShake");
+
         if (shaking)
         {
             return;
@@ -282,6 +308,9 @@ public class CharacterController : MonoBehaviour
     [YarnCommand("ShakeOver")]
     public void shakeGameObjectAllOver()
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFXString("JoyShake");
+
         if (shaking)
         {
             return;
@@ -293,8 +322,13 @@ public class CharacterController : MonoBehaviour
     [YarnCommand("SpeedLines")]
     public void PlaySpeedLines(float duration)
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlaySFXString("Speed");
+
         var main = speedLines.main;
         main.duration = duration;
         speedLines.Play();
     }
+
+
 }

@@ -20,10 +20,10 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("CreateCharacter")]
     public void CreateCharacter(string character, float xPos, float yPos, string standDireciton)
     {
-        Dictionary<string,float> directions = new Dictionary<string,float>
+        Dictionary<string, float> directions = new Dictionary<string, float>
         {
-            {"Left",-1.0f },
-            {"Right",1.0f},
+            {"Left",1.0f },
+            {"Right",-1.0f},
         };
         var newCharacter = Instantiate(Resources.Load("Prefabs/" + character) as GameObject);
         newCharacter.name = character;
@@ -35,4 +35,21 @@ public class CharacterManager : MonoBehaviour
             newCharacter.transform.localScale.z
             );
     }
+
+    /*    [YarnCommand("CreateCharacter")]
+        public void CreateCharacter(string character, float xPos, float yPos, bool facingRight)
+        {
+            var newCharacter = Instantiate(Resources.Load("Prefabs/" + character) as GameObject);
+            newCharacter.name = character;
+            StartCoroutine(newCharacter.GetComponent<CharacterController>().FadeIn());
+            newCharacter.transform.position = new Vector3(xPos, yPos, 0);
+            if (facingRight)
+            {
+                newCharacter.transform.GetComponentInChildren<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                newCharacter.transform.GetComponentInChildren<SpriteRenderer>().flipX = false;
+            }
+        }*/
 }

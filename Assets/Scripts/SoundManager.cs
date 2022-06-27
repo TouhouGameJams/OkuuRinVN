@@ -124,12 +124,16 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBGM(in AudioInfo audio)
     {
-        m_BGM_Audio.PlayOneShot(audio.audioClip, m_BGM_Volume);
+        m_BGM_Audio.clip = audio.audioClip;
+        m_BGM_Audio.Play();
+        //m_BGM_Audio.PlayOneShot(audio.audioClip, m_BGM_Volume);
     }
 
     public void PlaySBBGM(in AudioInfo audio)
     {
-        m_SBBGM_Audio.PlayOneShot(audio.audioClip, m_SBBGM_Volume);
+        m_SBBGM_Audio.clip = audio.audioClip;
+        m_SBBGM_Audio.Play();
+        //m_SBBGM_Audio.PlayOneShot(audio.audioClip, m_SBBGM_Volume);
     }
 
     public void PauseBGM()
@@ -140,6 +144,12 @@ public class SoundManager : MonoBehaviour
     public void ResumeBGM()
     {
         m_BGM_Audio.UnPause();
+    }
+
+    [YarnCommand("PlaySFX")]
+    public void YarnPlaySFX(string audioName)
+    {
+        PlaySFX(GetSFX(audioName));
     }
 
     public AudioInfo GetSFX(in string audioName)

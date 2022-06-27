@@ -10,6 +10,7 @@ public class CurrentSpeaker : DialogueViewBase
     public Color OkuuCol;
     public Color OrinCol;
     public Color SatoriCol;
+    public Color YatCol;
     public Color standardCol;
     public TMP_Text text;
     private string sound;
@@ -34,6 +35,7 @@ public class CurrentSpeaker : DialogueViewBase
             {"Okuu",OkuuCol },
             {"Orin",OrinCol },
             {"Satori",SatoriCol },
+            {"Yatagarasu",YatCol },
         };
 
         if (string.IsNullOrEmpty(characterName))
@@ -50,14 +52,15 @@ public class CurrentSpeaker : DialogueViewBase
     {
         Dictionary<string, string> characterNameSFX = new Dictionary<string, string>
         {
-            {"Okuu","TextScrollA" },
-            {"Orin", "TextScrollB" },
-            {"Satori", "TextScrollC" },
+            {"Okuu","OkuuNote" },
+            {"Orin", "RinNote" },
+            {"Satori", "SatNote" },
+            {"Yatagarasu", "YatNote" },
         };
 
         if (string.IsNullOrEmpty(characterName))
         {
-            SetSound("TextScrollC");
+            SetSound("GenNote");
         }
         else if (characterNameSFX.ContainsKey(characterName))
         {
