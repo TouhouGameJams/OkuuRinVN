@@ -22,6 +22,22 @@ public class ReturnToTitleScreen : MonoBehaviour
 
     public void StartToClick()
     {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
+
+        SoundManager soundManager = SoundManager.Instance;
+        if (soundManager.IsPlayingBGM())
+        {
+            soundManager.StopBGM();
+        }
+
+        if (soundManager.IsPlayingSBBGM())
+        {
+            soundManager.StopSBBGM();
+        }
+
         LoadingData.sceneToLoad = targetScene;
         SceneManager.LoadScene("LoadingScene");
     }

@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         anim.Play("OpenWindow");
     }        //Call on board's create slot and block functions using the sO as references
 
-    [YarnCommand("SetUpScene")]
+/*    [YarnCommand("SetUpScene")]
     public void SetUpScene(string backGroundName, string bgmName, string charactersInfo)
     {
         var texture = Resources.Load<Texture2D>("Sprites/" + backGroundName);
@@ -90,9 +90,8 @@ public class GameManager : MonoBehaviour
                 characterInfo[3].Substring(0, characterInfo[3].IndexOf("\r")) : characterInfo[3];
             characterManager.CreateCharacter(name, posX, posY, standDirection);
         }
-
     }
-
+*/
     [YarnCommand("ToNext")]
     public void ToNext(string nextScriptName)
     {

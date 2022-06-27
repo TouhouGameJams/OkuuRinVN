@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
+  m_Name: MainStory_Chireiden_0_v01
+  m_EditorClassIdentifier: 
+  numberOfSlots: 3
+  listPhrases:
+  - I
+  - You
+  - Like
+  - Be
+  - Anything
+  - Nothing
+  - Cooking?
+  SentenceAnswerList:
+  - outputComparatorList:
+    - I
+    - Like
+    - You
+    nodeName: I_Like_You
+    points: 0
+  - outputComparatorList:
+    - I
+    - Like
+    - Anything
+    nodeName: I_Like_Anything
+    points: 0
+  - outputComparatorList:
+    - I
+    - Like
+    - Cooking?
+    nodeName: I_Like_Cooking?
+    points: 0
+  - outputComparatorList:
+    - You
+    - Be
+    - Nothing
+    nodeName: You_Be_Nothing
+    points: 0
+  - outputComparatorList:
+    - You
+    - Like
+    - Cooking?
+    nodeName: You_Like_Cooking?
+    points: 0
+  - outputComparatorList:
+    - I
+    - Be
+    - You
+    nodeName: I_Be_You
+    points: 0
+  - outputComparatorList:
+    - You
+    - Be
+    - I
+    nodeName: You_Be_I
+    points: 0
+  invalidNodeName: Invalid_Chireiden_0
