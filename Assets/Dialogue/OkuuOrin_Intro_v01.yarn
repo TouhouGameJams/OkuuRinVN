@@ -105,9 +105,16 @@ Okuu: (It sure is quiet without her...)
 Yatagarasu: (You enjoy her company alot, don't you?)
 Okuu: Who said that?!
 <<Spin Okuu 360 1>>
-//Yatagarasu appears
-//fade in white
-Yatagarasu: (Well who else beside me, the great Divine Three Legged Crow.)
+Okuu: Who is there?
+Here!
+<<Flip Okuu>>
+Okuu: Where?
+<<Flip Okuu>>
+Okuu: Who is there?
+<<FadeHalf FadeScreenWhite>>
+<<StartThinking Thinking>>
+Yatagarasu: (Have you forgotten me so soon?)
+Yatagarasu: (It is I! The great Divine Three Legged Crow.)
 Yatagarasu: (The Avatar of the Sun Goddess and the vessel of the divine flame which pours out nuclear power!)
 Okuu: (Mr. Crow!)
 Yatagarasu: (Mr. Crow!)
@@ -124,12 +131,16 @@ Yatagarasu: (Ahh...I see. This is probably the first time where it's just the ca
 Okuu: (Her name is Orin.)
 Yatagarasu: (Ah correct. Ms. Orin. My mistake. Do you have anything planned as of yet for the weekend?)
 Yatagarasu: (Maybe some sort of date perhaps?)
+<<Expression Okuu Embarassed>>
 Okuu: (D-Date?!)
 Yatagarasu: (My how, risque. I can feel those fiery emotions within ready to burst.)
 Yatagarasu: (You're even thinking as far as to confess your love aren't you?)
+<<ShakeSide Okuu>>
 Okuu: (L-love...confess...)
+<<Expression Okuu Swirly>>
 Okuu: Unyuu...
 Yatagarasu: (Oh dear I may have broken a fuse there.)
+<<Expression Okuu Neutral>>
 Okuu: (What should I do Mr. Crow? I don't know what to do!)
 Yatagarasu: (I'm going to have to ask you to slow down before a valve in your head begins to burst.)
 Yatagarasu: You remember what Ms. Satori said when your thoughts begin to race correct?
@@ -155,11 +166,12 @@ position: -335,-187
 Okuu: (I can try...)
 Yag: (A little half-baked, make sure not to chicken out when it's confession time.)
 Orin: Okuu!
+<<Expression Okuu Embarassed>>
 Yag: (Ah, speaking of which...)
 Okuu: Orin! Quick! Hide!
-//disable crow
+<<FinishThinking Thinking>>
 Yag: (I don't have to hide! I'm in your head!)
-<<jump MainStory_Intro_2>>
+<<jump MainStory_Intro_1>>
 ===
 title: I_Will_DoIt
 position: -334,-282
@@ -168,11 +180,12 @@ position: -334,-282
 Okuu: (I promised, I will do it!)
 Yag: (I like that look in your eyes! I can feel the fire from within.)
 Orin: Okuu!
+<<Expression Okuu Embarassed>>
 Yag: (Ah, speaking of which...)
 Okuu: Orin! Quick! Hide!
-//disable crow
+<<FinishThinking Thinking>>
 Yag: (I don't have to hide! I'm in your head!)
-<<jump MainStory_Intro_2>>
+<<jump MainStory_Intro_1>>
 ===
 title: I_Can_DoIt
 position: -334,-236
@@ -181,11 +194,12 @@ position: -334,-236
 Okuu: (I know I can do it!)
 Yag: (That's the spirit!)
 Orin: Okuu!
+<<Expression Okuu Embarassed>>
 Yag: (Ah, speaking of which...)
 Okuu: Orin! Quick! Hide!
-//disable crow
+<<FinishThinking Thinking>>
 Yag: (I don't have to hide! I'm in your head!)
-<<jump MainStory_Intro_2>>
+<<jump MainStory_Intro_1>>
 ===
 title: Invalid_Intro_1
 position: -334,-140
@@ -193,23 +207,28 @@ position: -334,-140
 <<Expression Okuu "Unyuu">>
 Yag: (Oh dear... I hope it will be all ok...)
 Orin: Okuu!
+<<Expression Okuu Embarassed>>
 Yag: (Ah, speaking of which...)
 Okuu: Already? Quick! Hide!
-//disable crow
+<<FinishThinking Thinking>>
 Yag: (I don't have to hide! I'm in your head!)
-<<jump MainStory_Intro_2>>
+<<jump MainStory_Intro_1>>
 ===
 
 
 title: MainStory_Intro_1
 tags: 
 ---
-//Okuu moves back
-//Orin moves back into frame
+<<Hop Okuu 1>>
+<<Flip Okuu>>
+<<WalkTowards Okuu 4 Left 1>>
+<<Flip Okuu>>
+<<Expression Orin Neutral>>
+<<Flip Orin>>
+<<WalkTowards Orin 10 Left 1>>
 Okuu: O-Orin! What did Satori-sama want?
-//Smile
+<<Expression Orin Flushed>>
 Orin: Oh she just warned me to not bring any corpses back from wherever we went.
-//Thinking
 Orin: Anyways. We were saying something before. What was it again?
 Orin: Oh yea! We finally get days off! What do you think Okuu?
 Yatagarasu: (Here's your chance Okuu. Turn the conversation the way you want!)
@@ -239,7 +258,7 @@ Orin: I like it too! It has been so long.
 Orin: Of course, I like work too: Collecting corpses, helping you and Satori-sama...
 Orin: But having a relaxing day once in a while is great.
 Okuu: Relaxing...
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
 ===
 title: I_Like_Work
 position: -578,-412
@@ -253,7 +272,7 @@ Orin: Cheer up, Okuu. We will see Satori-sama again soon.
 Okuu: Yeah, you are right!
 <<PlaySFX SoundManager Smile>>
 <<Expression Okuu Happy>>
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
 ===
 title: It_Be_Great
 position: -579,-359
@@ -273,7 +292,7 @@ Okuu: I-I really thought it was good for Satori-sama and the others.
 <<Expression Orin Flushed>>
 Orin: I'm joking. Well, the past is the past. Let us look forward to our days off.
 Orin: And a proper one this time.
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
 ===
 title: It_Be_Bad
 position: -579,-294
@@ -294,7 +313,7 @@ Okuu: I forgot what I want to say...
 Okuu: Oh well, it's not important! Anyway, I'm looking forward to our days off.
 <<Expression Okuu Thinking>>
 Orin: (So... Are days off still bad then?)
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
 ===
 title: What_Be_It
 position: -578,-241
@@ -312,7 +331,7 @@ Orin: Meaning we don't have to do anything!
 <<Expression Okuu Unyuu>>
 <<ShakeOver Okuu>>
 Okuu: Woah~ That sounds cool.
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
 ===
 title: Invalid_Intro_0
 position: -575,-184
@@ -326,7 +345,8 @@ Orin: Okuu? Are you alright?
 Orin: I didn't catch that...
 <<Expression Okuu Sad>>
 Okuu: Unyuu...
-<<jump MainStory_Intro_1>>
+<<jump MainStory_Intro_2>>
+===
 
 title: MainStory_Intro_2
 position: -111,-229
