@@ -5,13 +5,13 @@ position: -291,-292
 <<SetBlack FadeScreen>>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
-[i]The following day. Okuu and Orin decided on a lazy staycation at Chireiden[/i]
+<i>The following day. Okuu and Orin decided on a lazy staycation at Chireiden</i>
 <<PlayBGM SoundManager Comical>>
 Orin: Okuu...
 Orin: Okuu...
-Okuu: (Zzz...)
+Okuu: <i>(Zzz...)</i>
 Orin: Reiuji Utsuho!
-Okuu: (Unyuu~)
+Okuu: <i>(Unyuu~)</i>
 Orin: Wake up!
 Orin: Else you will miss breakfast...
 -> Okuu: Just 5 more minutes... Zzz...
@@ -39,14 +39,14 @@ Orin: Else you will miss breakfast...
     Okuu: Zzz...
     //Orin moves closer and give peek on Okuu's cheek
     Orin: *chu*
-    Orin: (Oh well... I guess I will give her more time to sleep)
+    Orin: <i>(Oh well... I guess I will give her more time to sleep)</i>
     //Orin out of the room
     <<Expression Okuu "BugEyed">>
     Okuu: !!!
     Okuu: (S-She...)
     Okuu: Ahh, I should hurry!
     <<FadeOut FadeScreen>>
-[i] Few minutes later [/i]
+<i>Few minutes later</i>
 <<Expression Okuu "Happy">>
 <<Expression Orin "Flushed">>
 Okuu: Orin's breakfast... It smells so good...
@@ -69,12 +69,12 @@ Orin: ...And for us.
 <<Expression Okuu "Happy">>
 Okuu: Yup! Although that shrine maiden and magician are scary...
 Orin: Yeah... So, do you have any plan for today, Okuu?
-Yatagarasu: (Oh right, you don't exactly have anything planned...)
-Yatagarasu: (I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)
-Yatagarasu: (But this may play into your advantage.)
-Yatagarasu: (No distractions for either of you, I have to say.)
-Yatagarasu: (Go for it Ms. Utsuho. Be as bold as you like!)
-Okuu: (Unyuu!)
+Yatagarasu: <i>(Oh right, you don't exactly have anything planned...)</i>
+Yatagarasu: <i>(I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)</i>
+Yatagarasu: <i>(But this may play to your advantage.)</i>
+Yatagarasu: <i>(No distractions for either of you, I have to say.)</i>
+Yatagarasu: <i>(Go for it Ms. Utsuho. Be as bold as you like!)</i>
+Okuu: <i>(Unyuu!)<i>
 <<JumpToNode SentenceBuilder_Chireiden_0>>
 ===
 
@@ -90,7 +90,7 @@ position: -290,-216
 ---
 <<AddScore AddScore 5>>
 Okuu: I like you.
-Yatagarasu: (How bold...)
+Yatagarasu: <i>(How bold...)</i>
 <<Expression Orin "Embarrassed">>
 Orin: *blushes*
 Okuu: I mean it: I like how you take care of everyone.
@@ -120,12 +120,12 @@ Both: Hmm...
 Okuu: We can... No, it's too late...
 Orin: How about... Nah, no one will look after this place...
 Both: Hmm...
-Yag: (Oh dear... Hey, bird friend!)
+Yag: <i>(Oh dear... Hey, bird friend!)</i>
 <<Expression Okuu "Unyuu">>
-Okuu: (Unyuu?)
-Yag: (Listen, how about you two do some cooking?)
-Okuu: (Cooking? But I'm horrible at it...)
-Yag: (I mean, yeah, but you can use it as an excuse so Orin can teach how to make something.)
+Okuu: <i>(Unyuu?)</i>
+Yag: <i>(Listen, how about you two do some cooking?)</i>
+Okuu: <i>(Cooking? But I'm horrible at it...)</i>
+Yag: <i>(I mean, yeah, but you can use it as an excuse so Orin can teach how to make something.)</i>
 Okuu: Orin.
 Orin: ?
 Okuu: Would it be ok if you teach me how to cook?
@@ -161,10 +161,10 @@ position: -289,-68
 <<AddScore AddScore -5>>
 Okuu: You are nothing.
 <<Expression Orin "Sad">>
-Yag: (Hey, hey, hey! What are you saying?)
-Yag: (That's too mean, my bird friend.)
+Yag: <i>(Hey, hey, hey! What are you saying?)</i>
+Yag: <i>(That's too mean, my bird friend.)</i>
 Orin: I'm sorry...
-Okuu: (Oh... I-...)
+Okuu: <i>(Oh... I-...)</i>
 <<Expression Okuu "Sad">>
 Okuu: I-I didn't mean to. Uhm, anyway...
 *silence*
@@ -205,8 +205,8 @@ Orin: ...Okuu?
 Orin: Are you alright?
 Okuu: We are all creatures of this world...
 Okuu: Creatures like us need energies to survive.
-Yag: (Oh Amaterasu Oomikami, we are losing her...)
-Yag: (Okuu? Okuu! Snap out. NOW!)
+Yag: <i>(Oh Amaterasu Oomikami, we are losing her...)</i>
+Yag: <i>(Okuu? Okuu! Snap out. NOW!)</i>
 <<Expression Okuu "Unyuu">>
 Okuu: Unyuu?!
 Orin: Wah!
@@ -215,7 +215,7 @@ Okuu: Orin... Let's do some cooking...
 Orin: Oh... uhm... sure?
 <<Expression Okuu "Happy">>
 Okuu: Yah! I will get ready then.
-Orin: (Now I'm worried...)
+Orin: <i>(Now I'm worried...)</i>
 <<jump MainStory_Chireiden_1>>
 ===
 title: You_Be_I
@@ -228,9 +228,9 @@ position: -291,175
 ---
 <<AddScore AddScore -3>>
 <<Expression Okuu "Sad">>
-Okuu: (Ughh, nothing came out...)
+Okuu: <i>(Ughh, nothing came out...)</i>
 Orin: Are you alright, Okuu?
-Okuu: (Come on, say something!)
+Okuu: <i>(Come on, say something!)</i>
 <<Expression Okuu "Unyuu">>
 Okuu: Unyuu...
 Orin: I guess you don't have anything planned then?
@@ -255,13 +255,13 @@ Okuu: Yup...
 Orin: Do you have any food you want to cook?
 Okuu: Not really...
 //Inner monolog
-Okuu: (Yamcha, what kind of food do you like?)
-Yag: (Who? Anyhow, I don't really have any preference for food.)
-Yag: (It's not like I can eat anyway...)
-Okuu: (What about you? Do you have any food you would like to make?)
-Okuu: (I love anything Orin makes!)
-Okuu: (So... I guess I don't really have any favorite food...)
-Yag: (What about your feline friend? Does she have any favorite food?)
+Okuu: <i>(Yamcha, what kind of food do you like?)</i>
+Yag: <i>(Who? Anyhow, I don't really have any preference for food.)</i>
+Yag: <i>(It's not like I can eat anyway...)</i>
+Okuu: <i>(What about you? Do you have any food you would like to make?)</i>
+Okuu: <i>(I love anything Orin makes!)</i>
+Okuu: <i>(So... I guess I don't really have any favorite food...)</i>
+Yag: <i>(What about your feline friend? Does she have any favorite food?)</i>
 //Dialog with Orin
 <<Expression Orin "Neutral">>
 Okuu: Orin, do you have any favorite food?
@@ -281,14 +281,14 @@ Orin: Unless you want the wrath of that shrine maiden again, that is.
 <<Expression Okuu "Swirly">>
 Okuu: Unyuu... So... I guess we can't cook your favorite food, Orin...
 //Monolog
-Yag: (Hey, what about that master of yours? That mind-reading youkai.)
+Yag: <i>(Hey, what about that master of yours? That mind-reading youkai.)</i>
 <<Expression Okuu "Mad">>
-Okuu: (Please don't disrespect Satori-sama like that!)
+Okuu: <i>(Please don't disrespect Satori-sama like that!)</i>
 <<Expression Okuu "Thinking">>
-Okuu: (I think she likes drinking tea while petting us...)
-Okuu: (She says it calms her mind.)
+Okuu: <i>(I think she likes drinking tea while petting us...)</i>
+Okuu: <i>(She says it calms her mind.)</i>
 <<Expression Okuu "Happy">>
-Okuu: (Oh... OH!!)
+Okuu: <i>(Oh... OH!!)</i>
 //Dialog
 Okuu: Orin, I have a great idea!
 Orin: ?
@@ -352,12 +352,12 @@ Okuu: What?!
 <<Expression Okuu "Sad">>
 Okuu: I can't believe Satori-sama isn't a fan of pudding...
 <<Expression Orin "Catface">>
-Orin: (I'm so sorry, Okuu.)
-Orin: (I know I ask you what food you want to make-)
-Orin: (B-But my tea and cookies!)
+Orin: <i>(I'm so sorry, Okuu.)</i>
+Orin: <i>(I know I ask you what food you want to make-)</i>
+Orin: <i>(B-But my tea and cookies!)</i>
 Orin: Let's just make some simple cookies, Okuu.
 Okuu: Ok. For Satori-sama's sake, I shall learn how to make cookies.
-Orin: (I'm so sorry, Satori-sama, for using you like this.)
+Orin: <i>(I'm so sorry, Satori-sama, for using you like this.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Can_Make_GrilledMushroom
@@ -373,9 +373,9 @@ Orin: Thou, I did say I will teach you what you want to make.
 Orin: I hope Satori-sama won't mind the smell of those mushrooms clashing with her tea.
 //Monolog
 <<Expression Okuu "Thinking">>
-Okuu: (Hmm, I feel like I said something wrong...)
-Yag: (I guess... On the bright side, you could say something even worse.)
-Okuu: (That... doesn't exactly make me feel any better though.)
+Okuu: <i>(Hmm, I feel like I said something wrong...)</i>
+Yag: <i>(I guess... On the bright side, you could say something even worse.)</i>
+Okuu: <i>(That... doesn't exactly make me feel any better though.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_Cookies
@@ -396,7 +396,7 @@ Okuu: B-but... I just think those little crumbs are annoying...
 Orin: Hmm. If you are so against it... How about pudding?
 Orin: It shouldn't leave crumbs like cookies.
 Okuu: That's much better. Let's do it!
-Orin: (My beloved cookies with Satori-sama's tea...)
+Orin: <i>(My beloved cookies with Satori-sama's tea...)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_Pudding
@@ -416,7 +416,7 @@ Okuu: They are dangerously cute!!!
 <<Expression Orin "Neutral">>
 Orin: ...
 Okuu: ...
-Yag: (...)
+Yag: <i>(...)</i>
 <<Expression Orin "Happy">>
 Orin: Let's just bake some cookies, shall we?
 Okuu: Ok!
@@ -475,9 +475,9 @@ Okuu: I-it's... a slip of the tongue... that's all...
 <<Expression Orin "Neutral">>
 Orin: Oh well, whatever. Let us make some cookies.
 //Monolog
-Yag: (Well... That was embarrassing, my dear bird friend...)
+Yag: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
-Okuu: (Unyuu... I didn't mean to...)
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_Pudding
@@ -505,9 +505,9 @@ Okuu: I-it's... a slip of the tongue... that's all...
 <<Expression Orin "Neutral">>
 Orin: Oh well, whatever. Let us make some cookies.
 //Monolog
-Yag: (Well... That was embarrassing, my dear bird friend...)
+Yag: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
-Okuu: (Unyuu... I didn't mean to...)
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_GrilledMushroom
@@ -536,9 +536,9 @@ Okuu: I-it's... a slip of the tongue... that's all...
 <<Expression Orin "Neutral">>
 Orin: Oh well, whatever. Let us make some cookies.
 //Monolog
-Yag: (Well... That was embarrassing, my dear bird friend...)
+Yag: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
-Okuu: (Unyuu... I didn't mean to...)
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can't_Make_Cookies
@@ -587,16 +587,16 @@ position: -26,401
 ---
 <<AddScore AddScore -3>>
 <<Expression Okuu "Sad">>
-Okuu: (Ughh... Why do no words coming out of my mouth?)
-Yag: (Are you alright, bird friend?)
-Okuu: (No... I can't say anything again... Terrasse-san)
-Yag: (Hmm... Wait...) 
-Yag: (What kind of language is that???)
-Okuu: (I think it's some language from the outside world.)
+Okuu: <i>(Ughh... Why do no words coming out of my mouth?)</i>
+Yag: <i>(Are you alright, bird friend?)</i>
+Okuu: <i>(No... I can't say anything again... Terrasse-san)</i>
+Yag: <i>(Hmm... Wait...) </i>
+Yag: <i>(What kind of language is that???)</i>
+Okuu: <i>(I think it's some language from the outside world.)</i>
 <<Expression Okuu "Unyuu">>
-Okuu: (I'm not sure.)
-Yag: (Why do you keep giving me weird nicknames?!)
-Yag: (Never mind.)
+Okuu: <i>(I'm not sure.)</i>
+Yag: <i>(Why do you keep giving me weird nicknames?!)</i>
+Yag: <i>(Never mind.)</i>
 <<Expression Okuu "Neutral">>
 Orin: Okuu? You are spacing out again.
 Orin: How about we make some simple cookies?
@@ -609,7 +609,7 @@ title: MainStory_Chireiden_2
 position: 434,173
 ---
 //CG: Baking
-[i]A few hours later[/i]
+<i>A few hours later</i>
 <<Expression Okuu "Sad">>
 <<Expression Orin "Happy">>
 Orin: Well, they are not *that* bad, Okuu.
@@ -629,7 +629,7 @@ Okuu: I wonder why...
 Orin: Oh well, we can make our own tea if you want. 
 Okuu: Sure, we can store some for Satori-sama later.
 //
-[i]Orin is brewing some tea.[/i]
+<i>Orin is brewing some tea.</i>
 <<Expression Orin "Happy">>
 <<Expression Okuu "Happy">>
 Orin: They might not be as good as Satori-sama's-
@@ -637,14 +637,14 @@ Orin: But I'm confident in my skills, you know.
 Okuu: Wah, they smell amazing for sure.
 Okuu: Maybe you should teach me how to brew tea next, Orin.
 Orin: Sure, I would more than happy to teach you!
-*sips*
+<i>*sips*</i>
 Okuu: I like calm time like this once in a while.
 Orin: Right. I do love work but having days off like this is wonderful.
-*sips*
+<i>*sips*</i>
 Okuu: Oh, Orin, if your tea went cold, just tell me so I can heat them up for you.
 Orin: Hehe, thanks a lot, Okuu. But I'm afraid you will over boil the tea.
 Okuu: Ahh, true.
-*sips*
+<i>*sips*</i>
 Orin: I like today a lot. Spending time with you like this.
 Orin: How about you? W-What do you think of today?
 Orin: We couldn't go to the Human Village or the Old Capital.
@@ -708,11 +708,11 @@ Orin: Does that mean you didn't enjoy our time together.
 Okuu: N-No, I mean, we should spend our days off somewhere else instead of this place.
 Okuu: You know, to see more of Gensokyo.
 //Mono
-Okuu: (I'm so sorry Orin... B-but...)
-Okuu: (I didn't exactly enjoy today.)
-Okuu: (I know you did your best for me but I just couldn't feel it.)
-Yag: (Oh well, it's best if you don't tell her the truth.) 
-Yag: (Else you are just the cruelest person, my friend.)
+Okuu: <i>(I'm so sorry Orin... B-but...)</i>
+Okuu: <i>(I didn't exactly enjoy today.)</i>
+Okuu: <i>(I know you did your best for me but I just couldn't feel it.)</i>
+Yag: <i>(Oh well, it's best if you don't tell her the truth.) </i>
+Yag: <i>(Else you are just the cruelest person, my friend.)</i>
 //Diag
 <<Expression Orin "Embarrassed">>
 Orin: R-right. You didn't have a lot of chances to see outside of Chireiden.
@@ -724,16 +724,16 @@ position: 432,550
 <<AddScore AddScore 2>>
 <<Expression Okuu "Thinking">>
 //Monolog
-Okuu: (Do I enjoy today?)
-Yag: (Are you asking me?)
-Okuu: (Yup. I just want to make sure of my feelings before telling Orin.)
-Okuu: (I don't want to be rude.)
-Yag: (Then tell me, what is your honest feeling of today?)
-Okuu: (I... think I enjoy today.)
-Yag: (Then that's a positive experience!)
-Yag: (Don't think too hard, friend.)
-Okuu: (Right! If I think I enjoyed it mean I enjoyed it.)
-Yag: (Well... Let's just go with that.)
+Okuu: <i>(Do I enjoy today?)</i>
+Yag: <i>(Are you asking me?)<i>
+Okuu: <i>(Yup. I just want to make sure of my feelings before telling Orin.)</i>
+Okuu: <i>(I don't want to be rude.)</i>
+Yag: <i>(Then tell me, what is your honest feeling of today?)</i>
+Okuu: <i>(I... think I enjoy today.)</i>
+Yag: <i>(Then that's a positive experience!)</i>
+Yag: <i>(Don't think too hard, friend.)</i>
+Okuu: <i>(Right! If I think I enjoyed it mean I enjoyed it.)</i>
+Yag: <i>(Well... Let's just go with that.)</i>
 //Dialog
 <<Expression Okuu "Happy">>
 Okuu: Orin, thank you for making today so enjoyable!
@@ -748,13 +748,13 @@ position: 433,619
 ---
 <<AddScore AddScore -3>>
 //Monolog
-Yag: (You don't enjoy today, do you?)
-Okuu: (I-I'm not sure...)
-Okuu: (Orin, did all of this for me...)
-Okuu: (But, it just doesn't feel right for some reason.)
-Yag: (Like something is missing?)
-Okuu: (Maybe? Unyuu...)
-Yag: (Best if you don't tell her this.)
+Yag: <i>(You don't enjoy today, do you?)</i>
+Okuu: <i>(I-I'm not sure...)</i>
+Okuu: <i>(Orin, did all of this for me...)</i>
+Okuu: <i>(But, it just doesn't feel right for some reason.)</i>
+Yag: <i>(Like something is missing?)</i>
+Okuu: <i>(Maybe? Unyuu...)</i>
+Yag: <i>(Best if you don't tell her this.)</i>
 //Dialog
 Orin: Okuu?
 Okuu: Ah. So today...
@@ -777,18 +777,18 @@ position: 434,694
 Okuu: ...
 Orin: ...
 *sips*
-Okuu: (...)
-Yag: (...)
-Yag: (...That's it?)
-Okuu: (You are not going to tell her how you feel?)
+Okuu: <i>(...)</i>
+Yag: <i>(...)</i>
+Yag: <i>(...That's it?)</i>
+Okuu: <i>(You are not going to tell her how you feel?)</i>
 <<Expression Okuu "Unyuu">>
-Okuu: (I don't know what to say.)
+Okuu: <i>(I don't know what to say.)</i>
 <<Expression Okuu "Neutral">>
 Orin: ...
 Okuu: ...
-*sips*
+<i>*sips*</i>
 Orin: ...Nice weather, isn't it?
 Okuu: It is.
-*sips*
-Yag: (Ugh... I give up.)
+<i>*sips*</i>
+Yag: <i>(Ugh... I give up.)</i>
 ===
