@@ -36,6 +36,7 @@ public class CharacterController : MonoBehaviour
     {
     }
 
+    ///Change character Expression
     [YarnCommand("Expression")]
     public void SwapSprite(string expressionName)
     {

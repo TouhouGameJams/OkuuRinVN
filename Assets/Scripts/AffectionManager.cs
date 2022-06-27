@@ -23,6 +23,7 @@ public class AffectionManager : MonoBehaviour
 
     }
 
+    ///Add points to Affection Score
     [YarnCommand("AddScore")]
     private void AddScore(int score)
     {

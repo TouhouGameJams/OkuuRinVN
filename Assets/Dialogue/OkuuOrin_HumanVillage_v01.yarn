@@ -73,11 +73,11 @@ Orin: Or you rather have it as a surprise?
 <<Expression Orin "Happy">>
 Okuu: So this is the surface...
 Orin: Yup, breath-taking isn't it?
-Orin: If we keep flying this direction, we will reach the Human Village in no time.
+Orin: If we keep flying in this direction, we will reach the Human Village in no time.
 <<jump SentenceBuilder_HumanVillage_0>>
 ===
 title: SentenceBuilder_HumanVillage_0
-position: -97,67
+position: -94,71
 ---
 Okuu: (I feel like I have to say something...)
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_0_v01>>
@@ -130,7 +130,7 @@ Okuu: Chireiden is way better!
 <<Expression Okuu "Embarrassed">>
 Orin: Okuu...
 <<Expression Orin "Smug">>
-Orin: It's ok to admit you are facinated by this new place.
+Orin: It's ok to admit you are fascinated by this new place.
 Orin: I can see your ears are blushing.
 <<Expression Okuu "Embarrassed">>
 Okuu: Wah?!
@@ -141,7 +141,7 @@ Orin: Well, let's go. We can't be late.
 <<jump MainStory_HumanVillage_1>>
 ===
 title: Is_It_Amazing_Question
-position: -94,488
+position: -96,423
 ---
 <<AddScore AddScore 0>>
 <<Expression Okuu "Thinking">>
@@ -163,7 +163,7 @@ Orin: Sure...
 <<jump MainStory_HumanVillage_1>>
 ===
 title: Is_It_Not_Amazing
-position: -94,420
+position: -95,354
 ---
 <<AddScore AddScore 2>>
 <<Expression Okuu "Thinking">>
@@ -172,7 +172,7 @@ Yag: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
 Yag: <i>(Now, I'm a cake??? ...Geez)</i>
 Yag: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yag: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
+Yag: <i>(If anything, I have even a better view of the universe as if I was the sun.)</i> 
 Okuu: <i>(But then you won't be able to see anything.)</i>
 Yag: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>
@@ -186,7 +186,7 @@ Orin: Sure...
 <<jump MainStory_HumanVillage_1>>
 ===
 title: Invalid_HumanVillage_0
-position: -95,352
+position: -97,494
 ---
 <<AddScore AddScore 3>>
 <<Expression Okuu "Happy">>
@@ -200,223 +200,7 @@ Orin: <i>(It would be a shame if we miss the festival)</i>
 <<jump MainStory_HumanVillage_1>>
 ===
 title: MainStory_HumanVillage_1
-position: 180,270
----
-~<i>The Human Village</i>~
-
-===
-title: SentenceBuilder_HumanVillage_1
-position: -97,67
----
-Okuu: ()
-<<SentenceBuilderStart GameManager MainStory_HumanVillage_1_v01>>
-Okuu: ()
-<<jump {JumpToNode()}>>
-//Word:
-<i></i>
-===title: MainStory_HumanVillage_0
-tags:
-position: -98,-38
----
-<<SetBlack FadeScreen>>
-<<PlayBGM SoundManager HF_2>>
-Satori: Listen, Okuu.
-Satori: When you go to the surface, please behave.
-Satori: And be a good example for Chireiden.
-Satori: Don't cause trouble at the Human Village.
-Satori: Listen to Orin. She will know what to do there.
-Satori: But more importantly, have fun.
-<<FadeOut FadeScreen>>
-<<Expression Orin "Neutral">>
-Orin: Are you ready, Okuu?
-Orin: Is this the first time you will go to the surface?
-<<Expression Okuu "Happy">>
-Okuu: I think so... That's why I'm so hype!
-Okuu: Can you tell me something about the surface, Orin?
-<<Expression Orin "Thinking">>
-<<Expression Okuu "Neutral">>
-Orin: Well, there are lots of Youkai and even Humans.
-Orin: The Human Village is supposed to be a strict "No-Youkai" zone.
-Orin: But in reality, I see many Youkai hanging around there.
-Okuu: Oh? A place only for the so-called, human...
-Orin: Yup! Although, I personally only set foot there as Satori-sama's assistant.
-Orin: Normally I wouldn't dare to visit either.
-Okuu: How come? I don't think those humans will notice you.
-Okuu: Unlike me with these gigantic wings and a concrete leg.
-<<Expression Orin "Happy">>
-Orin: Luckily the Human Village is having a festival!
-Orin: I don't know the full details but it's said...
-Orin: That this festival is for everyone to attend.
-Orin: As long as they behave themselves, of course.
-Okuu: What if they don't and cause trouble?
-Orin: Well, they will just face the wrath of that shrine maiden.
-<<Expression Okuu "Swirly">>
-Okuu: <i>shivers</i>
-Okuu: Scary... Yeah...
-<<Expression Okuu "Neutral">>
-<<Expression Orin "Neutral">>
-Orin: Say, do you have anything you want to ask me of the surface?
-Orin: Or you rather have it as a surprise?
--> Okuu: Are there other interesting locations?
-    Orin: I haven't been everywhere.
-    Orin: But I visited two interesting locations while searching for that Jail-Breaking King.
-    Okuu: Do tell!
-    Orin: One of them is a mansion just like ours, but fully covered in red.
-    Okuu: A red mansion, interesting...
-    Orin: Oh, within the depth of a bamboo forest there is another mansion.
-    Okuu: Another one? There sure are a lot of mansions on the surface.
-    Orin: It sure is. But the design is rather unique.
-    <<Expression Orin "Happy">>
-    Orin: Ah, I believe the owners are alien, too!
-    Okuu: Wah... That sounds kinda scary...
-    Orin: Anyhow we probably won't have time to visit them.
-    Okuu: True... Regardless I'm looking forwards to the Human Village.
-    Okuu: And seeing it with my own eyes.
--> Okuu: I think I will leave everything as a surprise for now.
-    Orin: Wah... Are you still Okuu?
-    <<Expression Okuu "Unyuu">>
-    Okuu: ???
-    <<Expression Orin "Swirly">>
-    Orin: Normally you would be more... I don't know... Curious?
-    Orin: I just feel kinda sad that you don't want to ask me...
-    <<Expression Okuu "Smug">>
-    Okuu: Haha! I thought it would be nice if I just experience everything blind.
-    Okuu: You know, for maximum effects.
-    Orin: Oh, ok.
-    Orin: <i>(Okuu is growing up. I'm so proud of you)</i>
-<i>A few hours later...</i>
-<<Expression Okuu "Neutral">>
-<<Expression Orin "Happy">>
-Okuu: So this is the surface...
-Orin: Yup, breath-taking isn't it?
-Orin: If we keep flying this direction, we will reach the Human Village in no time.
-<<jump SentenceBuilder_HumanVillage_0>>
-===
-title: SentenceBuilder_HumanVillage_0
-position: -97,67
----
-Okuu: (I feel like I have to say something...)
-<<SentenceBuilderStart GameManager MainStory_HumanVillage_0_v01>>
-Okuu: (But what should I say to Orin?)
-<<jump {JumpToNode()}>>
-//Word:[It] [Is] [Not] [Amazing] [...] [?]
-===
-title: It_Is_Amazing_Sentence
-position: -95,212
----
-//It is amazing...
-<<AddScore AddScore 5>>
-<<Expression Okuu "Happy">>
-Okuu: It is amazing...
-Orin: Right?
-Okuu: I never knew the sky is this blue. And all these trees. 
-Okuu: Ahhhhh, now I want to visit every nook and corner of the surface.
-Orin: Now now, We should focus on getting to the Human Village on time.
-Orin: We don't want to miss the festival.
-<<Expression Okuu "Embarrassed">>
-Okuu: Right, right. Let's go!
-<<jump MainStory_HumanVillage_1>>
-===
-title: Amazing_It_Is_Sentence
-position: -96,141
----
-//Amazing It Is...
-<<AddScore AddScore 5>>
-<<Expression Okuu "Happy">>
-Okuu: Amazing... It surely is...
-Orin: Right?
-Okuu: I never knew the sky is this blue. And all these trees. 
-Okuu: Ahhhhh, now I want to visit every nook and corner of the surface.
-Orin: Now now, We should focus on getting to the Human Village on time.
-Orin: We don't want to miss the festival.
-<<Expression Okuu "Embarrassed">>
-Okuu: Right, right. Let's go!
-<<jump MainStory_HumanVillage_1>>
-===
-title: It_Is_Not_Amazing
-position: -94,285
----
-<<AddScore AddScore -5>>
-<<Expression Okuu "Angry">>
-Okuu: Hmm... I expected more, to be honest...
-Orin: ?
-Okuu: It's not <i>that</i> amazing...
-Okuu: Chireiden is way better!
-...
-<<Expression Okuu "Embarrassed">>
-Orin: Okuu...
-<<Expression Orin "Smug">>
-Orin: It's ok to admit you are facinated by this new place.
-Orin: I can see your ears are blushing.
-<<Expression Okuu "Embarrassed">>
-Okuu: Wah?!
-Orin: It's a habit of you when you are lying. 
-<<Expression Okuu "Unyuu">>
-Okuu: Unyuu~
-Orin: Well, let's go. We can't be late.
-<<jump MainStory_HumanVillage_1>>
-===
-title: Is_It_Amazing_Question
-position: -94,488
----
-<<AddScore AddScore 0>>
-<<Expression Okuu "Thinking">>
-Okuu: <i>(Is it amazing?)</i>
-Yag: <i>(Wait, are you asking me?)</i>
-Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
-Yag: <i>(Now, I'm a cake??? ...Geez)</i>
-Yag: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yah: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
-Okuu: <i>(But then you won't be able to see anything.)</i>
-Yag: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
-Okuu: <i>(I'm glad to hear that!)</i>
-<<Expression Orin "Neutral">>
-Orin: Okuu?
-<<Expression Okuu "Happy">>
-Okuu: Never mind, let us hurry.
-<<Expression Orin "Swirly">>
-Orin: Sure...
-<<jump MainStory_HumanVillage_1>>
-===
-title: Is_It_Not_Amazing
-position: -94,420
----
-<<AddScore AddScore 2>>
-<<Expression Okuu "Thinking">>
-Okuu: <i>(Is it not amazing?)</i>
-Yag: <i>(Wait, are you asking me?)</i>
-Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
-Yag: <i>(Now, I'm a cake??? ...Geez)</i>
-Yag: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yag: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
-Okuu: <i>(But then you won't be able to see anything.)</i>
-Yag: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
-Okuu: <i>(I'm glad to hear that!)</i>
-<<Expression Orin "Neutral">>
-Orin: Okuu?
-<<Expression Okuu "Happy">>
-Okuu: I was just so amazed by this view.
-Okuu: Anyhow, let us hurry.
-<<Expression Orin "Swirly">>
-Orin: Sure... 
-<<jump MainStory_HumanVillage_1>>
-===
-title: Invalid_HumanVillage_0
-position: -95,352
----
-<<AddScore AddScore 3>>
-<<Expression Okuu "Happy">>
-Okuu: ...
-<<Expression Orin "Smug">>
-Orin: <i>(She's so immersed)</i>
-Orin: <i>(I will leave her to gaze the view.)</i>
-Orin: <i>(But we should still hurry up!)</i>
-<<Expression Orin "Sad">>
-Orin: <i>(It would be a shame if we miss the festival)</i>
-<<jump MainStory_HumanVillage_1>>
-===
-title: MainStory_HumanVillage_1
-position: 180,270
+position: 319,259
 ---
 ~<i>The Human Village</i>~
 <<Expression Okuu "Neutral">>
@@ -425,38 +209,160 @@ Orin: It's sure is loud here...
 Okuu: And lively too!
 Orin: I only visit the Human Village during "normal" days.
 Orin: And their "normal" days are loud enough.
-Orin: From vendors promoting their stuffs to old ladies gossiping...
+Orin: From vendors promoting their stuff to old ladies gossiping...
 Okuu: So kinda like the Old Capital?
 <<Expression Orin "Thinking">>
-Orin: Hmm, true. But you know: It's just more lively than just a bunch of ghost selling you old stuffs.
+Orin: Hmm, true. But you know: It's just more lively than just a bunch of ghosts selling you old stuff.
 <<Expression Orin "Neutral">>
 Okuu: Those cute ghost weren't that bad.
 <<Expression Okuu "Thinking">>
-Okuu: But you are right, alive human sure looks and sounds different than dead one.
-<i>After walking around the village for awhile</i>
+Okuu: But you are right, alive humans sure look and sound different than a dead one.
+<i>After walking around the village for a while </i>
 <<Expression Okuu "Happy">>
 <<Expression Orin "Happy">>
 Okuu: *mg mg* These dangos are quite yummy.
-Orin: I wonder what these fish-shape pastry is called... But it's delicious as well.
-Okuu: Satori-sama sure gives us lots of this so called "money"...
-Orin: Yup! *mg mg* With each case being solved, the one requesting Satori-sama have to pay "money".
+Orin: I wonder what this fish-shaped pastry is called... But it's delicious as well.
+Okuu: Satori-sama sure gives us lots of this so-called "money"...
+Orin: Yup! *mg mg* With each case being solved, the one requesting Satori-sama has to pay "money".
 Orin: Although it's not like "money" has any uses at Chireiden...
-Okuu: So she just save all her "money" for special occasions like this?
+Okuu: So she just saves all her "money" for special occasions like this?
 Orin: Looks like it! 
 Okuu: I wish Satori-sama would be able to join this festival, too.
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
-Orin: I doubt she can. One time she goes on the surface and it was too overwhelming for her...
+Orin: I doubt she can. One time she goes to the surface and it was too overwhelming for her...
 Orin: She can't exactly control whose mind she can read.
-Orin: In the end everyone's mind barge into her head. It sounds very painful to be honest.
+Orin: In the end, everyone's mind barges into her head. It sounds very painful, to be honest.
+<i>Music plays in the distance</i>
+Orin: Oh? Okuu, let's check it out.
+Okuu: *mg mg* Sure!
+<i>A few minutes later...</i>
+Orin: The Prismrivers? And they are playing all their hits...
+Okuu: The humans are dancing over there too!
+Yag: <i>(What are you waiting for?)</i>
+Yag: <i>(The chance can't get any better than this)</i>
+<<jump SentenceBuilder_HumanVillage_1>>
 ===
 title: SentenceBuilder_HumanVillage_1
-position: -97,67
+position: 320,375
 ---
-Okuu: ()
+<<Expression Okuu "Unyuu">>
+Okuu: <i>(Hmm...)</i>
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_1_v01>>
-Okuu: ()
+Okuu: <i>(Should I ask Orin out for a dance?)</i>
 <<jump {JumpToNode()}>>
-//Word:
-<i></i>
+//Word: [Would] [You, I] [Like To] [Dance, Watch]
+===
+title: Would_You_LikeTo_Dance
+position: 326,523
+---
+<<AddScore AddScore 5>>
+<<Expression Okuu "Embarrassed">>
+Okuu: Orin... Would you like to dance with me?
+<<Expression Orin "Happy">>
+Orin: I would love to. But...
+<<Expression Okuu "Unyuu">>
+Okuu: But?
+<<Expression Orin "Embarrassed">>
+Orin: I don't know how to dance...
+<<Expression Okuu "Happy">>
+Okuu: It's ok! I don't know how to dance either.
+Okuu: Just have fun, I guess?
+<<Expression Orin "Happy">>
+Orin: Right, it's not common we can dance together like this!
+Okuu: May I have your hands?
+Orin: But of course!
+<<jump MainStory_HumanVillage_2>>
+===
+title: Would_You_LikeTo_Watch
+position: 323,446
+---
+<<AddScore AddScore 3>>
+<<Expression Okuu "Embarrassed">>
+Okuu: W-Would you like to watch them with me, Orin?
+Okuu: I don't know how to dance...
+Okuu: So I don't want to embarrass you with my horrible dancing skills...
+<<Expression Orin "Embarrassed">>
+Orin: Haha... Same here...
+Orin: L-let just enjoys the music together, Okuu.
+<<jump MainStory_HumanVillage_2>>
+===
+title: I_Would_LikeTo_Watch
+position: 325,603
+---
+<<AddScore AddScore 3>>
+<<Expression Okuu "Embarrassed">>
+Okuu: I think I will just stay back and watch, Orin...
+Okuu: I-I don't know how to dance...
+Okuu: So I don't want to embarrass you with my horrible dancing skills...
+<<Expression Orin "Embarrassed">>
+Orin: Haha... Same here...
+Orin: L-let just enjoys the music together, Okuu.
+<<jump MainStory_HumanVillage_2>>
+===
+title: I_Would_LikeTo_Dance
+position: 137,479
+---
+//No affection/Add Score here as we jump to the node with a score already
+<<Expression Okuu "Embarrassed">>
+Okuu: I-I think I would like to try to dance...
+Okuu: So...
+<<jump Would_You_LikeTo_Dance>>
+===
+title: You_Would_LikeTo_Dance
+position: 144,578
+---
+<<Expression Okuu "Thinking">>
+Okuu: <i>(Orin is looking at the human so intensely)</i>
+Okuu: <i>(Does she wants to try to dance as well?)</i>
+Yag: <i>(Duh?)</i>
+Yag: <i>(Now be brave and ask her out, my bird friend!)</i>
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhm...
+<<jump Would_You_LikeTo_Dance>>
+===
+title: You_Would_LikeTo_Watch
+position: 326,679
+---
+<<AddScore AddScore -5>>
+<<Expression Okuu "Happy">>
+Okuu: You would prefer to just watch them, right?
+Okuu: Same with me!
+Orin: I mean sure, I don't mind...
+<<Expression Orin "Sad">>
+Orin: <i>*whispers</i> But we came here to have fun though...
+<<Expression Okuu "Unyuu">>
+Okuu: Unyuu? Did you say something?
+<<Expression Orin "Neutral">>
+Orin: Ah, nothing. Nothing at all.
+Orin: Let's just enjoy the music!
+<<jump MainStory_HumanVillage_2>>
+===
+title: Invalid_HumanVillage_1
+position: 324,752
+---
+<<AddScore AddScore 1>>
+Okuu: ...
+<<Expression Orin "Smug">>
+Orin: <i>(Guess she's so immersed in the music...)</i>
+Orin: <i>(She probably won't hear me.)</i>
+Orin: <i>(Oh well, time to listen to the Prismriver Sisters.)</i>
+<<Expression Orin "Embarrassed">>
+Orin: <i>(I was so heart-broken when they disbanded!)</i>
+<<Expression Orin "Happy">>
+Orin: <i>(Turns out they came back weeks later with a new member!!!)</i>
+Orin: <i>(Ahhh, to hear them live like this-!)</i>
+Okuu: Orin?
+<<Expression Orin "Sad">>
+Orin: Nyaaa-!
+Okuu: Oh, I didn't mean to surprise you like this... I'm sorry...
+<<Expression Orin "Swirly">>
+Orin: A-Ah, it's ok, I was just in some deep thoughts...
+Orin: ...as the music really moves me! Let's continue watching the show.
+<<jump MainStory_HumanVillage_2>>
+===
+title: MainStory_HumanVillage_2
+position: 587,565
+---
+
 ===
