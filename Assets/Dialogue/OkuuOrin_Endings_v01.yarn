@@ -1,5 +1,68 @@
 ﻿title: GoodEnding_Chireiden
 tags:
 ---
-
+<i>Few hours later</i>
+<<Expression Orin "Embarrassed">>
+<<Expression Okuu "Happy">>
+Okuu: Looks like Satori-sama won't come home for today...
+Okuu: Then, good night Orin!
+Okuu: Today was insanely fun. We should do it again.
+Orin: ...
+Okuu: Hmm?
+Orin: ...Okuu.
+Okuu: Yes?
+Orin: W-Would you like to stay with me...
+Orin: A bit longer...?
+Orin: I-in my room, of course...
+<<Expression Okuu "Embarrassed">>
+-> Okuu: Y-yes...
+<<FadeOut FadeScreen>>
+===
+title: BadEnding_Chireiden
+position: -215,1
+---
+<i>Few hours later</i>
+<<Expression Orin "Neutral">>
+<<Expression Okuu "Neutral">>
+Okuu: Well, then, good night, Orin.
+Orin: Yeah, good night, Okuu.
+<<Expression Orin "Sad">>
+<<Expression Okuu "Sad">>
+Both: <i>(Such a shame today didn't go as planned)</i>
+<<FadeOut FadeScreen>>
+===
+title: GoodEnding_HumanVillage
+position: -215,1
+---
+<i>Danmaku battles in the sky</i>
+<i>Like beautiful fireworks celebrating the festival.</i>
+<<Expression Orin "Happy">>
+<<Expression Okuu "Happy">>
+Okuu: This is so much fun!
+Orin: It sure is!
+<<Expression Okuu "Embarrassed">>
+Okuu: Orin...
+Okuu: I love you...
+<<Expression Orin "Embarrassed">>
+Orin: !!!
+Okuu: Ahhh! You hear that...
+<<Expression Orin "Happy">>
+Orin: ...Yup!
+<<FadeOut FadeScreen>>
+===
+title: BadEnding_HumanVillage
+position: -215,1
+---
+<i>Danmaku battles in the sky</i>
+<i>Like beautiful fireworks celebrating the festival.</i>
+<<Expression Okuu "Embarrassed">>
+Okuu: Orin...
+Okuu: I lo-...
+<i>A loud explosion in the sky</i>
+<<Expression Orin "Neutral">>
+Orin: Hm? Did you say something Okuu?
+<<Expression Okuu "BugEyed">>
+Okuu: Uh, nothing, never mind!
+Orin: Oh sure...
+<<FadeOut FadeScreen>>
 ===
