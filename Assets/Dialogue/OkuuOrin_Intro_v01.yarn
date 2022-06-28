@@ -1,6 +1,6 @@
 title: MainStory_Intro_0
 tags: 
-position: -573,-560
+position: -576,-636
 colorID: 4
 ---
 <<SetBlack FadeScreen>>
@@ -149,10 +149,11 @@ Okuu: <i>(She said to think and focus on one thing at a time.)</i>
 Yatagarasu: <i>(That's right and when it comes to right now? What do you want to do most?!)</i>
 Yatagarasu: <i>(Say it! Let me feel the flames of conviction from within!)</i>
 Okuu: <i>(What do I want to do most...)</i>
-<<jump SentenceBuilder_Prelude>>
+<<jump SentenceBuilder_Intro_0>>
 ===
-title: SentenceBuilder_Prelude
+title: SentenceBuilder_Intro_0
 tags: 
+position: -577,-540
 ---
 <<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
 Okuu: (Hmm...)
@@ -160,7 +161,7 @@ Okuu: (Hmm...)
 //Words: <i> [Can, Will] [My best, Do it] 
 ===
 title: I_Can_Try
-position: -335,-187
+position: -134,-188
 ---
 <<Expression Okuu "Swirly">>
 Okuu: <i>(I can try...)</i>
@@ -174,7 +175,7 @@ Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Will_DoIt
-position: -334,-282
+position: -134,-277
 ---
 <<Expression Okuu "Smug">>
 Okuu: <i>(I promised, I will do it!)</i>
@@ -188,7 +189,7 @@ Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: I_Can_DoIt
-position: -334,-236
+position: -135,-232
 ---
 <<Expression Okuu "Smug">>
 Okuu: <i>(I know I can do it!)</i>
@@ -202,7 +203,7 @@ Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
 title: Invalid_Intro_1
-position: -334,-140
+position: -134,-146
 ---
 <<Expression Okuu "Unyuu">>
 Yatagarasu: <i>(Oh dear... I hope it will be all ok...)</i>
@@ -214,10 +215,9 @@ Okuu: Already? Quick! Hide!
 Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
 ===
-
-
 title: MainStory_Intro_1
 tags: 
+position: 189,-203
 ---
 <<Hop Okuu 1>>
 <<Flip Okuu>>
@@ -232,11 +232,12 @@ Orin: Oh she just warned me to not bring any corpses back from wherever we went.
 Orin: Anyways. We were saying something before. What was it again?
 Orin: Oh yea! We finally get days off! What do you think Okuu?
 Yatagarasu: <i>(Here's your chance Okuu. Turn the conversation the way you want!)</i>
-<<jump SentenceBuilder_Intro_0>>
+<<jump SentenceBuilder_Intro_1>>
 ===
 
-title: SentenceBuilder_Intro_0
+title: SentenceBuilder_Intro_1
 tags: 
+position: 189,-122
 ---
 <<SentenceBuilderStart GameManager MainStory_Intro_0_v01>>
 Okuu: (What do I think of days off?)
@@ -349,7 +350,7 @@ Okuu: Unyuu...
 ===
 
 title: MainStory_Intro_2
-position: -111,-229
+position: -131,-438
 ---
 <<Expression Okuu "Happy">>
 Okuu: Hey Orin! You've been to the surface more than me.
@@ -368,9 +369,10 @@ Yatagarasu: <i>(Go ahead and tell her to go out on a date with you!)</i>
 Yatagarasu: <i>(Don't let all of our hard work go to waste!)</i>
 Okuu: O-Orin...
 Orin: Hmm?
+<<jump SentenceBuilder_Intro_2>>
 ===
-
 title: SentenceBuilder_Intro_2
+position: -136,-347
 ---
 //Building Segment
 <<SentenceBuilderStart GameManager MainStory_Intro_2_v01>>
@@ -381,7 +383,7 @@ Okuu: I-I want to ask...
 ===
 
 title: WouldYouLike_ToGoTo_TheHumanVillage
-position: -111,-158
+position: 192,-47
 ---
 <<Expression Okuu Embarassed>>
 Okuu: W-Would you like to go to the Human Village with me?
@@ -397,7 +399,7 @@ Okuu: <i>(D-date...)</i>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_TheHumanVillage
-position: -110,-85
+position: 191,29
 ---
 <<Expression Okuu Happy>>
 Okuu: How about we stay at the Human Village this weekend, Orin?
@@ -411,7 +413,7 @@ Okuu: <i>(Yah!)</i>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToGoTo_Home
-position: -111,-13
+position: 193,101
 ---
 <<Expression Okuu Swirly>>
 Okuu: What if we visited home?
@@ -428,7 +430,7 @@ Orin: Then I'm looking forward to the weekend, Okuu!
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_Home
-position: -111,58
+position: 192,177
 ---
 Okuu: I'm kind of tired? What if we stayed home?
 <<Expression Orin Blank>>
@@ -447,7 +449,7 @@ Orin: Then I'm looking forward to the weekend, Okuu!
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
 title: Invalid_Intro_2
-position: -112,127
+position: 192,250
 ---
 Okuu: Unyuu... Unyuuuuuu.....
 Yatagarasu: <i>(Oh dear... She has too many ideas.)</i>
