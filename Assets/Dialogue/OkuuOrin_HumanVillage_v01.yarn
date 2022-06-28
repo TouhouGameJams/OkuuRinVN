@@ -3,7 +3,7 @@ tags:
 position: -98,-38
 ---
 <<SetBlack FadeScreen>>
-<<PlayBGM SoundManager HF_2>>
+<<PlayBGM SoundManager HeartfeltFancy>>
 Satori: Listen, Okuu.
 Satori: When you go to the surface, please behave.
 Satori: And be a good example for Chireiden.
@@ -79,7 +79,7 @@ Orin: If we keep flying in this direction, we will reach the Human Village in no
 title: SentenceBuilder_HumanVillage_0
 position: -94,71
 ---
-Okuu: (I feel like I have to say something...)
+Okuu: (I feel like I have to say something...)s
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_0_v01>>
 Okuu: (But what should I say to Orin?)
 <<jump {JumpToNode()}>>
@@ -390,7 +390,7 @@ position: 320,375
 ---
 <<Expression Okuu "Thinking">>
 Okuu: <i>(I have to find a way to convince Orin to join)</i>
-<<SentenceBuilderStart GameManager MainStory_HumanVillage_1_v01>>
+<<SentenceBuilderStart GameManager MainStory_HumanVillage_2_v01>>
 Okuu: <i>(But what if she really doesn't want to join?)</i>
 <<jump {JumpToNode()}>>
 //Word: [Please] [Pretty] [?] [I'm] [Begging] [You]
@@ -493,7 +493,7 @@ Okuu: Yah! I will get ready then.
 Orin: (Now I'm worried...)
 <<jump GoToEnding_HumanVillage>>
 ===
-title: You_Pretty_?
+title: You_Pretty_Question
 position: 586,1011
 ---
 <<AddScore AddScore 5>>

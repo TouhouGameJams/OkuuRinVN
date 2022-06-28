@@ -350,16 +350,12 @@ Okuu: Unyuu...
 title: MainStory_Intro_2
 position: -111,-229
 ---
-//Orin comes back
-Orin: There you are. Sorry to keep you waiting.
-<<Expression Orin Flushed>>
-Okuu: Welcome back, Orin!
 <<Expression Okuu "Happy">>
 Okuu: Hey Orin! You've been to the surface more than me.
 Okuu: Do you have any interesting place you know of?
 Okuu: <i>(So maybe we can go there.)</i>
 Orin: Ah, I heard the Human Village is preparing some kind of festival!
-Orin: Yuugi sent an invitation to Satori-sama.
+Orin: Satori-sama received an invitation.
 Orin: But she told me she can't go just now...
 Orin: Regardless, I'm happy where ever we will spend our time, Okuu!
 Okuu: <i>(Do I have something planned for this weekend, I wonder?)</i>
@@ -379,7 +375,7 @@ title: SentenceBuilder_Intro_2
 <<SentenceBuilderStart GameManager MainStory_Intro_2_v01>>
 Okuu: I-I want to ask...
 <<jump {JumpToNode()}>>
-//Words: [Would you like] [To visit, to stay at] [The Human Village, the Old Capital] 
+//Words: [Would you like] [To visit, to stay] [The Human Village, Home] 
 //Words: [Hmm, Uhm, Uhh]
 ===
 
@@ -413,33 +409,39 @@ Okuu: <i>(Yah!)</i>
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
-title: WouldYouLike_ToGoTo_TheOldCapital
+title: WouldYouLike_ToGoTo_Home
 position: -111,-13
 ---
-<<Expression Okuu Happy>>
-Okuu: How about the Old Capital?
-Okuu: I heard the hot spring boost your health.
+<<Expression Okuu Swirly>>
+Okuu: What if we visited home?
+<<Expression Orin Blank>>
+Orin: You don't exactly visit home Okuu
 <<Expression Orin Flushed>>
-Orin: Oooh, we can also check out how everyone is doing.
-Orin: I would be rude to turn down Yuugi's invitation.
-Okuu: I'm sure she won't mind us going as Satori-sama's representative.
-Orin: Exactly!
-Orin: <i>(It's not like Okuu can sneak into the human village easily like me...)</i>
+Orin: But I'm down for a staycation!
+Orin: You're always down in the furnaces. So it'll be a nice change of pace.
+Orin: We could even have a slumber party! What do you think?
+<<Expression Okuu Happy>>
+Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
-title: WouldYouLike_ToStayAt_TheOldCapital
+title: WouldYouLike_ToStayAt_Home
 position: -111,58
 ---
-Orin: Ah! The hot spring is offering a discount for couples!
-Orin: How about we spend our weekend there, Okuu?
-Okuu: Wah... Are you Satori-sama? How did you read my mind like that?
-Orin: Oh?
-Okuu: I wanted to ask if you would like to stay at the Old Capital with me this weekend...
-Okuu: But now that you ask me first, I'm so happy to hear you want the same thing, Orin!
-Orin: Great mind, think alike, don't you think?
-Okuu: Yup!
+Okuu: I'm kind of tired? What if we stayed home?
+<<Expression Orin Blank>>
+Orin: Stayed home?
+<<Expression Okuu Sad>>
+Okuu: Was that no good? Is that too boring?
+<<Expression Orin Flushed>>
+Orin: Honestly a staycation sounds great to me! 
+<<Expression Orin Embarassed>>
+Okuu: It does?!
+Orin: We could even have a slumber party! What do you think?
+<<Expression Okuu Happy>>
+Okuu: Yay! That sounds great. I'm so excited!
+Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
 <<ToNext GameManager MainStory_Chireiden_0>>
 ===
