@@ -1757,12 +1757,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6959347626697859734, guid: 2f5afa3ef7e670540899335eabff8f99,
+      objectReference: {fileID: -6819009052746303321, guid: 2f5afa3ef7e670540899335eabff8f99,
         type: 3}
     - target: {fileID: 8580657701148171486, guid: 638a339da405742489b926d205f8e079,
         type: 3}
       propertyPath: m_labelHash
-      value: 2.2952445e+38
+      value: -0.000000002709848
       objectReference: {fileID: 0}
     - target: {fileID: 8580657701856380083, guid: 638a339da405742489b926d205f8e079,
         type: 3}

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
+  m_Name: MainStory_HumanVillage_2_v01
+  m_EditorClassIdentifier: 
+  numberOfSlots: 3
+  listPhrases:
+  - Pretty
+  - Please
+  - '?'
+  - I'm
+  - Begging
+  - You
+  SentenceAnswerList:
+  - outputComparatorList:
+    - Pretty
+    - Please
+    - '?'
+    nodeName: Pretty_Please_Quesiton
+    points: 0
+  - outputComparatorList:
+    - Please
+    - I'm
+    - Begging
+    nodeName: Please_Im_Begging
+    points: 0
+  - outputComparatorList:
+    - I'm
+    - Begging
+    - You
+    nodeName: Im_Begging_You
+    points: 0
+  - outputComparatorList:
+    - I'm
+    - Pretty
+    - '?'
+    nodeName: Im_Pretty_Question
+    points: 0
+  - outputComparatorList:
+    - I'm
+    - You
+    - '?'
+    nodeName: Im_You_Question
+    points: 0
+  - outputComparatorList:
+    - You
+    - Pretty
+    - '?'
+    nodeName: You_Pretty_Question
+    points: 0
+  - outputComparatorList:
+    - I'm
+    - Begging
+    - '?'
+    nodeName: Im_Begging_Question
+    points: 0
+  invalidNodeName: Invalid_HumanVillage_2
