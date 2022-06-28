@@ -3,6 +3,7 @@ tags:
 position: -291,-292
 ---
 <<SetBlack FadeScreen>>
+<<ChangeBG BGManager "Chireiden">>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 <i>The following day. Okuu and Orin decided on a lazy staycation at Chireiden</i>
