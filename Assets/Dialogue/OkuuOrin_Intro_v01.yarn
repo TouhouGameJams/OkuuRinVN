@@ -4,6 +4,7 @@ position: -573,-560
 colorID: 4
 ---
 <<SetBlack FadeScreen>>
+<<ChangeBG BGManager "Chireiden">>
 <i>~On one odd conspicuous day at Satori Komeiji's office, Chireiden~</i>
 <<FadeOut FadeScreen>>
 <<PlayBGM SoundManager HeartfeltFancy>>

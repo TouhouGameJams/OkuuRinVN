@@ -3,6 +3,7 @@ tags:
 position: -98,-38
 ---
 <<SetBlack FadeScreen>>
+<<ChangeBG BGManager "HumanVillage">>
 <<PlayBGM SoundManager HeartfeltFancy>>
 Satori: Listen, Okuu.
 Satori: When you go to the surface, please behave.
