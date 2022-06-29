@@ -12,6 +12,8 @@ public class TitleScreenManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.PlayBGM(soundManager.GetBGM("TitleScreen"));
         sM.ChangeState(new MenuState { });
     }
 
@@ -23,6 +25,8 @@ public class TitleScreenManager : MonoBehaviour
 
     public void StartToClick()
     {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.StopBGM();
         LoadingData.sceneToLoad = targetScene;
         SceneManager.LoadScene("LoadingScene");
     }
