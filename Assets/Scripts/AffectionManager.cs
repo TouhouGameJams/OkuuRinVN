@@ -6,8 +6,8 @@ using Yarn.Unity;
 public class AffectionManager : MonoBehaviour
 {
 
-    private const int BASE_SCORE = 10;
-    private int m_Score = BASE_SCORE;
+    private const int BASE_SCORE = 0;
+    private static int m_Score = BASE_SCORE;
     public const int MAX_SCORE = 100;
 
     public int CurrentScore { get { return m_Score; } }
@@ -37,6 +37,11 @@ public class AffectionManager : MonoBehaviour
         return conditionScore <= m_Score;
     }
 
+    [YarnFunction("ReturnScore")]
+    public static int ReturnScore()
+    {
+        return m_Score;
+    }
 
     private void Clamp(ref int currentScore,in int maxScore)
     {

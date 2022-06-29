@@ -1,4 +1,24 @@
-﻿title: GoodEnding_Chireiden
+﻿title: GoToEnding_HumanVillage
+position: 13,378
+---
+//If total Affection score is higher than 2
+//<<IsHigher 2>>
+    //<<jump GoodEnding_HumanVillage>>
+===
+
+title: GoToEnding_Chireiden
+position: 0,1
+---
+<<set $score to ReturnScore()>>
+
+<<if $score > 3>>
+    <<jump GoodEnding_Chireiden>>
+<<else>>
+    <<jump BadEnding_Chireiden>>
+<<endif>>
+===
+
+title: GoodEnding_Chireiden
 tags:
 ---
 <<ChangeBG BGManager "Chireiden">>

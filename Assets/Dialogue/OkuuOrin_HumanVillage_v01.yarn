@@ -16,6 +16,7 @@ Satori: Don't cause trouble at the Human Village.
 Satori: Listen to Orin. She will know what to do there.
 Satori: But more importantly, have fun.
 <<FadeOut FadeScreen>>
+<<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 Orin: Are you ready, Okuu?
 Orin: Is this the first time you will go to the surface?

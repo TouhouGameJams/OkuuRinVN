@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eulogous - SFX, BGM
+  m_text: Eulogous - Music Composer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -915,6 +915,7 @@ GameObject:
   - component: {fileID: 538221093}
   - component: {fileID: 538221092}
   - component: {fileID: 538221091}
+  - component: {fileID: 538221094}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -984,7 +985,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 538221092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1517173550}
+        m_TargetAssemblyTypeName: MITView, Assembly-CSharp
+        m_MethodName: ArrowClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &538221092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,6 +1036,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538221089}
   m_CullTransparentMesh: 1
+--- !u!114 &538221094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538221089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0c5c7553c06814196829434b59cc4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679402950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1060,7 @@ GameObject:
   - component: {fileID: 679402954}
   - component: {fileID: 679402953}
   - component: {fileID: 679402952}
+  - component: {fileID: 679402955}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1105,7 +1131,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 679402953}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2094164266811750446}
+        m_TargetAssemblyTypeName: CreditsView, Assembly-CSharp
+        m_MethodName: ArrowClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &679402953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,56 +1182,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679402950}
   m_CullTransparentMesh: 1
---- !u!1 &703559524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 703559526}
-  - component: {fileID: 703559525}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: SaveDataManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &703559525
+--- !u!114 &679402955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703559524}
+  m_GameObject: {fileID: 679402950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9579b339b450344ba796ce292995ca, type: 3}
+  m_Script: {fileID: 11500000, guid: ea0c5c7553c06814196829434b59cc4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_saveData:
-    lastSentence: 
-    resolution: 
-    isFullScreen: 0
-    bgmVolume: 0
-    sfxVolume: 0
-  m_continueButton: {fileID: 0}
---- !u!4 &703559526
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703559524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &736995167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CKenshin - Programmer
+  m_text: CKenshin - Unity Developer / Programmer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aqwa - 2D Artist
+  m_text: Aqwa - 2D Sprite Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2091,7 +2091,7 @@ PrefabInstance:
     - target: {fileID: 3229433066660590824, guid: dde12c61bc0a38643afbcf5355d47cfe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3229433066660590824, guid: dde12c61bc0a38643afbcf5355d47cfe,
         type: 3}
@@ -2424,7 +2424,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1517173550}
-        m_TargetAssemblyTypeName: CreditsView, Assembly-CSharp
+        m_TargetAssemblyTypeName: MITView, Assembly-CSharp
         m_MethodName: CloseClick
         m_Mode: 1
         m_Arguments:
@@ -2484,7 +2484,7 @@ GameObject:
   - component: {fileID: 994933899}
   - component: {fileID: 994933898}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: SetScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2521,7 +2521,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008342996
 GameObject:
@@ -2561,7 +2561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 312.1384, y: 58.526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008342998
@@ -2765,7 +2765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 320}
+  m_AnchoredPosition: {x: 0, y: 403}
   m_SizeDelta: {x: 1800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1068931627
@@ -3075,7 +3075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1459336384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3355,7 +3355,7 @@ GameObject:
   - component: {fileID: 1517173551}
   - component: {fileID: 1517173550}
   m_Layer: 5
-  m_Name: CreditsScreen (1)
+  m_Name: MITScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3394,7 +3394,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1517173548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2431a9fe06035841b15b296a4e19d09, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cfe8f53bcaca164ba018c34fc7262da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1517173551
@@ -3470,7 +3470,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 470}
-  m_SizeDelta: {x: 1800, y: 50}
+  m_SizeDelta: {x: 1600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533427275
 MonoBehaviour:
@@ -3779,6 +3779,7 @@ MonoBehaviour:
   loadView: {fileID: 1426943332}
   optionsView: {fileID: 4499786955037715631}
   creditsView: {fileID: 2094164266811750446}
+  mITView: {fileID: 1517173550}
 --- !u!1 &1671805323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,7 +3882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DX5536 - Story, Background
+  m_text: DX5536 - Writer and Background Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4175,7 +4176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seeker - Programmer
+  m_text: Seeker - Unity Developer / Programmer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4343,37 +4344,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24100000, guid: cfcb8f3703ccfbb4caf3c13cccbbfa20,
-        type: 2}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[4].name
-      value: HeartfeltFancy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[14].name
-      value: SadShake
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[4].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c98cf780a1023c34ca85ccb079783469, type: 3}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[14].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: df0fe7a6a0995e342a771ddf7c8c7b29, type: 3}
     - target: {fileID: 1043275046997892079, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_RootOrder
@@ -4428,16 +4398,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2120634389204310258, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6224101405462711696, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_Volume
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d7256b3882a6546ab2e0f10b2da531, type: 3}
