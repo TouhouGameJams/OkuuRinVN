@@ -82,6 +82,7 @@ Orin: Or you rather have it as a surprise?
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Happy">>
 <<SetWhite FadeScreen>>
+<<ChangeBG BGManager Sky>>
 Okuu: So this is the surface...
 Orin: Yup, breath-taking isn't it?
 Orin: If we keep flying in this direction, we will reach the Human Village in no time.
@@ -218,6 +219,7 @@ position: 319,259
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 Orin: It's sure is loud here...
+<<Hop Okuu 1>>
 Okuu: And lively too!
 Orin: I only visit the Human Village during "normal" days.
 Orin: And their "normal" days are loud enough.
@@ -226,7 +228,7 @@ Okuu: So kinda like the Old Capital?
 <<Expression Orin "Thinking">>
 Orin: Hmm, true. But you know: It's just more lively than just a bunch of ghosts selling you old stuff.
 <<Expression Orin "Neutral">>
-Okuu: Those cute ghost weren't that bad.
+Okuu: Those cute ghosts weren't that bad.
 <<Expression Okuu "Thinking">>
 Okuu: But you are right, alive humans sure look and sound different than a dead one.
 <i>After walking around the village for a while </i>
