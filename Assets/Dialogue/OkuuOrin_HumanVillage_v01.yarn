@@ -586,14 +586,3 @@ Yatagarasu: <i>(Guess it's too late now, the sky is already filled with beautifu
 Okuu: <i>(I- I will ask her next time...)</i>
 <<jump GoToEnding_HumanVillage>>
 ===
-title: GoToEnding_HumanVillage
-position: 13,378
----
-//<<set $score to ReturnScore()>>
-
-<<if $score > 5>>
-    <<jump GoodEnding_Chireiden>>
-<<else>>
-    <<jump BadEnding_Chireiden>>
-<<endif>>
-===
