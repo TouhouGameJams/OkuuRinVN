@@ -4344,37 +4344,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24100000, guid: cfcb8f3703ccfbb4caf3c13cccbbfa20,
-        type: 2}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[4].name
-      value: TitleScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[14].name
-      value: SadShake
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[4].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8824696940a45034189899838eed06d2, type: 3}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[14].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: df0fe7a6a0995e342a771ddf7c8c7b29, type: 3}
     - target: {fileID: 1043275046997892079, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_RootOrder
@@ -4429,26 +4398,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2120634389204310258, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2120634389204310258, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4353977209507773268, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6224101405462711696, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_Volume
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d7256b3882a6546ab2e0f10b2da531, type: 3}

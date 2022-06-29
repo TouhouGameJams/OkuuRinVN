@@ -24,8 +24,8 @@ MonoBehaviour:
       m_Hash: -34935967
       m_Sprite: {fileID: 7284610765720928995, guid: e1cfb1d322d81ca459ce8bd7b3ad22c9,
         type: 3}
-    - m_Name: Flushed
-      m_Hash: -1717006102
+    - m_Name: Happy
+      m_Hash: 2133634253
       m_Sprite: {fileID: -1315022560135975909, guid: e1cfb1d322d81ca459ce8bd7b3ad22c9,
         type: 3}
     - m_Name: Neutral

@@ -30,15 +30,12 @@ Orin: Else you will miss breakfast...
     <<Expression Okuu "Happy">>
     Okuu: I'm looking forward to today, Orin.
     Okuu: Let's go!
-    //Move
-    //Orin Flip
-
 -> Okuu: Zzz...
     Orin: Okuu?
     Okuu: Zzz... Zzz...
     Orin: If you don't wake up soon, your breakfast is going to be cold...
     Okuu: Zzz...
-    //Orin moves closer and give peek on Okuu's cheek
+    Orin: *Shuffling noises*
     Orin: *chu*
     Orin: <i>(Oh well... I guess I will give her more time to sleep)</i>
     //Orin out of the room
@@ -76,7 +73,7 @@ Yatagarasu: <i>(But this may play to your advantage.)</i>
 Yatagarasu: <i>(No distractions for either of you, I have to say.)</i>
 Yatagarasu: <i>(Go for it Ms. Utsuho. Be as bold as you like!)</i>
 Okuu: <i>(Unyuu!)<i>
-<<JumpToNode SentenceBuilder_Chireiden_0>>
+<<jump SentenceBuilder_Chireiden_0>>
 ===
 
 title: SentenceBuilder_Chireiden_0

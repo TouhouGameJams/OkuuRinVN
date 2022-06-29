@@ -40,7 +40,7 @@ Okuu: ( thinks very hard )
     <<Expression Okuu "Sad">>
     Orin: For everyone's sake
 Satori: I would like to give you two this weekend off.
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Ehhh?
 <<Expression Okuu Happy>>
 Okuu: Ehhhhh!
@@ -53,7 +53,7 @@ Satori: Also you two have been working very hard for everyone these past few yea
 Satori: It's only fair that you two deserve a break.
 Okuu: Satori-sama...
 Orin: Satori-sama...
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 <<Expression Okuu Happy>>
 <<SpeedLines Okuu 1>>
 <<SpeedLines Orin 1>>
@@ -81,7 +81,7 @@ Satori: (Ah...Actually...I seemed to forget to tell Orin something important.)
 Orin: Woah, days off. What do you think, Okuu?
 Okuu: I...!
 Satori: Orin! Could you come into my office real fast?
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Of course Satori-sama!
 <<Expression Orin Neutral>>
 Orin: Ah one sec ok Okuu?
@@ -227,7 +227,7 @@ position: 189,-203
 <<Flip Orin>>
 <<WalkTowards Orin 10 Left 1>>
 Okuu: O-Orin! What did Satori-sama want?
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Oh she just warned me to not bring any corpses back from wherever we went.
 Orin: Anyways. We were saying something before. What was it again?
 Orin: Oh yea! We finally get days off! What do you think Okuu?
@@ -254,7 +254,7 @@ colorID: 4
 <<PlaySFX SoundManager Smile>>
 <<Expression Okuu Happy>>
 Okuu: I like it! 
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: I like it too! It has been so long.
 Orin: Of course, I like work too: Collecting corpses, helping you and Satori-sama...
 Orin: But having a relaxing day once in a while is great.
@@ -290,7 +290,7 @@ Orin: Should count that time you trying to take over Gensokyo as "days off", I w
 <<ShakeSide Okuu>>
 <<PlaySFX SoundManager SadShake>> 
 Okuu: I-I really thought it was good for Satori-sama and the others.
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: I'm joking. Well, the past is the past. Let us look forward to our days off.
 Orin: And a proper one this time.
 <<jump MainStory_Intro_2>>
@@ -326,7 +326,7 @@ Okuu: So... What exactly is it?
 Orin: Exactly what, Okuu?
 Okuu: Days off. You seem so excited too. I just can't help but be excited.
 Okuu: But... I'm not sure why...
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: To put it simply: We are completely free during our days off.
 Orin: Meaning we don't have to do anything!
 <<Expression Okuu Unyuu>>
@@ -389,7 +389,7 @@ position: 192,-47
 Okuu: W-Would you like to go to the Human Village with me?
 Okuu: I know you visit the surface a lot to help Satori-sama in her detective work.
 Okuu: But I still want to go there with you!
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Just us two?
 Okuu: Yep, just the two of us!
 Orin: Then it's a deal! I'm looking forward to our date, Okuu.
@@ -405,7 +405,7 @@ position: 191,29
 Okuu: How about we stay at the Human Village this weekend, Orin?
 Okuu: You said there will be a festival right?
 Okuu: I would love to experience this festival with you!
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: <i>(Yah!)</i>
@@ -419,7 +419,7 @@ position: 193,101
 Okuu: What if we visited home?
 <<Expression Orin Blank>>
 Orin: You don't exactly visit home Okuu
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: But I'm down for a staycation!
 Orin: You're always down in the furnaces. So it'll be a nice change of pace.
 Orin: We could even have a slumber party! What do you think?
@@ -437,7 +437,7 @@ Okuu: I'm kind of tired? What if we stayed home?
 Orin: Stayed home?
 <<Expression Okuu Sad>>
 Okuu: Was that no good? Is that too boring?
-<<Expression Orin Flushed>>
+<<Expression Orin Happy>>
 Orin: Honestly a staycation sounds great to me! 
 <<Expression Orin Embarassed>>
 Okuu: It does?!
