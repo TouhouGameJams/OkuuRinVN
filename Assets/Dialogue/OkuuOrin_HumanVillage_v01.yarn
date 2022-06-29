@@ -3,8 +3,12 @@ tags:
 position: -98,-38
 ---
 <<SetBlack FadeScreen>>
-<<ChangeBG BGManager "HumanVillage">>
-<<PlayBGM SoundManager HeartfeltFancy>>
+<<ChangeBG BGManager "Chireiden">>
+//Should be HumanVillage track
+<<PlayBGM SoundManager UnderGround>>
+//Debug Spawn
+<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
+<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
 Satori: Listen, Okuu.
 Satori: When you go to the surface, please behave.
 Satori: And be a good example for Chireiden.
@@ -17,6 +21,7 @@ Satori: But more importantly, have fun.
 Orin: Are you ready, Okuu?
 Orin: Is this the first time you will go to the surface?
 <<Expression Okuu "Happy">>
+<<Hop Okuu 3>>
 Okuu: I think so... That's why I'm so hype!
 Okuu: Can you tell me something about the surface, Orin?
 <<Expression Orin "Thinking">>
@@ -25,6 +30,7 @@ Orin: Well, there are lots of Youkai and even Humans.
 Orin: The Human Village is supposed to be a strict "No-Youkai" zone.
 Orin: But in reality, I see many Youkai hanging around there.
 Okuu: Oh? A place only for the so-called, human...
+<<Hop Orin 1>>
 Orin: Yup! Although, I personally only set foot there as Satori-sama's assistant.
 Orin: Normally I wouldn't dare to visit either.
 Okuu: How come? I don't think those humans will notice you.
@@ -37,6 +43,7 @@ Orin: As long as they behave themselves, of course.
 Okuu: What if they don't and cause trouble?
 Orin: Well, they will just face the wrath of that shrine maiden.
 <<Expression Okuu "Swirly">>
+<<Spin Okuu 360 0.5>>
 Okuu: <i>shivers</i>
 Okuu: Scary... Yeah...
 <<Expression Okuu "Neutral">>
@@ -46,6 +53,7 @@ Orin: Or you rather have it as a surprise?
 -> Okuu: Are there other interesting locations?
     Orin: I haven't been everywhere.
     Orin: But I visited two interesting locations while searching for that Jail-Breaking King.
+    <<Hop Okuu 1>>
     Okuu: Do tell!
     Orin: One of them is a mansion just like ours, but fully covered in red.
     Okuu: A red mansion, interesting...
@@ -59,6 +67,7 @@ Orin: Or you rather have it as a surprise?
     Okuu: True... Regardless I'm looking forwards to the Human Village.
     Okuu: And seeing it with my own eyes.
 -> Okuu: I think I will leave everything as a surprise for now.
+    <<Hop Orin 1>>
     Orin: Wah... Are you still Okuu?
     <<Expression Okuu "Unyuu">>
     Okuu: ???
@@ -73,6 +82,8 @@ Orin: Or you rather have it as a surprise?
 <i>A few hours later...</i>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Happy">>
+<<SetWhite FadeScreen>>
+<<ChangeBG BGManager Sky>>
 Okuu: So this is the surface...
 Orin: Yup, breath-taking isn't it?
 Orin: If we keep flying in this direction, we will reach the Human Village in no time.
@@ -91,12 +102,14 @@ title: It_Is_Amazing_Sentence
 position: -95,212
 ---
 //It is amazing...
-<<AddScore AddScore 5>>
+<<AddScore AffectionManager 5>>
 <<Expression Okuu "Happy">>
 Okuu: It is amazing...
 Orin: Right?
 Okuu: I never knew the sky is this blue. And all these trees. 
+<<Hop Okuu 2>>
 Okuu: Ahhhhh, now I want to visit every nook and corner of the surface.
+<<Expression Orin Happy>>
 Orin: Now now, We should focus on getting to the Human Village on time.
 Orin: We don't want to miss the festival.
 <<Expression Okuu "Embarrassed">>
@@ -107,11 +120,12 @@ title: Amazing_It_Is_Sentence
 position: -96,141
 ---
 //Amazing It Is...
-<<AddScore AddScore 5>>
+<<AddScore AffectionManager 5>>
 <<Expression Okuu "Happy">>
 Okuu: Amazing... It surely is...
 Orin: Right?
-Okuu: I never knew the sky is this blue. And all these trees. 
+Okuu: I never knew the sky is this blue. And all these trees.
+<<Hop Okuu 2>>
 Okuu: Ahhhhh, now I want to visit every nook and corner of the surface.
 Orin: Now now, We should focus on getting to the Human Village on time.
 Orin: We don't want to miss the festival.
@@ -122,7 +136,7 @@ Okuu: Right, right. Let's go!
 title: It_Is_Not_Amazing
 position: -94,285
 ---
-<<AddScore AddScore -5>>
+<<AddScore AffectionManager -5>>
 <<Expression Okuu "Angry">>
 Okuu: Hmm... I expected more, to be honest...
 Orin: ?
@@ -135,6 +149,7 @@ Orin: Okuu...
 Orin: It's ok to admit you are fascinated by this new place.
 Orin: I can see your ears are blushing.
 <<Expression Okuu "Embarrassed">>
+<<Hop Okuu 1>>
 Okuu: Wah?!
 Orin: It's a habit of you when you are lying. 
 <<Expression Okuu "Unyuu">>
@@ -145,7 +160,7 @@ Orin: Well, let's go. We can't be late.
 title: Is_It_Amazing_Question
 position: -96,423
 ---
-<<AddScore AddScore 0>>
+<<AddScore AffectionManager 0>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
@@ -167,7 +182,7 @@ Orin: Sure...
 title: Is_It_Not_Amazing
 position: -95,354
 ---
-<<AddScore AddScore 2>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it not amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
@@ -190,7 +205,7 @@ Orin: Sure...
 title: Invalid_HumanVillage_0
 position: -97,494
 ---
-<<AddScore AddScore 3>>
+<<AddScore AffectionManager 3>>
 <<Expression Okuu "Happy">>
 Okuu: ...
 <<Expression Orin "Smug">>
@@ -204,10 +219,12 @@ Orin: <i>(It would be a shame if we miss the festival)</i>
 title: MainStory_HumanVillage_1
 position: 319,259
 ---
+<<ChangeBG BGManager "HumanVillage">>
 ~<i>The Human Village</i>~
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 Orin: It's sure is loud here...
+<<Hop Okuu 1>>
 Okuu: And lively too!
 Orin: I only visit the Human Village during "normal" days.
 Orin: And their "normal" days are loud enough.
@@ -216,19 +233,20 @@ Okuu: So kinda like the Old Capital?
 <<Expression Orin "Thinking">>
 Orin: Hmm, true. But you know: It's just more lively than just a bunch of ghosts selling you old stuff.
 <<Expression Orin "Neutral">>
-Okuu: Those cute ghost weren't that bad.
+Okuu: Those cute ghosts weren't that bad.
 <<Expression Okuu "Thinking">>
 Okuu: But you are right, alive humans sure look and sound different than a dead one.
 <i>After walking around the village for a while </i>
 <<Expression Okuu "Happy">>
 <<Expression Orin "Happy">>
-Okuu: *mg mg* These dangos are quite yummy.
+Okuu: <i>*mg mg*</i> These dangos are quite yummy.
 Orin: I wonder what this fish-shaped pastry is called... But it's delicious as well.
 Okuu: Satori-sama sure gives us lots of this so-called "money"...
-Orin: Yup! *mg mg* With each case being solved, the one requesting Satori-sama has to pay "money".
+Orin: Yup! <i>*mg mg*</i> With each case being solved, the one requesting Satori-sama has to pay "money".
 Orin: Although it's not like "money" has any uses at Chireiden...
 Okuu: So she just saves all her "money" for special occasions like this?
-Orin: Looks like it! 
+Orin: Looks like it!
+<<Hop Okuu 1>>
 Okuu: I wish Satori-sama would be able to join this festival, too.
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
@@ -237,7 +255,8 @@ Orin: She can't exactly control whose mind she can read.
 Orin: In the end, everyone's mind barges into her head. It sounds very painful, to be honest.
 <i>Music plays in the distance</i>
 Orin: Oh? Okuu, let's check it out.
-Okuu: *mg mg* Sure!
+<<Hop Orin 1>>
+Okuu: <i>*mg mg*</i> Sure!
 <i>A few minutes later...</i>
 Orin: The Prismrivers? And they are playing all their hits...
 Okuu: The humans are dancing over there too!
@@ -258,7 +277,7 @@ Okuu: <i>(Should I ask Orin out for a dance?)</i>
 title: Would_You_LikeTo_Dance
 position: 326,523
 ---
-<<AddScore AddScore 5>>
+<<AddScore AffectionManager 5>>
 <<Expression Okuu "Embarrassed">>
 Okuu: Orin... Would you like to dance with me?
 <<Expression Orin "Happy">>
@@ -268,6 +287,8 @@ Okuu: But?
 <<Expression Orin "Embarrassed">>
 Orin: I don't know how to dance...
 <<Expression Okuu "Happy">>
+<<Hop Okuu 1>>
+<<Spin Okuu 360 0.5>>
 Okuu: It's ok! I don't know how to dance either.
 Okuu: Just have fun, I guess?
 <<Expression Orin "Happy">>
@@ -279,7 +300,7 @@ Orin: But of course!
 title: Would_You_LikeTo_Watch
 position: 323,446
 ---
-<<AddScore AddScore 3>>
+<<AddScore AffectionManager 3>>
 <<Expression Okuu "Embarrassed">>
 Okuu: W-Would you like to watch them with me, Orin?
 Okuu: I don't know how to dance...
@@ -292,7 +313,7 @@ Orin: L-let just enjoys the music together, Okuu.
 title: I_Would_LikeTo_Watch
 position: 325,603
 ---
-<<AddScore AddScore 3>>
+<<AddScore AffectionManager 3>>
 <<Expression Okuu "Embarrassed">>
 Okuu: I think I will just stay back and watch, Orin...
 Okuu: I-I don't know how to dance...
@@ -326,7 +347,7 @@ Okuu: Uhm...
 title: You_Would_LikeTo_Watch
 position: 326,679
 ---
-<<AddScore AddScore -5>>
+<<AddScore AffectionManager -5>>
 <<Expression Okuu "Happy">>
 Okuu: You would prefer to just watch them, right?
 Okuu: Same with me!
@@ -336,6 +357,7 @@ Orin: <i>*whispers</i> But we came here to have fun though...
 <<Expression Okuu "Unyuu">>
 Okuu: Unyuu? Did you say something?
 <<Expression Orin "Neutral">>
+<<Hop Orin 1>>
 Orin: Ah, nothing. Nothing at all.
 Orin: Let's just enjoy the music!
 <<jump MainStory_HumanVillage_2>>
@@ -343,7 +365,7 @@ Orin: Let's just enjoy the music!
 title: Invalid_HumanVillage_1
 position: 324,752
 ---
-<<AddScore AddScore 1>>
+<<AddScore AffectionManager 1>>
 Okuu: ...
 <<Expression Orin "Smug">>
 Orin: <i>(Guess she's so immersed in the music...)</i>
@@ -356,6 +378,7 @@ Orin: <i>(Turns out they came back weeks later with a new member!!!)</i>
 Orin: <i>(Ahhh, to hear them live like this-!)</i>
 Okuu: Orin?
 <<Expression Orin "Sad">>
+<<Hop Orin 2>>
 Orin: Nyaaa-!
 Okuu: Oh, I didn't mean to surprise you like this... I'm sorry...
 <<Expression Orin "Swirly">>
@@ -371,6 +394,7 @@ position: 587,565
 <<Expression Okuu "Thinking">>
 Okuu: I wonder if there is anything interesting left-
 Man: Did you hear? They are having a public danmaku battle by the end of the festival.
+<<Hop Okuu 1>>
 Woman: Eh? They won't do the fireworks like before?
 Man: I'm not sure but it's supposed to replace the fireworks...
 <<Expression Okuu "Happy">>
@@ -381,6 +405,7 @@ Okuu: Orin...
 Orin: You want to join, don't you?
 Okuu: I admit, I do...
 Okuu: It sounds so interesting too!
+<<Hop Orin 2>>
 Okuu: Would you like to join?
 Orin: Me?
 Okuu: Yeah. In fact, the two of us haven't had a spell card duel in a while.
@@ -400,13 +425,15 @@ Okuu: <i>(But what if she really doesn't want to join?)</i>
 title: Pretty_Please_Quesiton
 position: 588,639
 ---
-<<AddScore AddScore 3>>
+<<AddScore AffectionManager 3>>
 <<Expression Okuu "Unyuu">>
 Okuu: Pretty please?
 Orin: ...
+<<Hop Okuu 1>>
 Okuu: Unyuu~
 <<Expression Orin "Swirly">>
 Orin: ...Those eyes won't work...
+<<Hop Okuu 1>>
 Okuu: Unyuu~
 <<Expression Orin "Embarrassed">>
 Orin: Ok, fine. You win.
@@ -418,11 +445,12 @@ Okuu: Of course. Time to put on a spectacular show!
 title: Please_Im_Begging
 position: 587,709
 ---
-<<AddScore AddScore -2>>
+<<AddScore AffectionManager -2>>
 <<Expression Okuu "Sad">>
 Okuu: Orin, please, I'm begging here!
 <<Expression Orin "Thinking">>
 Orin: Is it that important?
+<<Hop Okuu 1>>
 Okuu: Yeeess!
 Orin: ...
 Okuu: ...
@@ -437,12 +465,13 @@ Okuu: Me neither!
 title: Im_Begging_You
 position: 587,779
 ---
-<<AddScore AddScore -2>>
+<<AddScore AffectionManager -2>>
 <<Expression Okuu "Sad">>
 Okuu: I'm begging you, Orin!
 Okuu: Please have a danmaku duel with me!
 <<Expression Orin "Thinking">>
 Orin: Is it that important?
+<<Hop Okuu 1>>
 Okuu: Yeeess!
 Orin: ...
 Okuu: ...Please?
@@ -457,11 +486,12 @@ Okuu: Me neither!
 title: Im_Pretty_Question
 position: 587,823
 ---
-<<AddScore AddScore 0>>
+<<AddScore AffectionManager 0>>
 <<Expression Okuu "Happy">>
 Okuu: I'm pretty, right?
 Orin: Huh? Uhm...
 Orin: You are pretty, Okuu!
+<<Hop Orin 2>>
 <<Expression Okuu "Swirly">>
 Orin: <i>(But what does it have to do with the danmaku battle?)</i>
 Okuu: It sure feels good to be praised!
@@ -470,7 +500,7 @@ Okuu: It sure feels good to be praised!
 title: Im_You_Question
 position: 586,894
 ---
-<<AddScore AddScore -2>>
+<<AddScore AffectionManager -2>>
 <<Expression Okuu "Swirly">>
 Okuu: I am you?
 Orin: Excuse me...?
@@ -498,7 +528,7 @@ Orin: (Now I'm worried...)
 title: You_Pretty_Question
 position: 586,1011
 ---
-<<AddScore AddScore 5>>
+<<AddScore AffectionManager 5>>
 <<Expression Okuu "Smug">>
 Okuu: Orin, I think you are pretty?
 Okuu: And I can't take my eye off you.
@@ -521,13 +551,14 @@ Orin: Sure! I can't get too rusty with my skills now, do I?
 title: Im_Begging_Question
 position: 586,939
 ---
-<<AddScore AddScore -2>>
+<<Add ScoreAffectionManager -2>>
 <<Expression Okuu "Sad">>
 Okuu: Orin, even if...
 Okuu: I'm begging here?
 Okuu: Just... Have a danmaku match with me!
 <<Expression Orin "Thinking">>
 Orin: Is it that important?
+<<Hop Okuu 1>>
 Okuu: Yeeess!
 Orin: ...
 Okuu: ...Please?
@@ -542,7 +573,7 @@ Okuu: Me neither!
 title: Invalid_HumanVillage_2
 position: 586,1055
 ---
-<<AddScore AddScore -4>>
+<<AddScore AffectionManager -4>>
 Okuu: ...
 Okuu: <i>(Better not ask Orin as she seems to not want to play with me...)</i>
 Okuu: <i>(I will respect that)</i>
@@ -554,4 +585,15 @@ Yatagarasu: <i>(Oh you think, not because you know... right....)</i>
 Yatagarasu: <i>(Guess it's too late now, the sky is already filled with beautiful patterns)</i>
 Okuu: <i>(I- I will ask her next time...)</i>
 <<jump GoToEnding_HumanVillage>>
+===
+title: GoToEnding_HumanVillage
+position: 13,378
+---
+//<<set $score to ReturnScore()>>
+
+<<if $score > 5>>
+    <<jump GoodEnding_Chireiden>>
+<<else>>
+    <<jump BadEnding_Chireiden>>
+<<endif>>
 ===

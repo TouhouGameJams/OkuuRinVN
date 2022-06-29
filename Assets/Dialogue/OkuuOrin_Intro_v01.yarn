@@ -8,8 +8,10 @@ colorID: 4
 <i>~On one odd conspicuous day at Satori Komeiji's office, Chireiden~</i>
 <<FadeOut FadeScreen>>
 <<PlayBGM SoundManager HeartfeltFancy>>
-Satori: Okuu! Orin! Could you come into my office please?
+Satori: Okuu! Orin! Could you come into my office, please?
+//Right: On-ScreenPos
 <<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
+//Right: Off-ScreenPos
 <<CreateCharacter CharacterManager Okuu 15 -1.25 Left>>
 Orin: Yahoo! How's it going Satori-sama?
 <i>~Rin Kaenbyou, Hell's Traffic Accident. Affectionately known as Orin~</i>
@@ -18,6 +20,7 @@ Orin: Yahoo! How's it going Satori-sama?
 <i>~Even if it does mean carting a corpse back home...~</i>
 Satori: Orin, did you see Okuu on the way here?
 Orin: Okuu? I think she should be on the way here. She shouldn't be long.
+//Dashing from Right_Off-Screen to Left_On-ScreenPos
 <<WalkTowards Okuu 19 Left 0.5>>
 <<Expression Orin BugEyed>>
 <<Flip Okuu>>
