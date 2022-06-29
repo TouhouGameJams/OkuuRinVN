@@ -10,6 +10,7 @@ public class CreditsState : BaseState
 
         // Attach functions to view events
         owner.UI.CreditsView.OnCloseClicked += CloseClicked;
+        owner.UI.CreditsView.OnArrowClicked += ArrowClicked;
 
         // Show pause view
         owner.UI.CreditsView.ShowView();
@@ -22,6 +23,7 @@ public class CreditsState : BaseState
 
         // Detach functions from view events
         owner.UI.CreditsView.OnCloseClicked -= CloseClicked;
+        owner.UI.CreditsView.OnArrowClicked -= ArrowClicked;
 
         base.DestroyState();
     }
@@ -32,5 +34,10 @@ public class CreditsState : BaseState
     private void CloseClicked()
     {
         owner.ChangeState(new MenuState { });
+    }
+
+    private void ArrowClicked()
+    {
+        owner.ChangeState(new MITState { });
     }
 }
