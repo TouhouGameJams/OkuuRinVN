@@ -12,6 +12,8 @@ public class Board : MonoBehaviour
     public GameObject PhraseBlockArea;
     public List<Slot> slots;
     private float[] slotPosition = { -600f, -300f, 0f, 300f, 600f };
+    private float[] slotPositionEven = { -400f, -100f, 100f, 400f };
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,16 +57,34 @@ public class Board : MonoBehaviour
         const float SPACING_WIDTH = 50f;
         float SLOT_WIDTH = slotAsset.GetComponent<RectTransform>().rect.width;
 
-        for(int i = 0; i < numberOfSlots; i++)
+        if(numberOfSlots%2 == 0)
         {
-            float xPos = slotPosition[numberOfSlots - 1] + (SLOT_WIDTH * (i - 1)) + (SPACING_WIDTH * (i - 1));
-            var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
-            newSlot.transform.localPosition = new Vector3(xPos, 0f, 0f);
-            var slotNumber = 1 + i;
-            newSlot.GetComponentInChildren<TextMeshProUGUI>().text = "Slot " + slotNumber.ToString();
-            newSlot.SlotIndex = i;
-            slots.Add(newSlot);
+            for (int i = 0; i < numberOfSlots; i++)
+            {
+                float xPos = slotPositionEven[1] + (SLOT_WIDTH * (i - 1)) + (SPACING_WIDTH * (i - 1));
+                var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
+                newSlot.transform.localPosition = new Vector3(xPos, 0f, 0f);
+                var slotNumber = 1 + i;
+                newSlot.GetComponentInChildren<TextMeshProUGUI>().text = "Slot " + slotNumber.ToString();
+                newSlot.SlotIndex = i;
+                slots.Add(newSlot);
+            }
         }
+        else
+        {
+            for (int i = 0; i < numberOfSlots; i++)
+            {
+                float xPos = slotPosition[numberOfSlots - 1] + (SLOT_WIDTH * (i - 1)) + (SPACING_WIDTH * (i - 1));
+                var newSlot = Instantiate(slotAsset, AnswerBlockArea.transform);
+                newSlot.transform.localPosition = new Vector3(xPos, 0f, 0f);
+                var slotNumber = 1 + i;
+                newSlot.GetComponentInChildren<TextMeshProUGUI>().text = "Slot " + slotNumber.ToString();
+                newSlot.SlotIndex = i;
+                slots.Add(newSlot);
+            }
+        }
+
+
         //Create and evenly position slots in the slot area based on the number of slots provided
     }
 
