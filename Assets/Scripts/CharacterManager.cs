@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
-public class CharacterManager : MonoBehaviour
+public class CharacterManager: MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

@@ -16,8 +16,8 @@ MonoBehaviour:
   - m_Name: Okuu
     m_Hash: -728319050
     m_CategoryList:
-    - m_Name: Embarassed
-      m_Hash: 384447257
+    - m_Name: Embarrassed
+      m_Hash: 1651659371
       m_Sprite: {fileID: 1070389599491975910, guid: 2f5afa3ef7e670540899335eabff8f99,
         type: 3}
     - m_Name: Happy
