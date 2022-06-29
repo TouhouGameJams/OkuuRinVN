@@ -396,7 +396,7 @@ Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 <<Expression Orin Neutral>>
 Okuu: <i>(D-date...)</i>
 <<FadeIn FadeScreen>>
-<<ToNext GameManager MainStory_Chireiden_0>>
+<<jump MainStory_HumanVillage_0>>
 ===
 title: WouldYouLike_ToStayAt_TheHumanVillage
 position: 191,29
@@ -410,7 +410,7 @@ Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: <i>(Yah!)</i>
 <<FadeIn FadeScreen>>
-<<ToNext GameManager MainStory_Chireiden_0>>
+<<jump MainStory_HumanVillage_0>>
 ===
 title: WouldYouLike_ToGoTo_Home
 position: 193,101
@@ -427,7 +427,7 @@ Orin: We could even have a slumber party! What do you think?
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
-<<ToNext GameManager MainStory_Chireiden_0>>
+<<jump MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_Home
 position: 192,177
@@ -446,7 +446,7 @@ Orin: We could even have a slumber party! What do you think?
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
-<<ToNext GameManager MainStory_Chireiden_0>>
+<<jump MainStory_Chireiden_0>>
 ===
 title: Invalid_Intro_2
 position: 192,250
@@ -466,5 +466,5 @@ Orin: I don't. And you?
 Okuu: Same! As long I'm with you, I don't really care where we go!
 Orin: Then let us relax at home for this weekend.
 <<FadeIn FadeScreen>>
-<<ToNext GameManager MainStory_Chireiden_0>>
+<<jump MainStory_Chireiden_0>>
 ===
