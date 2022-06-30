@@ -5,7 +5,7 @@ position: -98,-38
 <<SetBlack FadeScreen>>
 <<ChangeBG BGManager "Chireiden">>
 //Should be HumanVillage track
-<<PlayBGM SoundManager UnderGround>>
+<<PlayBGM SoundManager HeartfeltFancy>>
 //Debug Spawn
 <<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
 <<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
@@ -21,7 +21,7 @@ Satori: But more importantly, have fun.
 Orin: Are you ready, Okuu?
 Orin: Is this the first time you will go to the surface?
 <<Expression Okuu "Happy">>
-<<Hop Okuu 3>>
+<<ShakeOver Okuu>>
 Okuu: I think so... That's why I'm so hype!
 Okuu: Can you tell me something about the surface, Orin?
 <<Expression Orin "Thinking">>

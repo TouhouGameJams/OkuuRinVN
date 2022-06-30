@@ -8,11 +8,9 @@ colorID: 4
 <i>~On one odd conspicuous day at Satori Komeiji's office, Chireiden~</i>
 <<FadeOut FadeScreen>>
 <<PlayBGM SoundManager HeartfeltFancy>>
-Satori: Okuu! Orin! Could you come into my office, please?
-//Right: On-ScreenPos
-<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
-//Right: Off-ScreenPos
-<<CreateCharacter CharacterManager Okuu 15 -1.25 Left>>
+Satori: Okuu! Orin! Could you come into my office please?
+<<CreateCharacter CharacterManager Orin -6 -1.25 Right>>
+<<CreateCharacter CharacterManager Okuu -15 -1.25 Right>>
 Orin: Yahoo! How's it going Satori-sama?
 <i>~Rin Kaenbyou, Hell's Traffic Accident. Affectionately known as Orin~</i>
 <i>~A twin-tailed pet cat in faithful service to Satori, the mistress of the Palace of the Earth Sprits~</i>
@@ -20,8 +18,7 @@ Orin: Yahoo! How's it going Satori-sama?
 <i>~Even if it does mean carting a corpse back home...~</i>
 Satori: Orin, did you see Okuu on the way here?
 Orin: Okuu? I think she should be on the way here. She shouldn't be long.
-//Dashing from Right_Off-Screen to Left_On-ScreenPos
-<<WalkTowards Okuu 19 Left 0.5>>
+<<WalkTowards Okuu 19 Right 0.5>>
 <<Expression Orin BugEyed>>
 <<Flip Okuu>>
 Okuu: Okuu reporting for duty!
@@ -65,18 +62,18 @@ Satori: (I-It's too bright...)
 Satori: You're both excused!
 <<Hop Okuu 2>>
 Okuu: Yay!
-<<WalkTowards Okuu 19 Right 0.5>>
+<<WalkTowards Okuu 19 Left 0.5>>
 <<Hop Orin 1>>
 Orin: Okuu! Wait!
 <<Flip Orin>>
-<<WalkTowards Orin 10 Right 0.5>>
+<<WalkTowards Orin 10 Left 0.5>>
 Satori: (I wonder how these two are going to spend their weekend)
 Satori: (Ah...Actually...I seemed to forget to tell Orin something important.)
 <<FadeIn FadeScreen>>
 <i>~At the hallway of Chireiden~</i>
 <<PlayBGM SoundManager Comical>>
-<<SetCharacter Orin 6 -1.25>>
-<<SetCharacter Okuu -4 -1.25>>
+<<SetCharacter Orin -6 -1.25>>
+<<SetCharacter Okuu 4 -1.25>>
 <<Expression Orin Neutral>>
 <<Expression Okuu Neutral>>
 <<Flip Orin>>
@@ -84,7 +81,7 @@ Satori: (Ah...Actually...I seemed to forget to tell Orin something important.)
 Orin: Woah, days off. What do you think, Okuu?
 Okuu: I...!
 Satori: Orin! Could you come into my office real fast?
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: Of course Satori-sama!
 <<Expression Orin Neutral>>
 Orin: Ah one sec ok Okuu?
@@ -102,11 +99,12 @@ Orin: Ah one sec ok Okuu?
 <<Expression Okuu "Sad">>
 //Walk into center
 <<Flip Orin>>
-<<WalkTowards Orin 10 Right 0.5>>
-<<WalkTowards Okuu 4 Right 1>>
+<<WalkTowards Orin 10 Left 0.5>>
+<<WalkTowards Okuu 4 Left 1>>
 Okuu: Sigh...
 Okuu: (It sure is quiet without her...)
 Yatagarasu: (You enjoy her company alot, don't you?)
+<<Expression Okuu Embarrassed>>
 Okuu: Who said that?!
 <<Spin Okuu 360 1>>
 Okuu: Who is there?
@@ -120,6 +118,7 @@ Okuu: Who is there?
 Yatagarasu: <i>(Have you forgotten me so soon?)</i>
 Yatagarasu: <i>(It is I! The great Divine Three-Legged Crow.)</i>
 Yatagarasu: <i>(The Avatar of the Sun Goddess and the vessel of the divine flame which pours out nuclear power!)</i>
+<<Expression Okuu Happy>>
 Okuu: <i>(Mr. Crow!)</i>
 Yatagarasu: <i>(Mr. Crow!)</i>
 Yatagarasu: <i>(No! Wait! I am the Yatagarasu!)</i>
@@ -135,7 +134,7 @@ Yatagarasu: <i>(Ahh...I see. This is probably the first time where it's just the
 Okuu: <i>(Her name is Orin.)</i>
 Yatagarasu: <i>(Ah correct. Ms. Orin. My mistake. Do you have anything planned as of yet for the weekend?)</i>
 Yatagarasu: <i>(Maybe some sort of date perhaps?)</i>
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Okuu: <i>(D-Date?!)</i>
 Yatagarasu: <i>(My how, risque. I can feel those fiery emotions within ready to burst.)</i>
 Yatagarasu: <i>(You're even thinking as far as to confess your love aren't you?)</i>
@@ -144,10 +143,11 @@ Okuu: <i>(L-love...confess...)</i>
 <<Expression Okuu Swirly>>
 Okuu: <i>(Unyuu...)</i>
 Yatagarasu: <i>(Oh dear I may have broken a fuse there.)</i>
-<<Expression Okuu Neutral>>
+<<Expression Okuu Embarrassed>>
 Okuu: <i>(What should I do Mr. Crow? I don't know what to do!)</i>
 Yatagarasu: <i>(I'm going to have to ask you to slow down before a valve in your head begins to burst.)</i>
 Yatagarasu: <i>(You remember what Ms. Satori said when your thoughts begin to race correct?)</i>
+<<Expression Okuu Thinking>>
 Okuu: <i>(She said to think and focus on one thing at a time.)</i>
 Yatagarasu: <i>(That's right and when it comes to right now? What do you want to do most?!)</i>
 Yatagarasu: <i>(Say it! Let me feel the flames of conviction from within!)</i>
@@ -170,9 +170,9 @@ position: -134,-188
 Okuu: <i>(I can try...)</i>
 Yatagarasu: <i>(A little half-baked, make sure not to chicken out when it's confession time.)</i>
 Orin: Okuu!
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Yatagarasu: <i>(Ah, speaking of which...)</i>
-Okuu: Orin! Quick! Hide!
+Okuu: It's Orin! Quick Mr. Crow! Hide!
 <<FinishThinking Thinking>>
 Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
@@ -184,9 +184,9 @@ position: -134,-277
 Okuu: <i>(I promised, I will do it!)</i>
 Yatagarasu: <i>(I like that look in your eyes! I can feel the fire from within.)</i>
 Orin: Okuu!
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Yatagarasu: <i>(Ah, speaking of which...)</i>
-Okuu: Orin! Quick! Hide!
+Okuu: It's Orin! Quick Mr. Crow! Hide!
 <<FinishThinking Thinking>>
 Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
@@ -198,9 +198,9 @@ position: -135,-232
 Okuu: <i>(I know I can do it!)</i>
 Yatagarasu: <i>(That's the spirit!)</i>
 Orin: Okuu!
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Yatagarasu: <i>(Ah, speaking of which...)</i>
-Okuu: Orin! Quick! Hide!
+Okuu: It's Orin! Quick Mr. Crow! Hide!
 <<FinishThinking Thinking>>
 Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
@@ -211,9 +211,9 @@ position: -134,-146
 <<Expression Okuu "Unyuu">>
 Yatagarasu: <i>(Oh dear... I hope it will be all ok...)</i>
 Orin: Okuu!
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Yatagarasu: <i>(Ah, speaking of which...)</i>
-Okuu: Already? Quick! Hide!
+Okuu: It's Orin! Quick Mr. Crow! Hide!
 <<FinishThinking Thinking>>
 Yatagarasu: <i>(I don't have to hide! I'm in your head!)</i>
 <<jump MainStory_Intro_1>>
@@ -224,11 +224,12 @@ position: 189,-203
 ---
 <<Hop Okuu 1>>
 <<Flip Okuu>>
-<<WalkTowards Okuu 4 Left 1>>
+<<WalkTowards Okuu 4 Right 0.5>>
 <<Flip Okuu>>
 <<Expression Orin Neutral>>
 <<Flip Orin>>
-<<WalkTowards Orin 10 Left 1>>
+<<WalkTowards Orin 10 Right 1>>
+<<Expression Okuu Unyuu>>
 Okuu: O-Orin! What did Satori-sama want?
 <<Expression Orin Happy>>
 Orin: Oh she just warned me to not bring any corpses back from wherever we went.
@@ -257,7 +258,7 @@ colorID: 4
 <<PlaySFX SoundManager Smile>>
 <<Expression Okuu Happy>>
 Okuu: I like it! 
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: I like it too! It has been so long.
 Orin: Of course, I like work too: Collecting corpses, helping you and Satori-sama...
 Orin: But having a relaxing day once in a while is great.
@@ -293,7 +294,7 @@ Orin: Should count that time you trying to take over Gensokyo as "days off", I w
 <<ShakeSide Okuu>>
 <<PlaySFX SoundManager SadShake>> 
 Okuu: I-I really thought it was good for Satori-sama and the others.
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: I'm joking. Well, the past is the past. Let us look forward to our days off.
 Orin: And a proper one this time.
 <<jump MainStory_Intro_2>>
@@ -312,7 +313,7 @@ Orin: Okuu? Are you ok?
 Okuu: Because...
 Orin: You are worrying me...
 Okuu: Because...
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Okuu: I forgot what I want to say...
 Okuu: Oh well, it's not important! Anyway, I'm looking forward to our days off.
 <<Expression Okuu Thinking>>
@@ -329,7 +330,7 @@ Okuu: So... What exactly is it?
 Orin: Exactly what, Okuu?
 Okuu: Days off. You seem so excited too. I just can't help but be excited.
 Okuu: But... I'm not sure why...
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: To put it simply: We are completely free during our days off.
 Orin: Meaning we don't have to do anything!
 <<Expression Okuu Unyuu>>
@@ -359,6 +360,7 @@ position: -131,-438
 Okuu: Hey Orin! You've been to the surface more than me.
 Okuu: Do you have any interesting place you know of?
 Okuu: <i>(So maybe we can go there.)</i>
+<<Expression Orin "Neutral">>
 Orin: Ah, I heard the Human Village is preparing some kind of festival!
 Orin: Satori-sama received an invitation.
 Orin: But she told me she can't go just now...
@@ -370,6 +372,7 @@ Yatagarasu: <i>(Please don't tell me you gather all your courage to ask Satori t
 Okuu: <i>(Oh, right...)</i>
 Yatagarasu: <i>(Go ahead and tell her to go out on a date with you!)</i>
 Yatagarasu: <i>(Don't let all of our hard work go to waste!)</i>
+<<Expression Okuu "Thinking">>
 Okuu: O-Orin...
 Orin: Hmm?
 <<jump SentenceBuilder_Intro_2>>
@@ -388,17 +391,22 @@ Okuu: I-I want to ask...
 title: WouldYouLike_ToGoTo_TheHumanVillage
 position: 192,-47
 ---
-<<Expression Okuu Embarassed>>
+<<Expression Okuu Embarrassed>>
 Okuu: W-Would you like to go to the Human Village with me?
 Okuu: I know you visit the surface a lot to help Satori-sama in her detective work.
 Okuu: But I still want to go there with you!
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: Just us two?
 Okuu: Yep, just the two of us!
 Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 <<Expression Orin Neutral>>
 Okuu: <i>(D-date...)</i>
 <<FadeIn FadeScreen>>
+<<StopBGM SoundManager>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<i>~And so Orin and Reiuji decided to head up to the surface world for a day to spend at the human village.~</i>
+<i>~Will the scatterbrained crow be able to make the most of the opportunity on her hands?~</i>
 <<jump MainStory_HumanVillage_0>>
 ===
 title: WouldYouLike_ToStayAt_TheHumanVillage
@@ -408,11 +416,16 @@ position: 191,29
 Okuu: How about we stay at the Human Village this weekend, Orin?
 Okuu: You said there will be a festival right?
 Okuu: I would love to experience this festival with you!
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: <i>(Yah!)</i>
 <<FadeIn FadeScreen>>
+<<StopBGM SoundManager>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<i>~And so Orin and Reiuji decided to head up to the surface world for a day to spend at the human village.~</i>
+<i>~Will the scatterbrained crow be able to make the most of the opportunity on her hands?~</i>
 <<jump MainStory_HumanVillage_0>>
 ===
 title: WouldYouLike_ToGoTo_Home
@@ -422,7 +435,7 @@ position: 193,101
 Okuu: What if we visited home?
 <<Expression Orin Blank>>
 Orin: You don't exactly visit home Okuu
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: But I'm down for a staycation!
 Orin: You're always down in the furnaces. So it'll be a nice change of pace.
 Orin: We could even have a slumber party! What do you think?
@@ -430,6 +443,11 @@ Orin: We could even have a slumber party! What do you think?
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
+<<StopBGM SoundManager>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<i>~And so Orin and Reiuji decided to settle on a carefree staycation in their very own home.~</i>
+<i>~Will the scatterbrained crow be able to make the most of the opportunity on her hands?~</i>
 <<jump MainStory_Chireiden_0>>
 ===
 title: WouldYouLike_ToStayAt_Home
@@ -440,20 +458,26 @@ Okuu: I'm kind of tired? What if we stayed home?
 Orin: Stayed home?
 <<Expression Okuu Sad>>
 Okuu: Was that no good? Is that too boring?
-<<Expression Orin Happy>>
+<<Expression Orin Flushed>>
 Orin: Honestly a staycation sounds great to me! 
-<<Expression Orin Embarassed>>
+<<Expression Orin Embarrassed>>
 Okuu: It does?!
 Orin: We could even have a slumber party! What do you think?
 <<Expression Okuu Happy>>
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
+<<StopBGM SoundManager>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<i>~And so Orin and Reiuji decided to settle on a carefree staycation in their very own home.~</i>
+<i>~Will the scatterbrained crow be able to make the most of the opportunity on her hands?~</i>
 <<jump MainStory_Chireiden_0>>
 ===
 title: Invalid_Intro_2
 position: 192,250
 ---
+<<Expression Okuu Embarrassed>>
 Okuu: Unyuu... Unyuuuuuu.....
 Yatagarasu: <i>(Oh dear... She has too many ideas.)</i>
 Yatagarasu: <i>(Yet, she can't say it out loud...)</i>
@@ -469,5 +493,10 @@ Orin: I don't. And you?
 Okuu: Same! As long I'm with you, I don't really care where we go!
 Orin: Then let us relax at home for this weekend.
 <<FadeIn FadeScreen>>
+<<StopBGM SoundManager>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<i>~And so Orin and Reiuji decided to settle on a carefree staycation in their very own home.~</i>
+<i>~Will the scatterbrained crow be able to make the most of the opportunity on her hands?~</i>
 <<jump MainStory_Chireiden_0>>
 ===

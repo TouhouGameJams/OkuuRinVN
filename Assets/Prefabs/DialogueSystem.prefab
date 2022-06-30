@@ -225,7 +225,7 @@ RectTransform:
   m_Children:
   - {fileID: 8085502190283453861}
   m_Father: {fileID: 7968051002529691339}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -695,6 +695,7 @@ MonoBehaviour:
   loadView: {fileID: 0}
   optionsView: {fileID: 0}
   creditsView: {fileID: 0}
+  mITView: {fileID: 0}
 --- !u!1 &3730882958416008363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,9 +1072,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 3639486282110369103}
   - {fileID: 3417091159354080382}
   - {fileID: 8257147209029133846}
-  - {fileID: 3639486282110369103}
   - {fileID: 7437138033518587027}
   - {fileID: 2410875658878736766}
   - {fileID: 5727712405959845261}
@@ -2494,7 +2495,7 @@ PrefabInstance:
     - target: {fileID: 5173716932904229137, guid: 62abeadfd9a53874184ca1dbbf942ad9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5173716932904229137, guid: 62abeadfd9a53874184ca1dbbf942ad9,
         type: 3}
@@ -2778,6 +2779,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09e81596f172fd640979aa114b72df9c, type: 3}
+--- !u!224 &137870752448004005 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6619895121885357054, guid: 09e81596f172fd640979aa114b72df9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6500742867991223387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7177128018875994236 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4155978967810968615, guid: 09e81596f172fd640979aa114b72df9c,
@@ -2790,12 +2797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff72cefe4a164b0889da6d8d56cb15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &137870752448004005 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6619895121885357054, guid: 09e81596f172fd640979aa114b72df9c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6500742867991223387}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7541082333735249263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2821,7 +2822,7 @@ PrefabInstance:
     - target: {fileID: 5173716932904229137, guid: 62abeadfd9a53874184ca1dbbf942ad9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5173716932904229137, guid: 62abeadfd9a53874184ca1dbbf942ad9,
         type: 3}

@@ -324,12 +324,16 @@ public class CharacterController : MonoBehaviour
     public void PlaySpeedLines(float duration)
     {
         SoundManager soundManager = SoundManager.Instance;
-        soundManager.PlaySFXString("Speed");
+        soundManager.PlaySFXString("Smile");
 
         var main = speedLines.main;
         main.duration = duration;
         speedLines.Play();
     }
 
-
+    [YarnCommand("Destroy")]
+    public void DestroyCharacter()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -51,7 +51,7 @@ public class ImageCG : MonoBehaviour
     [YarnCommand("ShowCG")]
     public void ShowCGImage(string name)
     {
-        SetTransparencyHalf();
+        //SetTransparencyHalf();
         GetCGImage(name).image.gameObject.SetActive(true);
     }
 
@@ -59,7 +59,7 @@ public class ImageCG : MonoBehaviour
     public void HideCGImage(string name)
     {
         GetCGImage(name).image.gameObject.SetActive(false);
-        SetOpaque();
+        //SetOpaque();
     }
 
     public ImageCGInfo GetCGImage(in string imageName)

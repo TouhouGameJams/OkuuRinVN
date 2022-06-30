@@ -5,15 +5,13 @@ position: -288,-378
 <<SetBlack FadeScreen>>
 <<ChangeBG BGManager "Chireiden">>
 //Create Chara in case.
-<<CreateCharacter CharacterManager Okuu -4 -1.25 Left>>
-<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
+<<CreateCharacter CharacterManager Okuu 4 -1.25 Left>>
+<<CreateCharacter CharacterManager Orin -6 -1.25 Right>>
 //
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 <i>The following day. Okuu and Orin decided on a lazy staycation at Chireiden</i>
 <<PlayBGM SoundManager Comical>>
-<<SetCharacter Orin 6 -1.25>>
-<<SetCharacter Okuu -4 -1.25>>
 Orin: Okuu...
 Orin: Okuu...
 Okuu: <i>(Zzz...)</i>
@@ -28,19 +26,17 @@ Orin: Else you will miss breakfast...
     <<FadeOut FadeScreen>>
     <<Expression Okuu "BugEyed">>
     <<Hop Okuu 1>>
-    <<Flip Okuu>>
     Okuu: Orin's breakfast... I can't miss it!
     Orin: I'm glad that got you woke up. Go clean up and let's have breakfast together!
-    <<Expression Orin "Neutral">>
+    <<Expression Okuu "Neutral">>
     Okuu: Will Satori-sama be joining us?
     Orin: It seems she went somewhere. She left us a note saying the house is ours for the day.
     Yatagarasu: (Or she just wants to leave these two alone for the day.)
     <<Expression Okuu "Happy">>
     Okuu: I'm looking forward to today, Orin.
     Okuu: Let's go!
-    <<WalkTowards Okuu 19 Right 0.5>>
-    <<Flip Orin>>
-    <<WalkTowards Orin 9 Right 0.5>>
+    <<FadeIn FadeScreen>>
+
 -> Okuu: Zzz...
     Orin: Okuu?
     Okuu: Zzz... Zzz...
@@ -49,25 +45,22 @@ Orin: Else you will miss breakfast...
     Orin: *Shuffling noises*
     Orin: *chu*
     Orin: <i>(Oh well... I guess I will give her more time to sleep)</i>
-    <<WalkTowards Orin 9 Right 0.5>>
+    <<WalkTowards Orin 19 Right 0.5>>
     //Orin out of the room
     <<FadeOut FadeScreen>>
     <<Expression Okuu "BugEyed">>
     Okuu: !!!
     <<Hop Okuu 3>>
-    <<Spin Okuu 360 2>>
-    <<Flip Okuu>>
+    <<Spin Okuu 720 1>>
     Okuu: <i>(S-She...)</i>
     Okuu: Ahh, I should hurry!
-    <<WalkTowards Okuu 19 Right 0.5>>
+    <<FadeIn FadeScreen>>
+    <<wait 1>>
+    <<SetCharacter Orin -6 -1.25>>
+
 //
-<i>Few minutes later</i>
-//<<FadeOut FadeScreen>>
-//Okuu OnL <- OffR 
-<<Flip Okuu>>
-<<WalkTowards Okuu 19 Left 0.5>>
-//
-<<Flip Okuu>>
+<i>Few minutes later down in the kitchen.</i>
+<<FadeOut FadeScreen>>
 <<Expression Okuu "Happy">>
 <<Expression Orin "Happy">>
 Okuu: Orin's breakfast... It smells so good...
@@ -90,8 +83,10 @@ Orin: While it was, admitedly, kinda scary, I think you just want a better world
 Orin: ...And for us.
 <<Expression Okuu "Happy">>
 <<Hop Okuu 1>>
+Okuu: Yup!
 <<Expression Okuu Sad>>
-Okuu: Yup! Although that shrine maiden and magician are scary...
+<<ShakeSide Okuu>>
+Okuu: Although that shrine maiden and magician are scary...
 Orin: Yeah... So, do you have any plan for today, Okuu?
 Yatagarasu: <i>(Oh right, you don't exactly have anything planned...)</i>
 Yatagarasu: <i>(I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)</i>
@@ -104,10 +99,6 @@ Okuu: <i>(Unyuu!)<i>
 title: SentenceBuilder_Chireiden_0
 position: -286,-283
 ---
-//Debug
-//<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
-//<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
-//
 <<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
 Okuu: (Hmmm... What should I tell Orin...?)
 <<jump {JumpToNode()}>>
@@ -118,6 +109,7 @@ position: -290,-216
 ---
 <<AddScore AffectionManager 2>>
 <<Expression Okuu "Happy">>
+<<SpeedLines Okuu 1>>
 Okuu: I like you.
 Yatagarasu: <i>(How bold...)</i>
 <<Expression Orin "Blank">>
@@ -127,9 +119,9 @@ Okuu: I mean it: I like how you take care of everyone.
 <<Expression Orin "Happy">>
 Orin: Geez, flattering won't get you anywhere.
 //Orin move to Okuu and hit her UwU
-<<WalkTowards Orin 10 Left 0.5>>
+<<WalkTowards Orin 7 Right 0.5>>
 <<Hop Okuu 1>>
-<<WalkTowards Orin 10 Right 0.5>>
+<<WalkTowards Orin 7 Left 0.5>>
 Okuu: If you want I can praise you whenever you want!
 Orin: I- I will remember this offer. Anyway, back to the topic...
 <<Expression Orin "Thinking">>
@@ -239,7 +231,7 @@ Orin: It's not like we have anything better to do.
 Okuu: You... don't want to?
 Orin: I mean, why not?
 <<Expression Orin "Happy">>
-Orin: I'm sure there are easy recepies for you to follow.
+Orin: I'm sure there are easy recipes for you to follow.
 <<Expression Okuu "Happy">>
 <<Hop Okuu 2>>
 Okuu: Ooooh!
@@ -551,7 +543,6 @@ Okuu: Uh...
 <<Expression Orin "Thinking">>
 Orin: But it's "I" who has to do it instead?
 Orin: Something just doesn't add up, don't you think?
-//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
 <<Expression Okuu "Embarrassed">>
 Okuu: Uhmmm... Uh... I-I mean...
 <<Hop Okuu 1>>

@@ -41,7 +41,7 @@ public class SoundManager : MonoBehaviour
 
     public float m_BGM_Volume = 1.0f;
     public float m_SBBGM_Volume = 1.0f;
-    public float m_SFX_Volume = 0.5f;
+    public float m_SFX_Volume = 1.0f;
     private const float MIN_VOLUME = 0.0f;
     private const float MAX_VOLUME = 1.0f;
     public AudioInfo current;
@@ -179,6 +179,7 @@ public class SoundManager : MonoBehaviour
         return m_SBBGM_Audio.isPlaying;
     }
 
+    [YarnCommand("StopBGM")]
     public void StopBGM()
     {
         m_BGM_Audio.Stop();

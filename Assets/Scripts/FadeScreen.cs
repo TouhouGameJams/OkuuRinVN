@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class FadeScreen : MonoBehaviour
 {
-    CanvasRenderer elementToFade;
+    public CanvasRenderer elementToFade;
 
     // Start is called before the first frame update
     void Start()
