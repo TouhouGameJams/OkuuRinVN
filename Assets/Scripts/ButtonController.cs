@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ButtonController: MonoBehaviour
 {
+    //[SerializeField]
     private Image buttonImage;
 
     [SerializeField]

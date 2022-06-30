@@ -1054,12 +1054,14 @@ PrefabInstance:
     - target: {fileID: 7437138033321883877, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_text
-      value: Continue... [E]
+      value: 'Continue...
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7437138033321883877, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_fontSize
-      value: 26
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7437138033321883877, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
@@ -1090,7 +1092,7 @@ PrefabInstance:
     - target: {fileID: 7437138033321883877, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 26
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7437138033321883877, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
@@ -1190,6 +1192,16 @@ PrefabInstance:
     - target: {fileID: 7437138033518587029, guid: 4dffc36fe3c8097469ec79edc3b10405,
         type: 3}
       propertyPath: m_VerticalFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: holdTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
+        type: 3}
+      propertyPath: autoAdvance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7437138033518587030, guid: 4dffc36fe3c8097469ec79edc3b10405,
@@ -2022,7 +2034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueView: {fileID: 0}
   continueActionType: 1
-  continueActionKeyCode: 101
+  continueActionKeyCode: 32
 --- !u!1 &1009776711
 GameObject:
   m_ObjectHideFlags: 0
