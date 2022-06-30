@@ -38,6 +38,10 @@ public class UIRoot : MonoBehaviour
     public CreditsView CreditsView => creditsView;
 
     [SerializeField]
+    private EndingView endingView;
+    public EndingView EndingView => endingView;
+
+    [SerializeField]
     private MITView mITView;
     public MITView MITView => mITView;
 }

@@ -48,5 +48,10 @@ public class ButtonController : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    public void TitleToClick()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
 }
 
