@@ -31,6 +31,22 @@ public class TitleScreenManager : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");
     }
 
+    public void GoToChireiden()
+    {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.StopBGM();
+        LoadingData.sceneToLoad = "Chireiden";
+        SceneManager.LoadScene("LoadingScene");
+    }
+
+    public void GoToVillage()
+    {
+        SoundManager soundManager = SoundManager.Instance;
+        soundManager.StopBGM();
+        LoadingData.sceneToLoad = "Village";
+        SceneManager.LoadScene("LoadingScene");
+    }
+
     public void ExitToClick()
     {
 #if UNITY_EDITOR

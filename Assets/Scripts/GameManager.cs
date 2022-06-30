@@ -4,6 +4,7 @@ using UnityEngine;
 using Yarn.Unity;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -172,5 +173,18 @@ public class GameManager : MonoBehaviour
     {
         uiRoot.GameView.PauseClick();
 
+    }
+
+    [YarnCommand("EndGame")]
+    public void EndGame()
+    {
+        SoundManager soundManager = SoundManager.Instance;
+        if (soundManager.IsPlayingBGM())
+        {
+            soundManager.StopBGM();
+        }
+
+        LoadingData.sceneToLoad = "Ending";
+        SceneManager.LoadScene("LoadingScene");
     }
 }

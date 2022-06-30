@@ -25,7 +25,7 @@ MonoBehaviour:
   SentenceAnswerList:
   - outputComparatorList:
     - Would you like
-    - To visit
+    - To go to
     - The Human Village
     nodeName: WouldYouLike_ToGoTo_TheHumanVillage
     points: 0
@@ -37,14 +37,14 @@ MonoBehaviour:
     points: 0
   - outputComparatorList:
     - Would you like
-    - To visit
-    - WouldYouLike_ToGoTo_TheOldCapital
-    nodeName: Location_3
+    - To go to
+    - Home
+    nodeName: WouldYouLike_ToGoTo_Home
     points: 0
   - outputComparatorList:
     - Would you like
     - To stay at
-    - The Old Capital
-    nodeName: WouldYouLike_ToStayAt_TheOldCapital
+    - Home
+    nodeName: WouldYouLike_ToStayAt_Home
     points: 0
   invalidNodeName: Invalid_Intro_2
