@@ -15,9 +15,13 @@ position: 13,378
 title: GoToEnding_Chireiden
 position: 0,1
 ---
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~Evening, Chireiden~</i>
+
 <<set $score to ReturnScore()>>
 
-<<if $score > 3>>
+<<if $score > 2>>
     <<jump GoodEnding_Chireiden>>
 <<else>>
     <<jump BadEnding_Chireiden>>
@@ -28,6 +32,8 @@ title: GoodEnding_Chireiden
 tags:
 ---
 <<SetBlack FadeScreen>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
 <<ChangeBG BGManager "ChireidenEnding">>
 <<PlayBGM SoundManager TitleScreen>>
 <i>Few hours later</i>
