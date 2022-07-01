@@ -85,8 +85,8 @@ Orin: Or you rather have it as a surprise?
 <i>A few hours later flying over the surface world sky...</i>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Happy">>
-<<FadeOut FadeScreen>>
 <<SetWhite FadeScreen>>
+<<FadeOut FadeScreen>>
 <<ChangeBG BGManager Sky>> 
 <<PlayBGM SoundManager Village>>
 Okuu: So this is the surface...
@@ -169,15 +169,17 @@ position: -96,423
 ---
 <<AddScore AffectionManager 0>>
 <<Expression Okuu "Thinking">>
+<<StartThinking Thinking>>
 Okuu: <i>(Is it amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
 Yatagarasu: <i>(Now, I'm a cake??? ...Geez)</i>
 Yatagarasu: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yah: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
+Yatagarasu: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
 Okuu: <i>(But then you won't be able to see anything.)</i>
 Yatagarasu: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>
+<<FinishThinking Thinking>>
 <<Expression Orin "Neutral">>
 Orin: Okuu?
 <<Expression Okuu "Happy">>
@@ -191,6 +193,7 @@ position: -95,354
 ---
 <<AddScore AffectionManager 1>>
 <<Expression Okuu "Thinking">>
+<<StartThinking Thinking>>
 Okuu: <i>(Is it not amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
@@ -200,6 +203,7 @@ Yatagarasu: <i>(If anything, I have even a better view of the universe as if I w
 Okuu: <i>(But then you won't be able to see anything.)</i>
 Yatagarasu: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>
+<<FinishThinking Thinking>>
 <<Expression Orin "Neutral">>
 Orin: Okuu?
 <<Expression Okuu "Happy">>
@@ -347,10 +351,12 @@ title: You_Would_LikeTo_Dance
 position: 144,578
 ---
 <<Expression Okuu "Thinking">>
+<<StartThinking Thinking>>
 Okuu: <i>(Orin is looking at the human so intensely)</i>
 Okuu: <i>(Does she wants to try to dance as well?)</i>
 Yatagarasu: <i>(Duh?)</i>
 Yatagarasu: <i>(Now be brave and ask her out, my bird friend!)</i>
+<<FinishThinking Thinking>>
 <<Expression Okuu "Embarrassed">>
 Okuu: Uhm...
 <<jump Would_You_LikeTo_Dance>>
@@ -591,6 +597,7 @@ position: 591,1127
 ---
 <<AddScore AffectionManager -1>>
 Okuu: ...
+<<StartThinking Thinking>>
 Okuu: <i>(Better not ask Orin as she seems to not want to play with me...)</i>
 Okuu: <i>(I will respect that)</i>
 Yatagarasu: <i>(Wait, how do you even know that she doesn't want to play with you?)</i>
@@ -600,5 +607,6 @@ Okuu: <i>(I... think?)</i>
 Yatagarasu: <i>(Oh you think, not because you know... right....)</i>
 Yatagarasu: <i>(Guess it's too late now, the sky is already filled with beautiful patterns)</i>
 Okuu: <i>(I- I will ask her next time...)</i>
+<<FinishThinking Thinking>>
 <<jump GoToEnding_HumanVillage>>
 ===

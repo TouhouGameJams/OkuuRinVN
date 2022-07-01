@@ -30,10 +30,10 @@ Satori: Okuu, Orin, do you know why I'm calling you two here?
 <<Expression Orin Neutral>>
 Orin: I'm not sure, Satori-sama...
 <<Expression Okuu Thinking>>
-Okuu: ( thinks very hard )
+Okuu: <i>(*thinks very hard*)</i>
 -> Okuu: D-did I do something bad again?
     <<Expression Okuu "Unyuu">>
-    Okuu: (There wasn't another explosion was there?)
+    Okuu: <i>(There wasn't another explosion was there?)</i>
 -> Okuu: Is it about that Vengeful Spirit on the surface?
     <<Expression Okuu "Happy">>
     Orin: I think it's best if you don't go after her, Okuu.
@@ -58,7 +58,7 @@ Orin: Satori-sama...
 <<SpeedLines Okuu 1>>
 <<SpeedLines Orin 1>>
 Okuu & Orin: You're the best!
-Satori: (I-It's too bright...)
+Satori: <i>(I-It's too bright...)</i>
 Satori: You're both excused!
 <<Hop Okuu 2>>
 Okuu: Yay!
@@ -67,9 +67,10 @@ Okuu: Yay!
 Orin: Okuu! Wait!
 <<Flip Orin>>
 <<WalkTowards Orin 10 Left 0.5>>
-Satori: (I wonder how these two are going to spend their weekend)
-Satori: (Ah...Actually...I seemed to forget to tell Orin something important.)
+Satori: <i>(I wonder how these two are going to spend their weekend)</i>
+Satori: <i>(Ah...Actually...I seemed to forget to tell Orin something important.)</i>
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <i>~At the hallway of Chireiden~</i>
 <<PlayBGM SoundManager Comical>>
 <<SetCharacter Orin -6 -1.25>>
@@ -102,8 +103,8 @@ Orin: Ah one sec ok Okuu?
 <<WalkTowards Orin 10 Left 0.5>>
 <<WalkTowards Okuu 4 Left 1>>
 Okuu: Sigh...
-Okuu: (It sure is quiet without her...)
-Yatagarasu: (You enjoy her company alot, don't you?)
+Okuu: <i>(It sure is quiet without her...)</i>
+Yatagarasu: <i>(You enjoy her company a lot, don't you?)</i>
 <<Expression Okuu Embarrassed>>
 Okuu: Who said that?!
 <<Spin Okuu 360 1>>
@@ -396,6 +397,7 @@ Orin: Then it's a deal! I'm looking forward to our date, Okuu.
 <<Expression Orin Neutral>>
 Okuu: <i>(D-date...)</i>
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <<StopBGM SoundManager>>
 <<Destroy Orin>>
 <<Destroy Okuu>>
@@ -415,6 +417,7 @@ Orin: Then let us visit the Human Village for our days off.
 Orin: It sure sounds like a date, don't you think, Okuu?
 Okuu: <i>(Yah!)</i>
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <<StopBGM SoundManager>>
 <<Destroy Orin>>
 <<Destroy Okuu>>
@@ -437,6 +440,7 @@ Orin: We could even have a slumber party! What do you think?
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <<StopBGM SoundManager>>
 <<Destroy Orin>>
 <<Destroy Okuu>>
@@ -461,6 +465,7 @@ Orin: We could even have a slumber party! What do you think?
 Okuu: Yay! That sounds great. I'm so excited!
 Orin: Then I'm looking forward to the weekend, Okuu!
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <<StopBGM SoundManager>>
 <<Destroy Orin>>
 <<Destroy Okuu>>
@@ -487,6 +492,7 @@ Orin: I don't. And you?
 Okuu: Same! As long I'm with you, I don't really care where we go!
 Orin: Then let us relax at home for this weekend.
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <<StopBGM SoundManager>>
 <<Destroy Orin>>
 <<Destroy Okuu>>

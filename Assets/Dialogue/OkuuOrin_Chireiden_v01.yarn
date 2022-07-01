@@ -36,7 +36,7 @@ Orin: Else you will miss breakfast...
     Okuu: I'm looking forward to today, Orin.
     Okuu: Let's go!
     <<FadeIn FadeScreen>>
-
+    <<wait 1>>
 -> Okuu: Zzz...
     Orin: Okuu?
     Okuu: Zzz... Zzz...
@@ -57,7 +57,6 @@ Orin: Else you will miss breakfast...
     <<FadeIn FadeScreen>>
     <<wait 1>>
     <<SetCharacter Orin -6 -1.25>>
-
 //
 <i>Few minutes later down in the kitchen.</i>
 <<FadeOut FadeScreen>>
@@ -88,12 +87,14 @@ Okuu: Yup!
 <<ShakeSide Okuu>>
 Okuu: Although that shrine maiden and magician are scary...
 Orin: Yeah... So, do you have any plan for today, Okuu?
+<<StartThinking Thinking>>
 Yatagarasu: <i>(Oh right, you don't exactly have anything planned...)</i>
 Yatagarasu: <i>(I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)</i>
 Yatagarasu: <i>(But this may play to your advantage.)</i>
 Yatagarasu: <i>(No distractions for either of you, I have to say.)</i>
 Yatagarasu: <i>(Go for it Ms. Utsuho. Be as bold as you like!)</i>
 Okuu: <i>(Unyuu!)<i>
+<<FinishThinking Thinking>>
 <<jump SentenceBuilder_Chireiden_0>>
 ===
 title: SentenceBuilder_Chireiden_0
@@ -150,6 +151,7 @@ Both: Hmm...
 Okuu: We can... No, it's too late...
 Orin: How about... Nah, no one will look after this place...
 Both: Hmm...
+<<StartThinking Thinking>>
 Yatagarasu: <i>(Oh dear... Hey, bird friend!)</i>
 <<Expression Okuu "Unyuu">>
 <<Hop Okuu 1>>
@@ -157,6 +159,7 @@ Okuu: <i>(Unyuu?)</i>
 Yatagarasu: <i>(Listen, how about you two do some cooking?)</i>
 Okuu: <i>(Cooking? But I'm horrible at it...)</i>
 Yatagarasu: <i>(I mean, yeah, but you can use it as an excuse so Orin can teach how to make something.)</i>
+<<FinishThinking Thinking>>
 Okuu: Orin.
 Orin: ?
 <<Expression Okuu "Happy">>
@@ -311,6 +314,7 @@ Orin: Now we are facing the biggest question...
 Okuu: Yup...
 Orin: Do you have any food you want to cook?
 Okuu: Not really...
+<<StartThinking Thinking>>
 Okuu: <i>(Yamcha, what kind of food do you like?)</i>
 Yatagarasu: <i>(Who? Anyhow, I don't really have any preference for food.)</i>
 Yatagarasu: <i>(It's not like I can eat anyway...)</i>
@@ -319,6 +323,7 @@ Okuu: <i>(I love anything Orin makes!)</i>
 Okuu: <i>(So... I guess I don't really have any favorite food...)</i>
 <<Expression Orin "Thinking">>
 Yatagarasu: <i>(What about your feline friend? Does she have any favorite food?)</i>
+<<FinishThinking Thinking>>
 <<Expression Orin "Neutral">>
 Okuu: Orin, do you have any favorite food?
 Orin: Me? Well, I like fishes a lot.
@@ -337,6 +342,7 @@ Orin: Unless you want the wrath of that shrine maiden again, that is.
 <<Expression Okuu "Swirly">>
 Okuu: Unyuu... So... I guess we can't cook your favorite food, Orin...
 //Monolog
+<<StartThinking Thinking>>
 Yatagarasu: <i>(Hey, what about that master of yours? That mind-reading youkai.)</i>
 <<Expression Okuu "Mad">>
 Okuu: <i>(Please don't disrespect Satori-sama like that!)</i>
@@ -345,6 +351,7 @@ Okuu: <i>(I think she likes drinking tea while petting us...)</i>
 Okuu: <i>(She says it calms her mind.)</i>
 <<Expression Okuu "Happy">>
 Okuu: <i>(Oh... OH!!)</i>
+<<FinishThinking Thinking>>
 //Dialog
 Okuu: Orin, I have a great idea!
 Orin: ?
@@ -397,7 +404,7 @@ Orin: Wait until you taste them with the tea.
 Okuu: Wow... It sure does sound magical.
 <<Expression Orin "CatFace">>
 Orin: Once you get a taste, you will know what I'm talking about.
-Yatagarasu: <i>A brilliant answer!</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Can_Make_Pudding
@@ -424,7 +431,7 @@ Orin: <i>(B-But my tea and cookies!)</i>
 Orin: Let's just make some simple cookies, Okuu.
 Okuu: Ok. For Satori-sama's sake, I shall learn how to make cookies.
 Orin: <i>(I'm so sorry, Satori-sama, for using you like this.)</i>
-Yatagarasu: <i>A brilliant answer!</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Can_Make_GrilledMushroom
@@ -440,11 +447,13 @@ Orin: Yeah but... I thought we are making something to go along with Satori-sama
 Orin: Thou, I did say I will teach you what you want to make.
 Orin: I hope Satori-sama won't mind the smell of those mushrooms clashing with her tea.
 //Monolog
+<<StartThinking Thinking>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Hmm, I feel like I said something wrong...)</i>
 Yatagarasu: <i>(I guess... On the bright side, you could say something even worse.)</i>
 Okuu: <i>(That... doesn't exactly make me feel any better though.)</i>
-Yatagarasu: <i>Guess she doesn't like mushrooms</i>
+Yatagarasu: <i>(Guess she doesn't like mushrooms...)</i>
+<<FinishThinking Thinking>>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_Cookies
@@ -467,7 +476,7 @@ Orin: Hmm. If you are so against it... How about pudding?
 Orin: It shouldn't leave crumbs like cookies.
 Okuu: That's much better. Let's do it!
 Orin: <i>(My beloved cookies with Satori-sama's tea...)</i>
-Yatagarasu: <i>Being uptight was not the answer.</i>
+Yatagarasu: <i>(Being uptight was not the answer.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_Pudding
@@ -492,7 +501,7 @@ Yatagarasu: <i>(...)</i>
 <<Expression Orin "Happy">>
 Orin: Let's just bake some cookies, shall we?
 Okuu: Ok!
-Yatagarasu: <i>Way to turn it around.</i>
+Yatagarasu: <i>(Way to turn it around.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_GrilledMushroom
@@ -522,7 +531,7 @@ Okuu: Oooooohhhh... I seeeee...
 <<Expression Okuu "Happy">>
 Okuu: How about we just make some cookies instead?
 Okuu: They are great to go with Satori-sama's tea!
-Yatagarasu: <i>A brilliant answer</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_Cookies
@@ -553,7 +562,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_Pudding
@@ -585,7 +594,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_GrilledMushroom
@@ -618,7 +627,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can't_Make_Cookies
@@ -670,6 +679,7 @@ position: -26,401
 ---
 <<AddScore AffectionManager -1>>
 <<Expression Okuu "Sad">>
+<<StartThinking Thinking>>
 Okuu: <i>(Ughh... Why do no words coming out of my mouth?)</i>
 Yatagarasu: <i>(Are you alright, bird friend?)</i>
 Okuu: <i>(No... I can't say anything again... Terrasse-san)</i>
@@ -680,6 +690,7 @@ Okuu: <i>(I think it's some language from the outside world.)</i>
 Okuu: <i>(I'm not sure.)</i>
 Yatagarasu: <i>(Why do you keep giving me weird nicknames?!)</i>
 Yatagarasu: <i>(Never mind.)</i>
+<<FinishThinking Thinking>>
 <<Expression Okuu "Neutral">>
 Orin: Okuu? You are spacing out again.
 Orin: How about we make some simple cookies?
@@ -821,6 +832,7 @@ position: 432,550
 <<AddScore AffectionManager 1>>
 <<Expression Okuu "Thinking">>
 //Monolog
+<<StartThinking Thinking>>
 Okuu: <i>(Do I enjoy today?)</i>
 Yatagarasu: <i>(Are you asking me?)<i>
 Okuu: <i>(Yup. I just want to make sure of my feelings before telling Orin.)</i>
@@ -831,6 +843,7 @@ Yatagarasu: <i>(Then that's a positive experience!)</i>
 Yatagarasu: <i>(Don't think too hard, friend.)</i>
 Okuu: <i>(Right! If I think I enjoyed it mean I enjoyed it.)</i>
 Yatagarasu: <i>(Well... Let's just go with that.)</i>
+<<FinishThinking Thinking>>
 //Dialog
 <<Expression Okuu "Happy">>
 <<Hop Okuu 1>>
@@ -848,6 +861,7 @@ position: 433,619
 <<AddScore AffectionManager -1>>
 //Monolog
 <<Expression Okuu Thinking>>
+<<StartThinking Thinking>>
 Yatagarasu: <i>(You don't enjoy today, do you?)</i>
 Okuu: <i>(I-I'm not sure...)</i>
 Okuu: <i>(Orin, did all of this for me...)</i>
@@ -855,6 +869,7 @@ Okuu: <i>(But, it just doesn't feel right for some reason.)</i>
 Yatagarasu: <i>(Like something is missing?)</i>
 Okuu: <i>(Maybe? Unyuu...)</i>
 Yatagarasu: <i>(Best if you don't tell her this.)</i>
+<<FinishThinking Thinking>>
 //Dialog
 Orin: Okuu?
 Okuu: Ah. So today...
@@ -878,6 +893,7 @@ position: 434,694
 Okuu: ...
 Orin: ...
 *sips*
+<<StartThinking Thinking>>
 Okuu: <i>(...)</i>
 Yatagarasu: <i>(...)</i>
 Yatagarasu: <i>(...That's it?)</i>
@@ -892,5 +908,6 @@ Orin: ...Nice weather, isn't it?
 Okuu: It is.
 <i>*sips*</i>
 Yatagarasu: <i>(Ugh... I give up.)</i>
+<<FinishThinking Thinking>>
 <<jump GoToEnding_Chireiden>>
 ===

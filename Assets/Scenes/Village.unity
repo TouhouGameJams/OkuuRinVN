@@ -625,7 +625,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f442c95def56ebd4c9f9f0f152fe4961,
+      objectReference: {fileID: 21300000, guid: 74c8cca5a69f43a4c879a61e227f1388,
         type: 3}
     - target: {fileID: 3229433067917408183, guid: dde12c61bc0a38643afbcf5355d47cfe,
         type: 3}
@@ -972,36 +972,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24100000, guid: cfcb8f3703ccfbb4caf3c13cccbbfa20,
         type: 2}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.size
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[5].name
-      value: Village
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[20].name
-      value: Firework
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[5].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 37d36795e3c3eda429fcdc35dcb41a20, type: 3}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[20].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: eb30e9bac3e737d41b76997c9dff3cd3, type: 3}
     - target: {fileID: 1043275046997892079, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_RootOrder
@@ -2473,7 +2443,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cedd1f65796a0ad499eb7d33a13a0024,
+      objectReference: {fileID: 21300000, guid: da96d3dedf826c14f804be7a881b7578,
         type: 3}
     - target: {fileID: 3229433067917408183, guid: dde12c61bc0a38643afbcf5355d47cfe,
         type: 3}
@@ -6495,8 +6465,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9613,8 +9583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0c5c7553c06814196829434b59cc4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSprite_Neutral: {fileID: 0}
-  buttonSprite_Glow: {fileID: 0}
+  buttonSprite_Neutral: {fileID: 6254994779434879595, guid: 74218a7c24cd66e41ae583759e2120a6,
+    type: 3}
+  buttonSprite_Glow: {fileID: 2199318747006134821, guid: 4162ad414297e28448ead006c50d0f31,
+    type: 3}
 --- !u!1 &8405095577389918599
 GameObject:
   m_ObjectHideFlags: 0
@@ -9665,7 +9637,7 @@ PrefabInstance:
     - target: {fileID: 2317480787375535657, guid: 638a339da405742489b926d205f8e079,
         type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3134297237856945738, guid: 638a339da405742489b926d205f8e079,
         type: 3}
@@ -9686,16 +9658,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7997110414802988513, guid: 638a339da405742489b926d205f8e079,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7997110414802988513, guid: 638a339da405742489b926d205f8e079,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 8580657701148171485, guid: 638a339da405742489b926d205f8e079,
         type: 3}
