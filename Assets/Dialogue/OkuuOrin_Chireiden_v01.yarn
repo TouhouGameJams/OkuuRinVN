@@ -404,7 +404,7 @@ Orin: Wait until you taste them with the tea.
 Okuu: Wow... It sure does sound magical.
 <<Expression Orin "CatFace">>
 Orin: Once you get a taste, you will know what I'm talking about.
-Yatagarasu: <i>A brilliant answer!</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Can_Make_Pudding
@@ -431,7 +431,7 @@ Orin: <i>(B-But my tea and cookies!)</i>
 Orin: Let's just make some simple cookies, Okuu.
 Okuu: Ok. For Satori-sama's sake, I shall learn how to make cookies.
 Orin: <i>(I'm so sorry, Satori-sama, for using you like this.)</i>
-Yatagarasu: <i>A brilliant answer!</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Can_Make_GrilledMushroom
@@ -452,7 +452,7 @@ Orin: I hope Satori-sama won't mind the smell of those mushrooms clashing with h
 Okuu: <i>(Hmm, I feel like I said something wrong...)</i>
 Yatagarasu: <i>(I guess... On the bright side, you could say something even worse.)</i>
 Okuu: <i>(That... doesn't exactly make me feel any better though.)</i>
-Yatagarasu: <i>Guess she doesn't like mushrooms</i>
+Yatagarasu: <i>(Guess she doesn't like mushrooms...)</i>
 <<FinishThinking Thinking>>
 <<jump MainStory_Chireiden_2>>
 ===
@@ -476,7 +476,7 @@ Orin: Hmm. If you are so against it... How about pudding?
 Orin: It shouldn't leave crumbs like cookies.
 Okuu: That's much better. Let's do it!
 Orin: <i>(My beloved cookies with Satori-sama's tea...)</i>
-Yatagarasu: <i>Being uptight was not the answer.</i>
+Yatagarasu: <i>(Being uptight was not the answer.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_Pudding
@@ -501,7 +501,7 @@ Yatagarasu: <i>(...)</i>
 <<Expression Orin "Happy">>
 Orin: Let's just bake some cookies, shall we?
 Okuu: Ok!
-Yatagarasu: <i>Way to turn it around.</i>
+Yatagarasu: <i>(Way to turn it around.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: We_Cant_Make_GrilledMushroom
@@ -531,7 +531,7 @@ Okuu: Oooooohhhh... I seeeee...
 <<Expression Okuu "Happy">>
 Okuu: How about we just make some cookies instead?
 Okuu: They are great to go with Satori-sama's tea!
-Yatagarasu: <i>A brilliant answer</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_Cookies
@@ -562,7 +562,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_Pudding
@@ -594,7 +594,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can_Make_GrilledMushroom
@@ -627,7 +627,7 @@ Orin: Oh well, whatever. Let us make some cookies.
 Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
 <<Expression Okuu "Sad">>
 Okuu: <i>(Unyuu... I didn't mean to...)</i>
-Yatagarasu: <i>Lacking tact I'm afraid</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
 <<jump MainStory_Chireiden_2>>
 ===
 title: You_Can't_Make_Cookies

@@ -6465,8 +6465,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9583,8 +9583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0c5c7553c06814196829434b59cc4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSprite_Neutral: {fileID: 0}
-  buttonSprite_Glow: {fileID: 0}
+  buttonSprite_Neutral: {fileID: 6254994779434879595, guid: 74218a7c24cd66e41ae583759e2120a6,
+    type: 3}
+  buttonSprite_Glow: {fileID: 2199318747006134821, guid: 4162ad414297e28448ead006c50d0f31,
+    type: 3}
 --- !u!1 &8405095577389918599
 GameObject:
   m_ObjectHideFlags: 0
