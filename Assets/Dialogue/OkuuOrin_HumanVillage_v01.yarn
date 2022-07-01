@@ -85,8 +85,8 @@ Orin: Or you rather have it as a surprise?
 <i>A few hours later flying over the surface world sky...</i>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Happy">>
-<<FadeOut FadeScreen>>
 <<SetWhite FadeScreen>>
+<<FadeOut FadeScreen>>
 <<ChangeBG BGManager Sky>> 
 <<PlayBGM SoundManager Village>>
 Okuu: So this is the surface...
@@ -175,7 +175,7 @@ Yatagarasu: <i>(Wait, are you asking me?)</i>
 Okuu: <i>(Yup, Tiramisu. You have been on the surface before, right?)</i>
 Yatagarasu: <i>(Now, I'm a cake??? ...Geez)</i>
 Yatagarasu: <i>(But yes, such a view is nothing new for the great me.)</i>
-Yah: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
+Yatagarasu: <i>(If anything, I have even a better view of the universe as I was the sun.)</i> 
 Okuu: <i>(But then you won't be able to see anything.)</i>
 Yatagarasu: <i>(Ok, fine. You are right, this is an amazing view.)</i> 
 Okuu: <i>(I'm glad to hear that!)</i>

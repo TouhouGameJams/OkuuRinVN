@@ -67,6 +67,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: c98cf780a1023c34ca85ccb079783469, type: 3}
   - name: TitleScreen
     audioClip: {fileID: 8300000, guid: 8824696940a45034189899838eed06d2, type: 3}
+  - name: Village
+    audioClip: {fileID: 8300000, guid: 37d36795e3c3eda429fcdc35dcb41a20, type: 3}
   m_SFX_List:
   - name: Drop
     audioClip: {fileID: 8300000, guid: b8391895405675f4591f49a3678fe40d, type: 3}
@@ -108,6 +110,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: d647055e76e2b5b4d8fee874adc52f87, type: 3}
   - name: Fail
     audioClip: {fileID: 8300000, guid: 479b67b64e157304ca6fb986be470da2, type: 3}
+  - name: Firework
+    audioClip: {fileID: 8300000, guid: eb30e9bac3e737d41b76997c9dff3cd3, type: 3}
 --- !u!1 &3966956177437143760
 GameObject:
   m_ObjectHideFlags: 0

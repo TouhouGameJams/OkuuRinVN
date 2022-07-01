@@ -36,7 +36,7 @@ Orin: Else you will miss breakfast...
     Okuu: I'm looking forward to today, Orin.
     Okuu: Let's go!
     <<FadeIn FadeScreen>>
-
+    <<wait 1>>
 -> Okuu: Zzz...
     Orin: Okuu?
     Okuu: Zzz... Zzz...
@@ -57,7 +57,6 @@ Orin: Else you will miss breakfast...
     <<FadeIn FadeScreen>>
     <<wait 1>>
     <<SetCharacter Orin -6 -1.25>>
-
 //
 <i>Few minutes later down in the kitchen.</i>
 <<FadeOut FadeScreen>>

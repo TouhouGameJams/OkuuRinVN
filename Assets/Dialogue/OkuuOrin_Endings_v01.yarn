@@ -8,7 +8,6 @@ position: 13,378
 <<wait 1>>
 <i>~Evening, Human Village~</i>
 <i>~Underneath the firework lit night sky...~</i>
-
 <<if $score > 2>>
     <<jump GoodEnding_HumanVillage>>
 <<else>>
@@ -22,9 +21,7 @@ position: 0,1
 <<FadeIn FadeScreen>>
 <<wait 1>>
 <i>~Evening, Chireiden~</i>
-
 <<set $score to ReturnScore()>>
-
 <<if $score > 2>>
     <<jump GoodEnding_Chireiden>>
 <<else>>
@@ -80,6 +77,7 @@ Orin: Yeah, good night, Okuu.
 <<Expression Okuu "Sad">>
 Both: <i>(Such a shame today didn't go as planned)</i>
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <i>~And so Reiuji and Orin listlessly retreated to their own rooms for the night.~</i>
 <i>~In their solitude it felt like just another day.~</i>
 <i>~With nothing eventful to note.~</i>
@@ -137,6 +135,7 @@ Okuu: Uh, nothing, never mind!
 <<Expression Okuu "Sad">>
 Orin: Oh sure...
 <<FadeIn FadeScreen>>
+<<wait 1>>
 <i>~And so Reiuji and Orin enjoyed the rest of the night watching the sky fill with beautiful lights~</i>
 <i>~But they would come back with memories of regret~</i>
 <i>~And questions of what if~</i>

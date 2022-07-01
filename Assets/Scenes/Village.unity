@@ -972,36 +972,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24100000, guid: cfcb8f3703ccfbb4caf3c13cccbbfa20,
         type: 2}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.size
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[5].name
-      value: Village
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[20].name
-      value: Firework
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_BGM_List.Array.data[5].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 37d36795e3c3eda429fcdc35dcb41a20, type: 3}
-    - target: {fileID: 1043275046997892077, guid: 09d7256b3882a6546ab2e0f10b2da531,
-        type: 3}
-      propertyPath: m_SFX_List.Array.data[20].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: eb30e9bac3e737d41b76997c9dff3cd3, type: 3}
     - target: {fileID: 1043275046997892079, guid: 09d7256b3882a6546ab2e0f10b2da531,
         type: 3}
       propertyPath: m_RootOrder
