@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa9cb3c0e41b0849b1722e7788ade01, type: 3}
   m_Name: 5.Title_SO
   m_EditorClassIdentifier: 
-  tweenDuration: 0
+  tweenDuration: 1.5
   tweenSnapping: 0
   easeType: 0
-  tweenDelaySeconds: 0
+  tweenDelaySeconds: 1.5
+  moveHorizontal: 0
+  moveVertical: 1

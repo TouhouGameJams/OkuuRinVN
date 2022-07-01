@@ -15,4 +15,6 @@ MonoBehaviour:
   tweenDuration: 0.5
   tweenSnapping: 0
   easeType: 0
-  tweenDelaySeconds: 1.5
+  tweenDelaySeconds: 0.75
+  moveHorizontal: 1
+  moveVertical: 0
