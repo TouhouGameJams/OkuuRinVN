@@ -110,7 +110,7 @@ position: -95,212
 //It is amazing...
 <<AddScore AffectionManager 2>>
 <<Expression Okuu "Happy">>
-<SpeedLines 1>>
+<<SpeedLines Okuu 1>>
 Okuu: It is amazing...
 Orin: Right?
 Okuu: I never knew the sky is this blue. And all these trees. 
@@ -144,7 +144,7 @@ title: It_Is_Not_Amazing
 position: -94,285
 ---
 <<AddScore AffectionManager -1>>
-<<Expression Okuu "Angry">>
+<<Expression Okuu "Mad">>
 Okuu: Hmm... I expected more, to be honest...
 Orin: ?
 Okuu: It's not <i>that</i> amazing...
@@ -189,7 +189,7 @@ Orin: Sure...
 title: Is_It_Not_Amazing
 position: -95,354
 ---
-<<AddScore AffectionManager 0>>
+<<AddScore AffectionManager 1>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it not amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
@@ -212,7 +212,7 @@ Orin: Sure...
 title: Invalid_HumanVillage_0
 position: -97,494
 ---
-<<AddScore AffectionManager 1>>
+<<AddScore AffectionManager 0>>
 <<Expression Okuu "Happy">>
 Okuu: ...
 <<Expression Orin "Smug">>
@@ -295,7 +295,7 @@ Okuu: Orin... Would you like to dance with me?
 Orin: I would love to. But...
 <<Expression Okuu "Unyuu">>
 Okuu: But?
-<<Expression Orin "Embarrassed">>
+<<Expression Orin "Blank">>
 Orin: I don't know how to dance...
 <<Expression Okuu "Happy">>
 <<Hop Okuu 1>>
@@ -316,7 +316,7 @@ position: 323,446
 Okuu: W-Would you like to watch them with me, Orin?
 Okuu: I don't know how to dance...
 Okuu: So I don't want to embarrass you with my horrible dancing skills...
-<<Expression Orin "Embarrassed">>
+<<Expression Orin "Happy">>
 Orin: Haha... Same here...
 Orin: L-let just enjoys the music together, Okuu.
 <<jump MainStory_HumanVillage_2>>
@@ -376,7 +376,7 @@ Orin: Let's just enjoy the music!
 title: Invalid_HumanVillage_1
 position: 324,752
 ---
-<<AddScore AffectionManager 1>>
+<<AddScore AffectionManager 0>>
 Okuu: ...
 <<Expression Orin "Smug">>
 Orin: <i>(Guess she's so immersed in the music...)</i>
@@ -461,7 +461,7 @@ Okuu: Of course. Time to put on a spectacular show!
 title: Please_Im_Begging
 position: 591,752
 ---
-<<AddScore AffectionManager -1>>
+<<AddScore AffectionManager 1>>
 <<Expression Okuu "Sad">>
 Okuu: Orin, please, I'm begging here!
 <<Expression Orin "Thinking">>
@@ -481,7 +481,7 @@ Okuu: Me neither!
 title: Im_Begging_You
 position: 592,822
 ---
-<<AddScore AffectionManager -1>>
+<<AddScore AffectionManager 1>>
 <<Expression Okuu "Sad">>
 Okuu: I'm begging you, Orin!
 Okuu: Please have a danmaku duel with me!
