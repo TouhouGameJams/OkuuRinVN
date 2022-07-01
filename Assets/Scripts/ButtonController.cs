@@ -1,13 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class ButtonController : MonoBehaviour
+public class ButtonController: MonoBehaviour
 {
+    //[SerializeField]
+    private Image buttonImage;
+
+    [SerializeField]
+    private Sprite buttonSprite_Neutral;
+    [SerializeField]
+    private Sprite buttonSprite_Glow;
+
     private Text m_text;
+
+    private void Start()
+    {
+        buttonImage = this.GetComponent<Image>();
+    }
 
     public void OnClick()
     {
@@ -18,9 +28,12 @@ public class ButtonController : MonoBehaviour
     public void OnHover()
     {
         m_text = GetComponentInChildren<Text>();
-        if(m_text != null)
+        if (m_text != null)
         {
             m_text.color = Color.red;
+
+            //Change button sprite to one with Glow
+            buttonImage.sprite = buttonSprite_Glow;
         }
         SoundManager soundManager = SoundManager.Instance;
         soundManager.PlaySFX(soundManager.GetSFX("Hover"));
@@ -30,9 +43,11 @@ public class ButtonController : MonoBehaviour
     public void OnExit()
     {
         m_text = GetComponentInChildren<Text>();
-        if(m_text != null)
+        if (m_text != null)
         {
-            m_text.color = Color.black;
+            m_text.color = Color.white;
+            //Change button sprite to one with Normal upon exit hover
+            buttonImage.sprite = buttonSprite_Neutral;
         }
 
     }

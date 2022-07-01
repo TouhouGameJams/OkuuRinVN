@@ -97,6 +97,7 @@ Okuu: (I feel like I have to say something...)s
 Okuu: (But what should I say to Orin?)
 <<jump {JumpToNode()}>>
 //Word:[It] [Is] [Not] [Amazing] [...] [?]
+//Max: 4 Words
 ===
 title: It_Is_Amazing_Sentence
 position: -95,212
@@ -273,6 +274,7 @@ Okuu: <i>(Hmm...)</i>
 Okuu: <i>(Should I ask Orin out for a dance?)</i>
 <<jump {JumpToNode()}>>
 //Word: [Would] [You, I] [Like To] [Dance, Watch]
+//Max: 4 Words
 ===
 title: Would_You_LikeTo_Dance
 position: 326,523
@@ -387,7 +389,7 @@ Orin: ...as the music really moves me! Let's continue watching the show.
 <<jump MainStory_HumanVillage_2>>
 ===
 title: MainStory_HumanVillage_2
-position: 587,565
+position: 589,509
 ---
 <i>~The Prismrivers finish their stage and everyone goes their separate way~</i>
 <<Expression Orin "Neutral">>
@@ -411,9 +413,10 @@ Orin: Me?
 Okuu: Yeah. In fact, the two of us haven't had a spell card duel in a while.
 Okuu: It will be fun!
 Orin: Hmm...
+<<jump SentenceBuilder_HumanVillage_2>>
 ===
 title: SentenceBuilder_HumanVillage_2
-position: 320,375
+position: 591,612
 ---
 <<Expression Okuu "Thinking">>
 Okuu: <i>(I have to find a way to convince Orin to join)</i>
@@ -421,9 +424,10 @@ Okuu: <i>(I have to find a way to convince Orin to join)</i>
 Okuu: <i>(But what if she really doesn't want to join?)</i>
 <<jump {JumpToNode()}>>
 //Word: [Please] [Pretty] [?] [I'm] [Begging] [You]
+//Max: 3 Words
 ===
 title: Pretty_Please_Quesiton
-position: 588,639
+position: 591,681
 ---
 <<AddScore AffectionManager 3>>
 <<Expression Okuu "Unyuu">>
@@ -443,7 +447,7 @@ Okuu: Of course. Time to put on a spectacular show!
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Please_Im_Begging
-position: 587,709
+position: 591,752
 ---
 <<AddScore AffectionManager -2>>
 <<Expression Okuu "Sad">>
@@ -463,7 +467,7 @@ Okuu: Me neither!
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Begging_You
-position: 587,779
+position: 592,822
 ---
 <<AddScore AffectionManager -2>>
 <<Expression Okuu "Sad">>
@@ -484,7 +488,7 @@ Okuu: Me neither!
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Pretty_Question
-position: 587,823
+position: 592,864
 ---
 <<AddScore AffectionManager 0>>
 <<Expression Okuu "Happy">>
@@ -498,7 +502,7 @@ Okuu: It sure feels good to be praised!
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Im_You_Question
-position: 586,894
+position: 591,935
 ---
 <<AddScore AffectionManager -2>>
 <<Expression Okuu "Swirly">>
@@ -526,7 +530,7 @@ Orin: (Now I'm worried...)
 <<jump GoToEnding_HumanVillage>>
 ===
 title: You_Pretty_Question
-position: 586,1011
+position: 591,1055
 ---
 <<AddScore AffectionManager 5>>
 <<Expression Okuu "Smug">>
@@ -549,7 +553,7 @@ Orin: Sure! I can't get too rusty with my skills now, do I?
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Im_Begging_Question
-position: 586,939
+position: 591,979
 ---
 <<Add ScoreAffectionManager -2>>
 <<Expression Okuu "Sad">>
@@ -571,7 +575,7 @@ Okuu: Me neither!
 <<jump GoToEnding_HumanVillage>>
 ===
 title: Invalid_HumanVillage_2
-position: 586,1055
+position: 591,1127
 ---
 <<AddScore AffectionManager -4>>
 Okuu: ...

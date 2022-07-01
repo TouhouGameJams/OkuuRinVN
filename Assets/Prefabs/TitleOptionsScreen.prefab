@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8008474019741776283}
   - component: {fileID: 5827436523407631939}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Description_TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 6007427355581395884}
   - component: {fileID: 4056019149450082290}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Option_TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,8 +379,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 450}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 400}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6007427355581395884
 CanvasRenderer:
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2426
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 1199982134787929869}
   - component: {fileID: 8225709174485042605}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: ResolutionValue_TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 6165068221200606380}
   - component: {fileID: 2633387606732275120}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 'Description_TMP '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,7 +894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2585167844536195300
@@ -1124,7 +1124,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: cfcb8f3703ccfbb4caf3c13cccbbfa20, type: 2}
   ScreenResolutionText: {fileID: 8225709174485042605}
+  BGMSlider: {fileID: 0}
+  SFXSlider: {fileID: 0}
+  fullScreenTog: {fileID: 0}
   isFullScreen: 0
+  resolutions: []
 --- !u!1 &2779099104487709475
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -250}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4413300646840387751
@@ -1563,8 +1567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 830, y: 500}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 845, y: 445}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4643951974006364742
 CanvasRenderer:
@@ -2307,7 +2311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 280}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9213108147052023219
@@ -2323,7 +2327,7 @@ GameObject:
   - component: {fileID: 1382484508918081638}
   - component: {fileID: 7461182201970567146}
   m_Layer: 5
-  m_Name: Button
+  m_Name: FullScreen_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2346,8 +2350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: -75}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -165.4}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8538736230000814237
 CanvasRenderer:
