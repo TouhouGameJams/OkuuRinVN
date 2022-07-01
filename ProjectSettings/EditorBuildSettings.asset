@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: ef4b3581a6087ac4eb38320bab4b729e
   - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: bae44137e7cab1e4a82497f31f17fbdc
+  - enabled: 1
+    path: Assets/Scenes/Chireiden.unity
+    guid: fd4b85da0e7a19d45a8a0f30c5e8a812
+  - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 4ccdec62e67d2734eb0174e9dfa9ab6a
   m_configObjects: {}

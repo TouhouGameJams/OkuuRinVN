@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public UIRoot uiRoot;
     public DialogueRunner dR;
     public LineView lW;
+    public DialogueAdvanceInput dAI;
     public List<string> wordList;
 
     public SentenceBuilderScriptableObject currentSO;
@@ -52,7 +53,7 @@ public class GameManager : MonoBehaviour
     [YarnCommand("SentenceBuilderStart")]
     public void SentenceBuilderStart(string scriptableObjectName)
     {
-
+        dAI.enabled = false;
         //disable and hide continue button
         currentSO = Resources.Load<SentenceBuilderScriptableObject>("ScriptableObjects/" + scriptableObjectName);
 
@@ -109,6 +110,8 @@ public class GameManager : MonoBehaviour
         board.CleanBoard();
         // Animation End
         uiRoot.SentenceBuilderView.SentenceBuilderEnd();
+
+        dAI.enabled = true;
 
 
         //stateMachine.ChangeState(new GameState());

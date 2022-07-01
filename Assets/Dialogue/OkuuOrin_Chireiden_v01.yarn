@@ -100,7 +100,7 @@ title: SentenceBuilder_Chireiden_0
 position: -286,-283
 ---
 <<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
-Okuu: (Hmmm... What should I tell Orin...?)
+Okuu: <br>(Hmmm... What should I tell Orin...?)
 <<jump {JumpToNode()}>>
 //Words: [I, You], [Like, Be] [Anything, Nothing, Cooking?]
 ===
@@ -368,7 +368,7 @@ position: -24,-96
 //<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
 //<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
 <<SentenceBuilderStart GameManager MainStory_Chireiden_1_v01>>
-Okuu: (Let's see... what kind of food should we make for Satori-sama and her tea time?)
+Okuu: <br>(Let's see... what kind of food should we make for Satori-sama and her tea time?)
 <<jump {JumpToNode()}>>
 //Word: [We, You], [Can, Can't], [Make], [Cookies, Pudding, Grilled Mushroom]
 ===
@@ -749,7 +749,7 @@ position: 434,170
 //<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
 //<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
 <<SentenceBuilderStart GameManager MainStory_Chireiden_2_v01>>
-Okuu: (What do I want to say to Orin?)
+Okuu: <br>(What do I want to say to Orin?)
 <<jump {JumpToNode()}>>
 //Word: <i>, [Do, Don't], [Enjoy], [Today], [A lot]
 ===

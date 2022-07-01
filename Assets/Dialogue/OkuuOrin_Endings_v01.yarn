@@ -4,8 +4,12 @@ position: 13,378
 ---
 <<declare $score = 0 as number>>
 <<set $score to ReturnScore()>>
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~Evening, Human Village~</i>
+<i>~Underneath the firework lit night sky...~</i>
 
-<<if $score > 3>>
+<<if $score > 2>>
     <<jump GoodEnding_HumanVillage>>
 <<else>>
     <<jump BadEnding_HumanVillage>>

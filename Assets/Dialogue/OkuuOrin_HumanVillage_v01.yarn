@@ -3,12 +3,13 @@ tags:
 position: -98,-38
 ---
 <<SetBlack FadeScreen>>
+<i>~The following day in Satori Komeiji's office~</i>
 <<ChangeBG BGManager "Chireiden">>
 //Should be HumanVillage track
 <<PlayBGM SoundManager HeartfeltFancy>>
 //Debug Spawn
-<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
-<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
+<<CreateCharacter CharacterManager Orin -6 -1.25 Right>>
+<<CreateCharacter CharacterManager Okuu 4 -1.25 Left>>
 Satori: Listen, Okuu.
 Satori: When you go to the surface, please behave.
 Satori: And be a good example for Chireiden.
@@ -43,7 +44,7 @@ Orin: As long as they behave themselves, of course.
 Okuu: What if they don't and cause trouble?
 Orin: Well, they will just face the wrath of that shrine maiden.
 <<Expression Okuu "Swirly">>
-<<Spin Okuu 360 0.5>>
+<<ShakeSide Okuu>>
 Okuu: <i>shivers</i>
 Okuu: Scary... Yeah...
 <<Expression Okuu "Neutral">>
@@ -79,11 +80,15 @@ Orin: Or you rather have it as a surprise?
     Okuu: You know, for maximum effects.
     Orin: Oh, ok.
     Orin: <i>(Okuu is growing up. I'm so proud of you)</i>
-<i>A few hours later...</i>
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>A few hours later flying over the surface world sky...</i>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Happy">>
+<<FadeOut FadeScreen>>
 <<SetWhite FadeScreen>>
-<<ChangeBG BGManager Sky>>
+<<ChangeBG BGManager Sky>> 
+<<PlayBGM SoundManager Village>>
 Okuu: So this is the surface...
 Orin: Yup, breath-taking isn't it?
 Orin: If we keep flying in this direction, we will reach the Human Village in no time.
@@ -92,9 +97,9 @@ Orin: If we keep flying in this direction, we will reach the Human Village in no
 title: SentenceBuilder_HumanVillage_0
 position: -94,71
 ---
-Okuu: (I feel like I have to say something...)s
+Okuu: (I feel like I have to say something...)
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_0_v01>>
-Okuu: (But what should I say to Orin?)
+Okuu: <br>(But what should I say to Orin?)
 <<jump {JumpToNode()}>>
 //Word:[It] [Is] [Not] [Amazing] [...] [?]
 //Max: 4 Words
@@ -103,8 +108,9 @@ title: It_Is_Amazing_Sentence
 position: -95,212
 ---
 //It is amazing...
-<<AddScore AffectionManager 5>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Happy">>
+<SpeedLines 1>>
 Okuu: It is amazing...
 Orin: Right?
 Okuu: I never knew the sky is this blue. And all these trees. 
@@ -121,7 +127,7 @@ title: Amazing_It_Is_Sentence
 position: -96,141
 ---
 //Amazing It Is...
-<<AddScore AffectionManager 5>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Happy">>
 Okuu: Amazing... It surely is...
 Orin: Right?
@@ -137,7 +143,7 @@ Okuu: Right, right. Let's go!
 title: It_Is_Not_Amazing
 position: -94,285
 ---
-<<AddScore AffectionManager -5>>
+<<AddScore AffectionManager -1>>
 <<Expression Okuu "Angry">>
 Okuu: Hmm... I expected more, to be honest...
 Orin: ?
@@ -183,7 +189,7 @@ Orin: Sure...
 title: Is_It_Not_Amazing
 position: -95,354
 ---
-<<AddScore AffectionManager 2>>
+<<AddScore AffectionManager 0>>
 <<Expression Okuu "Thinking">>
 Okuu: <i>(Is it not amazing?)</i>
 Yatagarasu: <i>(Wait, are you asking me?)</i>
@@ -206,7 +212,7 @@ Orin: Sure...
 title: Invalid_HumanVillage_0
 position: -97,494
 ---
-<<AddScore AffectionManager 3>>
+<<AddScore AffectionManager 1>>
 <<Expression Okuu "Happy">>
 Okuu: ...
 <<Expression Orin "Smug">>
@@ -220,8 +226,11 @@ Orin: <i>(It would be a shame if we miss the festival)</i>
 title: MainStory_HumanVillage_1
 position: 319,259
 ---
+<<FadeIn FadeScreen>>
+<<wait 1>>
 <<ChangeBG BGManager "HumanVillage">>
 ~<i>The Human Village</i>~
+<<FadeOut FadeScreen>>
 <<Expression Okuu "Neutral">>
 <<Expression Orin "Neutral">>
 Orin: It's sure is loud here...
@@ -271,7 +280,7 @@ position: 320,375
 <<Expression Okuu "Unyuu">>
 Okuu: <i>(Hmm...)</i>
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_1_v01>>
-Okuu: <i>(Should I ask Orin out for a dance?)</i>
+Okuu: <br><i>(Should I ask Orin out for a dance?)</i>
 <<jump {JumpToNode()}>>
 //Word: [Would] [You, I] [Like To] [Dance, Watch]
 //Max: 4 Words
@@ -279,7 +288,7 @@ Okuu: <i>(Should I ask Orin out for a dance?)</i>
 title: Would_You_LikeTo_Dance
 position: 326,523
 ---
-<<AddScore AffectionManager 5>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Embarrassed">>
 Okuu: Orin... Would you like to dance with me?
 <<Expression Orin "Happy">>
@@ -302,7 +311,7 @@ Orin: But of course!
 title: Would_You_LikeTo_Watch
 position: 323,446
 ---
-<<AddScore AffectionManager 3>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Embarrassed">>
 Okuu: W-Would you like to watch them with me, Orin?
 Okuu: I don't know how to dance...
@@ -315,7 +324,7 @@ Orin: L-let just enjoys the music together, Okuu.
 title: I_Would_LikeTo_Watch
 position: 325,603
 ---
-<<AddScore AffectionManager 3>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Embarrassed">>
 Okuu: I think I will just stay back and watch, Orin...
 Okuu: I-I don't know how to dance...
@@ -349,7 +358,7 @@ Okuu: Uhm...
 title: You_Would_LikeTo_Watch
 position: 326,679
 ---
-<<AddScore AffectionManager -5>>
+<<AddScore AffectionManager -1>>
 <<Expression Okuu "Happy">>
 Okuu: You would prefer to just watch them, right?
 Okuu: Same with me!
@@ -391,7 +400,10 @@ Orin: ...as the music really moves me! Let's continue watching the show.
 title: MainStory_HumanVillage_2
 position: 589,509
 ---
+<<FadeIn FadeScreen>>
+<<wait 1>>
 <i>~The Prismrivers finish their stage and everyone goes their separate way~</i>
+<<FadeOut FadeScreen>>
 <<Expression Orin "Neutral">>
 <<Expression Okuu "Thinking">>
 Okuu: I wonder if there is anything interesting left-
@@ -421,7 +433,7 @@ position: 591,612
 <<Expression Okuu "Thinking">>
 Okuu: <i>(I have to find a way to convince Orin to join)</i>
 <<SentenceBuilderStart GameManager MainStory_HumanVillage_2_v01>>
-Okuu: <i>(But what if she really doesn't want to join?)</i>
+Okuu: <br><i>(But what if she really doesn't want to join?)</i>
 <<jump {JumpToNode()}>>
 //Word: [Please] [Pretty] [?] [I'm] [Begging] [You]
 //Max: 3 Words
@@ -429,7 +441,7 @@ Okuu: <i>(But what if she really doesn't want to join?)</i>
 title: Pretty_Please_Quesiton
 position: 591,681
 ---
-<<AddScore AffectionManager 3>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Unyuu">>
 Okuu: Pretty please?
 Orin: ...
@@ -449,7 +461,7 @@ Okuu: Of course. Time to put on a spectacular show!
 title: Please_Im_Begging
 position: 591,752
 ---
-<<AddScore AffectionManager -2>>
+<<AddScore AffectionManager -1>>
 <<Expression Okuu "Sad">>
 Okuu: Orin, please, I'm begging here!
 <<Expression Orin "Thinking">>
@@ -469,7 +481,7 @@ Okuu: Me neither!
 title: Im_Begging_You
 position: 592,822
 ---
-<<AddScore AffectionManager -2>>
+<<AddScore AffectionManager -1>>
 <<Expression Okuu "Sad">>
 Okuu: I'm begging you, Orin!
 Okuu: Please have a danmaku duel with me!
@@ -504,7 +516,7 @@ Okuu: It sure feels good to be praised!
 title: Im_You_Question
 position: 591,935
 ---
-<<AddScore AffectionManager -2>>
+<<AddScore AffectionManager -1>>
 <<Expression Okuu "Swirly">>
 Okuu: I am you?
 Orin: Excuse me...?
@@ -532,7 +544,7 @@ Orin: (Now I'm worried...)
 title: You_Pretty_Question
 position: 591,1055
 ---
-<<AddScore AffectionManager 5>>
+<<AddScore AffectionManager 2>>
 <<Expression Okuu "Smug">>
 Okuu: Orin, I think you are pretty?
 Okuu: And I can't take my eye off you.
@@ -555,7 +567,7 @@ Orin: Sure! I can't get too rusty with my skills now, do I?
 title: Im_Begging_Question
 position: 591,979
 ---
-<<Add ScoreAffectionManager -2>>
+<<Add ScoreAffectionManager -1>>
 <<Expression Okuu "Sad">>
 Okuu: Orin, even if...
 Okuu: I'm begging here?
@@ -577,7 +589,7 @@ Okuu: Me neither!
 title: Invalid_HumanVillage_2
 position: 591,1127
 ---
-<<AddScore AffectionManager -4>>
+<<AddScore AffectionManager -1>>
 Okuu: ...
 Okuu: <i>(Better not ask Orin as she seems to not want to play with me...)</i>
 Okuu: <i>(I will respect that)</i>

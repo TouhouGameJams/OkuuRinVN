@@ -159,7 +159,7 @@ tags:
 position: -577,-540
 ---
 <<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
-Okuu: (Hmm...)
+Okuu: <br>(How do I feel about this weekend with Orin?)
 <<jump {JumpToNode()}>>
 //Words: <i> [Can, Will] [My best, Do it] 
 ===
@@ -244,7 +244,7 @@ tags:
 position: 189,-122
 ---
 <<SentenceBuilderStart GameManager MainStory_Intro_0_v01>>
-Okuu: (What do I think of days off?)
+Okuu: <br>(What do I think of days off?)
 <<jump {JumpToNode()}>>
 //Words: [I, We, It, What] [Be, Like, Work] [Great, Bad]
 ===
@@ -254,7 +254,6 @@ tags:
 position: -575,-472
 colorID: 4
 ---
-<<AddScore AffectionManager 2>>
 <<PlaySFX SoundManager Smile>>
 <<Expression Okuu Happy>>
 Okuu: I like it! 
@@ -268,7 +267,6 @@ Okuu: Relaxing...
 title: I_Like_Work
 position: -578,-412
 ---
-<<AddScore AffectionManager 0>>
 <<Expression Okuu BugEyed>>
 Okuu: But I do like working for Satori-sama.
 <<Expression Orin Thinking>>
@@ -282,7 +280,6 @@ Okuu: Yeah, you are right!
 title: It_Be_Great
 position: -579,-359
 ---
-<<AddScore AffectionManager 2>>
 <<PlaySFX SoundManager Smile>>
 <<Expression Okuu Happy>>
 Okuu: It is great that we are getting days off!
@@ -303,7 +300,6 @@ title: It_Be_Bad
 position: -579,-294
 ---
 <<PlaySFX SoundManager Fail>>
-<<AddScore AffectionManager -1>>
 <<Expression Okuu Thinking>>
 Okuu: It's bad...
 <<Expression Okuu BugEyed>>
@@ -323,7 +319,6 @@ Orin: (So... Are days off still bad then?)
 title: What_Be_It
 position: -578,-241
 ---
-<<AddScore AffectionManager 0>>
 <<Expression Okuu Thinking>>
 Okuu: So... What exactly is it?
 <<Expression Orin Thinking>>
@@ -342,7 +337,6 @@ title: Invalid_Intro_0
 position: -575,-184
 ---
 <<PlaySFX SoundManager Fail>>
-<<AddScore AffectionManager 0>>
 <<Expression Okuu Swirly>>
 Okuu: Eh...Ah...!
 <<Expression Orin BugEyed>>
@@ -382,7 +376,7 @@ position: -136,-347
 ---
 //Building Segment
 <<SentenceBuilderStart GameManager MainStory_Intro_2_v01>>
-Okuu: I-I want to ask...
+Okuu: <br>I-I want to ask...
 <<jump {JumpToNode()}>>
 //Words: [Would you like] [To visit, to stay] [The Human Village, Home] 
 //Words: [Hmm, Uhm, Uhh]
