@@ -1,0 +1,913 @@
+﻿title: MainStory_Chireiden_0
+tags:
+position: -288,-378
+---
+<<SetBlack FadeScreen>>
+<<ChangeBG BGManager "Chireiden">>
+//Create Chara in case.
+<<CreateCharacter CharacterManager Okuu 4 -1.25 Left>>
+<<CreateCharacter CharacterManager Orin -6 -1.25 Right>>
+//
+<<Expression Okuu "Neutral">>
+<<Expression Orin "Neutral">>
+<i>The following day. Okuu and Orin decided on a lazy staycation at Chireiden</i>
+<<PlayBGM SoundManager Comical>>
+Orin: Okuu...
+Orin: Okuu...
+Okuu: <i>(Zzz...)</i>
+Orin: Reiuji Utsuho!
+Okuu: <i>(Unyuu~)</i>
+Orin: Wake up!
+Orin: Else you will miss breakfast...
+-> Okuu: Just 5 more minutes... Zzz...
+    //lower sound
+    Orin: *whispers* I made us breakfast.
+    Okuu: Wah!
+    <<FadeOut FadeScreen>>
+    <<Expression Okuu "BugEyed">>
+    <<Hop Okuu 1>>
+    Okuu: Orin's breakfast... I can't miss it!
+    Orin: I'm glad that got you woke up. Go clean up and let's have breakfast together!
+    <<Expression Okuu "Neutral">>
+    Okuu: Will Satori-sama be joining us?
+    Orin: It seems she went somewhere. She left us a note saying the house is ours for the day.
+    Yatagarasu: (Or she just wants to leave these two alone for the day.)
+    <<Expression Okuu "Happy">>
+    Okuu: I'm looking forward to today, Orin.
+    Okuu: Let's go!
+    <<FadeIn FadeScreen>>
+    <<wait 1>>
+-> Okuu: Zzz...
+    Orin: Okuu?
+    Okuu: Zzz... Zzz...
+    Orin: If you don't wake up soon, your breakfast is going to be cold...
+    Okuu: Zzz...
+    Orin: *Shuffling noises*
+    Orin: *chu*
+    Orin: <i>(Oh well... I guess I will give her more time to sleep)</i>
+    <<WalkTowards Orin 19 Right 0.5>>
+    //Orin out of the room
+    <<FadeOut FadeScreen>>
+    <<Expression Okuu "BugEyed">>
+    Okuu: !!!
+    <<Hop Okuu 3>>
+    <<Spin Okuu 720 1>>
+    Okuu: <i>(S-She...)</i>
+    Okuu: Ahh, I should hurry!
+    <<FadeIn FadeScreen>>
+    <<wait 1>>
+    <<SetCharacter Orin -6 -1.25>>
+//
+<i>Few minutes later down in the kitchen.</i>
+<<FadeOut FadeScreen>>
+<<Expression Okuu "Happy">>
+<<Expression Orin "Happy">>
+Okuu: Orin's breakfast... It smells so good...
+Orin: Feel free to dig in.
+Okuu: You are an amazing cook, Orin! I wish I know how to cook like you.
+<<Expression Okuu "Unyuu">>
+Okuu: I simply scorched our food when I try...
+Orin: Don't be sad. On the bright side...
+<<Expression Orin "Smug">>
+Orin: You are amazing at disposing of our trash. The perk of having the power of the sun.
+<<Expression Okuu "Embarrassed">>
+<<Hop Okuu 3>>
+Okuu: Oriiiiiinn~
+Orin: I'm joking, I'm joking!
+<<Expression Orin "Happy">>
+Orin: But I mean it, I do think you are amazing.
+<<Expression Okuu "Sad">>
+Okuu: Even if I did trouble in the past?
+Orin: While it was, admitedly, kinda scary, I think you just want a better world for Satori-sama...
+Orin: ...And for us.
+<<Expression Okuu "Happy">>
+<<Hop Okuu 1>>
+Okuu: Yup!
+<<Expression Okuu Sad>>
+<<ShakeSide Okuu>>
+Okuu: Although that shrine maiden and magician are scary...
+Orin: Yeah... So, do you have any plan for today, Okuu?
+<<StartThinking Thinking>>
+Yatagarasu: <i>(Oh right, you don't exactly have anything planned...)</i>
+Yatagarasu: <i>(I don't think we can execute your planned date in the Human Village or the Old Capital anymore...)</i>
+Yatagarasu: <i>(But this may play to your advantage.)</i>
+Yatagarasu: <i>(No distractions for either of you, I have to say.)</i>
+Yatagarasu: <i>(Go for it Ms. Utsuho. Be as bold as you like!)</i>
+Okuu: <i>(Unyuu!)<i>
+<<FinishThinking Thinking>>
+<<jump SentenceBuilder_Chireiden_0>>
+===
+title: SentenceBuilder_Chireiden_0
+position: -286,-283
+---
+<<SentenceBuilderStart GameManager MainStory_Chireiden_0_v01>>
+Okuu: <br>(Hmmm... What should I tell Orin...?)
+<<jump {JumpToNode()}>>
+//Words: [I, You], [Like, Be] [Anything, Nothing, Cooking?]
+===
+title: I_Like_You
+position: -290,-216
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Happy">>
+<<SpeedLines Okuu 1>>
+Okuu: I like you.
+Yatagarasu: <i>(How bold...)</i>
+<<Expression Orin "Blank">>
+Orin: *blushes*
+Orin: W-what...?
+Okuu: I mean it: I like how you take care of everyone.
+<<Expression Orin "Happy">>
+Orin: Geez, flattering won't get you anywhere.
+//Orin move to Okuu and hit her UwU
+<<WalkTowards Orin 7 Right 0.5>>
+<<Hop Okuu 1>>
+<<WalkTowards Orin 7 Left 0.5>>
+Okuu: If you want I can praise you whenever you want!
+Orin: I- I will remember this offer. Anyway, back to the topic...
+<<Expression Orin "Thinking">>
+Orin: Oh, you mention you can't cook well.
+Orin: How about I teach you in making some sweets?
+Okuu: Ohhh! You will?
+<<Expression Orin "Happy">>
+Orin: Sure! I'm sure everyone else, including Satori-sama, will be so happy to receive your gift.
+Orin: Oh, maybe Koishi-sama will come by. She likes sweet, isn't she?
+Okuu: Right, let's get to work!
+Yatagarasu: <i>Terrific work Okuu!</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Like_Anything
+position: -291,-166
+---
+<<AddScore AffectionManager 1>>
+<<Expression Okuu "Neutral">>
+Okuu: I like anything really.
+Orin: Hmm, that's a bit hard for us to decide...
+Orin: As I also have no idea what we should do...
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Thinking">>
+Both: Hmm...
+<<Hop Orin 1>>
+Okuu: We can... No, it's too late...
+Orin: How about... Nah, no one will look after this place...
+Both: Hmm...
+<<StartThinking Thinking>>
+Yatagarasu: <i>(Oh dear... Hey, bird friend!)</i>
+<<Expression Okuu "Unyuu">>
+<<Hop Okuu 1>>
+Okuu: <i>(Unyuu?)</i>
+Yatagarasu: <i>(Listen, how about you two do some cooking?)</i>
+Okuu: <i>(Cooking? But I'm horrible at it...)</i>
+Yatagarasu: <i>(I mean, yeah, but you can use it as an excuse so Orin can teach how to make something.)</i>
+<<FinishThinking Thinking>>
+Okuu: Orin.
+Orin: ?
+<<Expression Okuu "Happy">>
+Okuu: Would it be ok if you teach me how to cook?
+Okuu: And we have time now anyway.
+<<Expression Orin "Happy">>
+<<Hop Orin 2>>
+Orin: Oh, sure! I would love to help you!
+Yatagarasu: <i>A solid response Okuu!</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Like_Cooking?
+position: -291,-115
+---
+<<AddScore AffectionManager 1>>
+<<Expression Okuu "Unyuu">>
+Okuu: I like cooking, maybe?
+<<Expression Okuu "Sad">>
+<<ShakeSide Okuu>>
+Okuu: I like to try at least... Even though the result is...
+Okuu: Well...
+Orin: I know it's hard to control such power, Okuu.
+<<Hop Orin 1>>
+Orin: So how about I teach you a bit of cooking?
+<<Expression Orin "Happy">>
+<<Hop Orin 1>>
+Orin: We have time anyway!
+<<Expression Okuu "Happy">>
+<<Hop Okuu 3>>
+Okuu: Really? You are the best, Orin!
+Orin: If we fail we can still have some fun for ourselves.
+Okuu: Yup! Teach me, Master Orin!
+Orin: Sure!
+Yatagarasu: <i>Not a bad answer.</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Be_Nothing
+position: -289,-68
+---
+<<AddScore AffectionManager -2>>
+<<Expression Okuu "Smug">>
+Okuu: You are nothing.
+<<Expression Orin "Sad">>
+<<ShakeSide Orin>>
+Yatagarasu: <i>(Hey, hey, hey! What are you saying?)</i>
+Yatagarasu: <i>(That's too mean, my bird friend.)</i>
+Orin: I'm sorry...
+Okuu: <i>(Oh... I-...)</i>
+<<Expression Okuu "Sad">>
+Okuu: I-I didn't mean to. I meant, do you have nothing to do?
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Thinking">>
+*silence*
+Okuu: If you don't have anything else? Would you teach me how to cook?
+Orin: Oh, uh...sure...
+Yatagarasu: <i>Lacking a little tact I'd say.</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Like_Cooking?
+position: -290,-17
+---
+<<AddScore AffectionManager 1>>
+<<Expression Okuu "Thinking">>
+Okuu: Orin. Do you like cooking?
+<<Expression Orin "Thinking">>
+Orin: I wouldn't exactly say I like cooking...
+Orin: But I don't hate it. Something on your mind, Okuu?
+Okuu: Oh, I thought if you want...
+<<Hop Okuu 1>>
+Okuu: Maybe you can teach me how to cook?
+Orin: It's not like we have anything better to do.
+Okuu: You... don't want to?
+Orin: I mean, why not?
+<<Expression Orin "Happy">>
+Orin: I'm sure there are easy recipes for you to follow.
+<<Expression Okuu "Happy">>
+<<Hop Okuu 2>>
+Okuu: Ooooh!
+Orin: Let's me have a look.
+Yatagarasu: <i>Not a bad answer.</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: I_Be_You
+position: -292,121
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Swirly">>
+<<Spin Okuu 360 0.5>>
+<<Flip Okuu>>
+Okuu: I am you.
+Okuu: And you are me.
+<<Expression Orin "BugEyed">>
+Orin: ...Okuu?
+Orin: Are you alright?
+<<Spin Okuu 360 0.5>>
+<<Flip Okuu>>
+Okuu: We are all creatures of this world...
+Okuu: Creatures like us need energies to survive.
+<<Spin Okuu 360 0.5>>
+<<Flip Okuu>>
+Yatagarasu: <i>(Oh Amaterasu Oomikami, we are losing her...)</i>
+Yatagarasu: <i>(Okuu? Okuu! Snap out. NOW!)</i>
+<<Expression Okuu "Unyuu">>
+<<Hop Okuu 1>>
+<<Flip Okuu>>
+Okuu: Unyuu?!
+Orin: Wah!
+Orin: Uhm, are you... ok now?
+Okuu: Orin... Let's do some cooking...
+Orin: Oh... uhm... sure?
+<<Expression Okuu "Happy">>
+Okuu: Yah! I will get ready then.
+Orin: <i>(Now I'm worried...)</i>
+Yatagarasu: <i>Just a little confusing I'd say.</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: You_Be_I
+position: -291,57
+---
+<<jump I_Be_You>>
+===
+title: Invalid_Chireiden_0
+position: -291,175
+---
+<<AddScore AffectionManager 0>>
+<<Expression Okuu "Sad">>
+Okuu: <i>(Ughh, nothing came out...)</i>
+Orin: Are you alright, Okuu?
+Okuu: <i>(Come on, say something!)</i>
+<<Expression Okuu "Unyuu">>
+Okuu: Unyuu...
+Orin: I guess you don't have anything planned then?
+Okuu: ...Unyuu...
+<<Expression Orin "Thinking">>
+Orin: Hmmmmm... This is tricky.
+Orin: Oh, you mention you are bad at cooking, right?
+Orin: How about I teach you a bit? You won't be a master chef.
+<<Expression Orin "Happy">>
+<<Hop Okuu 1>>
+Orin: But I'm sure you will be happy with the result.
+<<Expression Okuu "Happy">>
+Okuu: Oh, sure! I would love to cook again.
+Yatagarasu: <i>You're a little lucky Orin carried you there.</i>
+<<jump MainStory_Chireiden_1>>
+===
+title: MainStory_Chireiden_1
+position: -23,-195
+---
+<<Expression Orin "Thinking">>
+<<Expression Okuu "Thinking">>
+Orin: Now we are facing the biggest question...
+Okuu: Yup...
+Orin: Do you have any food you want to cook?
+Okuu: Not really...
+<<StartThinking Thinking>>
+Okuu: <i>(Yamcha, what kind of food do you like?)</i>
+Yatagarasu: <i>(Who? Anyhow, I don't really have any preference for food.)</i>
+Yatagarasu: <i>(It's not like I can eat anyway...)</i>
+Okuu: <i>(What about you? Do you have any food you would like to make?)</i>
+Okuu: <i>(I love anything Orin makes!)</i>
+Okuu: <i>(So... I guess I don't really have any favorite food...)</i>
+<<Expression Orin "Thinking">>
+Yatagarasu: <i>(What about your feline friend? Does she have any favorite food?)</i>
+<<FinishThinking Thinking>>
+<<Expression Orin "Neutral">>
+Okuu: Orin, do you have any favorite food?
+Orin: Me? Well, I like fishes a lot.
+Orin: But we don't have any fish left for this weekend.
+Okuu: Oh, I see. How do you normally get the ingredients anyway?
+Orin: You know that I'm helping Satori-sama with her detective work, right?
+Okuu: Oh, that! I heard many youkai hire Satori-sama to solve some mystery for them...
+<<Expression Orin "Happy">>
+<<Expression Okuu "Smug">>
+Orin: Yup! Satori-sama is an amazing detective and I'm her amazing sidekick!
+Orin: I'm her eyes and ear on the surface then report back to her.
+Orin: Along the way, I visit the Human Village to buy some ingredients too!
+Okuu: Oooh! Right, I wish to visit the Human Village sometime soon...
+Orin: It's a great place, but don't cause any trouble.
+Orin: Unless you want the wrath of that shrine maiden again, that is.
+<<Expression Okuu "Swirly">>
+Okuu: Unyuu... So... I guess we can't cook your favorite food, Orin...
+//Monolog
+<<StartThinking Thinking>>
+Yatagarasu: <i>(Hey, what about that master of yours? That mind-reading youkai.)</i>
+<<Expression Okuu "Mad">>
+Okuu: <i>(Please don't disrespect Satori-sama like that!)</i>
+<<Expression Okuu "Thinking">>
+Okuu: <i>(I think she likes drinking tea while petting us...)</i>
+Okuu: <i>(She says it calms her mind.)</i>
+<<Expression Okuu "Happy">>
+Okuu: <i>(Oh... OH!!)</i>
+<<FinishThinking Thinking>>
+//Dialog
+Okuu: Orin, I have a great idea!
+Orin: ?
+Okuu: How about we make something for Satori-sama?
+Orin: Something for Satori-sama?
+Okuu: Yeah! She likes to drink tea during her breaks, right?
+Okuu: I thought, maybe we can do something small for her.
+<<Expression Orin "Happy">>
+Orin: That should work with our limited ingredients.
+Orin: Although...
+<<Expression Okuu "Thinking">>
+<<Expression Orin "Thinking">>
+Orin: What do you think we should make for her?
+<<jump SentenceBuilder_Chireiden_1>>
+===
+
+title: SentenceBuilder_Chireiden_1
+position: -24,-96
+---
+//Debug Spawn
+//<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
+//<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
+<<SentenceBuilderStart GameManager MainStory_Chireiden_1_v01>>
+Okuu: <br>(Let's see... what kind of food should we make for Satori-sama and her tea time?)
+<<jump {JumpToNode()}>>
+//Word: [We, You], [Can, Can't], [Make], [Cookies, Pudding, Grilled Mushroom]
+===
+
+title: We_Can_Make_Cookies
+position: -25,-23
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Happy">>
+<<Expression Orin "BugEyed">>
+Okuu: We can make some cookies.
+Okuu: I'm sure they will go well with tea.
+Orin: Cookies... *drools*
+Okuu: Orin...?
+<<Hop Orin 1>>
+Orin: !!!
+<<Expression Orin "Happy">>
+Orin: Let's go, Okuu.
+<<Hop Orin 2>>
+Orin: We shall make the best cookies to go with Satori-sama's amazing tea.
+Okuu: Right. You sure look fired up.
+Orin: It's because you haven't tried Satori-sama tea alongside some cookies.
+Orin: If you think the cookies are already delicious...
+Orin: Wait until you taste them with the tea.
+<<Expression Okuu "Smug">>
+Okuu: Wow... It sure does sound magical.
+<<Expression Orin "CatFace">>
+Orin: Once you get a taste, you will know what I'm talking about.
+Yatagarasu: <i>(A brilliant answer!)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Can_Make_Pudding
+position: -23,115
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Happy">>
+Okuu: How about some puddings? We can make some of those.
+Orin: I do like puddings but...
+Okuu: But?
+Orin: They don't exactly go well with tea.
+Okuu: Ahh, right...
+Orin: And Satori-sama isn't such a huge fan of it.
+<<Expression Okuu "BugEyed">>
+<<Hop Okuu 3>>
+Okuu: What?!
+<<Expression Okuu "Sad">>
+Okuu: I can't believe Satori-sama isn't a fan of pudding...
+<<Spin Okuu 360 0.5>>
+<<Expression Orin "Catface">>
+Orin: <i>(I'm so sorry, Okuu.)</i>
+Orin: <i>(I know I ask you what food you want to make-)</i>
+Orin: <i>(B-But my tea and cookies!)</i>
+Orin: Let's just make some simple cookies, Okuu.
+Okuu: Ok. For Satori-sama's sake, I shall learn how to make cookies.
+Orin: <i>(I'm so sorry, Satori-sama, for using you like this.)</i>
+Yatagarasu: <i>(A brilliant answer!)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Can_Make_GrilledMushroom
+position: -24,45
+---
+<<AddScore AffectionManager 0>>
+<<Expression Okuu "Happy">>
+<<Hop Okuu 1>>
+Okuu: Oh, what about grilled mushrooms? We can grill some!
+Okuu: And the smells are amazing too.
+<<Expression Orin "Sad">>
+Orin: Yeah but... I thought we are making something to go along with Satori-sama's tea...
+Orin: Thou, I did say I will teach you what you want to make.
+Orin: I hope Satori-sama won't mind the smell of those mushrooms clashing with her tea.
+//Monolog
+<<StartThinking Thinking>>
+<<Expression Okuu "Thinking">>
+Okuu: <i>(Hmm, I feel like I said something wrong...)</i>
+Yatagarasu: <i>(I guess... On the bright side, you could say something even worse.)</i>
+Okuu: <i>(That... doesn't exactly make me feel any better though.)</i>
+Yatagarasu: <i>(Guess she doesn't like mushrooms...)</i>
+<<FinishThinking Thinking>>
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_Cookies
+position: -23,192
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Angry">>
+Okuu: We can't make any cookies.
+<<Expression Orin "BugEyes">>
+Orin: Ehhhhh??? Why not?
+<<Hop Orin 3>>
+Okuu: Those cookies' crumbs will ruin our clothes and the carpet.
+Orin: Okuu, I don't think Satori-sama minds that...
+Okuu: Yeah, but... those crumbs can get on our clothes!
+Orin: You are not the one washing the clothes, please...
+<<Expression Okuu "Sad">>
+Okuu: B-but... I just think those little crumbs are annoying...
+<<Expression Orin "Sad">>
+Orin: Hmm. If you are so against it... How about pudding?
+Orin: It shouldn't leave crumbs like cookies.
+Okuu: That's much better. Let's do it!
+Orin: <i>(My beloved cookies with Satori-sama's tea...)</i>
+Yatagarasu: <i>(Being uptight was not the answer.)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_Pudding
+position: -24,263
+---
+<<AddScore AffectionManager 1>>
+<<Expression Okuu "Angry">>
+Okuu: We can't make any pudding, Orin.
+<<Expression Orin "BugEyes">>
+Orin: I-I didn't exactly think we will be making pudding but...
+<<Expression Orin "Thinking">>
+Orin: May I ask why not?
+Okuu: Those puddings are dangerous.
+Orin: ?
+<<Expression Okuu "Happy">>
+<<Hop Okuu 3>>
+Okuu: They are dangerously cute!!!
+<<Expression Orin "Neutral">>
+Orin: ...
+Okuu: ...
+Yatagarasu: <i>(...)</i>
+<<Expression Orin "Happy">>
+Orin: Let's just bake some cookies, shall we?
+Okuu: Ok!
+Yatagarasu: <i>(Way to turn it around.)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: We_Cant_Make_GrilledMushroom
+position: -26,330
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Angry">>
+Okuu: We can't make any grilled mushrooms, Orin.
+Orin: They won't go well with Satori-sama's tea.
+<<Expression Orin "Thinking">>
+Orin: Uhm... Why are grilled mushrooms even on our menu in the first place?
+Okuu: I saw we have spared mushrooms so I thought we will be making something with mushrooms.
+Orin: ...
+Orin: You know, Okuu...
+<<Expression Orin "Unyuu">>
+Okuu: Unyuu?
+Orin: Do you remember that blond human flying on her broom?
+Orin: Self-proclaimed "Ordinary Magician" and all those jazz.
+Okuu: Oh, her? She did beat me before... What about her?
+Orin: Yeah, her. You see, she has this weird fixation on mushrooms.
+Orin: For some reason.
+<<Expression Orin "Happy">>
+Orin: She's interested in Former Hell's musrooms for some weird reason.
+Orin: Those are so I can trade with her once I visit the surface again.
+<<Hop Okuu 1>>
+Okuu: Oooooohhhh... I seeeee...
+<<Expression Okuu "Happy">>
+Okuu: How about we just make some cookies instead?
+Okuu: They are great to go with Satori-sama's tea!
+Yatagarasu: <i>(A brilliant answer!)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_Cookies
+position: 74,483
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some cookies.
+<<Expression Orin "Happy">>
+Orin: Cookies!
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+<<Hop Okuu 1>>
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
+<<Expression Okuu "Sad">>
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_Pudding
+position: 73,629
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some puddings.
+<<Expression Orin "Thinking">>
+Orin: Hmm, puddings? Not bad.
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+<<Hop Okuu 1>>
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
+<<Expression Okuu "Sad">>
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can_Make_GrilledMushroom
+position: 74,554
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Neutral">>
+Okuu: Orin, I think you can make some grilled mushrooms.
+<<Expression Orin "Thinking">>
+Orin: Grilled mushrooms? 
+Orin: But they don't even go well with tea. Especially not with Satori-sama's tea.
+Orin: Wait... Did you just say "you"?
+<<Expression Orin "Angry">>
+<<Expression Okuu "Happy">>
+Okuu: Yup!
+Okuu: I-is something wrong with that?
+Orin: Why not "we" instead? Didn't you say you want me to teach you how to cook?
+Okuu: Uh...
+<<Expression Orin "Thinking">>
+Orin: But it's "I" who has to do it instead?
+Orin: Something just doesn't add up, don't you think?
+//Okuu's ScriptableObject wrote Embarrassed wrong! -> FIX Pls
+<<Expression Okuu "Embarrassed">>
+Okuu: Uhmmm... Uh... I-I mean...
+<<Hop Okuu 1>>
+Okuu: I-it's... a slip of the tongue... that's all...
+<<Expression Orin "Neutral">>
+Orin: Oh well, whatever. Let us make some cookies.
+//Monolog
+Yatagarasu: <i>(Well... That was embarrassing, my dear bird friend...)</i>
+<<Expression Okuu "Sad">>
+Okuu: <i>(Unyuu... I didn't mean to...)</i>
+Yatagarasu: <i>(Lacking tact I'm afraid.)</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: You_Can't_Make_Cookies
+position: -171,628
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Angry">>
+<<Hop Okuu 1>>
+Okuu: You can't make any cookies, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? What else should I make then?
+-> Okuu: You can make puddings instead.
+    <<jump You_Can_Make_Pudding>>
+-> Okuu: You can make grilled mushrooms instead.
+    <<jump You_Can_Make_GrilledMushroom>>
+===
+title: You_Can't_Make_Pudding
+position: -166,550
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Angry">>
+<<Hop Okuu 1>>
+Okuu: You can't make any puddings, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? What else should I make then?
+-> Okuu: You can make cookies instead.
+    <<jump You_Can_Make_Cookies>>
+-> Okuu: You can make grilled mushrooms instead.
+    <<jump You_Can_Make_GrilledMushroom>>
+===
+title: You_Can't_Make_GrilledMushroom
+position: -163,480
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Angry">>
+<<Hop Okuu 1>>
+Okuu: You can't make any grilled mushroom, Orin!
+<<Expression Orin "BugEyed">>
+Orin: Eh? Wait, why even grilled mushrooms in the first place???
+Okuu: Just trust me!
+Orin: Ok, what else should I make then?
+-> Okuu: You can make cookies instead.
+    <<jump You_Can_Make_Cookies>>
+-> Okuu: You can make puddings instead.
+    <<jump You_Can_Make_Pudding>>
+===
+title: Invalid_Chireiden_1
+position: -26,401
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Sad">>
+<<StartThinking Thinking>>
+Okuu: <i>(Ughh... Why do no words coming out of my mouth?)</i>
+Yatagarasu: <i>(Are you alright, bird friend?)</i>
+Okuu: <i>(No... I can't say anything again... Terrasse-san)</i>
+Yatagarasu: <i>(Hmm... Wait...) </i>
+Yatagarasu: <i>(What kind of language is that???)</i>
+Okuu: <i>(I think it's some language from the outside world.)</i>
+<<Expression Okuu "Unyuu">>
+Okuu: <i>(I'm not sure.)</i>
+Yatagarasu: <i>(Why do you keep giving me weird nicknames?!)</i>
+Yatagarasu: <i>(Never mind.)</i>
+<<FinishThinking Thinking>>
+<<Expression Okuu "Neutral">>
+Orin: Okuu? You are spacing out again.
+Orin: How about we make some simple cookies?
+Orin: They should go well with Satori-sama's tea.
+<<Expression Okuu "Happy">>
+<<Hop Okuu 1>>
+Okuu: Cookies! I would love to.
+Yatagarasu: <i>Hesitation is defeat I'm afraid</i>
+<<jump MainStory_Chireiden_2>>
+===
+title: MainStory_Chireiden_2
+position: 434,82
+---
+//CG: Baking
+<i>A few hours later</i>
+<<Expression Okuu "Sad">>
+<<Expression Orin "Happy">>
+Orin: Well, they are not *that* bad, Okuu.
+Okuu: Unyuu... But they are still terrible in comparison to you.
+Orin: Hey, look! This one isn't burnt out at all.
+<<Hop Orin 1>>
+Orin: Oh, and this one looks exactly like mine.
+Orin: I would say, overall and for our first cooking lesson this was a success.
+<<Expression Okuu "Happy">>
+Okuu: Right! I didn't scorch everything down this time.
+<<Flip Okuu>>
+<<Flip Okuu>>
+Okuu: Though they still taste kind of bitter.
+Orin: I'm sure you won't notice the bitterness if you make your tea extra sweet.
+Orin: Still...
+<<Expression Okuu "Neutral">>
+<<Expression Orin "Thinking">>
+Orin: Satori-sama sure is late.  
+Okuu: I wonder why...
+Orin: Oh well, we can make our own tea if you want. 
+Okuu: Sure, we can store some for Satori-sama later.
+//
+<i>Orin is brewing some tea. Please wait warmly~</i>
+<<Expression Orin "Happy">>
+<<Expression Okuu "Happy">>
+Orin: They might not be as good as Satori-sama's-
+Orin: But I'm confident in my skills, you know.
+<<Hop Okuu 1>>
+Okuu: Wah, they smell amazing for sure.
+Okuu: Maybe you should teach me how to brew tea next, Orin.
+Orin: Sure, I would more than happy to teach you!
+<i>*sips*</i>
+Okuu: I like calm time like this once in a while.
+Orin: Right. I do love work but having days off like this is wonderful.
+<i>*sips*</i>
+Okuu: Oh, Orin, if your tea went cold, just tell me so I can heat them up for you.
+Orin: Hehe, thanks a lot, Okuu. But I'm afraid you will over-boil the tea.
+Okuu: Ahh, true.
+<i>*sips*</i>
+Orin: I like today a lot. Spending time with you like this.
+Orin: How about you? W-What do you think of today?
+Orin: We couldn't go to the Human Village or the Old Capital.
+Orin: But... It wasn't bad, right?
+//
+<<Expression Okuu "Thinking">>
+<<jump SentenceBuilder_Chireiden_2>>
+===
+title: SentenceBuilder_Chireiden_2
+position: 434,170
+---
+//Debug Spawn
+//<<CreateCharacter CharacterManager Orin 6 -1.25 Left>>
+//<<CreateCharacter CharacterManager Okuu -4 -1.25 Right>>
+<<SentenceBuilderStart GameManager MainStory_Chireiden_2_v01>>
+Okuu: <br>(What do I want to say to Orin?)
+<<jump {JumpToNode()}>>
+//Word: <i>, [Do, Don't], [Enjoy], [Today], [A lot]
+===
+title: I_Enjoy_Today_ALot
+position: 434,331
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Happy">>
+<<Expression Orin "Happy">>
+Okuu: I enjoyed today a lot, Orin.
+Okuu: Thank you very much for spending time with me.
+Okuu: Also I learn quite a lot after all, especially how to cook.
+Orin: I'm glad today wasn't such a boring day, Okuu
+Orin: I was so worried that we decided not to go to the Human Village or the Old Capital.
+Orin: But my worries turn out to be nothing after all.
+Okuu: Same here. I never knew how such a familiar location can still be fun.
+Orin: Okuu, Okuu...
+Okuu: ?
+Orin: Is there something you want to try making next time?
+-> Okuu: Pudding!
+    <<Hop Okuu 1>>
+    Orin: Sure! It has been a while since I last ate them.
+-> Okuu: Do you think grilled mushrooms taste good?
+    Orin: M-Maybe? We will find out in the future...
+<<jump GoToEnding_Chireiden>>
+===
+title: I_Do_Enjoy_Today
+position: 432,403
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu "Happy">>
+Okuu: Despite everything...
+Okuu: I do enjoy today, Orin.
+<<Expression Orin "Happy">>
+Orin: Really? I'm very pleased to hear that.
+Okuu: Maybe we can do it again sometime.
+Orin: Sure, if Satori-sama allows us to have days off again!
+<<Hop Orin 1>>
+Okuu: I'm sure she will if we work hardand then ask her nicely.
+Orin: Right, Satori-sama is very kind and fair after all.
+<<jump GoToEnding_Chireiden>>
+===
+title: I_Dont_Enjoy_Today
+position: 432,476
+---
+<<AddScore AffectionManager -1>>
+<<Expression Okuu "Embarrassed">>
+Okuu: O-Orin...
+Okuu: H-How about we spend our days off somewhere else next time?
+Orin: Huh? Sure, I guess...
+Orin: Does that mean you didn't enjoy our time together.
+Okuu: N-No, I mean, we should spend our days off somewhere else instead of this place.
+Okuu: You know, to see more of Gensokyo.
+//Mono
+Okuu: <i>(I'm so sorry Orin... B-but...)</i>
+Okuu: <i>(I didn't exactly enjoy today.)</i>
+Okuu: <i>(I know you did your best for me but I just couldn't feel it.)</i>
+Yatagarasu: <i>(Oh well, it's best if you don't tell her the truth.) </i>
+Yatagarasu: <i>(Else you are just the cruelest person, my friend.)</i>
+//Diag
+<<Expression Orin "Embarrassed">>
+Orin: R-right. You didn't have a lot of chances to see outside of Chireiden.
+Orin: Let's do so next time, Okuu.
+<<jump GoToEnding_Chireiden>>
+===
+title: Do_I_Enjoy_Today
+position: 432,550
+---
+<<AddScore AffectionManager 1>>
+<<Expression Okuu "Thinking">>
+//Monolog
+<<StartThinking Thinking>>
+Okuu: <i>(Do I enjoy today?)</i>
+Yatagarasu: <i>(Are you asking me?)<i>
+Okuu: <i>(Yup. I just want to make sure of my feelings before telling Orin.)</i>
+Okuu: <i>(I don't want to be rude.)</i>
+Yatagarasu: <i>(Then tell me, what is your honest feeling of today?)</i>
+Okuu: <i>(I... think I enjoy today.)</i>
+Yatagarasu: <i>(Then that's a positive experience!)</i>
+Yatagarasu: <i>(Don't think too hard, friend.)</i>
+Okuu: <i>(Right! If I think I enjoyed it mean I enjoyed it.)</i>
+Yatagarasu: <i>(Well... Let's just go with that.)</i>
+<<FinishThinking Thinking>>
+//Dialog
+<<Expression Okuu "Happy">>
+<<Hop Okuu 1>>
+Okuu: Orin, thank you for making today so enjoyable!
+Okuu: Without you, it would be such a boring day off.
+<<Expression Orin "Happy">>
+Orin: I see, I enjoy your company too, Okuu.
+Orin: I'm glad I could teach you a bit.
+Orin: Hopefully there will be next time.
+<<jump GoToEnding_Chireiden>>
+===
+title: Dont_I_Enjoy_Today
+position: 433,619
+---
+<<AddScore AffectionManager -1>>
+//Monolog
+<<Expression Okuu Thinking>>
+<<StartThinking Thinking>>
+Yatagarasu: <i>(You don't enjoy today, do you?)</i>
+Okuu: <i>(I-I'm not sure...)</i>
+Okuu: <i>(Orin, did all of this for me...)</i>
+Okuu: <i>(But, it just doesn't feel right for some reason.)</i>
+Yatagarasu: <i>(Like something is missing?)</i>
+Okuu: <i>(Maybe? Unyuu...)</i>
+Yatagarasu: <i>(Best if you don't tell her this.)</i>
+<<FinishThinking Thinking>>
+//Dialog
+Orin: Okuu?
+Okuu: Ah. So today...
+Orin: Yes?
+Okuu: I like today. A lot.
+Orin: Really? I'm glad to hear that!
+Okuu: Yeah. I-I hope we will have.
+<<jump GoToEnding_Chireiden>>
+===
+title: Today_I_Enjoy_Alot
+position: 434,246
+---
+<<jump I_Enjoy_Today_ALot>>
+===
+title: Invalid_Chireiden_2
+position: 434,694
+---
+<<AddScore AffectionManager 0>>
+<<Expression Okuu "Neutral">>
+<<Expression Orin "Neutral">>
+Okuu: ...
+Orin: ...
+*sips*
+<<StartThinking Thinking>>
+Okuu: <i>(...)</i>
+Yatagarasu: <i>(...)</i>
+Yatagarasu: <i>(...That's it?)</i>
+Okuu: <i>(You are not going to tell her how you feel?)</i>
+<<Expression Okuu "Unyuu">>
+Okuu: <i>(I don't know what to say.)</i>
+<<Expression Okuu "Neutral">>
+Orin: ...
+Okuu: ...
+<i>*sips*</i>
+Orin: ...Nice weather, isn't it?
+Okuu: It is.
+<i>*sips*</i>
+Yatagarasu: <i>(Ugh... I give up.)</i>
+<<FinishThinking Thinking>>
+<<jump GoToEnding_Chireiden>>
+===

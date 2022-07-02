@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
+  m_Name: Sample
+  m_EditorClassIdentifier: 
+  numberOfSlots: 3
+  listPhrases:
+  - I
+  - Like
+  - Work
+  - Don't
+  - Mind
+  - It
+  SentenceAnswerList:
+  - outputComparatorList:
+    - I
+    - Like
+    - It
+    nodeName: Intro_1
+  - outputComparatorList:
+    - I
+    - Don't
+    - Mind
+    nodeName: Intro_2
+  - outputComparatorList:
+    - I
+    - Like
+    - Work
+    nodeName: Intro_3
+  - outputComparatorList:
+    - I
+    - Don't
+    - Like
+    nodeName: Intro_4
+  - outputComparatorList:
+    - I
+    - Don't
+    - Work
+    nodeName: Intro_5
+  invalidNodeName: Intro_6

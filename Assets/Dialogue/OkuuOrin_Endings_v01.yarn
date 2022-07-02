@@ -1,0 +1,145 @@
+﻿
+title: GoToEnding_HumanVillage
+position: 13,378
+---
+<<declare $score = 0 as number>>
+<<set $score to ReturnScore()>>
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~Evening, Human Village~</i>
+<i>~Underneath the firework lit night sky...~</i>
+<<if $score > 2>>
+    <<jump GoodEnding_HumanVillage>>
+<<else>>
+    <<jump BadEnding_HumanVillage>>
+<<endif>>
+===
+
+title: GoToEnding_Chireiden
+position: 0,1
+---
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~Evening, Chireiden~</i>
+<<set $score to ReturnScore()>>
+<<if $score > 2>>
+    <<jump GoodEnding_Chireiden>>
+<<else>>
+    <<jump BadEnding_Chireiden>>
+<<endif>>
+===
+
+title: GoodEnding_Chireiden
+tags:
+---
+<<SetBlack FadeScreen>>
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<<ChangeBG BGManager "ChireidenEnding">>
+<<PlayBGM SoundManager TitleScreen>>
+<i>Few hours later</i>
+<<FadeOut FadeScreen>>
+Okuu: Today was insanely fun. We should do it again.
+Orin: It was, wasn't it!
+Orin: ...
+Orin: Hey Okuu.
+Okuu: Yea?
+Orin: You don't have to head down to the Furnaces of Lower Hell so soon do you?
+Okuu: I don't have to go anywhere! This weekend is for us!
+Orin: There's a place in the garden I want to show you.
+Orin: And all kinds of neat places even in Chireiden.
+Orin: So if you don't mind staying a little longer...
+Okuu: Yea let's do it!
+Okuu: If it's with you. I'd love to do just about anything!
+<i>~And so Reiuji and Orin happily spent a lazy weekend within the home that they held so dear.~</i>
+<i>~Laughing and enjoying each other's company all the way even through the night.~</i> 
+<i>~What some would call a mundane weekend, to them was more than enough.~</i>
+<i>~Chireiden Good Ending.</i>
+<i>~Sometimes just hanging out is good enough~</i>
+<<FadeOut FadeScreen>>
+<<EndGame GameManager>>
+===
+title: BadEnding_Chireiden
+position: -215,1
+---
+<<SetBlack FadeScreen>>
+<<ChangeBG BGManager "Chireiden">>
+<<PlayBGM SoundManager TitleScreen>>
+<i>Few hours later</i>
+<<FadeOut FadeScreen>>
+<<Expression Orin Neutral>>
+<<Expression Okuu Neutral>>
+Okuu: Well, then, good night, Orin.
+Orin: Yeah, good night, Okuu.
+<<Flip Orin>>
+<<Flip Okuu>>
+<<Expression Orin "Sad">>
+<<Expression Okuu "Sad">>
+Both: <i>(Such a shame today didn't go as planned)</i>
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~And so Reiuji and Orin listlessly retreated to their own rooms for the night.~</i>
+<i>~In their solitude it felt like just another day.~</i>
+<i>~With nothing eventful to note.~</i>
+<i>~Chireiden Bad Ending.</i>
+<i>~Try to respond to Orin a little better.~</i>
+<<EndGame GameManager>>
+
+===
+title: GoodEnding_HumanVillage
+position: -215,1
+---
+<<SetBlack FadeScreen>>
+<<PlayBGM SoundManager TitleScreen>>
+<i>Danmaku battles in the sky</i>
+<i>Like beautiful fireworks soaring and lighting up the sky.</i>
+<i>Seeing the beauty of it all. Okuu just knew it was the right time.</i>
+Okuu: This is so much fun!
+Orin: It sure is!
+Okuu: Hey Orin.
+Orin: Yea Okuu?
+<<Destroy Orin>>
+<<Destroy Okuu>>
+<<ChangeBG BGManager "HumanVillageEnding">>
+<<FadeOut FadeScreen>>
+Okuu: I love you...
+Orin: Okuu...
+Orin: T-that's not fair...Cause I was just about to say that.
+Orin: Well fine. I love you too Okuu.
+Okuu: Unyuu...Orin!
+<i>~And so Reiuji and Orin enjoyed the rest of the night watching the sky fill with beautiful lights~</i>
+<i>~Village Good Ending.</i>
+<i>~Courage is all about the right timing and opportunity after all.~</i>
+<<FadeIn FadeScreen>>
+<<EndGame GameManager>>
+===
+title: BadEnding_HumanVillage
+position: -215,1
+---
+<<SetBlack FadeScreen>>
+<<ChangeBG BGManager "HumanVillage">>
+<<PlayBGM SoundManager TitleScreen>>
+<i>Danmaku battles in the sky</i>
+<i>Like beautiful fireworks celebrating the festival.</i>
+<<FadeOut FadeScreen>>
+<<Expression Okuu "Embarrassed">>
+Okuu: Orin...
+Okuu: I lo-...
+<i>A loud explosion in the sky</i>
+<<Expression Orin "Blank">>
+Orin: Hm? Did you say something Okuu?
+<<Expression Okuu "BugEyed">>
+<<Flip Okuu>>
+Okuu: Uh, nothing, never mind!
+<<Expression Orin "Sad">>
+<<Expression Okuu "Sad">>
+Orin: Oh sure...
+<<FadeIn FadeScreen>>
+<<wait 1>>
+<i>~And so Reiuji and Orin enjoyed the rest of the night watching the sky fill with beautiful lights~</i>
+<i>~But they would come back with memories of regret~</i>
+<i>~And questions of what if~</i>
+<i>~Village Bad Ending.</i>
+<i>~Try to respond to Orin a little better.~</i>
+<<EndGame GameManager>>
+===

@@ -1,0 +1,223 @@
+﻿title: MainStory_Intro_0
+tags: 
+position: -542,-566
+colorID: 4
+---
+<<PlayBGM SoundManager HF_2>>
+<i>~Weekday, at Satori Komeji's office, Chireiden~</i>
+Satori: Okuu, Orin, do you know why I'm calling you two here?
+Orin: I'm not sure, Satori-sama...
+Okuu: (thinks very hard)
+-> Okuu: D-did I do something bad again?
+    <<Expression Okuu "Unyuu">>
+    Okuu: (I might have accidentally broken a cup...)
+-> Okuu: Do you want us to go after that spirit, Satori-sama? 
+    <<Expression Orin "Smug">>
+    Orin: I think it's best if you don't go after her, Okuu.
+Satori: No, it's something much simpler.
+Satori: I would like to give you two this weekend off.
+Orin: Ehhh?
+<<Expression Okuu "Happy">>
+<<Expression Orin "Happy">>
+Orin: Woah! Satori-sama, you are the best!
+Orin: B-but Satori-sama, will the flames of Hell of Blazing Fires be ok without Okuu?
+<<Expression Orin "Thinking">>
+Satori: The kappa said we will be fine for a few days without Okuu.
+Satori: Also you two have worked hard for everyone this past few years.
+//CG: Satori pets Orin and Okuu?
+Satori: It's only fair that you two deserve a break.
+Both: Satori-sama...
+Satori: (I wonder how these two are going to spend their weekend)
+
+Yatagarasu: Now what are you doing fidgeting about Reiuji?
+Okuu: Who said that?
+Yatagarasu: Are you daft woman? Here!
+Okuu: W-where?
+Yatagarasu: In here!
+Okuu: In where?!
+Yatagarasu: Inside your head!
+Okuu: Oh but inside my head is just Mr. Crow.
+Yatagarasu: I’m a raven, not a crow. And I’m not just any raven.
+Yatagarasu: Geez to forget the god you’ve absorbed within your very being. 
+Yatagarasu: Surely you have not forgotten about the great and powerful god of the sun, the Yatagarasu, have you?
+Okuu: Oh! Yata...Yata...Mr Crow!
+Yatagarasu: Still having trouble saying my name are you? Very well, Mr. Crow then.
+Yatagarasu: Now what in red blazes is possibly bothering you?
+Okuu: Well, Satori gave us the day off today. And I don’t know how to spend it.
+Okuu: Well I do know how to spend it. But I don’t know how I CAN spend it.
+Okuu: But, well I. And she, but what if…
+Yatagarasu: Red blazes woman, your thoughts are all over the place. 
+Yatagarasu: I’m going to need you to slow down before a valve in your head begins to burst. 
+Yatagarasu: You remember what Ms. Satori said when you begin to feel this way correct?
+Okuu: She said to think and focus on one thing at a time?
+Yatagarasu: That’s right, think and focus on one thing at a time. 
+Yatagarasu: Now lets sort out this little conundrum you have in your mind. 
+Yatagarasu: Think carefully on what you want to do most on your free time.
+Okuu: Ok...What I want most to do on my free time is...
+
+<<WalkTowards Okuu 3 "Right" 2>>
+<<Flip Orin>>
+
+<i>~At the hallway of Chireiden~</i>
+<<FadeOut FadeScreen>>
+Orin: Woah, days off. What do you think, Okuu?
+//
+Okuu: (What do I think of days off?)
+<<SentenceBuilderStart GameManager MainStory_Intro_0_v01>>
+Okuu: (What do I think of days off?)
+<<jump {JumpToNode()}>>
+//Words: [I, We, It, What] [Be, Like, Work] [Great, Bad]
+===
+title: Intro_1
+tags: 
+position: -542,-451
+colorID: 4
+---
+Okuu: I like it! 
+Orin: I like it too! It has been so long.
+Orin: Of course, I like work too: Collecting corpses, helping you and Satori-sama...
+Orin: But having a relaxing day once in a while is great.
+Okuu: Relaxing...
+<<jump MainStory_Intro_1>>
+===
+title: Intro_2
+position: -542,-396
+---
+Okuu: But I do like working for Satori-sama.
+Orin: Well, I like working for Satori-sama too. Still, it's not wrong to relax once in a while!
+Orin: Cheer up, Okuu. We will see Satori-sama again soon.
+Okuu: Yeah, you are right!
+<<jump MainStory_Intro_1>>
+===
+title: Intro_3
+position: -542,-344
+---
+Okuu: It is great that we are getting days off!
+Okuu: How long has it been since our last days off?
+Orin: Should count that time you trying to take over Gensokyo as "days off", I wonder?
+Okuu: *teary eye* I-I really thought it was good for Satori-sama and the others.
+Orin: I'm joking. Well, the past is the past. Let us look forward to our days off.
+Orin: And a proper one this time.
+<<jump MainStory_Intro_1>>
+===
+title: Intro_4
+position: -541,-292
+---
+Okuu: It's bad...
+Orin: Ehhh??? How come?
+Okuu: Because...
+<<wait 3>>
+Orin: Okuu? Are you ok?
+<<wait 2>>
+Orin: You are worrying me...
+<<wait 1>>
+Okuu: I forgot what I want to say...
+Okuu: Oh well, it's not important! Anyway, I'm looking forward to our days off.
+Orin: (So... Are days off still bad then?)
+<<jump MainStory_Intro_1>>
+===
+title: Intro_5
+position: -542,-236
+---
+Okuu: So... What exactly is it?
+Orin: Exactly what, Okuu?
+Okuu: Days off. You seem so excited too. I just can't help but be excited.
+Okuu: But... I'm not sure why...
+Orin: To put it simply: We are completely free during our days off.
+Orin: Meaning we don't have to do anything!
+Okuu: Woah~ That sounds cool.
+<<jump MainStory_Intro_1>>
+===
+title: Invalid_Intro_0
+position: -540,-183
+---
+Orin: Okuu? Are you alright?
+Orin: I didn't catch that...
+Okuu: Unyuu...
+<<jump MainStory_Intro_1>>
+===
+
+title: MainStory_Intro_1
+position: -363,-565
+---
+Orin: Anyhow, do you plan to do something on the weekend, Okuu?
+Orin: I heard the Human Village is preparing some kind of festival!
+Orin: Oh, I remember Yuugi sent an invitation to Satori-sama. But I can't remember what is was about...
+Orin: But I'm happy regardless of where we spend our time, Okuu!
+Okuu: (Do I have something planned for this weekend, I wonder?)
+Yatagarasu: (Yes! Yes, you do!)
+Okuu: (Unyu???)
+Yatagarasu: (Please don't tell me you gather all your courage to ask Satori to let you two have weekends off for nothing!)
+Okuu: (Oh, right...)
+Yatagarasu: (Go ahead and tell her to go out on a date with you!)
+Yatagarasu: (Don't let all of our hard work go to waste!)
+Okuu: O-Orin...
+Orin: Hmm?
+<<SentenceBuilderStart GameManager MainStory_Intro_1_v01>>
+Okuu: I-I want to ask...
+<<jump {JumpToNode()}>>
+===
+
+title: Location_1
+position: -361,-452
+---
+Okuu: W-Would you like to go to the Human Village with me?
+Okuu: I know you visit the surface a lot to help Satori-sama in her detective works.
+Okuu: But I still want to go there with you!
+Orin: Just us two?
+Okuu: Yep, just the two of us!
+Orin: Then it's a deal! I'm looking forward to our date, Okuu.
+Okuu: (D-date...)
+===
+title: Location_2
+position: -362,-373
+---
+Okuu: How about we stay at the Human Village this weekend, Orin?
+Okuu: You said there will be a festival right?
+Okuu: I would love to experience this festival with you!
+Orin: Then let us visit the Human Village for our days off.
+Orin: It sure sounds like a date, don't you think, Okuu?
+Okuu: (Yah!)
+===
+title: Location_3
+position: -360,-296
+---
+Okuu: How about the Old Capital?
+Okuu: I heard the hot spring boost your health.
+Orin: Oooh, we can also check out how everyone is doing.
+Orin: I would be rude to turn down Yuugi's invitation.
+Okuu: I'm sure she won't mind us going as Satori-sama's representative.
+Orin: Exactly!
+Orin: (It's not like Okuu can sneak into the human village easily like me...) 
+Orin: Then I'm looking forward to the weekend, Okuu!
+===
+title: Location_4
+position: -359,-216
+---
+Orin: Ah! The hot spring is offering a discount for couples!
+Orin: How about we spend our weekend there, Okuu?
+Okuu: Wah... Are you Satori-sama? How did you read my mind like that?
+Orin: Oh?
+Okuu: I wanted to ask if you would like to stay at the Old Capital with me this weekend...
+Okuu: But now that you ask me first, I'm so happy to hear you want the same thing, Orin!
+Orin: Great mind, think alike, don't you think?
+Okuu: Yup!
+===
+title: Invalid_Intro_1
+position: -357,-138
+---
+Okuu: Unyuu... Unyuuuuuu.....
+Yatagarasu: (Oh dear... She has too many ideas.)
+Yatagarasu: (Yet, she can't say it out loud...)
+Orin: Okuu? Are you alright?
+Okuu: Unyuu~
+Orin: Hmm... How about we just stay at Chireiden, with Satori-sama?
+Okuu: Unyuu?
+Orin: I'm sure you are thinking hard. Maybe a bit too hard...
+Orin: I don't mind where we spend our weekend, Okuu.
+Orin: It's more important that we do it together, in my opinion.
+Okuu: You really don't mind?
+Orin: I don't. And you?
+Okuu: Same! As long I'm with you, I don't really care where we go!
+Orin: Then let us relax at home for this weekend.
+===

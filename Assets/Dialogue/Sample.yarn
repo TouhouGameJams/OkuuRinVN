@@ -1,0 +1,69 @@
+﻿title: MainStory_Intro_0
+tags:
+---
+<<PlayBGM SoundManager HF_2>>
+<<CreateCharacter CharacterManager Okuu -4.7 -1.25 true>>
+Orin: Hey Okuu!
+<<Hop Orin 2>>
+<<Hop Okuu 2>>
+Okuu: Hey Orin!
+
+Orin: Hey Okuu! Did you hear? Satori-sama gave us a day off. What do you think?
+Okuu: Oh? What do I think?
+<<Expression Okuu Confused>>
+<<Spin Okuu 2>>
+Okuu: Hm?
+<<Expression Okuu Confused>>
+
+<<SentenceBuilderStart GameManager Sample>> //This calls the sentence builder where you can call a scriptable object
+Okuu: (What do I think of days off?) //Represents inner thoughts. Also to help the player remind what the goal of the sentence to build
+<<jump {JumpToNode()}>>
+===
+
+title: Intro_1
+tags:
+---
+<<AddScore AffectionManager 2>>
+<<Expression Okuu Happy>>
+Okuu: I'm looking forward to a day off.
+Orin: I know right? We've been working a whole bunch lately.
+===
+
+title: Intro_2
+tags:
+---
+<<AddScore AffectionManager 1>>
+Okuu: I don't mind.
+Orin: Hehe. This girl acting all cool. I can see the grin on your face.
+===
+
+title: Intro_3
+tags:
+---
+<<AddScore AffectionManager 1>>
+Okuu: But I like working...
+Orin: I like work too, but a girl's gotta kick back sometime ya know.
+===
+
+title: Intro_4
+tags:
+---
+<<AddScore AffectionManager -1>>
+Okuu: Hm...I don't know, I kind of have a lot of work.
+Orin: Eh? You must be busy huh?
+===
+
+title: Intro_5
+tags:
+---
+<<AddScore AffectionManager -1>>
+Okuu: Uh...I don't really work.
+Orin: Eh? D-don't let Satori-sama hear that...
+===
+
+title: Intro_6
+tags:
+---
+<<AddScore AffectionManager 0>>
+Orin: What was that? I didn't quite catch that one.
+===

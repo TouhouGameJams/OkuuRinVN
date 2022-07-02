@@ -1,0 +1,51 @@
+﻿title: MainStory_Intro_0
+tags:
+---
+Okuu: Show a CG
+<<ShowCG CGImage test>>
+Okuu: CG!
+Orin: Whoooooa!
+<<HideCG CGImage test>>
+Okuu: Hiding the CG
+<<Expression Okuu Embarassed>>
+Okuu: Embarassed
+<<Expression Okuu Happy>>
+Okuu: Happy
+<<Expression Okuu Mad>>
+Okuu: Mad
+<<Expression Okuu Neutral>>
+Okuu: Neutral
+<<Expression Okuu BugEyed>>
+Okuu: BugEyed
+<<Expression Okuu Sad>>
+Okuu: Sad
+<<Expression Okuu Smug>>
+Okuu: Smug
+<<Expression Okuu Swirly>>
+Okuu: Swirly
+<<Expression Okuu Thinking>>
+Okuu: Thinking
+<<Expression Okuu Unyuu>>
+Okuu: Unyuu
+<<Flip Okuu >>
+Okuu: Flip
+<<Flip Okuu >>
+Okuu: Flip Again
+<<Hop Okuu 2>>
+Okuu: Hop
+<<Expression Okuu Swirly>>
+<<Rotate Okuu 360 0.5>>
+Okuu: Rotate
+<<Expression Okuu Smug>>
+<<SpeedLines Okuu 1>>
+Okuu: SpeedLines
+<<Expression Okuu Sad>>
+<<ShakeSide Okuu>>
+Okuu: ShakeSide
+<<Expression Okuu Unyuu>>
+<<ShakeOver Okuu>>
+Okuu: ShakeOver
+<<WalkTowards Okuu 8 Right 1>>
+Okuu: Right
+<<WalkTowards Okuu 8 Left 1>>
+===

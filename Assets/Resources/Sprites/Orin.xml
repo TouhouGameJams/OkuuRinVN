@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Orin.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cat0000" x="0" y="0" width="743" height="718"/>
+	<SubTexture name="O.Ocat0000" x="743" y="0" width="743" height="718"/>
+	<SubTexture name="angycat0000" x="1486" y="0" width="743" height="718"/>
+	<SubTexture name="flushedcat0000" x="2229" y="0" width="743" height="718"/>
+	<SubTexture name="neutralcat0000" x="2972" y="0" width="743" height="718"/>
+	<SubTexture name="sadcat0000" x="0" y="718" width="743" height="718"/>
+	<SubTexture name="smugcat0000" x="743" y="718" width="743" height="718"/>
+	<SubTexture name="swirl0000" x="1486" y="718" width="743" height="718"/>
+	<SubTexture name="thinkcat0000" x="2229" y="718" width="743" height="718"/>
+</TextureAtlas>

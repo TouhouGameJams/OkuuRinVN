@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9825430199df01944968a10e78531c93, type: 3}
+  m_Name: MainStory_Chireiden_2_v01
+  m_EditorClassIdentifier: 
+  numberOfSlots: 4
+  listPhrases:
+  - I
+  - Do
+  - Don't
+  - Enjoy
+  - Today
+  - Alot
+  SentenceAnswerList:
+  - outputComparatorList:
+    - I
+    - Enjoy
+    - Today
+    - Alot
+    nodeName: I_Enjoy_Today_ALot
+    points: 0
+  - outputComparatorList:
+    - I
+    - Do
+    - Enjoy
+    - Today
+    nodeName: I_Do_Enjoy_Today
+    points: 0
+  - outputComparatorList:
+    - I
+    - Don't
+    - Enjoy
+    - Today
+    nodeName: I_Dont_Enjoy_Today
+    points: 0
+  - outputComparatorList:
+    - Do
+    - I
+    - Enjoy
+    - Today
+    nodeName: Do_I_Enjoy_Today
+    points: 0
+  - outputComparatorList:
+    - Don't
+    - I
+    - Enjoy
+    - Today
+    nodeName: Dont_I_Enjoy_Today
+    points: 0
+  invalidNodeName: Invalid_Chireiden_2
