@@ -28,6 +28,7 @@ public class TitleScreenManager : MonoBehaviour
         SoundManager soundManager = SoundManager.Instance;
         soundManager.StopBGM();
         LoadingData.sceneToLoad = targetScene;
+        NodeData.NodeName = "MainStory_Intro_0";
         SceneManager.LoadScene("LoadingScene");
     }
 
@@ -35,7 +36,8 @@ public class TitleScreenManager : MonoBehaviour
     {
         SoundManager soundManager = SoundManager.Instance;
         soundManager.StopBGM();
-        LoadingData.sceneToLoad = "Chireiden";
+        LoadingData.sceneToLoad = targetScene;
+        NodeData.NodeName = "MainStory_Chireiden_0";
         SceneManager.LoadScene("LoadingScene");
     }
 
@@ -43,7 +45,8 @@ public class TitleScreenManager : MonoBehaviour
     {
         SoundManager soundManager = SoundManager.Instance;
         soundManager.StopBGM();
-        LoadingData.sceneToLoad = "Village";
+        LoadingData.sceneToLoad = targetScene;
+        NodeData.NodeName = "MainStory_HumanVillage_0";
         SceneManager.LoadScene("LoadingScene");
     }
 
